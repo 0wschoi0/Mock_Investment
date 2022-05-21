@@ -16,6 +16,7 @@ namespace Mock_Investing
         {
             InitializeComponent();
         }
+
         private void butMy_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedIndex = 0;
@@ -35,8 +36,6 @@ namespace Mock_Investing
         {
             guna2TabControl1.SelectedIndex = 3;
         }
-
-
 
         private void butLogout_Click(object sender, EventArgs e)
         {
