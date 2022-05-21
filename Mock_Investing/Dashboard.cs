@@ -23,6 +23,7 @@ namespace Mock_Investing
         string coinName = "";
         int maxViewY = 0;
         int minViewY = 0;
+        int flag = 0;
         public Dashboard(string uid)
         {
             InitializeComponent();
@@ -52,7 +53,12 @@ namespace Mock_Investing
         private void butTrans_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedIndex = 3;
-            Chart(coinName);
+            if (flag == 0)
+            {
+                flag = 1;
+                Chart(coinName);
+                
+            }
         }
 
         private void butLogout_Click(object sender, EventArgs e)
@@ -69,7 +75,7 @@ namespace Mock_Investing
             this.coinName = coinName;
             
             transactionChart.Series["Series1"]["PriceDownColor"] = "Blue";
-            coin_candle = fetchcandle("30");
+            coin_candle = fetchcandle("100");
             Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;
             timer.Tick += new EventHandler(timer_Tick);
@@ -207,57 +213,27 @@ namespace Mock_Investing
         void timer_Tick(object sender, EventArgs e)
         {
 
-            List<Candle> new_candle = fetchcandle("1");
-            if (transactionChart.Series != null) // 여기가 이상합니다..... 윈폼을 껐는데 에러가 납니다. null을 참조해서 에러가 난다고 하는데 모르겠씁니다.
+            List<Candle> new_candle = fetchcandle("100");
+            coin_candle = new_candle;
+            transactionChart.Series["Series1"].Points.Clear();
+            for (int i = 0; i < coin_candle.Count; i++)
             {
-                if (new_candle.ElementAt(0).candle_date_time_kst.Equals(coin_candle.ElementAt(0).candle_date_time_kst))
+                transactionChart.Series["Series1"].Points.AddXY(coin_candle.ElementAt(i).candle_date_time_kst, coin_candle.ElementAt(i).high_price);
+                transactionChart.Series["Series1"].Points[i].YValues[1] = coin_candle.ElementAt(i).low_price;
+                transactionChart.Series["Series1"].Points[i].YValues[2] = coin_candle.ElementAt(i).opening_price;
+                transactionChart.Series["Series1"].Points[i].YValues[3] = coin_candle.ElementAt(i).trade_price;
+                if (coin_candle.ElementAt(i).opening_price < coin_candle.ElementAt(i).trade_price)
                 {
-                    coin_candle.ElementAt(0).low_price = new_candle.ElementAt(0).low_price;
-                    coin_candle.ElementAt(0).opening_price = new_candle.ElementAt(0).opening_price;
-                    coin_candle.ElementAt(0).trade_price = new_candle.ElementAt(0).trade_price;
-                    transactionChart.Series["Series1"].Points[0].YValues[1] = coin_candle.ElementAt(0).low_price;
-                    transactionChart.Series["Series1"].Points[0].YValues[2] = coin_candle.ElementAt(0).opening_price;
-                    transactionChart.Series["Series1"].Points[0].YValues[3] = coin_candle.ElementAt(0).trade_price;
-                    if (new_candle.ElementAt(0).opening_price < new_candle.ElementAt(0).trade_price)
-                    {
-                        transactionChart.Series["Series1"].Points[0].Color = Color.Red;
-                        transactionChart.Series["Series1"].Points[0].BorderColor = Color.Red;
-                    }
-                    if (new_candle.ElementAt(0).opening_price >= new_candle.ElementAt(0).trade_price)
-                    {
-                        transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
-                        transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
-
-                    }
+                    transactionChart.Series["Series1"].Points[i].Color = Color.Red;
+                    transactionChart.Series["Series1"].Points[i].BorderColor = Color.Red;
                 }
-                else
+                if (coin_candle.ElementAt(i).opening_price >= coin_candle.ElementAt(i).trade_price)
                 {
-                    coin_candle.Insert(0, new_candle.ElementAt(0));
-                    transactionChart.Series["Series1"].Points.Clear();
-                    for (int i = 0; i < coin_candle.Count; i++)
-                    {
-
-                        transactionChart.Series["Series1"].Points.AddXY(coin_candle.ElementAt(i).candle_date_time_kst, coin_candle.ElementAt(i).high_price);
-                        transactionChart.Series["Series1"].Points[i].YValues[1] = coin_candle.ElementAt(i).low_price;
-                        transactionChart.Series["Series1"].Points[i].YValues[2] = coin_candle.ElementAt(i).opening_price;
-                        transactionChart.Series["Series1"].Points[i].YValues[3] = coin_candle.ElementAt(i).trade_price;
-                        if (coin_candle.ElementAt(i).opening_price < coin_candle.ElementAt(i).trade_price)
-                        {
-                            transactionChart.Series["Series1"].Points[i].Color = Color.Red;
-                            transactionChart.Series["Series1"].Points[i].BorderColor = Color.Red;
-                        }
-                        if (new_candle.ElementAt(0).opening_price >= new_candle.ElementAt(0).trade_price)
-                        {
-                            transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
-                            transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
-                        }
-                    }
+                    transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
+                    transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
                 }
             }
-
         }
-
-
     }
 
 }
