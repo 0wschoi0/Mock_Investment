@@ -7,11 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
+using System.Windows.Forms.DataVisualization.Charting;
+using Google.Cloud.Firestore;
 
 namespace Mock_Investing
 {
     public partial class Dashboard : Form
     {
+        string userName;
+        List<Candle> coin_candle;
+        string coinName = "";
+        int maxViewY = 0;
+        int minViewY = 0;
         public Dashboard(string uid)
         {
             InitializeComponent();
@@ -35,6 +46,7 @@ namespace Mock_Investing
         private void butTrans_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedIndex = 3;
+            Chart(coinName);
         }
 
         private void butLogout_Click(object sender, EventArgs e)
@@ -42,5 +54,204 @@ namespace Mock_Investing
             Environment.Exit(0);
         }
 
+        public void Chart(string coinName)
+        {
+            if (coinName == "")
+            {
+                coinName = "KRW-BTC";
+            }
+            this.coinName = coinName;
+            
+            transactionChart.Series["Series1"]["PriceDownColor"] = "Blue";
+            coin_candle = fetchcandle("30");
+            Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 1000;
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+
+           // transactionChart.AxisViewChanged += transactionChart_AxisViewChanged;
+            transactionChart.MouseWheel += mouseWheel;
+            maxViewY = (int)coin_candle.ElementAt(0).high_price;
+            minViewY = (int)coin_candle.ElementAt(0).low_price;
+            for (int i = 0; i < coin_candle.Count; i++)
+            {
+                transactionChart.Series["Series1"].Points.AddXY(coin_candle.ElementAt(i).candle_date_time_kst, coin_candle.ElementAt(i).high_price);
+                transactionChart.Series["Series1"].Points[i].YValues[1] = coin_candle.ElementAt(i).low_price;
+                transactionChart.Series["Series1"].Points[i].YValues[2] = coin_candle.ElementAt(i).opening_price;
+                transactionChart.Series["Series1"].Points[i].YValues[3] = coin_candle.ElementAt(i).trade_price;
+                if (coin_candle.ElementAt(0).opening_price >= coin_candle.ElementAt(0).trade_price)
+                {
+                    transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
+                    transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+                }
+                if (coin_candle.ElementAt(i).opening_price < coin_candle.ElementAt(i).trade_price)
+                {
+                    transactionChart.Series["Series1"].Points[i].Color = Color.Red;
+                    transactionChart.Series["Series1"].Points[i].BorderColor = Color.Red;
+                }
+
+                if (maxViewY < (int)coin_candle.ElementAt(i).high_price)
+                    maxViewY = (int)coin_candle.ElementAt(i).high_price;
+                if (minViewY > (int)coin_candle.ElementAt(i).low_price)
+                    minViewY = (int)coin_candle.ElementAt(i).low_price;
+            }
+            transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
+            transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
+        }
+
+        public List<Candle> fetchcandle(string count)
+        {
+            string urlMarket = "https://api.upbit.com/v1/candles/minutes/1";
+            StringBuilder dataParams = new StringBuilder();
+            dataParams.Append("market=" + coinName + "&" + "count=" + count);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(urlMarket + "?" + dataParams);
+            request.Method = "GET";
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            //인코딩
+            Stream stream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(stream, Encoding.UTF8);
+            var text = reader.ReadToEnd();
+
+            //Native Object 생성
+            JsonDocumentOptions jsonDocumentOptions = new JsonDocumentOptions
+            {
+                AllowTrailingCommas = true
+            };
+            JsonDocument jsonDocument = JsonDocument.Parse(text);
+
+            //역직렬화
+            JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions
+            {
+                AllowTrailingCommas = true // 데이터 후행의 쉼표 허용 여부
+            };
+
+            response.Close();
+            stream.Close();
+            reader.Close();
+            return JsonSerializer.Deserialize<List<Candle>>(text);
+        }
+
+        public class Candle
+        {
+            [JsonInclude]
+            public string market { get; set; }
+
+            [JsonInclude]
+            public string candle_date_time_kst { get; set; }
+
+            [JsonInclude]
+            public double opening_price { get; set; }
+
+            [JsonInclude]
+            public double high_price { get; set; }
+
+            [JsonInclude]
+            public double low_price { get; set; }
+
+            [JsonInclude]
+            public double trade_price { get; set; }
+
+            [JsonInclude]
+            public double candle_acc_trade_volume { get; set; }
+
+        }
+        private void mouseWheel(object sender, MouseEventArgs e)
+        {
+
+            if (sender.Equals(transactionChart))
+            {
+                var xAxis = transactionChart.ChartAreas[0].AxisX;
+                int minx = (int)xAxis.ScaleView.ViewMinimum;
+                int maxx = (int)xAxis.ScaleView.ViewMaximum;
+
+                transactionChart.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
+                transactionChart.ChartAreas[0].AxisX.ScrollBar.Enabled = true;
+                transactionChart.ChartAreas[0].AxisY.ScrollBar.Enabled = false;
+
+                if (e.Delta > 0) // 휠 위로 Zoom in
+                {
+                    int start = maxx / 2; //오래된 캔들 데이터일수록 인덱스 증가
+                    int end = minx; //제일 최근 캔들 데이터 인덱스 0
+
+                    for (int i = start - 1; i < end; i++)
+                    {
+                        if (i >= coin_candle.Count)
+                            break;
+                        if (i < 0)
+                            i = 0;
+                    }
+                    transactionChart.ChartAreas[0].AxisX.ScaleView.Zoom(end, start);
+                }
+                else //휠 아래 Zoom out
+                {
+                    int start = maxx * 2;//오래된 캔들 데이터일수록 인덱스 증가
+                    int end = minx;//제일 최근 캔들 데이터 인덱스 0
+                    for (int i = start - 1; i < end; i++)
+                    {
+                        if (i >= coin_candle.Count)
+                            break;
+                        if (i < 0)
+                            i = 0;
+                    }
+                    transactionChart.ChartAreas[0].AxisX.ScaleView.Zoom(end, start);
+                }
+            }
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+
+            List<Candle> new_candle = fetchcandle("1");
+            if (transactionChart.Series != null) // 여기가 이상합니다..... 윈폼을 껐는데 에러가 납니다. null을 참조해서 에러가 난다고 하는데 모르겠씁니다.
+            {
+                if (new_candle.ElementAt(0).candle_date_time_kst.Equals(coin_candle.ElementAt(0).candle_date_time_kst))
+                {
+                    coin_candle.ElementAt(0).low_price = new_candle.ElementAt(0).low_price;
+                    coin_candle.ElementAt(0).opening_price = new_candle.ElementAt(0).opening_price;
+                    coin_candle.ElementAt(0).trade_price = new_candle.ElementAt(0).trade_price;
+                    transactionChart.Series["Series1"].Points[0].YValues[1] = coin_candle.ElementAt(0).low_price;
+                    transactionChart.Series["Series1"].Points[0].YValues[2] = coin_candle.ElementAt(0).opening_price;
+                    transactionChart.Series["Series1"].Points[0].YValues[3] = coin_candle.ElementAt(0).trade_price;
+                    if (new_candle.ElementAt(0).opening_price < new_candle.ElementAt(0).trade_price)
+                    {
+                        transactionChart.Series["Series1"].Points[0].Color = Color.Red;
+                        transactionChart.Series["Series1"].Points[0].BorderColor = Color.Red;
+                    }
+                    if (new_candle.ElementAt(0).opening_price >= new_candle.ElementAt(0).trade_price)
+                    {
+                        transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
+                        transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+
+                    }
+                }
+                else
+                {
+                    coin_candle.Insert(0, new_candle.ElementAt(0));
+                    transactionChart.Series["Series1"].Points.Clear();
+                    for (int i = 0; i < coin_candle.Count; i++)
+                    {
+
+                        transactionChart.Series["Series1"].Points.AddXY(coin_candle.ElementAt(i).candle_date_time_kst, coin_candle.ElementAt(i).high_price);
+                        transactionChart.Series["Series1"].Points[i].YValues[1] = coin_candle.ElementAt(i).low_price;
+                        transactionChart.Series["Series1"].Points[i].YValues[2] = coin_candle.ElementAt(i).opening_price;
+                        transactionChart.Series["Series1"].Points[i].YValues[3] = coin_candle.ElementAt(i).trade_price;
+                        if (coin_candle.ElementAt(i).opening_price < coin_candle.ElementAt(i).trade_price)
+                        {
+                            transactionChart.Series["Series1"].Points[i].Color = Color.Red;
+                            transactionChart.Series["Series1"].Points[i].BorderColor = Color.Red;
+                        }
+                        if (new_candle.ElementAt(0).opening_price >= new_candle.ElementAt(0).trade_price)
+                        {
+                            transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
+                            transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
     }
+
 }
