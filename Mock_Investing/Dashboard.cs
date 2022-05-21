@@ -60,6 +60,7 @@ namespace Mock_Investing
             Environment.Exit(0);
         }
 
+        // Transaction Methods Start
         public void Chart(string coinName)
         {
             if (coinName == "")
@@ -75,7 +76,6 @@ namespace Mock_Investing
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
 
-           // transactionChart.AxisViewChanged += transactionChart_AxisViewChanged;
             transactionChart.MouseWheel += mouseWheel;
             maxViewY = (int)coin_candle.ElementAt(0).high_price;
             minViewY = (int)coin_candle.ElementAt(0).low_price;
@@ -228,6 +228,6 @@ namespace Mock_Investing
                 }
             }
         }
+        // Transaction Methods End
     }
-
 }
