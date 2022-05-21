@@ -232,7 +232,14 @@ namespace Mock_Investing
                     transactionChart.Series["Series1"].Points[0].Color = Color.Blue;
                     transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
                 }
+
+                if (maxViewY < (int)coin_candle.ElementAt(i).high_price)
+                    maxViewY = (int)coin_candle.ElementAt(i).high_price;
+                if (minViewY > (int)coin_candle.ElementAt(i).low_price)
+                    minViewY = (int)coin_candle.ElementAt(i).low_price;
             }
+            transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
+            transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
         }
         // Transaction Methods End
     }
