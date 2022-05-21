@@ -39,11 +39,11 @@ namespace Mock_Investing
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.sideTabControl = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabLogin = new System.Windows.Forms.TabPage();
             this.tabSignUp = new System.Windows.Forms.TabPage();
+            this.lblNameNew = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtNameNew = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
@@ -52,13 +52,14 @@ namespace Mock_Investing
             this.txtEmailNew = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPasswordNew = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblNameNew = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtNameNew = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.sideTabControl.SuspendLayout();
             this.tabLogin.SuspendLayout();
             this.tabSignUp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CheckBox2
@@ -209,6 +210,7 @@ namespace Mock_Investing
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
             this.guna2Panel2.Controls.Add(this.sideTabControl);
             this.guna2Panel2.Controls.Add(this.btnClose);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
@@ -217,28 +219,6 @@ namespace Mock_Investing
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1262, 673);
             this.guna2Panel2.TabIndex = 0;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.btnClose.IconColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1215, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
-            this.btnClose.TabIndex = 19;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(364, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(845, 633);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // sideTabControl
             // 
@@ -308,6 +288,43 @@ namespace Mock_Investing
             this.tabSignUp.TabIndex = 1;
             this.tabSignUp.Text = "tabPage2";
             this.tabSignUp.UseVisualStyleBackColor = true;
+            // 
+            // lblNameNew
+            // 
+            this.lblNameNew.BackColor = System.Drawing.Color.Transparent;
+            this.lblNameNew.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblNameNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblNameNew.Location = new System.Drawing.Point(21, 331);
+            this.lblNameNew.Margin = new System.Windows.Forms.Padding(2);
+            this.lblNameNew.Name = "lblNameNew";
+            this.lblNameNew.Size = new System.Drawing.Size(33, 22);
+            this.lblNameNew.TabIndex = 27;
+            this.lblNameNew.Text = "이름";
+            // 
+            // txtNameNew
+            // 
+            this.txtNameNew.Animated = true;
+            this.txtNameNew.BorderRadius = 5;
+            this.txtNameNew.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNameNew.DefaultText = "";
+            this.txtNameNew.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNameNew.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNameNew.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameNew.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNameNew.FillColor = System.Drawing.Color.Gainsboro;
+            this.txtNameNew.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameNew.Font = new System.Drawing.Font("굴림", 9F);
+            this.txtNameNew.ForeColor = System.Drawing.Color.Gray;
+            this.txtNameNew.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNameNew.Location = new System.Drawing.Point(21, 369);
+            this.txtNameNew.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNameNew.Name = "txtNameNew";
+            this.txtNameNew.PasswordChar = '\0';
+            this.txtNameNew.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtNameNew.PlaceholderText = "Name";
+            this.txtNameNew.SelectedText = "";
+            this.txtNameNew.Size = new System.Drawing.Size(267, 47);
+            this.txtNameNew.TabIndex = 28;
             // 
             // guna2CheckBox1
             // 
@@ -453,42 +470,35 @@ namespace Mock_Investing
             this.guna2HtmlLabel6.TabIndex = 24;
             this.guna2HtmlLabel6.Text = "비밀번호";
             // 
-            // lblNameNew
+            // btnClose
             // 
-            this.lblNameNew.BackColor = System.Drawing.Color.Transparent;
-            this.lblNameNew.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblNameNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblNameNew.Location = new System.Drawing.Point(21, 331);
-            this.lblNameNew.Margin = new System.Windows.Forms.Padding(2);
-            this.lblNameNew.Name = "lblNameNew";
-            this.lblNameNew.Size = new System.Drawing.Size(33, 22);
-            this.lblNameNew.TabIndex = 27;
-            this.lblNameNew.Text = "이름";
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.btnClose.IconColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(1215, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.TabIndex = 19;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // txtNameNew
+            // guna2PictureBox1
             // 
-            this.txtNameNew.Animated = true;
-            this.txtNameNew.BorderRadius = 5;
-            this.txtNameNew.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNameNew.DefaultText = "";
-            this.txtNameNew.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNameNew.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNameNew.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameNew.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNameNew.FillColor = System.Drawing.Color.Gainsboro;
-            this.txtNameNew.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameNew.Font = new System.Drawing.Font("굴림", 9F);
-            this.txtNameNew.ForeColor = System.Drawing.Color.Gray;
-            this.txtNameNew.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNameNew.Location = new System.Drawing.Point(21, 369);
-            this.txtNameNew.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNameNew.Name = "txtNameNew";
-            this.txtNameNew.PasswordChar = '\0';
-            this.txtNameNew.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txtNameNew.PlaceholderText = "Name";
-            this.txtNameNew.SelectedText = "";
-            this.txtNameNew.Size = new System.Drawing.Size(267, 47);
-            this.txtNameNew.TabIndex = 28;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(364, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(845, 633);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2VSeparator1
+            // 
+            this.guna2VSeparator1.FillColor = System.Drawing.Color.Black;
+            this.guna2VSeparator1.Location = new System.Drawing.Point(319, 35);
+            this.guna2VSeparator1.Name = "guna2VSeparator1";
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 596);
+            this.guna2VSeparator1.TabIndex = 19;
             // 
             // Login
             // 
@@ -501,12 +511,12 @@ namespace Mock_Investing
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.sideTabControl.ResumeLayout(false);
             this.tabLogin.ResumeLayout(false);
             this.tabLogin.PerformLayout();
             this.tabSignUp.ResumeLayout(false);
             this.tabSignUp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,5 +546,6 @@ namespace Mock_Investing
         private Guna.UI2.WinForms.Guna2TextBox txtEmailNew;
         private Guna.UI2.WinForms.Guna2TextBox txtPasswordNew;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
     }
 }

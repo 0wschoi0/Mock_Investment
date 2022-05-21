@@ -17,7 +17,14 @@ namespace Mock_Investing
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new Login().Show();
-            Application.Run();
+            try
+            {
+                Application.Run();
+            }
+            catch (System.Net.WebException)
+            {
+
+            }
         }
     }
 }
