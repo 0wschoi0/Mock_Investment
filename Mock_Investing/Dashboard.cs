@@ -26,6 +26,12 @@ namespace Mock_Investing
         public Dashboard(string uid)
         {
             InitializeComponent();
+
+            guna2DataGridView1.Rows.Add(1);
+            guna2DataGridView1.Rows[0].Cells[1].Value = "레이";
+            guna2DataGridView1.Rows[0].Cells[2].Value = "68.01";
+            guna2DataGridView1.Rows[0].Cells[3].Value = "-5.76%";
+            guna2DataGridView1.Rows[0].Cells[4].Value = "371.676";
         }
 
         private void butMy_Click(object sender, EventArgs e)
