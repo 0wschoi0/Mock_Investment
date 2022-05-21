@@ -30,6 +30,11 @@ namespace Mock_Investing
         private void btnLogin_Click(object sender, EventArgs e)
         {
             tabLogin.Enabled = false;
+            if (txtPassword.TextLength < 6)
+            {
+                MessageBox.Show("비밀번호는 최소 6자 이상이어야 합니다.");
+                return;
+            }
             bool t = true;
             LoginCheck(t);
         }
@@ -73,7 +78,7 @@ namespace Mock_Investing
         }
         private void btnSignUpNew_Click(object sender, EventArgs e)
         {
-            if (txtPassword.TextLength < 6)
+            if (txtPasswordNew.TextLength < 6)
             {
                 MessageBox.Show("비밀번호는 최소 6자 이상이어야 합니다.");
                 return;
