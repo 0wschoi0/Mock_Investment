@@ -101,7 +101,6 @@ namespace Mock_Investing
             {
                 flag = 1;
                 Chart(coinName);
-                
             }
         }
 
@@ -119,7 +118,7 @@ namespace Mock_Investing
                 coinName = "KRW-BTC";
             }
             this.coinName = coinName;
-            
+
             transactionChart.Series["Series1"]["PriceDownColor"] = "Blue";
             coin_candle = fetchcandle("100");
             Timer timer = new System.Windows.Forms.Timer();
@@ -188,30 +187,6 @@ namespace Mock_Investing
             return JsonSerializer.Deserialize<List<Candle>>(text);
         }
 
-        public class Candle
-        {
-            [JsonInclude]
-            public string market { get; set; }
-
-            [JsonInclude]
-            public string candle_date_time_kst { get; set; }
-
-            [JsonInclude]
-            public double opening_price { get; set; }
-
-            [JsonInclude]
-            public double high_price { get; set; }
-
-            [JsonInclude]
-            public double low_price { get; set; }
-
-            [JsonInclude]
-            public double trade_price { get; set; }
-
-            [JsonInclude]
-            public double candle_acc_trade_volume { get; set; }
-
-        }
         private void mouseWheel(object sender, MouseEventArgs e)
         {
 
@@ -260,6 +235,7 @@ namespace Mock_Investing
 
             List<Candle> new_candle = fetchcandle("100");
             coin_candle = new_candle;
+            lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
             transactionChart.Series["Series1"].Points.Clear();
             for (int i = 0; i < coin_candle.Count; i++)
             {
@@ -286,6 +262,40 @@ namespace Mock_Investing
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
         }
+
+        private void gridCoinList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            coinName = "KRW-" + gridCoinList.Rows[e.RowIndex].Cells[1].Value.ToString();
+            lblChartCoinName.Text = gridCoinList.Rows[e.RowIndex].Cells[2].Value.ToString();
+            lblChartCoinPrice.Text = gridCoinList.Rows[e.RowIndex].Cells[3].Value.ToString();
+            butTrans.PerformClick();
+        }
+
+        public class Candle
+        {
+            [JsonInclude]
+            public string market { get; set; }
+
+            [JsonInclude]
+            public string candle_date_time_kst { get; set; }
+
+            [JsonInclude]
+            public double opening_price { get; set; }
+
+            [JsonInclude]
+            public double high_price { get; set; }
+
+            [JsonInclude]
+            public double low_price { get; set; }
+
+            [JsonInclude]
+            public double trade_price { get; set; }
+
+            [JsonInclude]
+            public double candle_acc_trade_volume { get; set; }
+
+        }
+
         // 실시간 차트 구현 끝
 
         // 실시간 코인 리스트 구현 시작
@@ -462,6 +472,12 @@ namespace Mock_Investing
             [JsonInclude]
             public long timestamp { get; set; }                 // 타임스탬프
         }
+
+
+
+
+        // 실시간 코인 리스트 구현 끝
+
+
     }
-    // 실시간 코인 리스트 구현 끝
 }
