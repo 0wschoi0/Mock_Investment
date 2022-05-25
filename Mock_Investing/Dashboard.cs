@@ -103,6 +103,10 @@ namespace Mock_Investing
                 Chart(coinName);
             }
         }
+        private void myPro_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedIndex = 4;
+        }
 
         private void butLogout_Click(object sender, EventArgs e)
         {
@@ -118,9 +122,12 @@ namespace Mock_Investing
                 coinName = "KRW-BTC";
             }
             this.coinName = coinName;
-
+          
             transactionChart.Series["Series1"]["PriceDownColor"] = "Blue";
             coin_candle = fetchcandle("100");
+
+            lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
+
             Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;
             timer.Tick += new EventHandler(timer_Tick_Chart);
@@ -472,6 +479,10 @@ namespace Mock_Investing
             [JsonInclude]
             public long timestamp { get; set; }                 // 타임스탬프
         }
+
+      
+
+
 
 
 

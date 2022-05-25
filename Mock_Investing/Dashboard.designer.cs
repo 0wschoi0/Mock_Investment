@@ -32,14 +32,8 @@ namespace Mock_Investing
 
             private void InitializeComponent()
             {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Buy    Bitcoin    - ₩ 12,030");
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Sell    Bitcoin    + ₩ 12,030");
-            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Date    Time    Type    Sum    ");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("05 / 13    12:17 AM    Bitcoin    ₩ 12,030");
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -49,7 +43,14 @@ namespace Mock_Investing
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Buy    Bitcoin    - ₩ 12,030");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("Sell    Bitcoin    + ₩ 12,030");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("Date    Time    Type    Sum    ");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("05 / 13    12:17 AM    Bitcoin    ₩ 12,030");
+            this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -69,23 +70,10 @@ namespace Mock_Investing
             this.butFav = new Guna.UI2.WinForms.Guna2Button();
             this.butLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.myPro = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabMy = new System.Windows.Forms.TabPage();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Flow = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label29 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -164,14 +152,29 @@ namespace Mock_Investing
             this.txtboxSellPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelSellPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BtnSell = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2.SuspendLayout();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.listView3 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.listView4 = new System.Windows.Forms.ListView();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.dashBoardDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tabMy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -192,28 +195,30 @@ namespace Mock_Investing
             this.tabcontrolBuySell.SuspendLayout();
             this.tabPageBuy.SuspendLayout();
             this.tabPageSell.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Panel2
+            // panelHeader
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.guna2Panel2.Controls.Add(this.pictureBox2);
-            this.guna2Panel2.Controls.Add(this.label7);
-            this.guna2Panel2.Controls.Add(this.label8);
-            this.guna2Panel2.Controls.Add(this.guna2VSeparator2);
-            this.guna2Panel2.Controls.Add(this.label5);
-            this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
-            this.guna2Panel2.Controls.Add(this.label4);
-            this.guna2Panel2.Controls.Add(this.label3);
-            this.guna2Panel2.Controls.Add(this.pictureBox1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel2.Location = new System.Drawing.Point(255, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1190, 137);
-            this.guna2Panel2.TabIndex = 1;
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.panelHeader.Controls.Add(this.pictureBox2);
+            this.panelHeader.Controls.Add(this.label7);
+            this.panelHeader.Controls.Add(this.label8);
+            this.panelHeader.Controls.Add(this.guna2VSeparator2);
+            this.panelHeader.Controls.Add(this.label5);
+            this.panelHeader.Controls.Add(this.label6);
+            this.panelHeader.Controls.Add(this.guna2VSeparator1);
+            this.panelHeader.Controls.Add(this.label4);
+            this.panelHeader.Controls.Add(this.label3);
+            this.panelHeader.Controls.Add(this.pictureBox1);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.ForeColor = System.Drawing.SystemColors.Control;
+            this.panelHeader.Location = new System.Drawing.Point(255, 0);
+            this.panelHeader.Margin = new System.Windows.Forms.Padding(0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1190, 137);
+            this.panelHeader.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -368,7 +373,7 @@ namespace Mock_Investing
             // butView
             // 
             this.butView.Animated = true;
-            this.butView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butView.BackColor = System.Drawing.Color.White;
             this.butView.BorderRadius = 8;
             this.butView.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.butView.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("resource.HoveredImage")));
@@ -378,7 +383,7 @@ namespace Mock_Investing
             this.butView.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butView.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butView.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butView.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butView.FillColor = System.Drawing.Color.White;
             this.butView.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.butView.ForeColor = System.Drawing.Color.DarkGray;
             this.butView.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
@@ -397,7 +402,7 @@ namespace Mock_Investing
             // butTrans
             // 
             this.butTrans.Animated = true;
-            this.butTrans.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butTrans.BackColor = System.Drawing.Color.White;
             this.butTrans.BorderRadius = 8;
             this.butTrans.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.butTrans.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("resource.HoveredImage1")));
@@ -407,7 +412,7 @@ namespace Mock_Investing
             this.butTrans.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butTrans.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butTrans.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butTrans.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butTrans.FillColor = System.Drawing.Color.White;
             this.butTrans.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.butTrans.ForeColor = System.Drawing.Color.DarkGray;
             this.butTrans.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
@@ -426,7 +431,7 @@ namespace Mock_Investing
             // butMy
             // 
             this.butMy.Animated = true;
-            this.butMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butMy.BackColor = System.Drawing.Color.White;
             this.butMy.BorderRadius = 8;
             this.butMy.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.butMy.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("resource.HoveredImage2")));
@@ -436,18 +441,19 @@ namespace Mock_Investing
             this.butMy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butMy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butMy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butMy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butMy.FillColor = System.Drawing.Color.White;
             this.butMy.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.butMy.ForeColor = System.Drawing.Color.DarkGray;
             this.butMy.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.butMy.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.butMy.HoverState.ForeColor = System.Drawing.Color.White;
+            this.butMy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.butMy.Location = new System.Drawing.Point(14, 250);
             this.butMy.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.butMy.Name = "butMy";
             this.butMy.Size = new System.Drawing.Size(206, 56);
             this.butMy.TabIndex = 3;
-            this.butMy.Text = "My Profile";
+            this.butMy.Text = "Main";
             this.butMy.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.butMy.TextOffset = new System.Drawing.Point(30, 0);
             this.butMy.Click += new System.EventHandler(this.butMy_Click);
@@ -455,7 +461,7 @@ namespace Mock_Investing
             // butFav
             // 
             this.butFav.Animated = true;
-            this.butFav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butFav.BackColor = System.Drawing.Color.White;
             this.butFav.BorderRadius = 8;
             this.butFav.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.butFav.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("resource.HoveredImage3")));
@@ -465,7 +471,7 @@ namespace Mock_Investing
             this.butFav.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butFav.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butFav.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butFav.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butFav.FillColor = System.Drawing.Color.White;
             this.butFav.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.butFav.ForeColor = System.Drawing.Color.DarkGray;
             this.butFav.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
@@ -484,7 +490,7 @@ namespace Mock_Investing
             // butLogout
             // 
             this.butLogout.Animated = true;
-            this.butLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butLogout.BackColor = System.Drawing.Color.White;
             this.butLogout.BorderRadius = 8;
             this.butLogout.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.butLogout.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("resource.HoveredImage4")));
@@ -494,7 +500,7 @@ namespace Mock_Investing
             this.butLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.butLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.butLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.butLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.butLogout.FillColor = System.Drawing.Color.White;
             this.butLogout.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.butLogout.ForeColor = System.Drawing.Color.DarkGray;
             this.butLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
@@ -512,7 +518,8 @@ namespace Mock_Investing
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(253)))), ((int)(((byte)(253)))));
+            this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.myPro);
             this.guna2Panel1.Controls.Add(this.guna2Panel4);
             this.guna2Panel1.Controls.Add(this.butLogout);
             this.guna2Panel1.Controls.Add(this.butFav);
@@ -526,6 +533,35 @@ namespace Mock_Investing
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(255, 851);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // myPro
+            // 
+            this.myPro.Animated = true;
+            this.myPro.BackColor = System.Drawing.Color.White;
+            this.myPro.BorderRadius = 8;
+            this.myPro.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.myPro.CustomImages.HoveredImage = ((System.Drawing.Image)(resources.GetObject("resource.HoveredImage5")));
+            this.myPro.CustomImages.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.myPro.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.myPro.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.myPro.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.myPro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.myPro.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.myPro.FillColor = System.Drawing.Color.White;
+            this.myPro.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.myPro.ForeColor = System.Drawing.Color.DarkGray;
+            this.myPro.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.myPro.HoverState.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.myPro.HoverState.ForeColor = System.Drawing.Color.White;
+            this.myPro.Location = new System.Drawing.Point(14, 527);
+            this.myPro.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.myPro.Name = "myPro";
+            this.myPro.Size = new System.Drawing.Size(206, 56);
+            this.myPro.TabIndex = 6;
+            this.myPro.Text = "My Profile";
+            this.myPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.myPro.TextOffset = new System.Drawing.Point(30, 0);
+            this.myPro.Click += new System.EventHandler(this.myPro_Click);
             // 
             // guna2Panel4
             // 
@@ -541,6 +577,7 @@ namespace Mock_Investing
             this.guna2TabControl1.Controls.Add(this.tabView);
             this.guna2TabControl1.Controls.Add(this.tabFav);
             this.guna2TabControl1.Controls.Add(this.tabTran);
+            this.guna2TabControl1.Controls.Add(this.tabPage1);
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(40, 40);
             this.guna2TabControl1.Location = new System.Drawing.Point(255, 137);
             this.guna2TabControl1.Name = "guna2TabControl1";
@@ -568,20 +605,8 @@ namespace Mock_Investing
             // 
             // tabMy
             // 
-            this.tabMy.BackColor = System.Drawing.Color.White;
+            this.tabMy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.tabMy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabMy.Controls.Add(this.guna2Button3);
-            this.tabMy.Controls.Add(this.pictureBox9);
-            this.tabMy.Controls.Add(this.label31);
-            this.tabMy.Controls.Add(this.label28);
-            this.tabMy.Controls.Add(this.label30);
-            this.tabMy.Controls.Add(this.listView1);
-            this.tabMy.Controls.Add(this.label29);
-            this.tabMy.Controls.Add(this.label32);
-            this.tabMy.Controls.Add(this.listView2);
-            this.tabMy.Controls.Add(this.label33);
-            this.tabMy.Controls.Add(this.label34);
-            this.tabMy.Controls.Add(this.label35);
             this.tabMy.Controls.Add(this.guna2GradientPanel1);
             this.tabMy.Controls.Add(this.guna2GradientPanel3);
             this.tabMy.Controls.Add(this.guna2GradientPanel2);
@@ -591,176 +616,6 @@ namespace Mock_Investing
             this.tabMy.Size = new System.Drawing.Size(1182, 666);
             this.tabMy.TabIndex = 1;
             this.tabMy.Text = "tabPage2";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 10;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(929, 594);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.BorderRadius = 10;
-            this.guna2Button3.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.guna2Button3.Size = new System.Drawing.Size(206, 56);
-            this.guna2Button3.TabIndex = 65;
-            this.guna2Button3.Text = "RESET";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(79, 527);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(579, 136);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 64;
-            this.pictureBox9.TabStop = false;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label31.Location = new System.Drawing.Point(187, 500);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(51, 19);
-            this.label31.TabIndex = 63;
-            this.label31.Text = "Month";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.Transparent;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label28.Location = new System.Drawing.Point(912, 252);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(155, 21);
-            this.label28.TabIndex = 54;
-            this.label28.Text = "Transaction Record";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label30.Location = new System.Drawing.Point(132, 500);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(42, 19);
-            this.label30.TabIndex = 62;
-            this.label30.Text = "Week";
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Date,
-            this.Flow});
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem8,
-            listViewItem9,
-            listViewItem10,
-            listViewItem11,
-            listViewItem12});
-            this.listView1.Location = new System.Drawing.Point(916, 297);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(218, 225);
-            this.listView1.TabIndex = 55;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
-            // 
-            // Date
-            // 
-            this.Date.Text = "Date";
-            // 
-            // Flow
-            // 
-            this.Flow.Text = "Flow";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label29.Location = new System.Drawing.Point(83, 233);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(66, 21);
-            this.label29.TabIndex = 56;
-            this.label29.Text = "History";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label32.Location = new System.Drawing.Point(88, 500);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(33, 19);
-            this.label32.TabIndex = 61;
-            this.label32.Text = "Day";
-            // 
-            // listView2
-            // 
-            this.listView2.HideSelection = false;
-            this.listView2.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem13,
-            listViewItem14});
-            this.listView2.Location = new System.Drawing.Point(79, 293);
-            this.listView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(579, 148);
-            this.listView2.TabIndex = 57;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.List;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label33.Location = new System.Drawing.Point(83, 266);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(32, 19);
-            this.label33.TabIndex = 58;
-            this.label33.Text = "Buy";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Transparent;
-            this.label34.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label34.Location = new System.Drawing.Point(88, 471);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(92, 21);
-            this.label34.TabIndex = 60;
-            this.label34.Text = "Evaluation";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label35.Location = new System.Drawing.Point(127, 266);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(29, 19);
-            this.label35.TabIndex = 59;
-            this.label35.Text = "Sell";
             // 
             // guna2GradientPanel1
             // 
@@ -1079,6 +934,7 @@ namespace Mock_Investing
             // 
             // tabView
             // 
+            this.tabView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.tabView.Controls.Add(this.gridCoinList);
             this.tabView.Location = new System.Drawing.Point(4, 4);
             this.tabView.Name = "tabView";
@@ -1086,7 +942,6 @@ namespace Mock_Investing
             this.tabView.Size = new System.Drawing.Size(1182, 666);
             this.tabView.TabIndex = 2;
             this.tabView.Text = "tabPage1";
-            this.tabView.UseVisualStyleBackColor = true;
             // 
             // gridCoinList
             // 
@@ -1204,6 +1059,7 @@ namespace Mock_Investing
             // 
             // tabFav
             // 
+            this.tabFav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.tabFav.Controls.Add(this.gridFavList);
             this.tabFav.Location = new System.Drawing.Point(4, 4);
             this.tabFav.Name = "tabFav";
@@ -1211,7 +1067,6 @@ namespace Mock_Investing
             this.tabFav.Size = new System.Drawing.Size(1182, 666);
             this.tabFav.TabIndex = 3;
             this.tabFav.Text = "tabPage1";
-            this.tabFav.UseVisualStyleBackColor = true;
             // 
             // gridFavList
             // 
@@ -1328,7 +1183,7 @@ namespace Mock_Investing
             // 
             // tabTran
             // 
-            this.tabTran.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabTran.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.tabTran.Controls.Add(this.tabcontrolWonBTCHolding);
             this.tabTran.Controls.Add(this.guna2Panel5);
             this.tabTran.Controls.Add(this.tabcontrolBuySell);
@@ -2023,13 +1878,211 @@ namespace Mock_Investing
             this.BtnSell.Text = "매도";
             this.BtnSell.UseTransparentBackground = true;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.tabPage1.Controls.Add(this.guna2Button8);
+            this.tabPage1.Controls.Add(this.pictureBox10);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label24);
+            this.tabPage1.Controls.Add(this.label25);
+            this.tabPage1.Controls.Add(this.listView3);
+            this.tabPage1.Controls.Add(this.label26);
+            this.tabPage1.Controls.Add(this.label27);
+            this.tabPage1.Controls.Add(this.listView4);
+            this.tabPage1.Controls.Add(this.label36);
+            this.tabPage1.Controls.Add(this.label37);
+            this.tabPage1.Controls.Add(this.label38);
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1182, 666);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "tabPage1";
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.Animated = true;
+            this.guna2Button8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.BorderRadius = 10;
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.Location = new System.Drawing.Point(913, 479);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.ShadowDecoration.BorderRadius = 10;
+            this.guna2Button8.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.guna2Button8.Size = new System.Drawing.Size(206, 56);
+            this.guna2Button8.TabIndex = 77;
+            this.guna2Button8.Text = "RESET";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(63, 412);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(579, 136);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 76;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(171, 385);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 19);
+            this.label2.TabIndex = 75;
+            this.label2.Text = "Month";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label24.Location = new System.Drawing.Point(896, 137);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(155, 21);
+            this.label24.TabIndex = 66;
+            this.label24.Text = "Transaction Record";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label25.Location = new System.Drawing.Point(116, 385);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(42, 19);
+            this.label25.TabIndex = 74;
+            this.label25.Text = "Week";
+            // 
+            // listView3
+            // 
+            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView3.HideSelection = false;
+            this.listView3.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12});
+            this.listView3.Location = new System.Drawing.Point(900, 182);
+            this.listView3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView3.Name = "listView3";
+            this.listView3.Size = new System.Drawing.Size(218, 225);
+            this.listView3.TabIndex = 67;
+            this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.View = System.Windows.Forms.View.List;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Date";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Flow";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label26.Location = new System.Drawing.Point(67, 118);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(66, 21);
+            this.label26.TabIndex = 68;
+            this.label26.Text = "History";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label27.Location = new System.Drawing.Point(72, 385);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(33, 19);
+            this.label27.TabIndex = 73;
+            this.label27.Text = "Day";
+            // 
+            // listView4
+            // 
+            this.listView4.HideSelection = false;
+            this.listView4.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem13,
+            listViewItem14});
+            this.listView4.Location = new System.Drawing.Point(63, 178);
+            this.listView4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(579, 148);
+            this.listView4.TabIndex = 69;
+            this.listView4.UseCompatibleStateImageBehavior = false;
+            this.listView4.View = System.Windows.Forms.View.List;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label36.Location = new System.Drawing.Point(67, 151);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(32, 19);
+            this.label36.TabIndex = 70;
+            this.label36.Text = "Buy";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label37.Location = new System.Drawing.Point(72, 356);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(92, 21);
+            this.label37.TabIndex = 72;
+            this.label37.Text = "Evaluation";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label38.Location = new System.Drawing.Point(111, 151);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(29, 19);
+            this.label38.TabIndex = 71;
+            this.label38.Text = "Sell";
+            // 
+            // dashBoardDragControl
+            // 
+            this.dashBoardDragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.dashBoardDragControl.TargetControl = this.panelHeader;
+            this.dashBoardDragControl.UseTransparentDrag = true;
+            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1445, 851);
             this.Controls.Add(this.guna2TabControl1);
-            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -2037,8 +2090,8 @@ namespace Mock_Investing
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
@@ -2046,8 +2099,6 @@ namespace Mock_Investing
             this.guna2Panel1.ResumeLayout(false);
             this.guna2TabControl1.ResumeLayout(false);
             this.tabMy.ResumeLayout(false);
-            this.tabMy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -2074,13 +2125,16 @@ namespace Mock_Investing
             this.tabPageBuy.PerformLayout();
             this.tabPageSell.ResumeLayout(false);
             this.tabPageSell.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
             
 
             #endregion
-            private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+            private Guna.UI2.WinForms.Guna2Panel panelHeader;
             private System.Windows.Forms.Label label4;
             private System.Windows.Forms.Label label3;
             private System.Windows.Forms.PictureBox pictureBox1;
@@ -2167,20 +2221,6 @@ namespace Mock_Investing
             private Guna.UI2.WinForms.Guna2TextBox txtboxSellPrice;
             private Guna.UI2.WinForms.Guna2HtmlLabel labelSellPrice;
             private Guna.UI2.WinForms.Guna2Button BtnSell;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader Date;
-        private System.Windows.Forms.ColumnHeader Flow;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
         private Guna.UI2.WinForms.Guna2DataGridView gridCoinList;
         private System.Windows.Forms.DataGridViewImageColumn coinLogo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column0;
@@ -2195,6 +2235,23 @@ namespace Mock_Investing
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private Guna.UI2.WinForms.Guna2DragControl dashBoardDragControl;
+        private Guna.UI2.WinForms.Guna2Button myPro;
+        private System.Windows.Forms.TabPage tabPage1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.ListView listView3;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
     }
     }
 

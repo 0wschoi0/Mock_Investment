@@ -29,6 +29,7 @@ namespace Mock_Investing
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.chkPassword = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btnSIgnUp = new Guna.UI2.WinForms.Guna2Button();
@@ -54,12 +55,15 @@ namespace Mock_Investing
             this.txtPasswordNew = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.loginImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.loginDragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.loginDragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.loginDragControl3 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel2.SuspendLayout();
             this.sideTabControl.SuspendLayout();
             this.tabLogin.SuspendLayout();
             this.tabSignUp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
             this.SuspendLayout();
             // 
             // chkPassword
@@ -214,7 +218,7 @@ namespace Mock_Investing
             this.guna2Panel2.Controls.Add(this.guna2VSeparator1);
             this.guna2Panel2.Controls.Add(this.sideTabControl);
             this.guna2Panel2.Controls.Add(this.btnClose);
-            this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel2.Controls.Add(this.loginImage);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -491,16 +495,34 @@ namespace Mock_Investing
             this.btnClose.TabIndex = 19;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // guna2PictureBox1
+            // loginImage
             // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(364, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(845, 633);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
+            this.loginImage.Image = ((System.Drawing.Image)(resources.GetObject("loginImage.Image")));
+            this.loginImage.ImageRotate = 0F;
+            this.loginImage.Location = new System.Drawing.Point(364, 12);
+            this.loginImage.Name = "loginImage";
+            this.loginImage.Size = new System.Drawing.Size(845, 633);
+            this.loginImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loginImage.TabIndex = 3;
+            this.loginImage.TabStop = false;
+            // 
+            // loginDragControl1
+            // 
+            this.loginDragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.loginDragControl1.TargetControl = this.loginImage;
+            this.loginDragControl1.UseTransparentDrag = true;
+            // 
+            // loginDragControl2
+            // 
+            this.loginDragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.loginDragControl2.TargetControl = this.tabLogin;
+            this.loginDragControl2.UseTransparentDrag = true;
+            // 
+            // loginDragControl3
+            // 
+            this.loginDragControl3.DockIndicatorTransparencyValue = 0.6D;
+            this.loginDragControl3.TargetControl = this.tabSignUp;
+            this.loginDragControl3.UseTransparentDrag = true;
             // 
             // Login
             // 
@@ -518,14 +540,14 @@ namespace Mock_Investing
             this.tabLogin.PerformLayout();
             this.tabSignUp.ResumeLayout(false);
             this.tabSignUp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginImage)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox loginImage;
         private Guna.UI2.WinForms.Guna2CheckBox chkPassword;
         private Guna.UI2.WinForms.Guna2Button btnSIgnUp;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
@@ -549,5 +571,8 @@ namespace Mock_Investing
         private Guna.UI2.WinForms.Guna2TextBox txtPasswordNew;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
+        private Guna.UI2.WinForms.Guna2DragControl loginDragControl1;
+        private Guna.UI2.WinForms.Guna2DragControl loginDragControl2;
+        private Guna.UI2.WinForms.Guna2DragControl loginDragControl3;
     }
 }
