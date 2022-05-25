@@ -19,20 +19,34 @@ namespace Mock_Investing
     public partial class Dashboard : Form
     {
         string userName;
+        string UID;
+        FirestoreDb db;
         List<Candle> coin_candle;
         string coinName = "";
         int maxViewY = 0;
         int minViewY = 0;
         int flag = 0;
+
         public Dashboard(string uid)
         {
             InitializeComponent();
+            db = FirestoreDb.Create("mock-af23d");
+            UID = uid;
 
             guna2DataGridView1.Rows.Add(1);
             guna2DataGridView1.Rows[0].Cells[1].Value = "레이";
             guna2DataGridView1.Rows[0].Cells[2].Value = "68.01";
             guna2DataGridView1.Rows[0].Cells[3].Value = "-5.76%";
             guna2DataGridView1.Rows[0].Cells[4].Value = "371.676";
+        }
+
+        private async void Dashboard_Load(object sender, EventArgs e)
+        {
+            CollectionReference collection = db.Collection(UID);
+            DocumentReference document = collection.Document("Status");
+            DocumentSnapshot getUserData = await document.GetSnapshotAsync();
+            userName = getUserData.GetValue<string>("Name");
+            lblWallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
         }
 
         private void butMy_Click(object sender, EventArgs e)
@@ -241,6 +255,8 @@ namespace Mock_Investing
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
         }
+
+
         // Transaction Methods End
     }
 }

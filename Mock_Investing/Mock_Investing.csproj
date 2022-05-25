@@ -320,16 +320,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\icons8_Favorite_50px.png" />
-    <Content Include="Resources\icons8_Favorite_50px_1.png" />
-    <Content Include="Resources\icons8_logout_rounded_up_50px.png" />
-    <Content Include="Resources\icons8_logout_rounded_up_50px_1.png" />
-    <Content Include="Resources\icons8_profile_50px.png" />
-    <Content Include="Resources\icons8_profile_50px_1.png" />
-    <Content Include="Resources\icons8_search_50px.png" />
-    <Content Include="Resources\icons8_search_50px_1.png" />
-    <Content Include="Resources\icons8_sell_stock_50px.png" />
-    <Content Include="Resources\icons8_sell_stock_50px_1.png" />
+    <EmbeddedResource Include="Resources\icons8_Favorite_50px.png" />
+    <EmbeddedResource Include="Resources\icons8_Favorite_50px_1.png" />
+    <EmbeddedResource Include="Resources\icons8_logout_rounded_up_50px.png" />
+    <EmbeddedResource Include="Resources\icons8_logout_rounded_up_50px_1.png" />
+    <EmbeddedResource Include="Resources\icons8_profile_50px.png" />
+    <EmbeddedResource Include="Resources\icons8_profile_50px_1.png" />
+    <EmbeddedResource Include="Resources\icons8_search_50px.png" />
+    <EmbeddedResource Include="Resources\icons8_search_50px_1.png" />
+    <EmbeddedResource Include="Resources\icons8_sell_stock_50px.png" />
+    <EmbeddedResource Include="Resources\icons8_sell_stock_50px_1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.4\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.4\build\System.Text.Json.targets')" />

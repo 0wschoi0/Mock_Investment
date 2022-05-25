@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Mock_Investing.Properties {
+namespace Mock_Investing {
     using System;
     
     
