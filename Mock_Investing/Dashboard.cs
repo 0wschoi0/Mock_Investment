@@ -44,7 +44,7 @@ namespace Mock_Investing
             // 코인 리스트 초기화
             for (int i = 0; i < coins.Count; i++)
             {
-                gridCoinList.Rows.Add(1);
+                gridCoinList.Rows.Add(1); 
                 double changeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
                 int tradePrice = (int)(coins[i].acc_trade_price_24h / 1000000);
                 gridCoinList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
