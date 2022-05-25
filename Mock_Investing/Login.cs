@@ -29,10 +29,13 @@ namespace Mock_Investing
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            tabLogin.Enabled = false;
+            btnLogin.Focus();
+            btnLogin.Enabled = false;
             if (txtPassword.TextLength < 6)
             {
                 MessageBox.Show("비밀번호는 최소 6자 이상이어야 합니다.");
+                btnLogin.Enabled = true;
+                txtPassword.Focus();
                 return;
             }
             bool t = true;
@@ -61,8 +64,9 @@ namespace Mock_Investing
             {
                 MessageBox.Show("이메일과 비밀번호를 확인하십시오.");
                 txtPassword.ResetText();
+                txtPassword.Focus();
                 t = false;
-                tabLogin.Enabled = true;
+                btnLogin.Enabled = true;
             }
         }
         private void Login_KeyDown(object sender, KeyEventArgs e)
