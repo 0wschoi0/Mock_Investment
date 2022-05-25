@@ -122,6 +122,28 @@ namespace Mock_Investing
            }
         }
 
+        private void chkPassword_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (chkPassword.Checked == false){
+                txtPassword.PasswordChar = '*';
+            }
+            else if (chkPassword.Checked == true)
+            {
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void chkPasswordNew_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (chkPasswordNew.Checked == false)
+            {
+                txtPasswordNew.PasswordChar = '*';
+            }
+            else if (chkPasswordNew.Checked == true)
+            {
+                txtPasswordNew.PasswordChar = '\0';
+            }
+        }
     }
 
      

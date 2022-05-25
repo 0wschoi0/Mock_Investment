@@ -30,7 +30,7 @@ namespace Mock_Investing
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.guna2CheckBox2 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chkPassword = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btnSIgnUp = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -39,12 +39,13 @@ namespace Mock_Investing
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.sideTabControl = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabLogin = new System.Windows.Forms.TabPage();
             this.tabSignUp = new System.Windows.Forms.TabPage();
             this.lblNameNew = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNameNew = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.chkPasswordNew = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -54,7 +55,6 @@ namespace Mock_Investing
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel2.SuspendLayout();
             this.sideTabControl.SuspendLayout();
             this.tabLogin.SuspendLayout();
@@ -62,25 +62,26 @@ namespace Mock_Investing
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2CheckBox2
+            // chkPassword
             // 
-            this.guna2CheckBox2.AutoSize = true;
-            this.guna2CheckBox2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CheckBox2.CheckedState.BorderRadius = 2;
-            this.guna2CheckBox2.CheckedState.BorderThickness = 1;
-            this.guna2CheckBox2.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CheckBox2.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CheckBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CheckBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CheckBox2.Location = new System.Drawing.Point(23, 306);
-            this.guna2CheckBox2.Name = "guna2CheckBox2";
-            this.guna2CheckBox2.Size = new System.Drawing.Size(101, 19);
-            this.guna2CheckBox2.TabIndex = 18;
-            this.guna2CheckBox2.Text = "비밀번호 보기";
-            this.guna2CheckBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CheckBox2.UncheckedState.BorderRadius = 2;
-            this.guna2CheckBox2.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox2.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.chkPassword.AutoSize = true;
+            this.chkPassword.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkPassword.CheckedState.BorderRadius = 2;
+            this.chkPassword.CheckedState.BorderThickness = 1;
+            this.chkPassword.CheckedState.FillColor = System.Drawing.Color.White;
+            this.chkPassword.CheckMarkColor = System.Drawing.Color.Black;
+            this.chkPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.chkPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkPassword.Location = new System.Drawing.Point(23, 306);
+            this.chkPassword.Name = "chkPassword";
+            this.chkPassword.Size = new System.Drawing.Size(101, 19);
+            this.chkPassword.TabIndex = 18;
+            this.chkPassword.Text = "비밀번호 보기";
+            this.chkPassword.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkPassword.UncheckedState.BorderRadius = 2;
+            this.chkPassword.UncheckedState.BorderThickness = 1;
+            this.chkPassword.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.chkPassword.CheckStateChanged += new System.EventHandler(this.chkPassword_CheckStateChanged);
             // 
             // btnSIgnUp
             // 
@@ -220,6 +221,14 @@ namespace Mock_Investing
             this.guna2Panel2.Size = new System.Drawing.Size(1262, 673);
             this.guna2Panel2.TabIndex = 0;
             // 
+            // guna2VSeparator1
+            // 
+            this.guna2VSeparator1.FillColor = System.Drawing.Color.Black;
+            this.guna2VSeparator1.Location = new System.Drawing.Point(319, 35);
+            this.guna2VSeparator1.Name = "guna2VSeparator1";
+            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 596);
+            this.guna2VSeparator1.TabIndex = 19;
+            // 
             // sideTabControl
             // 
             this.sideTabControl.Alignment = System.Windows.Forms.TabAlignment.Left;
@@ -253,7 +262,7 @@ namespace Mock_Investing
             // 
             // tabLogin
             // 
-            this.tabLogin.Controls.Add(this.guna2CheckBox2);
+            this.tabLogin.Controls.Add(this.chkPassword);
             this.tabLogin.Controls.Add(this.guna2HtmlLabel5);
             this.tabLogin.Controls.Add(this.btnSIgnUp);
             this.tabLogin.Controls.Add(this.guna2HtmlLabel3);
@@ -273,7 +282,7 @@ namespace Mock_Investing
             // 
             this.tabSignUp.Controls.Add(this.lblNameNew);
             this.tabSignUp.Controls.Add(this.txtNameNew);
-            this.tabSignUp.Controls.Add(this.guna2CheckBox1);
+            this.tabSignUp.Controls.Add(this.chkPasswordNew);
             this.tabSignUp.Controls.Add(this.guna2HtmlLabel1);
             this.tabSignUp.Controls.Add(this.btnBack);
             this.tabSignUp.Controls.Add(this.guna2HtmlLabel2);
@@ -326,25 +335,26 @@ namespace Mock_Investing
             this.txtNameNew.Size = new System.Drawing.Size(267, 47);
             this.txtNameNew.TabIndex = 28;
             // 
-            // guna2CheckBox1
+            // chkPasswordNew
             // 
-            this.guna2CheckBox1.AutoSize = true;
-            this.guna2CheckBox1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CheckBox1.CheckedState.BorderRadius = 2;
-            this.guna2CheckBox1.CheckedState.BorderThickness = 1;
-            this.guna2CheckBox1.CheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CheckBox1.CheckMarkColor = System.Drawing.Color.Black;
-            this.guna2CheckBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2CheckBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CheckBox1.Location = new System.Drawing.Point(23, 306);
-            this.guna2CheckBox1.Name = "guna2CheckBox1";
-            this.guna2CheckBox1.Size = new System.Drawing.Size(101, 19);
-            this.guna2CheckBox1.TabIndex = 26;
-            this.guna2CheckBox1.Text = "비밀번호 보기";
-            this.guna2CheckBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2CheckBox1.UncheckedState.BorderRadius = 2;
-            this.guna2CheckBox1.UncheckedState.BorderThickness = 1;
-            this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.chkPasswordNew.AutoSize = true;
+            this.chkPasswordNew.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkPasswordNew.CheckedState.BorderRadius = 2;
+            this.chkPasswordNew.CheckedState.BorderThickness = 1;
+            this.chkPasswordNew.CheckedState.FillColor = System.Drawing.Color.White;
+            this.chkPasswordNew.CheckMarkColor = System.Drawing.Color.Black;
+            this.chkPasswordNew.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.chkPasswordNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkPasswordNew.Location = new System.Drawing.Point(23, 306);
+            this.chkPasswordNew.Name = "chkPasswordNew";
+            this.chkPasswordNew.Size = new System.Drawing.Size(101, 19);
+            this.chkPasswordNew.TabIndex = 26;
+            this.chkPasswordNew.Text = "비밀번호 보기";
+            this.chkPasswordNew.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.chkPasswordNew.UncheckedState.BorderRadius = 2;
+            this.chkPasswordNew.UncheckedState.BorderThickness = 1;
+            this.chkPasswordNew.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.chkPasswordNew.CheckStateChanged += new System.EventHandler(this.chkPasswordNew_CheckStateChanged);
             // 
             // guna2HtmlLabel1
             // 
@@ -492,14 +502,6 @@ namespace Mock_Investing
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2VSeparator1
-            // 
-            this.guna2VSeparator1.FillColor = System.Drawing.Color.Black;
-            this.guna2VSeparator1.Location = new System.Drawing.Point(319, 35);
-            this.guna2VSeparator1.Name = "guna2VSeparator1";
-            this.guna2VSeparator1.Size = new System.Drawing.Size(10, 596);
-            this.guna2VSeparator1.TabIndex = 19;
-            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -524,7 +526,7 @@ namespace Mock_Investing
         #endregion
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
+        private Guna.UI2.WinForms.Guna2CheckBox chkPassword;
         private Guna.UI2.WinForms.Guna2Button btnSIgnUp;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
@@ -538,7 +540,7 @@ namespace Mock_Investing
         private System.Windows.Forms.TabPage tabSignUp;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNameNew;
         private Guna.UI2.WinForms.Guna2TextBox txtNameNew;
-        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private Guna.UI2.WinForms.Guna2CheckBox chkPasswordNew;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
