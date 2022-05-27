@@ -70,9 +70,10 @@ namespace Mock_Investing
             }
             // 테스트용 데이터 삽입
             gridMainList.Rows.Add(4);
-            double TmpchangeRate = Math.Round(coins[0].signed_change_rate * 100, 2);
+            
             for(int i = 0; i < 4; i++)
             {
+                double TmpchangeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
                 gridMainList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
                 gridMainList.Rows[i].Cells[2].Value = coin[i].korean_name;
                 gridMainList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
