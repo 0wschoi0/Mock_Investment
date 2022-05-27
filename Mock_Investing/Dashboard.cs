@@ -68,6 +68,25 @@ namespace Mock_Investing
                 }
                 gridCoinList.Rows[i].Cells[5].Value = tradePrice.ToString("N0") + "백만";
             }
+            // 테스트용 데이터 삽입
+            gridMainList.Rows.Add(4);
+            double TmpchangeRate = Math.Round(coins[0].signed_change_rate * 100, 2);
+            for(int i = 0; i < 4; i++)
+            {
+                gridMainList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
+                gridMainList.Rows[i].Cells[2].Value = coin[i].korean_name;
+                gridMainList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
+                gridMainList.Rows[i].Cells[4].Value = TmpchangeRate.ToString() + "%";
+            }
+
+            gridTransList.Rows.Add(4);
+            for (int i = 0; i < 4; i++)
+            {
+                gridTransList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
+                gridTransList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+            }
+
+            //
         }
 
         private async void Dashboard_Load(object sender, EventArgs e)
