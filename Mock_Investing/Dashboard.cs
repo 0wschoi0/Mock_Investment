@@ -70,21 +70,26 @@ namespace Mock_Investing
             }
             // 테스트용 데이터 삽입
             gridMainList.Rows.Add(4);
-            
             for(int i = 0; i < 4; i++)
             {
+                int TmptradePrice = (int)(coins[i].acc_trade_price_24h / 1000000);
                 double TmpchangeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
                 gridMainList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
                 gridMainList.Rows[i].Cells[2].Value = coin[i].korean_name;
                 gridMainList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
                 gridMainList.Rows[i].Cells[4].Value = TmpchangeRate.ToString() + "%";
+                gridMainList.Rows[i].Cells[5].Value = TmptradePrice.ToString("N0") + "백만";
+
             }
 
-            gridTransList.Rows.Add(4);
+            gridRecordList.Rows.Add(4);
             for (int i = 0; i < 4; i++)
             {
-                gridTransList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
-                gridTransList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridRecordList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
+                gridRecordList.Rows[i].Cells[2].Value = coin[i].korean_name;
+                gridRecordList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
+                gridRecordList.Rows[i].Cells[4].Value = "2022-05-27 22:50";
+                gridRecordList.Rows[i].Cells[5].Value = "판매";
             }
 
             //
@@ -500,7 +505,9 @@ namespace Mock_Investing
             public long timestamp { get; set; }                 // 타임스탬프
         }
 
-      
+     
+
+
 
 
 
