@@ -34,21 +34,24 @@ namespace Mock_Investing
             {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,29 +65,64 @@ namespace Mock_Investing
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabMy = new System.Windows.Forms.TabPage();
+            this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gridRecordList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label13 = new System.Windows.Forms.Label();
             this.gridMainList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labTrans = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.tabView = new System.Windows.Forms.TabPage();
             this.gridCoinList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.coinLogo = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabFav = new System.Windows.Forms.TabPage();
             this.gridFavList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabTran = new System.Windows.Forms.TabPage();
             this.tabcontrolWonBTCHolding = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPageWon = new System.Windows.Forms.TabPage();
@@ -156,6 +194,9 @@ namespace Mock_Investing
             this.label43 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.dashBoardDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblWallet = new System.Windows.Forms.Label();
@@ -169,61 +210,41 @@ namespace Mock_Investing
             this.myPro = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.guna2ShadowPanel5 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.guna2ShadowPanel6 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.guna2ShadowPanel7 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.gridCoinListChart = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column0 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tabMy.SuspendLayout();
+            this.guna2ShadowPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.guna2ShadowPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.guna2ShadowPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.guna2ShadowPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.guna2ShadowPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.guna2ShadowPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.guna2ShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridRecordList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridMainList)).BeginInit();
             this.tabView.SuspendLayout();
@@ -232,6 +253,7 @@ namespace Mock_Investing
             ((System.ComponentModel.ISupportInitialize)(this.gridFavList)).BeginInit();
             this.tabTran.SuspendLayout();
             this.tabcontrolWonBTCHolding.SuspendLayout();
+            this.tabPageWon.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transactionChart)).BeginInit();
             this.tabcontrolBuySell.SuspendLayout();
@@ -251,20 +273,7 @@ namespace Mock_Investing
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.guna2ShadowPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.guna2ShadowPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.guna2ShadowPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.guna2ShadowPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.guna2ShadowPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.guna2ShadowPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCoinListChart)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -460,30 +469,485 @@ namespace Mock_Investing
             this.tabMy.TabIndex = 1;
             this.tabMy.Text = "tabPage2";
             // 
+            // guna2ShadowPanel7
+            // 
+            this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel7.Controls.Add(this.label50);
+            this.guna2ShadowPanel7.Controls.Add(this.label51);
+            this.guna2ShadowPanel7.Controls.Add(this.label52);
+            this.guna2ShadowPanel7.Controls.Add(this.pictureBox10);
+            this.guna2ShadowPanel7.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel7.Location = new System.Drawing.Point(808, 596);
+            this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
+            this.guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel7.ShadowDepth = 200;
+            this.guna2ShadowPanel7.ShadowShift = 4;
+            this.guna2ShadowPanel7.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel7.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel7.TabIndex = 55;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label50.Location = new System.Drawing.Point(237, 23);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(84, 21);
+            this.label50.TabIndex = 5;
+            this.label50.Text = "₩ 480,680";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label51.Location = new System.Drawing.Point(91, 38);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(26, 15);
+            this.label51.TabIndex = 4;
+            this.label51.Text = "BTC";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.Black;
+            this.label52.Location = new System.Drawing.Point(66, 17);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(74, 21);
+            this.label52.TabIndex = 3;
+            this.label52.Text = "비트코인";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 2;
+            this.pictureBox10.TabStop = false;
+            // 
+            // guna2ShadowPanel6
+            // 
+            this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel6.Controls.Add(this.label37);
+            this.guna2ShadowPanel6.Controls.Add(this.label38);
+            this.guna2ShadowPanel6.Controls.Add(this.label49);
+            this.guna2ShadowPanel6.Controls.Add(this.pictureBox8);
+            this.guna2ShadowPanel6.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel6.Location = new System.Drawing.Point(808, 510);
+            this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
+            this.guna2ShadowPanel6.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel6.ShadowDepth = 200;
+            this.guna2ShadowPanel6.ShadowShift = 4;
+            this.guna2ShadowPanel6.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel6.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel6.TabIndex = 55;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label37.Location = new System.Drawing.Point(237, 23);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(84, 21);
+            this.label37.TabIndex = 5;
+            this.label37.Text = "₩ 480,680";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label38.Location = new System.Drawing.Point(91, 38);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(26, 15);
+            this.label38.TabIndex = 4;
+            this.label38.Text = "BTC";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(66, 17);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(74, 21);
+            this.label49.TabIndex = 3;
+            this.label49.Text = "비트코인";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // guna2ShadowPanel5
+            // 
+            this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel5.Controls.Add(this.label26);
+            this.guna2ShadowPanel5.Controls.Add(this.label27);
+            this.guna2ShadowPanel5.Controls.Add(this.label36);
+            this.guna2ShadowPanel5.Controls.Add(this.pictureBox7);
+            this.guna2ShadowPanel5.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel5.Location = new System.Drawing.Point(808, 424);
+            this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
+            this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel5.ShadowDepth = 200;
+            this.guna2ShadowPanel5.ShadowShift = 4;
+            this.guna2ShadowPanel5.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel5.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel5.TabIndex = 55;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label26.Location = new System.Drawing.Point(237, 23);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(84, 21);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "₩ 480,680";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label27.Location = new System.Drawing.Point(91, 38);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(26, 15);
+            this.label27.TabIndex = 4;
+            this.label27.Text = "BTC";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(66, 17);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(74, 21);
+            this.label36.TabIndex = 3;
+            this.label36.Text = "비트코인";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // guna2ShadowPanel4
+            // 
+            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel4.Controls.Add(this.label23);
+            this.guna2ShadowPanel4.Controls.Add(this.label24);
+            this.guna2ShadowPanel4.Controls.Add(this.label25);
+            this.guna2ShadowPanel4.Controls.Add(this.pictureBox6);
+            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel4.Location = new System.Drawing.Point(808, 338);
+            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
+            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel4.ShadowDepth = 200;
+            this.guna2ShadowPanel4.ShadowShift = 4;
+            this.guna2ShadowPanel4.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel4.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel4.TabIndex = 56;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label23.Location = new System.Drawing.Point(237, 23);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(84, 21);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "₩ 480,680";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label24.Location = new System.Drawing.Point(91, 38);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(26, 15);
+            this.label24.TabIndex = 4;
+            this.label24.Text = "BTC";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(66, 17);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(74, 21);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "비트코인";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
+            // guna2ShadowPanel3
+            // 
+            this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel3.Controls.Add(this.label20);
+            this.guna2ShadowPanel3.Controls.Add(this.label21);
+            this.guna2ShadowPanel3.Controls.Add(this.label22);
+            this.guna2ShadowPanel3.Controls.Add(this.pictureBox5);
+            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(808, 252);
+            this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
+            this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel3.ShadowDepth = 200;
+            this.guna2ShadowPanel3.ShadowShift = 4;
+            this.guna2ShadowPanel3.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel3.TabIndex = 55;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label20.Location = new System.Drawing.Point(237, 23);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(84, 21);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "₩ 480,680";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label21.Location = new System.Drawing.Point(91, 38);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(26, 15);
+            this.label21.TabIndex = 4;
+            this.label21.Text = "BTC";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(66, 17);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(74, 21);
+            this.label22.TabIndex = 3;
+            this.label22.Text = "비트코인";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // guna2ShadowPanel2
+            // 
+            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.label17);
+            this.guna2ShadowPanel2.Controls.Add(this.label18);
+            this.guna2ShadowPanel2.Controls.Add(this.label19);
+            this.guna2ShadowPanel2.Controls.Add(this.pictureBox4);
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel2.Location = new System.Drawing.Point(808, 166);
+            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
+            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel2.ShadowDepth = 200;
+            this.guna2ShadowPanel2.ShadowShift = 4;
+            this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel2.TabIndex = 55;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label17.Location = new System.Drawing.Point(237, 23);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(84, 21);
+            this.label17.TabIndex = 5;
+            this.label17.Text = "₩ 480,680";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label18.Location = new System.Drawing.Point(91, 38);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(26, 15);
+            this.label18.TabIndex = 4;
+            this.label18.Text = "BTC";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(66, 17);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(74, 21);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "비트코인";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.label16);
+            this.guna2ShadowPanel1.Controls.Add(this.label15);
+            this.guna2ShadowPanel1.Controls.Add(this.label14);
+            this.guna2ShadowPanel1.Controls.Add(this.pictureBox3);
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(808, 80);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Gray;
+            this.guna2ShadowPanel1.ShadowDepth = 200;
+            this.guna2ShadowPanel1.ShadowShift = 4;
+            this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(341, 71);
+            this.guna2ShadowPanel1.TabIndex = 54;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.label16.Location = new System.Drawing.Point(237, 23);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(84, 21);
+            this.label16.TabIndex = 5;
+            this.label16.Text = "₩ 480,680";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label15.Location = new System.Drawing.Point(91, 38);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(26, 15);
+            this.label15.TabIndex = 4;
+            this.label15.Text = "BTC";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(66, 17);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 21);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "비트코인";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(14, 8);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(46, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // gridRecordList
             // 
             this.gridRecordList.AllowUserToAddRows = false;
             this.gridRecordList.AllowUserToDeleteRows = false;
             this.gridRecordList.AllowUserToResizeColumns = false;
             this.gridRecordList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridRecordList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridRecordList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridRecordList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridRecordList.BackgroundColor = System.Drawing.Color.White;
             this.gridRecordList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridRecordList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridRecordList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridRecordList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridRecordList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridRecordList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridRecordList.ColumnHeadersHeight = 40;
             this.gridRecordList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn4,
@@ -492,14 +956,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn14,
             this.Date,
             this.dataGridViewTextBoxColumn15});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridRecordList.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridRecordList.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridRecordList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridRecordList.EnableHeadersVisualStyles = false;
             this.gridRecordList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -535,6 +999,44 @@ namespace Mock_Investing
             this.gridRecordList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridRecordList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn4.HeaderText = "";
+            this.dataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.Width = 25;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn12.HeaderText = "종목";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.FillWeight = 81.58054F;
+            this.dataGridViewTextBoxColumn13.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.FillWeight = 81.58054F;
+            this.dataGridViewTextBoxColumn14.HeaderText = "가격";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // Date
+            // 
+            this.Date.FillWeight = 150F;
+            this.Date.HeaderText = "날짜";
+            this.Date.Name = "Date";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.FillWeight = 81.58054F;
+            this.dataGridViewTextBoxColumn15.HeaderText = "";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -553,24 +1055,24 @@ namespace Mock_Investing
             this.gridMainList.AllowUserToDeleteRows = false;
             this.gridMainList.AllowUserToResizeColumns = false;
             this.gridMainList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainList.BackgroundColor = System.Drawing.Color.White;
             this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridMainList.ColumnHeadersHeight = 40;
             this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn2,
@@ -579,14 +1081,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn11,
             this.Column2});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainList.EnableHeadersVisualStyles = false;
             this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -621,6 +1123,43 @@ namespace Mock_Investing
             this.gridMainList.ThemeStyle.RowsStyle.Height = 50;
             this.gridMainList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridMainList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 25;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "종목";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn7.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn8.HeaderText = "현재가";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn11.HeaderText = "전일대비";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "거래 대금";
+            this.Column2.Name = "Column2";
             // 
             // labTrans
             // 
@@ -687,40 +1226,39 @@ namespace Mock_Investing
             this.gridCoinList.AllowUserToDeleteRows = false;
             this.gridCoinList.AllowUserToResizeColumns = false;
             this.gridCoinList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gridCoinList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gridCoinList.ColumnHeadersHeight = 40;
             this.gridCoinList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.coinLogo,
             this.Column0,
             this.Column1,
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle9;
             this.gridCoinList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinList.EnableHeadersVisualStyles = false;
             this.gridCoinList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -757,44 +1295,6 @@ namespace Mock_Investing
             this.gridCoinList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gridCoinList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCoinList_CellDoubleClick);
             // 
-            // coinLogo
-            // 
-            this.coinLogo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.coinLogo.HeaderText = "";
-            this.coinLogo.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.coinLogo.Name = "coinLogo";
-            this.coinLogo.Width = 25;
-            // 
-            // Column0
-            // 
-            this.Column0.FillWeight = 29.06977F;
-            this.Column0.HeaderText = "종목";
-            this.Column0.Name = "Column0";
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 117.7326F;
-            this.Column1.HeaderText = "한글명";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 117.7326F;
-            this.Column3.HeaderText = "현재가";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 117.7326F;
-            this.Column4.HeaderText = "전일대비";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.FillWeight = 117.7326F;
-            this.Column5.HeaderText = "거래대금";
-            this.Column5.Name = "Column5";
-            // 
             // tabFav
             // 
             this.tabFav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -812,40 +1312,39 @@ namespace Mock_Investing
             this.gridFavList.AllowUserToDeleteRows = false;
             this.gridFavList.AllowUserToResizeColumns = false;
             this.gridFavList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
-            this.gridFavList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.gridFavList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridFavList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridFavList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridFavList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridFavList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridFavList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridFavList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFavList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFavList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridFavList.ColumnHeadersHeight = 40;
             this.gridFavList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn1,
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridFavList.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridFavList.DefaultCellStyle = dataGridViewCellStyle12;
             this.gridFavList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridFavList.EnableHeadersVisualStyles = false;
             this.gridFavList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -880,44 +1379,6 @@ namespace Mock_Investing
             this.gridFavList.ThemeStyle.RowsStyle.Height = 50;
             this.gridFavList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridFavList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 25;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.FillWeight = 29.06977F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "종목";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "한글명";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "현재가";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn4.HeaderText = "전일대비";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "거래대금";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // tabTran
             // 
@@ -964,6 +1425,7 @@ namespace Mock_Investing
             // 
             // tabPageWon
             // 
+            this.tabPageWon.Controls.Add(this.gridCoinListChart);
             this.tabPageWon.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tabPageWon.ForeColor = System.Drawing.Color.Black;
             this.tabPageWon.Location = new System.Drawing.Point(4, 44);
@@ -1007,21 +1469,28 @@ namespace Mock_Investing
             // 
             // transactionChart
             // 
-            chartArea3.AxisX.IsReversed = true;
-            chartArea3.CursorX.IsUserSelectionEnabled = true;
-            chartArea3.Name = "ChartArea1";
-            this.transactionChart.ChartAreas.Add(chartArea3);
-            legend3.Enabled = false;
-            legend3.Name = "Legend1";
-            this.transactionChart.Legends.Add(legend3);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.IsReversed = true;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.CursorX.IsUserSelectionEnabled = true;
+            chartArea1.InnerPlotPosition.Auto = false;
+            chartArea1.InnerPlotPosition.Height = 90.55851F;
+            chartArea1.InnerPlotPosition.Width = 90.52276F;
+            chartArea1.InnerPlotPosition.X = 1.67553F;
+            chartArea1.InnerPlotPosition.Y = 2.23404F;
+            chartArea1.Name = "ChartArea1";
+            this.transactionChart.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.transactionChart.Legends.Add(legend1);
             this.transactionChart.Location = new System.Drawing.Point(14, 109);
             this.transactionChart.Name = "transactionChart";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            series3.YValuesPerPoint = 4;
-            this.transactionChart.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.transactionChart.Series.Add(series1);
             this.transactionChart.Size = new System.Drawing.Size(599, 521);
             this.transactionChart.TabIndex = 0;
             this.transactionChart.Text = "transactionChart";
@@ -2061,6 +2530,30 @@ namespace Mock_Investing
             this.pictureBox13.TabIndex = 0;
             this.pictureBox13.TabStop = false;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
+            this.panel3.Location = new System.Drawing.Point(39, 138);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1110, 31);
+            this.panel3.TabIndex = 83;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(53)))), ((int)(((byte)(44)))));
+            this.panel2.Location = new System.Drawing.Point(39, 80);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1110, 31);
+            this.panel2.TabIndex = 82;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.panel1.Location = new System.Drawing.Point(39, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1110, 31);
+            this.panel1.TabIndex = 81;
+            // 
             // dashBoardDragControl
             // 
             this.dashBoardDragControl.DockIndicatorTransparencyValue = 0.6D;
@@ -2313,559 +2806,170 @@ namespace Mock_Investing
             this.guna2Panel1.Size = new System.Drawing.Size(255, 851);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // dataGridViewImageColumn4
+            // gridCoinListChart
+            // 
+            this.gridCoinListChart.AllowUserToAddRows = false;
+            this.gridCoinListChart.AllowUserToDeleteRows = false;
+            this.gridCoinListChart.AllowUserToResizeColumns = false;
+            this.gridCoinListChart.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.gridCoinListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridCoinListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gridCoinListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridCoinListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridCoinListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.gridCoinListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.gridCoinListChart.ColumnHeadersHeight = 40;
+            this.gridCoinListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column6,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18});
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle15;
+            this.gridCoinListChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridCoinListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.gridCoinListChart.EnableHeadersVisualStyles = false;
+            this.gridCoinListChart.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gridCoinListChart.Location = new System.Drawing.Point(3, 3);
+            this.gridCoinListChart.MultiSelect = false;
+            this.gridCoinListChart.Name = "gridCoinListChart";
+            this.gridCoinListChart.RowHeadersVisible = false;
+            this.gridCoinListChart.RowTemplate.DividerHeight = 5;
+            this.gridCoinListChart.RowTemplate.Height = 50;
+            this.gridCoinListChart.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.gridCoinListChart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridCoinListChart.Size = new System.Drawing.Size(519, 274);
+            this.gridCoinListChart.TabIndex = 2;
+            this.gridCoinListChart.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridCoinListChart.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gridCoinListChart.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gridCoinListChart.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gridCoinListChart.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gridCoinListChart.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gridCoinListChart.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gridCoinListChart.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.White;
+            this.gridCoinListChart.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridCoinListChart.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 30F);
+            this.gridCoinListChart.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.DimGray;
+            this.gridCoinListChart.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gridCoinListChart.ThemeStyle.HeaderStyle.Height = 40;
+            this.gridCoinListChart.ThemeStyle.ReadOnly = false;
+            this.gridCoinListChart.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridCoinListChart.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridCoinListChart.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridCoinListChart.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridCoinListChart.ThemeStyle.RowsStyle.Height = 50;
+            this.gridCoinListChart.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridCoinListChart.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridCoinListChart.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCoinListChart_CellDoubleClick);
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "종목";
+            this.Column6.Name = "Column6";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn10.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn16.HeaderText = "현재가";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn17.HeaderText = "전일대비";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn18.HeaderText = "거래대금";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             // 
-            this.dataGridViewImageColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn4.HeaderText = "";
-            this.dataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
-            this.dataGridViewImageColumn4.Width = 25;
+            // Column0
             // 
-            // dataGridViewTextBoxColumn12
+            this.Column0.FillWeight = 29.06977F;
+            this.Column0.HeaderText = "종목";
+            this.Column0.Name = "Column0";
             // 
-            this.dataGridViewTextBoxColumn12.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn12.HeaderText = "종목";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // Column1
             // 
-            // dataGridViewTextBoxColumn13
+            this.Column1.FillWeight = 117.7326F;
+            this.Column1.HeaderText = "한글명";
+            this.Column1.Name = "Column1";
             // 
-            this.dataGridViewTextBoxColumn13.FillWeight = 81.58054F;
-            this.dataGridViewTextBoxColumn13.HeaderText = "한글명";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // Column3
             // 
-            // dataGridViewTextBoxColumn14
+            this.Column3.FillWeight = 117.7326F;
+            this.Column3.HeaderText = "현재가";
+            this.Column3.Name = "Column3";
             // 
-            this.dataGridViewTextBoxColumn14.FillWeight = 81.58054F;
-            this.dataGridViewTextBoxColumn14.HeaderText = "가격";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // Column4
             // 
-            // Date
+            this.Column4.FillWeight = 117.7326F;
+            this.Column4.HeaderText = "전일대비";
+            this.Column4.Name = "Column4";
             // 
-            this.Date.FillWeight = 150F;
-            this.Date.HeaderText = "날짜";
-            this.Date.Name = "Date";
+            // Column5
             // 
-            // dataGridViewTextBoxColumn15
+            this.Column5.FillWeight = 117.7326F;
+            this.Column5.HeaderText = "거래대금";
+            this.Column5.Name = "Column5";
             // 
-            this.dataGridViewTextBoxColumn15.FillWeight = 81.58054F;
-            this.dataGridViewTextBoxColumn15.HeaderText = "";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // dataGridViewTextBoxColumn1
             // 
-            // dataGridViewImageColumn2
+            this.dataGridViewTextBoxColumn1.FillWeight = 29.06977F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "종목";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 25;
+            // dataGridViewTextBoxColumn2
             // 
-            // dataGridViewTextBoxColumn6
+            this.dataGridViewTextBoxColumn2.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            this.dataGridViewTextBoxColumn6.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "종목";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // dataGridViewTextBoxColumn3
             // 
-            // dataGridViewTextBoxColumn7
+            this.dataGridViewTextBoxColumn3.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "현재가";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            this.dataGridViewTextBoxColumn7.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn7.HeaderText = "한글명";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // dataGridViewTextBoxColumn4
             // 
-            // dataGridViewTextBoxColumn8
+            this.dataGridViewTextBoxColumn4.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn4.HeaderText = "전일대비";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            this.dataGridViewTextBoxColumn8.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn8.HeaderText = "현재가";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // dataGridViewTextBoxColumn5
             // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn11.HeaderText = "전일대비";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "거래 대금";
-            this.Column2.Name = "Column2";
-            // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.label16);
-            this.guna2ShadowPanel1.Controls.Add(this.label15);
-            this.guna2ShadowPanel1.Controls.Add(this.label14);
-            this.guna2ShadowPanel1.Controls.Add(this.pictureBox3);
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(808, 80);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel1.ShadowDepth = 200;
-            this.guna2ShadowPanel1.ShadowShift = 4;
-            this.guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel1.TabIndex = 54;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(66, 17);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(74, 21);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "비트코인";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label15.Location = new System.Drawing.Point(91, 38);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(26, 15);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "BTC";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label16.Location = new System.Drawing.Point(237, 23);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 21);
-            this.label16.TabIndex = 5;
-            this.label16.Text = "₩ 480,680";
-            // 
-            // guna2ShadowPanel2
-            // 
-            this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel2.Controls.Add(this.label17);
-            this.guna2ShadowPanel2.Controls.Add(this.label18);
-            this.guna2ShadowPanel2.Controls.Add(this.label19);
-            this.guna2ShadowPanel2.Controls.Add(this.pictureBox4);
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel2.Location = new System.Drawing.Point(808, 166);
-            this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
-            this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel2.ShadowDepth = 200;
-            this.guna2ShadowPanel2.ShadowShift = 4;
-            this.guna2ShadowPanel2.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel2.TabIndex = 55;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label17.Location = new System.Drawing.Point(237, 23);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 21);
-            this.label17.TabIndex = 5;
-            this.label17.Text = "₩ 480,680";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label18.Location = new System.Drawing.Point(91, 38);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(26, 15);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "BTC";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(66, 17);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(74, 21);
-            this.label19.TabIndex = 3;
-            this.label19.Text = "비트코인";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // guna2ShadowPanel3
-            // 
-            this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel3.Controls.Add(this.label20);
-            this.guna2ShadowPanel3.Controls.Add(this.label21);
-            this.guna2ShadowPanel3.Controls.Add(this.label22);
-            this.guna2ShadowPanel3.Controls.Add(this.pictureBox5);
-            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(808, 252);
-            this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
-            this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel3.ShadowDepth = 200;
-            this.guna2ShadowPanel3.ShadowShift = 4;
-            this.guna2ShadowPanel3.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel3.TabIndex = 55;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label20.Location = new System.Drawing.Point(237, 23);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(84, 21);
-            this.label20.TabIndex = 5;
-            this.label20.Text = "₩ 480,680";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label21.Location = new System.Drawing.Point(91, 38);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(26, 15);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "BTC";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(66, 17);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(74, 21);
-            this.label22.TabIndex = 3;
-            this.label22.Text = "비트코인";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // guna2ShadowPanel4
-            // 
-            this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel4.Controls.Add(this.label23);
-            this.guna2ShadowPanel4.Controls.Add(this.label24);
-            this.guna2ShadowPanel4.Controls.Add(this.label25);
-            this.guna2ShadowPanel4.Controls.Add(this.pictureBox6);
-            this.guna2ShadowPanel4.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(808, 338);
-            this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel4.ShadowDepth = 200;
-            this.guna2ShadowPanel4.ShadowShift = 4;
-            this.guna2ShadowPanel4.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel4.TabIndex = 56;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label23.Location = new System.Drawing.Point(237, 23);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(84, 21);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "₩ 480,680";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label24.Location = new System.Drawing.Point(91, 38);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(26, 15);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "BTC";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(66, 17);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(74, 21);
-            this.label25.TabIndex = 3;
-            this.label25.Text = "비트코인";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // guna2ShadowPanel5
-            // 
-            this.guna2ShadowPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel5.Controls.Add(this.label26);
-            this.guna2ShadowPanel5.Controls.Add(this.label27);
-            this.guna2ShadowPanel5.Controls.Add(this.label36);
-            this.guna2ShadowPanel5.Controls.Add(this.pictureBox7);
-            this.guna2ShadowPanel5.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel5.Location = new System.Drawing.Point(808, 424);
-            this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
-            this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel5.ShadowDepth = 200;
-            this.guna2ShadowPanel5.ShadowShift = 4;
-            this.guna2ShadowPanel5.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel5.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel5.TabIndex = 55;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label26.Location = new System.Drawing.Point(237, 23);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(84, 21);
-            this.label26.TabIndex = 5;
-            this.label26.Text = "₩ 480,680";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label27.Location = new System.Drawing.Point(91, 38);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(26, 15);
-            this.label27.TabIndex = 4;
-            this.label27.Text = "BTC";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(66, 17);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(74, 21);
-            this.label36.TabIndex = 3;
-            this.label36.Text = "비트코인";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // guna2ShadowPanel6
-            // 
-            this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel6.Controls.Add(this.label37);
-            this.guna2ShadowPanel6.Controls.Add(this.label38);
-            this.guna2ShadowPanel6.Controls.Add(this.label49);
-            this.guna2ShadowPanel6.Controls.Add(this.pictureBox8);
-            this.guna2ShadowPanel6.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel6.Location = new System.Drawing.Point(808, 510);
-            this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
-            this.guna2ShadowPanel6.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel6.ShadowDepth = 200;
-            this.guna2ShadowPanel6.ShadowShift = 4;
-            this.guna2ShadowPanel6.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel6.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel6.TabIndex = 55;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label37.Location = new System.Drawing.Point(237, 23);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(84, 21);
-            this.label37.TabIndex = 5;
-            this.label37.Text = "₩ 480,680";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label38.Location = new System.Drawing.Point(91, 38);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(26, 15);
-            this.label38.TabIndex = 4;
-            this.label38.Text = "BTC";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(66, 17);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(74, 21);
-            this.label49.TabIndex = 3;
-            this.label49.Text = "비트코인";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
-            // 
-            // guna2ShadowPanel7
-            // 
-            this.guna2ShadowPanel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel7.Controls.Add(this.label50);
-            this.guna2ShadowPanel7.Controls.Add(this.label51);
-            this.guna2ShadowPanel7.Controls.Add(this.label52);
-            this.guna2ShadowPanel7.Controls.Add(this.pictureBox10);
-            this.guna2ShadowPanel7.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel7.Location = new System.Drawing.Point(808, 596);
-            this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
-            this.guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Gray;
-            this.guna2ShadowPanel7.ShadowDepth = 200;
-            this.guna2ShadowPanel7.ShadowShift = 4;
-            this.guna2ShadowPanel7.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-            this.guna2ShadowPanel7.Size = new System.Drawing.Size(341, 71);
-            this.guna2ShadowPanel7.TabIndex = 55;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.label50.Location = new System.Drawing.Point(237, 23);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(84, 21);
-            this.label50.TabIndex = 5;
-            this.label50.Text = "₩ 480,680";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label51.Location = new System.Drawing.Point(91, 38);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(26, 15);
-            this.label51.TabIndex = 4;
-            this.label51.Text = "BTC";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.BackColor = System.Drawing.Color.Transparent;
-            this.label52.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(66, 17);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(74, 21);
-            this.label52.TabIndex = 3;
-            this.label52.Text = "비트코인";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(14, 8);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(46, 50);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 2;
-            this.pictureBox10.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(44)))), ((int)(((byte)(37)))));
-            this.panel3.Location = new System.Drawing.Point(39, 138);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1110, 31);
-            this.panel3.TabIndex = 83;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(53)))), ((int)(((byte)(44)))));
-            this.panel2.Location = new System.Drawing.Point(39, 80);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1110, 31);
-            this.panel2.TabIndex = 82;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.panel1.Location = new System.Drawing.Point(39, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1110, 31);
-            this.panel1.TabIndex = 81;
+            this.dataGridViewTextBoxColumn5.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "거래대금";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // Dashboard
             // 
@@ -2888,6 +2992,27 @@ namespace Mock_Investing
             this.guna2TabControl1.ResumeLayout(false);
             this.tabMy.ResumeLayout(false);
             this.tabMy.PerformLayout();
+            this.guna2ShadowPanel7.ResumeLayout(false);
+            this.guna2ShadowPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.guna2ShadowPanel6.ResumeLayout(false);
+            this.guna2ShadowPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.guna2ShadowPanel5.ResumeLayout(false);
+            this.guna2ShadowPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.guna2ShadowPanel4.ResumeLayout(false);
+            this.guna2ShadowPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.guna2ShadowPanel3.ResumeLayout(false);
+            this.guna2ShadowPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.guna2ShadowPanel2.ResumeLayout(false);
+            this.guna2ShadowPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.guna2ShadowPanel1.ResumeLayout(false);
+            this.guna2ShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridRecordList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridMainList)).EndInit();
             this.tabView.ResumeLayout(false);
@@ -2896,6 +3021,7 @@ namespace Mock_Investing
             ((System.ComponentModel.ISupportInitialize)(this.gridFavList)).EndInit();
             this.tabTran.ResumeLayout(false);
             this.tabcontrolWonBTCHolding.ResumeLayout(false);
+            this.tabPageWon.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transactionChart)).EndInit();
@@ -2925,27 +3051,7 @@ namespace Mock_Investing
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2ShadowPanel1.ResumeLayout(false);
-            this.guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.guna2ShadowPanel2.ResumeLayout(false);
-            this.guna2ShadowPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.guna2ShadowPanel3.ResumeLayout(false);
-            this.guna2ShadowPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.guna2ShadowPanel4.ResumeLayout(false);
-            this.guna2ShadowPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.guna2ShadowPanel5.ResumeLayout(false);
-            this.guna2ShadowPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.guna2ShadowPanel6.ResumeLayout(false);
-            this.guna2ShadowPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.guna2ShadowPanel7.ResumeLayout(false);
-            this.guna2ShadowPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCoinListChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3006,19 +3112,7 @@ namespace Mock_Investing
             private Guna.UI2.WinForms.Guna2HtmlLabel labelSellPrice;
             private Guna.UI2.WinForms.Guna2Button BtnSell;
         private Guna.UI2.WinForms.Guna2DataGridView gridCoinList;
-        private System.Windows.Forms.DataGridViewImageColumn coinLogo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column0;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private Guna.UI2.WinForms.Guna2DataGridView gridFavList;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private Guna.UI2.WinForms.Guna2DragControl dashBoardDragControl;
         private System.Windows.Forms.TabPage tabPage1;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
@@ -3122,6 +3216,22 @@ namespace Mock_Investing
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2DataGridView gridCoinListChart;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column0;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
     }
 

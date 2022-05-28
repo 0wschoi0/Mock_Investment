@@ -28,7 +28,6 @@ namespace Mock_Investing
         string coinName = "";
         int maxViewY = 0;
         int minViewY = 0;
-        int flag = 0;
 
         public Dashboard(string uid)
         {
@@ -36,6 +35,7 @@ namespace Mock_Investing
             db = FirestoreDb.Create("mock-af23d");
             UID = uid;
             market = fetchCoinList();
+            Chart(coinName);
             Timer timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;
             timer.Tick += new EventHandler(timer_Tick);
@@ -44,29 +44,45 @@ namespace Mock_Investing
             // 코인 리스트 초기화
             for (int i = 0; i < coins.Count; i++)
             {
-                gridCoinList.Rows.Add(1); 
+                gridCoinList.Rows.Add(1);
+                gridCoinListChart.Rows.Add(1);
                 double changeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
                 int tradePrice = (int)(coins[i].acc_trade_price_24h / 1000000);
-                gridCoinList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
-                gridCoinList.Rows[i].Cells[2].Value = coin[i].korean_name;
-                gridCoinList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
-                gridCoinList.Rows[i].Cells[4].Value = changeRate.ToString() + "%";
+                gridCoinList.Rows[i].Cells[0].Value = coin[i].market.Trim().Remove(0, 4);
+                gridCoinList.Rows[i].Cells[1].Value = coin[i].korean_name;
+                gridCoinList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridCoinList.Rows[i].Cells[3].Value = changeRate.ToString() + "%";
+
+                gridCoinListChart.Rows[i].Cells[0].Value = coin[i].market.Trim().Remove(0, 4);
+                gridCoinListChart.Rows[i].Cells[1].Value = coin[i].korean_name;
+                gridCoinListChart.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridCoinListChart.Rows[i].Cells[3].Value = changeRate.ToString() + "%";
                 if (changeRate < 0)
                 {
+                    gridCoinList.Rows[i].Cells[2].Style.ForeColor = Color.Blue;
                     gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Blue;
-                    gridCoinList.Rows[i].Cells[4].Style.ForeColor = Color.Blue;
+
+                    gridCoinListChart.Rows[i].Cells[2].Style.ForeColor = Color.Blue;
+                    gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Blue;
                 }
                 else if (changeRate == 0)
                 {
+                    gridCoinList.Rows[i].Cells[2].Style.ForeColor = Color.Black;
                     gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Black;
-                    gridCoinList.Rows[i].Cells[4].Style.ForeColor = Color.Black;
+
+                    gridCoinListChart.Rows[i].Cells[2].Style.ForeColor = Color.Black;
+                    gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Black;
                 }
                 else
                 {
+                    gridCoinList.Rows[i].Cells[2].Style.ForeColor = Color.Red;
                     gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Red;
-                    gridCoinList.Rows[i].Cells[4].Style.ForeColor = Color.Red;
+
+                    gridCoinListChart.Rows[i].Cells[2].Style.ForeColor = Color.Red;
+                    gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Red;
                 }
-                gridCoinList.Rows[i].Cells[5].Value = tradePrice.ToString("N0") + "백만";
+                gridCoinList.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
+                gridCoinListChart.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
             }
             // 테스트용 데이터 삽입
             gridMainList.Rows.Add(4);
@@ -122,11 +138,6 @@ namespace Mock_Investing
         private void butTrans_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedIndex = 3;
-            if (flag == 0)
-            {
-                flag = 1;
-                Chart(coinName);
-            }
         }
         private void myPro_Click(object sender, EventArgs e)
         {
@@ -153,12 +164,8 @@ namespace Mock_Investing
 
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
 
-            Timer timer = new System.Windows.Forms.Timer();
-            timer.Interval = 1000;
-            timer.Tick += new EventHandler(timer_Tick_Chart);
-            timer.Start();
-
             transactionChart.MouseWheel += mouseWheel;
+            transactionChart.Series["Series1"].Points.Clear();
             maxViewY = (int)coin_candle.ElementAt(0).high_price;
             minViewY = (int)coin_candle.ElementAt(0).low_price;
             for (int i = 0; i < coin_candle.Count; i++)
@@ -225,7 +232,6 @@ namespace Mock_Investing
             if (sender.Equals(transactionChart))
             {
                 var xAxis = transactionChart.ChartAreas[0].AxisX;
-                int minx = (int)xAxis.ScaleView.ViewMinimum;
                 int maxx = (int)xAxis.ScaleView.ViewMaximum;
 
                 transactionChart.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
@@ -234,35 +240,22 @@ namespace Mock_Investing
 
                 if (e.Delta > 0) // 휠 위로 Zoom in
                 {
-                    int start = maxx / 2; //오래된 캔들 데이터일수록 인덱스 증가
-                    int end = minx; //제일 최근 캔들 데이터 인덱스 0
+                    int start = (int)(maxx / 1.5); //오래된 캔들 데이터일수록 인덱스 증가
+                    int end = 0; //제일 최근 캔들 데이터 인덱스 0
 
-                    for (int i = start - 1; i < end; i++)
-                    {
-                        if (i >= coin_candle.Count)
-                            break;
-                        if (i < 0)
-                            i = 0;
-                    }
-                    transactionChart.ChartAreas[0].AxisX.ScaleView.Zoom(end, start);
+                   transactionChart.ChartAreas[0].AxisX.ScaleView.Zoom(end, start);
                 }
                 else //휠 아래 Zoom out
                 {
-                    int start = maxx * 2;//오래된 캔들 데이터일수록 인덱스 증가
-                    int end = minx;//제일 최근 캔들 데이터 인덱스 0
-                    for (int i = start - 1; i < end; i++)
-                    {
-                        if (i >= coin_candle.Count)
-                            break;
-                        if (i < 0)
-                            i = 0;
-                    }
+                    int start = (int)(maxx * 1.5);//오래된 캔들 데이터일수록 인덱스 증가
+                    int end = 0;//제일 최근 캔들 데이터 인덱스 0
+                    
                     transactionChart.ChartAreas[0].AxisX.ScaleView.Zoom(end, start);
                 }
             }
         }
 
-        void timer_Tick_Chart(object sender, EventArgs e)
+        void timer_Tick(object sender, EventArgs e)
         {
 
             List<Candle> new_candle = fetchcandle("100");
@@ -293,23 +286,77 @@ namespace Mock_Investing
             }
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
+
+            // 코인 리스트 업데이트
+            coins = fetchCoinInfo(market);
+            for (int i = 0; i < coins.Count; i++)
+            {
+                double changeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
+                int tradePrice = (int)(coins[i].acc_trade_price_24h / 1000000);
+
+                gridCoinList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridCoinList.Rows[i].Cells[3].Value = changeRate.ToString() + "%";
+
+
+                gridCoinListChart.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridCoinListChart.Rows[i].Cells[3].Value = changeRate.ToString() + "%";
+                if (changeRate < 0)
+                {
+                    gridCoinList.Rows[i].Cells[2].Style.ForeColor = Color.Blue;
+                    gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Blue;
+
+                    gridCoinListChart.Rows[i].Cells[2].Style.ForeColor = Color.Blue;
+                    gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Blue;
+                }
+                else if (changeRate == 0)
+                {
+                    gridCoinList.Rows[i].Cells[2].Style.ForeColor = Color.Black;
+                    gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Black;
+
+                    gridCoinListChart.Rows[i].Cells[2].Style.ForeColor = Color.Black;
+                    gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Black;
+                }
+                else
+                {
+                    gridCoinList.Rows[i].Cells[2].Style.ForeColor = Color.Red;
+                    gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Red;
+
+                    gridCoinListChart.Rows[i].Cells[2].Style.ForeColor = Color.Red;
+                    gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Red;
+                }
+                gridCoinList.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
+                gridCoinListChart.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
+
+            }
+            txtboxBuyPrice.Text = lblChartCoinPrice.Text; // 매수 가격 
+            txtboxSellPrice.Text = lblChartCoinPrice.Text;//매도 가격
         }
 
         private void gridCoinList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            coinName = "KRW-" + gridCoinList.Rows[e.RowIndex].Cells[1].Value.ToString();
-            lblChartCoinName.Text = gridCoinList.Rows[e.RowIndex].Cells[2].Value.ToString();
-            lblChartCoinPrice.Text = gridCoinList.Rows[e.RowIndex].Cells[3].Value.ToString();
+            coinName = "KRW-" + gridCoinList.Rows[e.RowIndex].Cells[0].Value.ToString();
+            lblChartCoinName.Text = gridCoinList.Rows[e.RowIndex].Cells[1].Value.ToString();
+            lblChartCoinPrice.Text = gridCoinList.Rows[e.RowIndex].Cells[2].Value.ToString();
             butTrans.PerformClick();
+            Chart(coinName);
+        }
+
+        private void gridCoinListChart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            coinName = "KRW-" + gridCoinListChart.Rows[e.RowIndex].Cells[0].Value.ToString();
+            lblChartCoinName.Text = gridCoinListChart.Rows[e.RowIndex].Cells[1].Value.ToString();
+            lblChartCoinPrice.Text = gridCoinListChart.Rows[e.RowIndex].Cells[2].Value.ToString();
+            Chart(coinName);
         }
 
         public class Candle
         {
+            string date_format = "";
             [JsonInclude]
             public string market { get; set; }
 
             [JsonInclude]
-            public string candle_date_time_kst { get; set; }
+            public string candle_date_time_kst { get { return date_format.Substring(5, 5) + " " + date_format.Substring(11, 5); } set { date_format = value; } }
 
             [JsonInclude]
             public double opening_price { get; set; }
@@ -406,37 +453,6 @@ namespace Mock_Investing
             responseDetail.Close();
             return coinObject;
         }
-
-        void timer_Tick(object sender, EventArgs e)
-        {
-            // 코인 리스트 업데이트
-            coins = fetchCoinInfo(market);
-            for (int i = 0; i < coins.Count; i++)
-            {
-                double changeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
-                int tradePrice = (int)(coins[i].acc_trade_price_24h / 1000000);
-                gridCoinList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
-                gridCoinList.Rows[i].Cells[2].Value = coin[i].korean_name;
-                gridCoinList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
-                gridCoinList.Rows[i].Cells[4].Value = changeRate.ToString() + "%";
-                if (changeRate < 0)
-                {
-                    gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Blue;
-                    gridCoinList.Rows[i].Cells[4].Style.ForeColor = Color.Blue;
-                }
-                else if (changeRate == 0)
-                {
-                    gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Black;
-                    gridCoinList.Rows[i].Cells[4].Style.ForeColor = Color.Black;
-                }
-                else
-                {
-                    gridCoinList.Rows[i].Cells[3].Style.ForeColor = Color.Red;
-                    gridCoinList.Rows[i].Cells[4].Style.ForeColor = Color.Red;
-                }
-                gridCoinList.Rows[i].Cells[5].Value = tradePrice.ToString("N0") + "백만";
-            }
-        }
  
         public class Coin
         {
@@ -505,7 +521,8 @@ namespace Mock_Investing
             public long timestamp { get; set; }                 // 타임스탬프
         }
 
-     
+
+
 
 
 
