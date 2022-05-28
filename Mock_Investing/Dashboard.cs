@@ -20,14 +20,15 @@ namespace Mock_Investing
     {
         string userName;
         string UID;
+        double Won = 0;
         FirestoreDb db;
         List<Candle> coin_candle;
         List<Coin> coin;
         List<CoinDetail> coins;
         string market;
         string coinName = "";
-        int maxViewY = 0;
-        int minViewY = 0;
+        double maxViewY = 0;
+        double minViewY = 0;
         
         public Dashboard(string uid)
         {
@@ -166,8 +167,8 @@ namespace Mock_Investing
 
             transactionChart.MouseWheel += mouseWheel;
             transactionChart.Series["Series1"].Points.Clear();
-            maxViewY = (int)coin_candle.ElementAt(0).high_price;
-            minViewY = (int)coin_candle.ElementAt(0).low_price;
+            maxViewY = coin_candle.ElementAt(0).high_price;
+            minViewY = coin_candle.ElementAt(0).low_price;
             for (int i = 0; i < coin_candle.Count; i++)
             {
                 transactionChart.Series["Series1"].Points.AddXY(coin_candle.ElementAt(i).candle_date_time_kst, coin_candle.ElementAt(i).high_price);
@@ -185,10 +186,10 @@ namespace Mock_Investing
                     transactionChart.Series["Series1"].Points[i].BorderColor = Color.Red;
                 }
 
-                if (maxViewY < (int)coin_candle.ElementAt(i).high_price)
-                    maxViewY = (int)coin_candle.ElementAt(i).high_price;
-                if (minViewY > (int)coin_candle.ElementAt(i).low_price)
-                    minViewY = (int)coin_candle.ElementAt(i).low_price;
+                if (maxViewY < coin_candle.ElementAt(i).high_price)
+                    maxViewY = coin_candle.ElementAt(i).high_price;
+                if (minViewY > coin_candle.ElementAt(i).low_price)
+                    minViewY = coin_candle.ElementAt(i).low_price;
             }
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
@@ -280,10 +281,10 @@ namespace Mock_Investing
                     transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
                 }
 
-                if (maxViewY < (int)coin_candle.ElementAt(i).high_price)
-                    maxViewY = (int)coin_candle.ElementAt(i).high_price;
-                if (minViewY > (int)coin_candle.ElementAt(i).low_price)
-                    minViewY = (int)coin_candle.ElementAt(i).low_price;
+                if (maxViewY < coin_candle.ElementAt(i).high_price)
+                    maxViewY = coin_candle.ElementAt(i).high_price;
+                if (minViewY > coin_candle.ElementAt(i).low_price)
+                    minViewY = coin_candle.ElementAt(i).low_price;
             }
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
@@ -330,7 +331,7 @@ namespace Mock_Investing
 
             }
 
-            txtboxSellPrice.Text = lblChartCoinPrice.Text;// 매수 가격 
+            txtboxBuyPrice.Text = lblChartCoinPrice.Text;// 매수 가격 
             txtboxSellPrice.Text = lblChartCoinPrice.Text;//매도 가격
         }
 
@@ -347,7 +348,7 @@ namespace Mock_Investing
         { 
             coinName = "KRW-" + gridCoinListChart.Rows[e.RowIndex].Cells[0].Value.ToString();
             lblChartCoinName.Text = gridCoinListChart.Rows[e.RowIndex].Cells[1].Value.ToString();
-            lblChartCoinPrice.Text = gridCoinListChart.Rows[e.RowIndex].Cells[2].Value.ToString();
+            lblChartCoinPrice.Text = Won.ToString("C").Substring(0, 1) + coins[e.RowIndex].trade_price.ToString(); 
             Chart(coinName);
         }
 
