@@ -160,11 +160,6 @@ namespace Mock_Investing
             this.tabcontrolBuySell = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPageBuy = new System.Windows.Forms.TabPage();
             this.btnResetBuy = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.txtboxBuyTotalOrder = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelBuyTotalOrder = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtboxBuyOrderQuantity = new Guna.UI2.WinForms.Guna2TextBox();
@@ -174,11 +169,6 @@ namespace Mock_Investing
             this.btnBuy = new Guna.UI2.WinForms.Guna2Button();
             this.tabPageSell = new System.Windows.Forms.TabPage();
             this.btnSellReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
             this.txtboxSellTotalOrder = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelSellTotalOrder = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtboxSellOrderQuantity = new Guna.UI2.WinForms.Guna2TextBox();
@@ -187,19 +177,6 @@ namespace Mock_Investing
             this.labelSellPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BtnSell = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dashBoardDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblWallet = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.butView = new Guna.UI2.WinForms.Guna2Button();
-            this.butTrans = new Guna.UI2.WinForms.Guna2Button();
-            this.butMy = new Guna.UI2.WinForms.Guna2Button();
-            this.butFav = new Guna.UI2.WinForms.Guna2Button();
-            this.butLogout = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.myPro = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gridMainList = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -219,6 +196,19 @@ namespace Mock_Investing
             this.label32 = new System.Windows.Forms.Label();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.label33 = new System.Windows.Forms.Label();
+            this.dashBoardDragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblWallet = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.butView = new Guna.UI2.WinForms.Guna2Button();
+            this.butTrans = new Guna.UI2.WinForms.Guna2Button();
+            this.butMy = new Guna.UI2.WinForms.Guna2Button();
+            this.butFav = new Guna.UI2.WinForms.Guna2Button();
+            this.butLogout = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.myPro = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -258,11 +248,11 @@ namespace Mock_Investing
             this.tabPageBuy.SuspendLayout();
             this.tabPageSell.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridMainList)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -304,7 +294,7 @@ namespace Mock_Investing
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(449, 70);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 40);
+            this.label7.Size = new System.Drawing.Size(121, 31);
             this.label7.TabIndex = 8;
             this.label7.Text = "₩ 480,680";
             // 
@@ -316,7 +306,7 @@ namespace Mock_Investing
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(455, 50);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 20);
+            this.label8.Size = new System.Drawing.Size(34, 15);
             this.label8.TabIndex = 7;
             this.label8.Text = "LOSS";
             // 
@@ -338,7 +328,7 @@ namespace Mock_Investing
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(250, 70);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(182, 40);
+            this.label5.Size = new System.Drawing.Size(140, 31);
             this.label5.TabIndex = 5;
             this.label5.Text = "₩ 1,230,890";
             // 
@@ -350,7 +340,7 @@ namespace Mock_Investing
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(256, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.Size = new System.Drawing.Size(45, 15);
             this.label6.TabIndex = 4;
             this.label6.Text = "PROFIT";
             // 
@@ -372,7 +362,7 @@ namespace Mock_Investing
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(37, 70);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 40);
+            this.label4.Size = new System.Drawing.Size(137, 31);
             this.label4.TabIndex = 2;
             this.label4.Text = "₩ +750,320";
             // 
@@ -384,7 +374,7 @@ namespace Mock_Investing
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(42, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 1;
             this.label3.Text = "OVERALL";
             // 
@@ -485,7 +475,7 @@ namespace Mock_Investing
             this.transRecPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice4.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice4.Name = "transRecPrice4";
-            this.transRecPrice4.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice4.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice4.TabIndex = 5;
             this.transRecPrice4.Text = "₩ 42,480,680";
             // 
@@ -497,7 +487,7 @@ namespace Mock_Investing
             this.transRecName4.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName4.Location = new System.Drawing.Point(69, 40);
             this.transRecName4.Name = "transRecName4";
-            this.transRecName4.Size = new System.Drawing.Size(33, 20);
+            this.transRecName4.Size = new System.Drawing.Size(26, 15);
             this.transRecName4.TabIndex = 4;
             this.transRecName4.Text = "BTC";
             // 
@@ -509,7 +499,7 @@ namespace Mock_Investing
             this.transRecKor4.ForeColor = System.Drawing.Color.Black;
             this.transRecKor4.Location = new System.Drawing.Point(66, 17);
             this.transRecKor4.Name = "transRecKor4";
-            this.transRecKor4.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor4.Size = new System.Drawing.Size(74, 21);
             this.transRecKor4.TabIndex = 3;
             this.transRecKor4.Text = "비트코인";
             // 
@@ -550,7 +540,7 @@ namespace Mock_Investing
             this.transRecPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice3.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice3.Name = "transRecPrice3";
-            this.transRecPrice3.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice3.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice3.TabIndex = 5;
             this.transRecPrice3.Text = "₩ 42,480,680";
             // 
@@ -562,7 +552,7 @@ namespace Mock_Investing
             this.transRecName3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName3.Location = new System.Drawing.Point(67, 40);
             this.transRecName3.Name = "transRecName3";
-            this.transRecName3.Size = new System.Drawing.Size(33, 20);
+            this.transRecName3.Size = new System.Drawing.Size(26, 15);
             this.transRecName3.TabIndex = 4;
             this.transRecName3.Text = "BTC";
             // 
@@ -574,7 +564,7 @@ namespace Mock_Investing
             this.transRecKor3.ForeColor = System.Drawing.Color.Black;
             this.transRecKor3.Location = new System.Drawing.Point(66, 17);
             this.transRecKor3.Name = "transRecKor3";
-            this.transRecKor3.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor3.Size = new System.Drawing.Size(74, 21);
             this.transRecKor3.TabIndex = 3;
             this.transRecKor3.Text = "비트코인";
             // 
@@ -615,7 +605,7 @@ namespace Mock_Investing
             this.transRecPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice2.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice2.Name = "transRecPrice2";
-            this.transRecPrice2.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice2.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice2.TabIndex = 5;
             this.transRecPrice2.Text = "₩ 42,480,680";
             // 
@@ -627,7 +617,7 @@ namespace Mock_Investing
             this.transRecName2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName2.Location = new System.Drawing.Point(67, 40);
             this.transRecName2.Name = "transRecName2";
-            this.transRecName2.Size = new System.Drawing.Size(33, 20);
+            this.transRecName2.Size = new System.Drawing.Size(26, 15);
             this.transRecName2.TabIndex = 4;
             this.transRecName2.Text = "BTC";
             // 
@@ -639,7 +629,7 @@ namespace Mock_Investing
             this.transRecKor2.ForeColor = System.Drawing.Color.Black;
             this.transRecKor2.Location = new System.Drawing.Point(66, 17);
             this.transRecKor2.Name = "transRecKor2";
-            this.transRecKor2.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor2.Size = new System.Drawing.Size(74, 21);
             this.transRecKor2.TabIndex = 3;
             this.transRecKor2.Text = "비트코인";
             // 
@@ -684,7 +674,7 @@ namespace Mock_Investing
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Location = new System.Drawing.Point(9, 99);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(279, 29);
+            this.label13.Size = new System.Drawing.Size(219, 23);
             this.label13.TabIndex = 7;
             this.label13.Text = "₩ 1,240,234,092,390";
             // 
@@ -696,7 +686,7 @@ namespace Mock_Investing
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Location = new System.Drawing.Point(198, 155);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 20);
+            this.label14.Size = new System.Drawing.Size(64, 17);
             this.label14.TabIndex = 6;
             this.label14.Text = "05 / 13";
             // 
@@ -708,7 +698,7 @@ namespace Mock_Investing
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label15.Location = new System.Drawing.Point(179, 139);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 14);
+            this.label15.Size = new System.Drawing.Size(70, 12);
             this.label15.TabIndex = 5;
             this.label15.Text = "Date Achieved";
             // 
@@ -720,7 +710,7 @@ namespace Mock_Investing
             this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label16.Location = new System.Drawing.Point(9, 155);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(108, 20);
+            this.label16.Size = new System.Drawing.Size(96, 17);
             this.label16.TabIndex = 4;
             this.label16.Text = "Mike Taylor";
             // 
@@ -732,7 +722,7 @@ namespace Mock_Investing
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Location = new System.Drawing.Point(11, 139);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 14);
+            this.label17.Size = new System.Drawing.Size(60, 12);
             this.label17.TabIndex = 3;
             this.label17.Text = "First Place";
             // 
@@ -789,7 +779,7 @@ namespace Mock_Investing
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label18.Location = new System.Drawing.Point(199, 155);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(72, 20);
+            this.label18.Size = new System.Drawing.Size(64, 17);
             this.label18.TabIndex = 6;
             this.label18.Text = "05 / 24";
             // 
@@ -801,7 +791,7 @@ namespace Mock_Investing
             this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label19.Location = new System.Drawing.Point(180, 139);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(98, 14);
+            this.label19.Size = new System.Drawing.Size(70, 12);
             this.label19.TabIndex = 5;
             this.label19.Text = "Date Achieved";
             // 
@@ -813,7 +803,7 @@ namespace Mock_Investing
             this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label20.Location = new System.Drawing.Point(9, 155);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(108, 20);
+            this.label20.Size = new System.Drawing.Size(96, 17);
             this.label20.TabIndex = 4;
             this.label20.Text = "Stephan Lee";
             // 
@@ -825,7 +815,7 @@ namespace Mock_Investing
             this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label21.Location = new System.Drawing.Point(11, 139);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 14);
+            this.label21.Size = new System.Drawing.Size(65, 12);
             this.label21.TabIndex = 3;
             this.label21.Text = "Second Place";
             // 
@@ -837,7 +827,7 @@ namespace Mock_Investing
             this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label22.Location = new System.Drawing.Point(8, 99);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(251, 29);
+            this.label22.Size = new System.Drawing.Size(197, 23);
             this.label22.TabIndex = 2;
             this.label22.Text = "₩ 339,234,092,390";
             // 
@@ -894,7 +884,7 @@ namespace Mock_Investing
             this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label23.Location = new System.Drawing.Point(18, 100);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(237, 29);
+            this.label23.Size = new System.Drawing.Size(186, 23);
             this.label23.TabIndex = 7;
             this.label23.Text = "₩ 72,234,092,390";
             // 
@@ -906,7 +896,7 @@ namespace Mock_Investing
             this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label24.Location = new System.Drawing.Point(198, 155);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(72, 20);
+            this.label24.Size = new System.Drawing.Size(64, 17);
             this.label24.TabIndex = 6;
             this.label24.Text = "06 / 06";
             // 
@@ -918,7 +908,7 @@ namespace Mock_Investing
             this.label25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label25.Location = new System.Drawing.Point(179, 139);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(98, 14);
+            this.label25.Size = new System.Drawing.Size(70, 12);
             this.label25.TabIndex = 5;
             this.label25.Text = "Date Achieved";
             // 
@@ -930,7 +920,7 @@ namespace Mock_Investing
             this.label26.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label26.Location = new System.Drawing.Point(9, 155);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(126, 20);
+            this.label26.Size = new System.Drawing.Size(112, 17);
             this.label26.TabIndex = 4;
             this.label26.Text = "Olivia Nelson";
             // 
@@ -942,7 +932,7 @@ namespace Mock_Investing
             this.label27.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label27.Location = new System.Drawing.Point(11, 139);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(84, 14);
+            this.label27.Size = new System.Drawing.Size(60, 12);
             this.label27.TabIndex = 3;
             this.label27.Text = "Thrid Place";
             // 
@@ -1003,7 +993,7 @@ namespace Mock_Investing
             this.transRecPrice1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice1.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice1.Name = "transRecPrice1";
-            this.transRecPrice1.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice1.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice1.TabIndex = 5;
             this.transRecPrice1.Text = "₩ 42,480,680";
             // 
@@ -1015,7 +1005,7 @@ namespace Mock_Investing
             this.transRecName1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName1.Location = new System.Drawing.Point(68, 41);
             this.transRecName1.Name = "transRecName1";
-            this.transRecName1.Size = new System.Drawing.Size(33, 20);
+            this.transRecName1.Size = new System.Drawing.Size(26, 15);
             this.transRecName1.TabIndex = 4;
             this.transRecName1.Text = "BTC";
             // 
@@ -1027,7 +1017,7 @@ namespace Mock_Investing
             this.transRecKor1.ForeColor = System.Drawing.Color.Black;
             this.transRecKor1.Location = new System.Drawing.Point(66, 17);
             this.transRecKor1.Name = "transRecKor1";
-            this.transRecKor1.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor1.Size = new System.Drawing.Size(74, 21);
             this.transRecKor1.TabIndex = 3;
             this.transRecKor1.Text = "비트코인";
             // 
@@ -1187,7 +1177,7 @@ namespace Mock_Investing
             this.label28.ForeColor = System.Drawing.Color.Black;
             this.label28.Location = new System.Drawing.Point(23, 254);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(165, 46);
+            this.label28.Size = new System.Drawing.Size(132, 37);
             this.label28.TabIndex = 93;
             this.label28.Text = "거래 내역";
             // 
@@ -1199,7 +1189,7 @@ namespace Mock_Investing
             this.labTrans.ForeColor = System.Drawing.Color.Gray;
             this.labTrans.Location = new System.Drawing.Point(910, 295);
             this.labTrans.Name = "labTrans";
-            this.labTrans.Size = new System.Drawing.Size(117, 28);
+            this.labTrans.Size = new System.Drawing.Size(95, 21);
             this.labTrans.TabIndex = 92;
             this.labTrans.Text = "05/27 20:49";
             // 
@@ -1211,7 +1201,7 @@ namespace Mock_Investing
             this.label30.ForeColor = System.Drawing.Color.Gray;
             this.label30.Location = new System.Drawing.Point(824, 295);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(111, 28);
+            this.label30.Size = new System.Drawing.Size(89, 21);
             this.label30.TabIndex = 91;
             this.label30.Text = "갱신 시간 : ";
             // 
@@ -1223,7 +1213,7 @@ namespace Mock_Investing
             this.label29.ForeColor = System.Drawing.Color.Black;
             this.label29.Location = new System.Drawing.Point(816, 254);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(236, 45);
+            this.label29.Size = new System.Drawing.Size(193, 37);
             this.label29.TabIndex = 90;
             this.label29.Text = "시장 체결 내역";
             // 
@@ -1252,7 +1242,7 @@ namespace Mock_Investing
             this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.label50.Location = new System.Drawing.Point(237, 23);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(110, 28);
+            this.label50.Size = new System.Drawing.Size(84, 21);
             this.label50.TabIndex = 5;
             this.label50.Text = "₩ 480,680";
             // 
@@ -1264,7 +1254,7 @@ namespace Mock_Investing
             this.label51.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label51.Location = new System.Drawing.Point(91, 38);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(33, 20);
+            this.label51.Size = new System.Drawing.Size(26, 15);
             this.label51.TabIndex = 4;
             this.label51.Text = "BTC";
             // 
@@ -1276,7 +1266,7 @@ namespace Mock_Investing
             this.label52.ForeColor = System.Drawing.Color.Black;
             this.label52.Location = new System.Drawing.Point(66, 17);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(92, 28);
+            this.label52.Size = new System.Drawing.Size(74, 21);
             this.label52.TabIndex = 3;
             this.label52.Text = "비트코인";
             // 
@@ -1768,7 +1758,7 @@ namespace Mock_Investing
             this.lblChartCoinPrice.ForeColor = System.Drawing.Color.IndianRed;
             this.lblChartCoinPrice.Location = new System.Drawing.Point(66, 50);
             this.lblChartCoinPrice.Name = "lblChartCoinPrice";
-            this.lblChartCoinPrice.Size = new System.Drawing.Size(149, 37);
+            this.lblChartCoinPrice.Size = new System.Drawing.Size(117, 30);
             this.lblChartCoinPrice.TabIndex = 1;
             this.lblChartCoinPrice.Text = "37,799,000";
             // 
@@ -1778,7 +1768,7 @@ namespace Mock_Investing
             this.lblChartCoinName.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblChartCoinName.Location = new System.Drawing.Point(68, 24);
             this.lblChartCoinName.Name = "lblChartCoinName";
-            this.lblChartCoinName.Size = new System.Drawing.Size(93, 20);
+            this.lblChartCoinName.Size = new System.Drawing.Size(75, 16);
             this.lblChartCoinName.TabIndex = 0;
             this.lblChartCoinName.Text = "비트코인";
             // 
@@ -1786,7 +1776,7 @@ namespace Mock_Investing
             // 
             this.tabcontrolBuySell.Controls.Add(this.tabPageBuy);
             this.tabcontrolBuySell.Controls.Add(this.tabPageSell);
-            this.tabcontrolBuySell.ItemSize = new System.Drawing.Size(263, 40);
+            this.tabcontrolBuySell.ItemSize = new System.Drawing.Size(264, 40);
             this.tabcontrolBuySell.Location = new System.Drawing.Point(641, 362);
             this.tabcontrolBuySell.Name = "tabcontrolBuySell";
             this.tabcontrolBuySell.SelectedIndex = 0;
@@ -1794,19 +1784,19 @@ namespace Mock_Investing
             this.tabcontrolBuySell.TabButtonHoverState.BorderColor = System.Drawing.Color.White;
             this.tabcontrolBuySell.TabButtonHoverState.FillColor = System.Drawing.Color.White;
             this.tabcontrolBuySell.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tabcontrolBuySell.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
+            this.tabcontrolBuySell.TabButtonHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tabcontrolBuySell.TabButtonHoverState.InnerColor = System.Drawing.Color.White;
             this.tabcontrolBuySell.TabButtonIdleState.BorderColor = System.Drawing.Color.White;
             this.tabcontrolBuySell.TabButtonIdleState.FillColor = System.Drawing.Color.White;
-            this.tabcontrolBuySell.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tabcontrolBuySell.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolBuySell.TabButtonIdleState.ForeColor = System.Drawing.Color.Black;
             this.tabcontrolBuySell.TabButtonIdleState.InnerColor = System.Drawing.Color.White;
             this.tabcontrolBuySell.TabButtonSelectedState.BorderColor = System.Drawing.Color.Black;
-            this.tabcontrolBuySell.TabButtonSelectedState.FillColor = System.Drawing.Color.MistyRose;
+            this.tabcontrolBuySell.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.tabcontrolBuySell.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolBuySell.TabButtonSelectedState.ForeColor = System.Drawing.Color.Red;
             this.tabcontrolBuySell.TabButtonSelectedState.InnerColor = System.Drawing.Color.White;
-            this.tabcontrolBuySell.TabButtonSize = new System.Drawing.Size(263, 40);
+            this.tabcontrolBuySell.TabButtonSize = new System.Drawing.Size(264, 40);
             this.tabcontrolBuySell.TabIndex = 14;
             this.tabcontrolBuySell.TabMenuBackColor = System.Drawing.SystemColors.Window;
             this.tabcontrolBuySell.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalTop;
@@ -1814,11 +1804,6 @@ namespace Mock_Investing
             // tabPageBuy
             // 
             this.tabPageBuy.Controls.Add(this.btnResetBuy);
-            this.tabPageBuy.Controls.Add(this.guna2Button6);
-            this.tabPageBuy.Controls.Add(this.guna2Button5);
-            this.tabPageBuy.Controls.Add(this.guna2Button4);
-            this.tabPageBuy.Controls.Add(this.guna2Button2);
-            this.tabPageBuy.Controls.Add(this.guna2Button1);
             this.tabPageBuy.Controls.Add(this.txtboxBuyTotalOrder);
             this.tabPageBuy.Controls.Add(this.labelBuyTotalOrder);
             this.tabPageBuy.Controls.Add(this.txtboxBuyOrderQuantity);
@@ -1846,111 +1831,11 @@ namespace Mock_Investing
             this.btnResetBuy.FillColor = System.Drawing.Color.DarkGray;
             this.btnResetBuy.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetBuy.ForeColor = System.Drawing.Color.White;
-            this.btnResetBuy.Location = new System.Drawing.Point(7, 186);
+            this.btnResetBuy.Location = new System.Drawing.Point(22, 186);
             this.btnResetBuy.Name = "btnResetBuy";
-            this.btnResetBuy.Size = new System.Drawing.Size(119, 36);
+            this.btnResetBuy.Size = new System.Drawing.Size(98, 36);
             this.btnResetBuy.TabIndex = 28;
             this.btnResetBuy.Text = "초기화";
-            // 
-            // guna2Button6
-            // 
-            this.guna2Button6.Animated = true;
-            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button6.BorderThickness = 1;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.White;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.Location = new System.Drawing.Point(445, 113);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button6.TabIndex = 27;
-            this.guna2Button6.Text = "직접입력";
-            this.guna2Button6.UseTransparentBackground = true;
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button5.BorderThickness = 1;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.White;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(368, 113);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button5.TabIndex = 26;
-            this.guna2Button5.Text = "100%";
-            this.guna2Button5.UseTransparentBackground = true;
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button4.BorderThickness = 1;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.White;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Location = new System.Drawing.Point(291, 113);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button4.TabIndex = 25;
-            this.guna2Button4.Text = "50%";
-            this.guna2Button4.UseTransparentBackground = true;
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.White;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(214, 113);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button2.TabIndex = 24;
-            this.guna2Button2.Text = "25%";
-            this.guna2Button2.UseTransparentBackground = true;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(137, 113);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button1.TabIndex = 23;
-            this.guna2Button1.Text = "10%";
-            this.guna2Button1.UseTransparentBackground = true;
             // 
             // txtboxBuyTotalOrder
             // 
@@ -1966,7 +1851,7 @@ namespace Mock_Investing
             this.txtboxBuyTotalOrder.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.txtboxBuyTotalOrder.ForeColor = System.Drawing.Color.Gray;
             this.txtboxBuyTotalOrder.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxBuyTotalOrder.Location = new System.Drawing.Point(137, 142);
+            this.txtboxBuyTotalOrder.Location = new System.Drawing.Point(141, 134);
             this.txtboxBuyTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxBuyTotalOrder.Name = "txtboxBuyTotalOrder";
             this.txtboxBuyTotalOrder.PasswordChar = '\0';
@@ -1982,10 +1867,10 @@ namespace Mock_Investing
             this.labelBuyTotalOrder.BackColor = System.Drawing.Color.Transparent;
             this.labelBuyTotalOrder.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelBuyTotalOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelBuyTotalOrder.Location = new System.Drawing.Point(21, 150);
+            this.labelBuyTotalOrder.Location = new System.Drawing.Point(38, 144);
             this.labelBuyTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyTotalOrder.Name = "labelBuyTotalOrder";
-            this.labelBuyTotalOrder.Size = new System.Drawing.Size(71, 25);
+            this.labelBuyTotalOrder.Size = new System.Drawing.Size(55, 19);
             this.labelBuyTotalOrder.TabIndex = 21;
             this.labelBuyTotalOrder.Text = "주문총액";
             // 
@@ -2003,14 +1888,14 @@ namespace Mock_Investing
             this.txtboxBuyOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.txtboxBuyOrderQuantity.ForeColor = System.Drawing.Color.Gray;
             this.txtboxBuyOrderQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxBuyOrderQuantity.Location = new System.Drawing.Point(137, 73);
+            this.txtboxBuyOrderQuantity.Location = new System.Drawing.Point(141, 81);
             this.txtboxBuyOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxBuyOrderQuantity.Name = "txtboxBuyOrderQuantity";
             this.txtboxBuyOrderQuantity.PasswordChar = '\0';
             this.txtboxBuyOrderQuantity.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxBuyOrderQuantity.PlaceholderText = "";
             this.txtboxBuyOrderQuantity.SelectedText = "";
-            this.txtboxBuyOrderQuantity.Size = new System.Drawing.Size(379, 35);
+            this.txtboxBuyOrderQuantity.Size = new System.Drawing.Size(378, 35);
             this.txtboxBuyOrderQuantity.TabIndex = 20;
             this.txtboxBuyOrderQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -2019,10 +1904,10 @@ namespace Mock_Investing
             this.labelBuyOrderQuantity.BackColor = System.Drawing.Color.Transparent;
             this.labelBuyOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelBuyOrderQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelBuyOrderQuantity.Location = new System.Drawing.Point(22, 81);
+            this.labelBuyOrderQuantity.Location = new System.Drawing.Point(38, 89);
             this.labelBuyOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyOrderQuantity.Name = "labelBuyOrderQuantity";
-            this.labelBuyOrderQuantity.Size = new System.Drawing.Size(71, 25);
+            this.labelBuyOrderQuantity.Size = new System.Drawing.Size(55, 19);
             this.labelBuyOrderQuantity.TabIndex = 19;
             this.labelBuyOrderQuantity.Text = "주문수량";
             // 
@@ -2040,7 +1925,7 @@ namespace Mock_Investing
             this.txtboxBuyPrice.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.txtboxBuyPrice.ForeColor = System.Drawing.Color.Gray;
             this.txtboxBuyPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxBuyPrice.Location = new System.Drawing.Point(138, 24);
+            this.txtboxBuyPrice.Location = new System.Drawing.Point(141, 28);
             this.txtboxBuyPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxBuyPrice.Name = "txtboxBuyPrice";
             this.txtboxBuyPrice.PasswordChar = '\0';
@@ -2056,10 +1941,10 @@ namespace Mock_Investing
             this.labelBuyPrice.BackColor = System.Drawing.Color.Transparent;
             this.labelBuyPrice.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelBuyPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelBuyPrice.Location = new System.Drawing.Point(23, 30);
+            this.labelBuyPrice.Location = new System.Drawing.Point(38, 37);
             this.labelBuyPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyPrice.Name = "labelBuyPrice";
-            this.labelBuyPrice.Size = new System.Drawing.Size(71, 25);
+            this.labelBuyPrice.Size = new System.Drawing.Size(55, 19);
             this.labelBuyPrice.TabIndex = 17;
             this.labelBuyPrice.Text = "매수가격";
             // 
@@ -2075,9 +1960,9 @@ namespace Mock_Investing
             this.btnBuy.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.btnBuy.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuy.ForeColor = System.Drawing.Color.White;
-            this.btnBuy.Location = new System.Drawing.Point(137, 186);
+            this.btnBuy.Location = new System.Drawing.Point(141, 187);
             this.btnBuy.Name = "btnBuy";
-            this.btnBuy.Size = new System.Drawing.Size(378, 36);
+            this.btnBuy.Size = new System.Drawing.Size(378, 35);
             this.btnBuy.TabIndex = 12;
             this.btnBuy.Text = "매수";
             this.btnBuy.UseTransparentBackground = true;
@@ -2085,11 +1970,6 @@ namespace Mock_Investing
             // tabPageSell
             // 
             this.tabPageSell.Controls.Add(this.btnSellReset);
-            this.tabPageSell.Controls.Add(this.guna2Button9);
-            this.tabPageSell.Controls.Add(this.guna2Button10);
-            this.tabPageSell.Controls.Add(this.guna2Button11);
-            this.tabPageSell.Controls.Add(this.guna2Button12);
-            this.tabPageSell.Controls.Add(this.guna2Button13);
             this.tabPageSell.Controls.Add(this.txtboxSellTotalOrder);
             this.tabPageSell.Controls.Add(this.labelSellTotalOrder);
             this.tabPageSell.Controls.Add(this.txtboxSellOrderQuantity);
@@ -2115,111 +1995,11 @@ namespace Mock_Investing
             this.btnSellReset.FillColor = System.Drawing.Color.DarkGray;
             this.btnSellReset.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSellReset.ForeColor = System.Drawing.Color.White;
-            this.btnSellReset.Location = new System.Drawing.Point(7, 186);
+            this.btnSellReset.Location = new System.Drawing.Point(22, 186);
             this.btnSellReset.Name = "btnSellReset";
-            this.btnSellReset.Size = new System.Drawing.Size(119, 36);
+            this.btnSellReset.Size = new System.Drawing.Size(98, 36);
             this.btnSellReset.TabIndex = 41;
             this.btnSellReset.Text = "초기화";
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.Animated = true;
-            this.guna2Button9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button9.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button9.BorderThickness = 1;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.FillColor = System.Drawing.Color.White;
-            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button9.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button9.Location = new System.Drawing.Point(445, 113);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button9.TabIndex = 40;
-            this.guna2Button9.Text = "직접입력";
-            this.guna2Button9.UseTransparentBackground = true;
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.Animated = true;
-            this.guna2Button10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button10.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button10.BorderThickness = 1;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.FillColor = System.Drawing.Color.White;
-            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.guna2Button10.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button10.Location = new System.Drawing.Point(368, 113);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button10.TabIndex = 39;
-            this.guna2Button10.Text = "100%";
-            this.guna2Button10.UseTransparentBackground = true;
-            // 
-            // guna2Button11
-            // 
-            this.guna2Button11.Animated = true;
-            this.guna2Button11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button11.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button11.BorderThickness = 1;
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.FillColor = System.Drawing.Color.White;
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button11.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button11.Location = new System.Drawing.Point(291, 113);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button11.TabIndex = 38;
-            this.guna2Button11.Text = "50%";
-            this.guna2Button11.UseTransparentBackground = true;
-            // 
-            // guna2Button12
-            // 
-            this.guna2Button12.Animated = true;
-            this.guna2Button12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button12.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button12.BorderThickness = 1;
-            this.guna2Button12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button12.FillColor = System.Drawing.Color.White;
-            this.guna2Button12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button12.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button12.Location = new System.Drawing.Point(214, 113);
-            this.guna2Button12.Name = "guna2Button12";
-            this.guna2Button12.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button12.TabIndex = 37;
-            this.guna2Button12.Text = "25%";
-            this.guna2Button12.UseTransparentBackground = true;
-            // 
-            // guna2Button13
-            // 
-            this.guna2Button13.Animated = true;
-            this.guna2Button13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button13.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button13.BorderThickness = 1;
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.FillColor = System.Drawing.Color.White;
-            this.guna2Button13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button13.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button13.Location = new System.Drawing.Point(137, 113);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.Size = new System.Drawing.Size(71, 24);
-            this.guna2Button13.TabIndex = 36;
-            this.guna2Button13.Text = "10%";
-            this.guna2Button13.UseTransparentBackground = true;
             // 
             // txtboxSellTotalOrder
             // 
@@ -2235,7 +2015,7 @@ namespace Mock_Investing
             this.txtboxSellTotalOrder.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.txtboxSellTotalOrder.ForeColor = System.Drawing.Color.Gray;
             this.txtboxSellTotalOrder.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxSellTotalOrder.Location = new System.Drawing.Point(137, 142);
+            this.txtboxSellTotalOrder.Location = new System.Drawing.Point(141, 134);
             this.txtboxSellTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxSellTotalOrder.Name = "txtboxSellTotalOrder";
             this.txtboxSellTotalOrder.PasswordChar = '\0';
@@ -2251,10 +2031,10 @@ namespace Mock_Investing
             this.labelSellTotalOrder.BackColor = System.Drawing.Color.Transparent;
             this.labelSellTotalOrder.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelSellTotalOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelSellTotalOrder.Location = new System.Drawing.Point(21, 150);
+            this.labelSellTotalOrder.Location = new System.Drawing.Point(38, 144);
             this.labelSellTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellTotalOrder.Name = "labelSellTotalOrder";
-            this.labelSellTotalOrder.Size = new System.Drawing.Size(71, 25);
+            this.labelSellTotalOrder.Size = new System.Drawing.Size(55, 19);
             this.labelSellTotalOrder.TabIndex = 34;
             this.labelSellTotalOrder.Text = "주문총액";
             // 
@@ -2272,14 +2052,14 @@ namespace Mock_Investing
             this.txtboxSellOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.txtboxSellOrderQuantity.ForeColor = System.Drawing.Color.Gray;
             this.txtboxSellOrderQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxSellOrderQuantity.Location = new System.Drawing.Point(137, 73);
+            this.txtboxSellOrderQuantity.Location = new System.Drawing.Point(141, 81);
             this.txtboxSellOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxSellOrderQuantity.Name = "txtboxSellOrderQuantity";
             this.txtboxSellOrderQuantity.PasswordChar = '\0';
             this.txtboxSellOrderQuantity.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxSellOrderQuantity.PlaceholderText = "";
             this.txtboxSellOrderQuantity.SelectedText = "";
-            this.txtboxSellOrderQuantity.Size = new System.Drawing.Size(379, 35);
+            this.txtboxSellOrderQuantity.Size = new System.Drawing.Size(378, 35);
             this.txtboxSellOrderQuantity.TabIndex = 33;
             this.txtboxSellOrderQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -2288,10 +2068,10 @@ namespace Mock_Investing
             this.labelSellOrderQuantity.BackColor = System.Drawing.Color.Transparent;
             this.labelSellOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelSellOrderQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelSellOrderQuantity.Location = new System.Drawing.Point(22, 81);
+            this.labelSellOrderQuantity.Location = new System.Drawing.Point(38, 89);
             this.labelSellOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellOrderQuantity.Name = "labelSellOrderQuantity";
-            this.labelSellOrderQuantity.Size = new System.Drawing.Size(71, 25);
+            this.labelSellOrderQuantity.Size = new System.Drawing.Size(55, 19);
             this.labelSellOrderQuantity.TabIndex = 32;
             this.labelSellOrderQuantity.Text = "주문수량";
             // 
@@ -2309,7 +2089,7 @@ namespace Mock_Investing
             this.txtboxSellPrice.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.txtboxSellPrice.ForeColor = System.Drawing.Color.Gray;
             this.txtboxSellPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxSellPrice.Location = new System.Drawing.Point(138, 24);
+            this.txtboxSellPrice.Location = new System.Drawing.Point(141, 28);
             this.txtboxSellPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxSellPrice.Name = "txtboxSellPrice";
             this.txtboxSellPrice.PasswordChar = '\0';
@@ -2325,10 +2105,10 @@ namespace Mock_Investing
             this.labelSellPrice.BackColor = System.Drawing.Color.Transparent;
             this.labelSellPrice.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelSellPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelSellPrice.Location = new System.Drawing.Point(23, 30);
+            this.labelSellPrice.Location = new System.Drawing.Point(38, 33);
             this.labelSellPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellPrice.Name = "labelSellPrice";
-            this.labelSellPrice.Size = new System.Drawing.Size(71, 25);
+            this.labelSellPrice.Size = new System.Drawing.Size(55, 19);
             this.labelSellPrice.TabIndex = 30;
             this.labelSellPrice.Text = "매도가격";
             // 
@@ -2344,9 +2124,9 @@ namespace Mock_Investing
             this.BtnSell.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.BtnSell.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSell.ForeColor = System.Drawing.Color.White;
-            this.BtnSell.Location = new System.Drawing.Point(137, 186);
+            this.BtnSell.Location = new System.Drawing.Point(141, 186);
             this.BtnSell.Name = "BtnSell";
-            this.BtnSell.Size = new System.Drawing.Size(378, 36);
+            this.BtnSell.Size = new System.Drawing.Size(378, 35);
             this.BtnSell.TabIndex = 29;
             this.BtnSell.Text = "매도";
             this.BtnSell.UseTransparentBackground = true;
@@ -2365,6 +2145,285 @@ namespace Mock_Investing
             this.tabPage1.Size = new System.Drawing.Size(1182, 686);
             this.tabPage1.TabIndex = 5;
             this.tabPage1.Text = "tabPage1";
+            // 
+            // gridMainList
+            // 
+            this.gridMainList.AllowUserToAddRows = false;
+            this.gridMainList.AllowUserToDeleteRows = false;
+            this.gridMainList.AllowUserToResizeColumns = false;
+            this.gridMainList.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridMainList.BackgroundColor = System.Drawing.Color.White;
+            this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.gridMainList.ColumnHeadersHeight = 40;
+            this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewImageColumn3,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn11});
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle15;
+            this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.gridMainList.EnableHeadersVisualStyles = false;
+            this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gridMainList.Location = new System.Drawing.Point(42, 58);
+            this.gridMainList.MultiSelect = false;
+            this.gridMainList.Name = "gridMainList";
+            this.gridMainList.RowHeadersVisible = false;
+            this.gridMainList.RowHeadersWidth = 62;
+            this.gridMainList.RowTemplate.DividerHeight = 5;
+            this.gridMainList.RowTemplate.Height = 50;
+            this.gridMainList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.gridMainList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridMainList.Size = new System.Drawing.Size(1107, 294);
+            this.gridMainList.TabIndex = 90;
+            this.gridMainList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridMainList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gridMainList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gridMainList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gridMainList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gridMainList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gridMainList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.gridMainList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.White;
+            this.gridMainList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridMainList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 30F);
+            this.gridMainList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.DimGray;
+            this.gridMainList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gridMainList.ThemeStyle.HeaderStyle.Height = 40;
+            this.gridMainList.ThemeStyle.ReadOnly = false;
+            this.gridMainList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridMainList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridMainList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridMainList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainList.ThemeStyle.RowsStyle.Height = 50;
+            this.gridMainList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridMainList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn3.HeaderText = "";
+            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn3.MinimumWidth = 8;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Width = 25;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn9.HeaderText = "종목";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn6.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn7.HeaderText = "현재가";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn8.HeaderText = "전일대비";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "거래 대금";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(58, 363);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 37);
+            this.label2.TabIndex = 87;
+            this.label2.Text = "내 프로필";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.White;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.DimGray;
+            this.guna2Panel2.BorderRadius = 5;
+            this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.label9);
+            this.guna2Panel2.Controls.Add(this.label10);
+            this.guna2Panel2.Controls.Add(this.label12);
+            this.guna2Panel2.Controls.Add(this.label11);
+            this.guna2Panel2.Controls.Add(this.label31);
+            this.guna2Panel2.Controls.Add(this.guna2Panel6);
+            this.guna2Panel2.ForeColor = System.Drawing.SystemColors.Control;
+            this.guna2Panel2.Location = new System.Drawing.Point(41, 386);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(1108, 291);
+            this.guna2Panel2.TabIndex = 88;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(30, 232);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(109, 21);
+            this.label9.TabIndex = 90;
+            this.label9.Text = "현재 순위      : ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(30, 142);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 21);
+            this.label10.TabIndex = 89;
+            this.label10.Text = "시작 자금      : ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(30, 187);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 21);
+            this.label12.TabIndex = 88;
+            this.label12.Text = "현재 수익률  : ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(30, 97);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(109, 21);
+            this.label11.TabIndex = 87;
+            this.label11.Text = "시작 날짜      : ";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(30, 52);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(109, 21);
+            this.label31.TabIndex = 86;
+            this.label31.Text = "이름               : ";
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.White;
+            this.guna2Panel6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.guna2Panel6.BorderRadius = 5;
+            this.guna2Panel6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.guna2Panel6.BorderThickness = 2;
+            this.guna2Panel6.Controls.Add(this.richTextBox1);
+            this.guna2Panel6.Controls.Add(this.label32);
+            this.guna2Panel6.Controls.Add(this.guna2Button8);
+            this.guna2Panel6.Location = new System.Drawing.Point(829, 17);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.Size = new System.Drawing.Size(260, 259);
+            this.guna2Panel6.TabIndex = 85;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(32, 61);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(206, 120);
+            this.richTextBox1.TabIndex = 81;
+            this.richTextBox1.Text = "아래의 리셋 버튼을 클릭시 \n이름을 제외한 모든 항목들이 \n초기화 되고, 이 행동을\n되돌릴 수 없습니다!";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(14, 18);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(110, 21);
+            this.label32.TabIndex = 79;
+            this.label32.Text = "리셋 주의사항";
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.Animated = true;
+            this.guna2Button8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.BorderRadius = 10;
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.Location = new System.Drawing.Point(32, 190);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.ShadowDecoration.BorderRadius = 10;
+            this.guna2Button8.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
+            this.guna2Button8.Size = new System.Drawing.Size(206, 56);
+            this.guna2Button8.TabIndex = 77;
+            this.guna2Button8.Text = "RESET";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(34, 9);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(132, 37);
+            this.label33.TabIndex = 89;
+            this.label33.Text = "보유 종목";
             // 
             // dashBoardDragControl
             // 
@@ -2393,7 +2452,7 @@ namespace Mock_Investing
             this.lblWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblWallet.Location = new System.Drawing.Point(25, 68);
             this.lblWallet.Name = "lblWallet";
-            this.lblWallet.Size = new System.Drawing.Size(157, 40);
+            this.lblWallet.Size = new System.Drawing.Size(121, 31);
             this.lblWallet.TabIndex = 1;
             this.lblWallet.Text = "₩ 432,120";
             // 
@@ -2405,7 +2464,7 @@ namespace Mock_Investing
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(25, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.Size = new System.Drawing.Size(43, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Wallet";
             // 
@@ -2618,285 +2677,6 @@ namespace Mock_Investing
             this.guna2Panel1.Size = new System.Drawing.Size(255, 851);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // gridMainList
-            // 
-            this.gridMainList.AllowUserToAddRows = false;
-            this.gridMainList.AllowUserToDeleteRows = false;
-            this.gridMainList.AllowUserToResizeColumns = false;
-            this.gridMainList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridMainList.BackgroundColor = System.Drawing.Color.White;
-            this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.gridMainList.ColumnHeadersHeight = 40;
-            this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewImageColumn3,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn11});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle15;
-            this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.gridMainList.EnableHeadersVisualStyles = false;
-            this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gridMainList.Location = new System.Drawing.Point(42, 58);
-            this.gridMainList.MultiSelect = false;
-            this.gridMainList.Name = "gridMainList";
-            this.gridMainList.RowHeadersVisible = false;
-            this.gridMainList.RowHeadersWidth = 62;
-            this.gridMainList.RowTemplate.DividerHeight = 5;
-            this.gridMainList.RowTemplate.Height = 50;
-            this.gridMainList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.gridMainList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMainList.Size = new System.Drawing.Size(1107, 294);
-            this.gridMainList.TabIndex = 90;
-            this.gridMainList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gridMainList.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gridMainList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gridMainList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gridMainList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gridMainList.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gridMainList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gridMainList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.White;
-            this.gridMainList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridMainList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 30F);
-            this.gridMainList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.DimGray;
-            this.gridMainList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gridMainList.ThemeStyle.HeaderStyle.Height = 40;
-            this.gridMainList.ThemeStyle.ReadOnly = false;
-            this.gridMainList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gridMainList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gridMainList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gridMainList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridMainList.ThemeStyle.RowsStyle.Height = 50;
-            this.gridMainList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gridMainList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dataGridViewImageColumn3
-            // 
-            this.dataGridViewImageColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn3.HeaderText = "";
-            this.dataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn3.MinimumWidth = 8;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            this.dataGridViewImageColumn3.Width = 25;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn9.HeaderText = "종목";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "한글명";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn7.HeaderText = "현재가";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn8.HeaderText = "전일대비";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.HeaderText = "거래 대금";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(58, 363);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 46);
-            this.label2.TabIndex = 87;
-            this.label2.Text = "내 프로필";
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.White;
-            this.guna2Panel2.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2Panel2.BorderRadius = 5;
-            this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.label9);
-            this.guna2Panel2.Controls.Add(this.label10);
-            this.guna2Panel2.Controls.Add(this.label12);
-            this.guna2Panel2.Controls.Add(this.label11);
-            this.guna2Panel2.Controls.Add(this.label31);
-            this.guna2Panel2.Controls.Add(this.guna2Panel6);
-            this.guna2Panel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel2.Location = new System.Drawing.Point(41, 386);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1108, 291);
-            this.guna2Panel2.TabIndex = 88;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(30, 232);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(136, 28);
-            this.label9.TabIndex = 90;
-            this.label9.Text = "현재 순위      : ";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(30, 142);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(136, 28);
-            this.label10.TabIndex = 89;
-            this.label10.Text = "시작 자금      : ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(30, 187);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(136, 28);
-            this.label12.TabIndex = 88;
-            this.label12.Text = "현재 수익률  : ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(30, 97);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 28);
-            this.label11.TabIndex = 87;
-            this.label11.Text = "시작 날짜      : ";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(30, 52);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(136, 28);
-            this.label31.TabIndex = 86;
-            this.label31.Text = "이름               : ";
-            // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.White;
-            this.guna2Panel6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.guna2Panel6.BorderRadius = 5;
-            this.guna2Panel6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.guna2Panel6.BorderThickness = 2;
-            this.guna2Panel6.Controls.Add(this.richTextBox1);
-            this.guna2Panel6.Controls.Add(this.label32);
-            this.guna2Panel6.Controls.Add(this.guna2Button8);
-            this.guna2Panel6.Location = new System.Drawing.Point(829, 17);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(260, 259);
-            this.guna2Panel6.TabIndex = 85;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(32, 61);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(206, 120);
-            this.richTextBox1.TabIndex = 81;
-            this.richTextBox1.Text = "아래의 리셋 버튼을 클릭시 \n이름을 제외한 모든 항목들이 \n초기화 되고, 이 행동을\n되돌릴 수 없습니다!";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Transparent;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.Black;
-            this.label32.Location = new System.Drawing.Point(14, 18);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(138, 28);
-            this.label32.TabIndex = 79;
-            this.label32.Text = "리셋 주의사항";
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.Animated = true;
-            this.guna2Button8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button8.BorderRadius = 10;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Location = new System.Drawing.Point(32, 190);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.BorderRadius = 10;
-            this.guna2Button8.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(217)))), ((int)(((byte)(207)))));
-            this.guna2Button8.Size = new System.Drawing.Size(206, 56);
-            this.guna2Button8.TabIndex = 77;
-            this.guna2Button8.Text = "RESET";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Location = new System.Drawing.Point(34, 9);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(165, 46);
-            this.label33.TabIndex = 89;
-            this.label33.Text = "보유 종목";
-            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2964,14 +2744,14 @@ namespace Mock_Investing
             this.tabPageSell.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.guna2Panel3.ResumeLayout(false);
-            this.guna2Panel3.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridMainList)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel3.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3001,11 +2781,6 @@ namespace Mock_Investing
             private System.Windows.Forms.TabPage tabPageBuy;
             private System.Windows.Forms.TabPage tabPageSell;
             private Guna.UI2.WinForms.Guna2Button btnResetBuy;
-            private Guna.UI2.WinForms.Guna2Button guna2Button6;
-            private Guna.UI2.WinForms.Guna2Button guna2Button5;
-            private Guna.UI2.WinForms.Guna2Button guna2Button4;
-            private Guna.UI2.WinForms.Guna2Button guna2Button2;
-            private Guna.UI2.WinForms.Guna2Button guna2Button1;
             private Guna.UI2.WinForms.Guna2TextBox txtboxBuyTotalOrder;
             private Guna.UI2.WinForms.Guna2HtmlLabel labelBuyTotalOrder;
             private Guna.UI2.WinForms.Guna2TextBox txtboxBuyOrderQuantity;
@@ -3019,11 +2794,6 @@ namespace Mock_Investing
             private System.Windows.Forms.TabPage tabPageBTC;
             private System.Windows.Forms.TabPage tabPageHoldings;
             private Guna.UI2.WinForms.Guna2Button btnSellReset;
-            private Guna.UI2.WinForms.Guna2Button guna2Button9;
-            private Guna.UI2.WinForms.Guna2Button guna2Button10;
-            private Guna.UI2.WinForms.Guna2Button guna2Button11;
-            private Guna.UI2.WinForms.Guna2Button guna2Button12;
-            private Guna.UI2.WinForms.Guna2Button guna2Button13;
             private Guna.UI2.WinForms.Guna2TextBox txtboxSellTotalOrder;
             private Guna.UI2.WinForms.Guna2HtmlLabel labelSellTotalOrder;
             private Guna.UI2.WinForms.Guna2TextBox txtboxSellOrderQuantity;
