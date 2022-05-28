@@ -28,7 +28,7 @@ namespace Mock_Investing
         string coinName = "";
         int maxViewY = 0;
         int minViewY = 0;
-
+        
         public Dashboard(string uid)
         {
             InitializeComponent();
@@ -90,22 +90,22 @@ namespace Mock_Investing
             {
                 int TmptradePrice = (int)(coins[i].acc_trade_price_24h / 1000000);
                 double TmpchangeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
-                gridMainList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
-                gridMainList.Rows[i].Cells[2].Value = coin[i].korean_name;
-                gridMainList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
-                gridMainList.Rows[i].Cells[4].Value = TmpchangeRate.ToString() + "%";
-                gridMainList.Rows[i].Cells[5].Value = TmptradePrice.ToString("N0") + "백만";
+                gridMainList.Rows[i].Cells[0].Value = coin[i].market.Trim().Remove(0, 4);
+                gridMainList.Rows[i].Cells[1].Value = coin[i].korean_name;
+                gridMainList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridMainList.Rows[i].Cells[3].Value = TmpchangeRate.ToString() + "%";
+                gridMainList.Rows[i].Cells[4].Value = TmptradePrice.ToString("N0") + "백만";
 
             }
 
             gridRecordList.Rows.Add(4);
             for (int i = 0; i < 4; i++)
             {
-                gridRecordList.Rows[i].Cells[1].Value = coin[i].market.Trim().Remove(0, 4);
-                gridRecordList.Rows[i].Cells[2].Value = coin[i].korean_name;
-                gridRecordList.Rows[i].Cells[3].Value = coins[i].trade_price.ToString("C");
-                gridRecordList.Rows[i].Cells[4].Value = "2022-05-27 22:50";
-                gridRecordList.Rows[i].Cells[5].Value = "판매";
+                gridRecordList.Rows[i].Cells[0].Value = coin[i].market.Trim().Remove(0, 4);
+                gridRecordList.Rows[i].Cells[1].Value = coin[i].korean_name;
+                gridRecordList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
+                gridRecordList.Rows[i].Cells[3].Value = "2022-05-27 22:50";
+                gridRecordList.Rows[i].Cells[4].Value = "판매";
             }
 
             //
@@ -257,7 +257,8 @@ namespace Mock_Investing
 
         void timer_Tick(object sender, EventArgs e)
         {
-
+            double asdf = 0;
+            double price = 0.1234;
             List<Candle> new_candle = fetchcandle("100");
             coin_candle = new_candle;
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
@@ -328,7 +329,8 @@ namespace Mock_Investing
                 gridCoinListChart.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
 
             }
-            txtboxBuyPrice.Text = lblChartCoinPrice.Text; // 매수 가격 
+
+            txtboxSellPrice.Text = lblChartCoinPrice.Text;// 매수 가격 
             txtboxSellPrice.Text = lblChartCoinPrice.Text;//매도 가격
         }
 
@@ -342,7 +344,7 @@ namespace Mock_Investing
         }
 
         private void gridCoinListChart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
+        { 
             coinName = "KRW-" + gridCoinListChart.Rows[e.RowIndex].Cells[0].Value.ToString();
             lblChartCoinName.Text = gridCoinListChart.Rows[e.RowIndex].Cells[1].Value.ToString();
             lblChartCoinPrice.Text = gridCoinListChart.Rows[e.RowIndex].Cells[2].Value.ToString();
