@@ -117,7 +117,7 @@ namespace Mock_Investing
             DocumentReference document = collection.Document("Status");
             DocumentSnapshot getUserData = await document.GetSnapshotAsync();
             userName = getUserData.GetValue<string>("Name");
-            lblWallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
+            //lblWallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
         }
 
         private void butMy_Click(object sender, EventArgs e)
@@ -520,6 +520,7 @@ namespace Mock_Investing
             [JsonInclude]
             public long timestamp { get; set; }                 // 타임스탬프
         }
+
 
 
 
