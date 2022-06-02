@@ -34,30 +34,30 @@ namespace Mock_Investing
             {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -189,6 +189,11 @@ namespace Mock_Investing
             this.labelBuyPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBuy = new Guna.UI2.WinForms.Guna2Button();
             this.tabPageSell = new System.Windows.Forms.TabPage();
+            this.btnSellOrderQuantityInput = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSellOrderQuantity100 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSellOrderQuantity75 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSellOrderQuantity50 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSellOrderQuantity25 = new Guna.UI2.WinForms.Guna2Button();
             this.btnSellReset = new Guna.UI2.WinForms.Guna2Button();
             this.txtboxSellTotalOrder = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelSellTotalOrder = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -228,11 +233,6 @@ namespace Mock_Investing
             this.myPro = new Guna.UI2.WinForms.Guna2Button();
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnSellOrderQuantityInput = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSellOrderQuantity100 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSellOrderQuantity75 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSellOrderQuantity50 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSellOrderQuantity25 = new Guna.UI2.WinForms.Guna2Button();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1037,24 +1037,24 @@ namespace Mock_Investing
             this.gridRecordList.AllowUserToDeleteRows = false;
             this.gridRecordList.AllowUserToResizeColumns = false;
             this.gridRecordList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridRecordList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridRecordList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridRecordList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridRecordList.BackgroundColor = System.Drawing.Color.White;
             this.gridRecordList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridRecordList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridRecordList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridRecordList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridRecordList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridRecordList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridRecordList.ColumnHeadersHeight = 40;
             this.gridRecordList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn4,
@@ -1063,14 +1063,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn14,
             this.Date,
             this.dataGridViewTextBoxColumn15});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridRecordList.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridRecordList.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridRecordList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridRecordList.EnableHeadersVisualStyles = false;
             this.gridRecordList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1289,24 +1289,24 @@ namespace Mock_Investing
             this.gridCoinList.AllowUserToDeleteRows = false;
             this.gridCoinList.AllowUserToResizeColumns = false;
             this.gridCoinList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridCoinList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridCoinList.ColumnHeadersHeight = 40;
             this.gridCoinList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column0,
@@ -1314,14 +1314,14 @@ namespace Mock_Investing
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridCoinList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinList.EnableHeadersVisualStyles = false;
             this.gridCoinList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1411,24 +1411,24 @@ namespace Mock_Investing
             this.gridFavList.AllowUserToDeleteRows = false;
             this.gridFavList.AllowUserToResizeColumns = false;
             this.gridFavList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
-            this.gridFavList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            this.gridFavList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gridFavList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridFavList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridFavList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridFavList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridFavList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridFavList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFavList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFavList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gridFavList.ColumnHeadersHeight = 40;
             this.gridFavList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1436,14 +1436,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridFavList.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridFavList.DefaultCellStyle = dataGridViewCellStyle9;
             this.gridFavList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridFavList.EnableHeadersVisualStyles = false;
             this.gridFavList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1540,19 +1540,19 @@ namespace Mock_Investing
             this.tabcontrolWonBTCHolding.Size = new System.Drawing.Size(533, 328);
             this.tabcontrolWonBTCHolding.TabButtonHoverState.BorderColor = System.Drawing.Color.Black;
             this.tabcontrolWonBTCHolding.TabButtonHoverState.FillColor = System.Drawing.Color.White;
-            this.tabcontrolWonBTCHolding.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tabcontrolWonBTCHolding.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolWonBTCHolding.TabButtonHoverState.ForeColor = System.Drawing.Color.Black;
             this.tabcontrolWonBTCHolding.TabButtonHoverState.InnerColor = System.Drawing.Color.White;
             this.tabcontrolWonBTCHolding.TabButtonIdleState.BorderColor = System.Drawing.Color.Black;
             this.tabcontrolWonBTCHolding.TabButtonIdleState.FillColor = System.Drawing.Color.White;
-            this.tabcontrolWonBTCHolding.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
+            this.tabcontrolWonBTCHolding.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolWonBTCHolding.TabButtonIdleState.ForeColor = System.Drawing.Color.Black;
             this.tabcontrolWonBTCHolding.TabButtonIdleState.InnerColor = System.Drawing.Color.White;
             this.tabcontrolWonBTCHolding.TabButtonSelectedState.BorderColor = System.Drawing.Color.Black;
-            this.tabcontrolWonBTCHolding.TabButtonSelectedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.tabcontrolWonBTCHolding.TabButtonSelectedState.FillColor = System.Drawing.Color.SeaShell;
             this.tabcontrolWonBTCHolding.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolWonBTCHolding.TabButtonSelectedState.ForeColor = System.Drawing.Color.Black;
-            this.tabcontrolWonBTCHolding.TabButtonSelectedState.InnerColor = System.Drawing.Color.WhiteSmoke;
+            this.tabcontrolWonBTCHolding.TabButtonSelectedState.InnerColor = System.Drawing.Color.SeaShell;
             this.tabcontrolWonBTCHolding.TabButtonSize = new System.Drawing.Size(176, 40);
             this.tabcontrolWonBTCHolding.TabIndex = 17;
             this.tabcontrolWonBTCHolding.TabMenuBackColor = System.Drawing.SystemColors.Window;
@@ -1577,24 +1577,24 @@ namespace Mock_Investing
             this.gridCoinListChart.AllowUserToDeleteRows = false;
             this.gridCoinListChart.AllowUserToResizeColumns = false;
             this.gridCoinListChart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridCoinListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridCoinListChart.ColumnHeadersHeight = 40;
             this.gridCoinListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -1602,14 +1602,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17,
             this.dataGridViewTextBoxColumn18});
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle12;
             this.gridCoinListChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridCoinListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinListChart.EnableHeadersVisualStyles = false;
@@ -1699,24 +1699,24 @@ namespace Mock_Investing
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
             this.guna2DataGridView1.AllowUserToResizeColumns = false;
             this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.guna2DataGridView1.ColumnHeadersHeight = 40;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn19,
@@ -1724,14 +1724,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn21,
             this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23});
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle15;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
@@ -1820,24 +1820,24 @@ namespace Mock_Investing
             this.guna2DataGridView2.AllowUserToDeleteRows = false;
             this.guna2DataGridView2.AllowUserToResizeColumns = false;
             this.guna2DataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.guna2DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.guna2DataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.guna2DataGridView2.ColumnHeadersHeight = 40;
             this.guna2DataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn24,
@@ -1845,14 +1845,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn26,
             this.dataGridViewTextBoxColumn27,
             this.dataGridViewTextBoxColumn28});
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle18;
             this.guna2DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.guna2DataGridView2.EnableHeadersVisualStyles = false;
@@ -1955,28 +1955,28 @@ namespace Mock_Investing
             // 
             // transactionChart
             // 
-            chartArea2.AxisX.IsLabelAutoFit = false;
-            chartArea2.AxisX.IsReversed = true;
-            chartArea2.AxisY.IsLabelAutoFit = false;
-            chartArea2.CursorX.IsUserSelectionEnabled = true;
-            chartArea2.InnerPlotPosition.Auto = false;
-            chartArea2.InnerPlotPosition.Height = 90.55851F;
-            chartArea2.InnerPlotPosition.Width = 90.52276F;
-            chartArea2.InnerPlotPosition.X = 1.67553F;
-            chartArea2.InnerPlotPosition.Y = 2.23404F;
-            chartArea2.Name = "ChartArea1";
-            this.transactionChart.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.transactionChart.Legends.Add(legend2);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.IsReversed = true;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.CursorX.IsUserSelectionEnabled = true;
+            chartArea1.InnerPlotPosition.Auto = false;
+            chartArea1.InnerPlotPosition.Height = 90.55851F;
+            chartArea1.InnerPlotPosition.Width = 90.52276F;
+            chartArea1.InnerPlotPosition.X = 1.67553F;
+            chartArea1.InnerPlotPosition.Y = 2.23404F;
+            chartArea1.Name = "ChartArea1";
+            this.transactionChart.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.transactionChart.Legends.Add(legend1);
             this.transactionChart.Location = new System.Drawing.Point(14, 109);
             this.transactionChart.Name = "transactionChart";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.YValuesPerPoint = 4;
-            this.transactionChart.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.transactionChart.Series.Add(series1);
             this.transactionChart.Size = new System.Drawing.Size(599, 521);
             this.transactionChart.TabIndex = 0;
             this.transactionChart.Text = "transactionChart";
@@ -1996,7 +1996,7 @@ namespace Mock_Investing
             // 
             this.lblChartCoinName.AutoSize = true;
             this.lblChartCoinName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChartCoinName.Location = new System.Drawing.Point(37, 35);
+            this.lblChartCoinName.Location = new System.Drawing.Point(34, 35);
             this.lblChartCoinName.Name = "lblChartCoinName";
             this.lblChartCoinName.Size = new System.Drawing.Size(110, 32);
             this.lblChartCoinName.TabIndex = 0;
@@ -2023,10 +2023,10 @@ namespace Mock_Investing
             this.tabcontrolBuySell.TabButtonIdleState.ForeColor = System.Drawing.Color.Black;
             this.tabcontrolBuySell.TabButtonIdleState.InnerColor = System.Drawing.Color.White;
             this.tabcontrolBuySell.TabButtonSelectedState.BorderColor = System.Drawing.Color.Black;
-            this.tabcontrolBuySell.TabButtonSelectedState.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.tabcontrolBuySell.TabButtonSelectedState.FillColor = System.Drawing.Color.SeaShell;
             this.tabcontrolBuySell.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolBuySell.TabButtonSelectedState.ForeColor = System.Drawing.Color.Black;
-            this.tabcontrolBuySell.TabButtonSelectedState.InnerColor = System.Drawing.Color.WhiteSmoke;
+            this.tabcontrolBuySell.TabButtonSelectedState.InnerColor = System.Drawing.Color.SeaShell;
             this.tabcontrolBuySell.TabButtonSize = new System.Drawing.Size(264, 40);
             this.tabcontrolBuySell.TabIndex = 14;
             this.tabcontrolBuySell.TabMenuBackColor = System.Drawing.SystemColors.Window;
@@ -2059,13 +2059,14 @@ namespace Mock_Investing
             // 
             // btnBuyOrderQuantityInput
             // 
-            this.btnBuyOrderQuantityInput.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuyOrderQuantityInput.BackColor = System.Drawing.Color.White;
+            this.btnBuyOrderQuantityInput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.btnBuyOrderQuantityInput.BorderThickness = 1;
             this.btnBuyOrderQuantityInput.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantityInput.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantityInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuyOrderQuantityInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuyOrderQuantityInput.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuyOrderQuantityInput.FillColor = System.Drawing.Color.White;
             this.btnBuyOrderQuantityInput.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBuyOrderQuantityInput.ForeColor = System.Drawing.Color.Black;
             this.btnBuyOrderQuantityInput.Location = new System.Drawing.Point(401, 110);
@@ -2076,13 +2077,14 @@ namespace Mock_Investing
             // 
             // btnBuyOrderQuantity100
             // 
-            this.btnBuyOrderQuantity100.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuyOrderQuantity100.BackColor = System.Drawing.Color.White;
+            this.btnBuyOrderQuantity100.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.btnBuyOrderQuantity100.BorderThickness = 1;
             this.btnBuyOrderQuantity100.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity100.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity100.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuyOrderQuantity100.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuyOrderQuantity100.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuyOrderQuantity100.FillColor = System.Drawing.Color.White;
             this.btnBuyOrderQuantity100.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBuyOrderQuantity100.ForeColor = System.Drawing.Color.Black;
             this.btnBuyOrderQuantity100.Location = new System.Drawing.Point(336, 110);
@@ -2093,13 +2095,14 @@ namespace Mock_Investing
             // 
             // btnBuyOrderQuantity75
             // 
-            this.btnBuyOrderQuantity75.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuyOrderQuantity75.BackColor = System.Drawing.Color.White;
+            this.btnBuyOrderQuantity75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.btnBuyOrderQuantity75.BorderThickness = 1;
             this.btnBuyOrderQuantity75.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity75.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity75.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuyOrderQuantity75.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuyOrderQuantity75.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuyOrderQuantity75.FillColor = System.Drawing.Color.White;
             this.btnBuyOrderQuantity75.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBuyOrderQuantity75.ForeColor = System.Drawing.Color.Black;
             this.btnBuyOrderQuantity75.Location = new System.Drawing.Point(271, 110);
@@ -2110,13 +2113,14 @@ namespace Mock_Investing
             // 
             // btnBuyOrderQuantity50
             // 
-            this.btnBuyOrderQuantity50.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuyOrderQuantity50.BackColor = System.Drawing.Color.White;
+            this.btnBuyOrderQuantity50.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.btnBuyOrderQuantity50.BorderThickness = 1;
             this.btnBuyOrderQuantity50.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity50.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity50.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuyOrderQuantity50.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuyOrderQuantity50.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuyOrderQuantity50.FillColor = System.Drawing.Color.White;
             this.btnBuyOrderQuantity50.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBuyOrderQuantity50.ForeColor = System.Drawing.Color.Black;
             this.btnBuyOrderQuantity50.Location = new System.Drawing.Point(206, 110);
@@ -2127,13 +2131,14 @@ namespace Mock_Investing
             // 
             // btnBuyOrderQuantity25
             // 
-            this.btnBuyOrderQuantity25.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBuyOrderQuantity25.BackColor = System.Drawing.Color.White;
+            this.btnBuyOrderQuantity25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
             this.btnBuyOrderQuantity25.BorderThickness = 1;
             this.btnBuyOrderQuantity25.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity25.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBuyOrderQuantity25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBuyOrderQuantity25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBuyOrderQuantity25.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnBuyOrderQuantity25.FillColor = System.Drawing.Color.White;
             this.btnBuyOrderQuantity25.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBuyOrderQuantity25.ForeColor = System.Drawing.Color.Black;
             this.btnBuyOrderQuantity25.Location = new System.Drawing.Point(141, 110);
@@ -2150,7 +2155,7 @@ namespace Mock_Investing
             this.btnResetBuy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnResetBuy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnResetBuy.FillColor = System.Drawing.Color.DarkGray;
-            this.btnResetBuy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetBuy.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
             this.btnResetBuy.ForeColor = System.Drawing.Color.White;
             this.btnResetBuy.Location = new System.Drawing.Point(22, 191);
             this.btnResetBuy.Name = "btnResetBuy";
@@ -2168,8 +2173,8 @@ namespace Mock_Investing
             this.txtboxBuyTotalOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxBuyTotalOrder.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxBuyTotalOrder.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxBuyTotalOrder.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.txtboxBuyTotalOrder.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxBuyTotalOrder.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxBuyTotalOrder.ForeColor = System.Drawing.Color.Black;
             this.txtboxBuyTotalOrder.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxBuyTotalOrder.Location = new System.Drawing.Point(141, 141);
             this.txtboxBuyTotalOrder.Margin = new System.Windows.Forms.Padding(2);
@@ -2204,8 +2209,8 @@ namespace Mock_Investing
             this.txtboxBuyOrderQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxBuyOrderQuantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxBuyOrderQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxBuyOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.txtboxBuyOrderQuantity.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxBuyOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxBuyOrderQuantity.ForeColor = System.Drawing.Color.Black;
             this.txtboxBuyOrderQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxBuyOrderQuantity.Location = new System.Drawing.Point(141, 70);
             this.txtboxBuyOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
@@ -2240,8 +2245,8 @@ namespace Mock_Investing
             this.txtboxBuyPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxBuyPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxBuyPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxBuyPrice.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.txtboxBuyPrice.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxBuyPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxBuyPrice.ForeColor = System.Drawing.Color.Black;
             this.txtboxBuyPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxBuyPrice.Location = new System.Drawing.Point(141, 17);
             this.txtboxBuyPrice.Margin = new System.Windows.Forms.Padding(2);
@@ -2308,6 +2313,96 @@ namespace Mock_Investing
             this.tabPageSell.TabIndex = 1;
             this.tabPageSell.Text = "매도";
             // 
+            // btnSellOrderQuantityInput
+            // 
+            this.btnSellOrderQuantityInput.BackColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantityInput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btnSellOrderQuantityInput.BorderThickness = 1;
+            this.btnSellOrderQuantityInput.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantityInput.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantityInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSellOrderQuantityInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSellOrderQuantityInput.FillColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantityInput.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSellOrderQuantityInput.ForeColor = System.Drawing.Color.Black;
+            this.btnSellOrderQuantityInput.Location = new System.Drawing.Point(401, 110);
+            this.btnSellOrderQuantityInput.Name = "btnSellOrderQuantityInput";
+            this.btnSellOrderQuantityInput.Size = new System.Drawing.Size(118, 26);
+            this.btnSellOrderQuantityInput.TabIndex = 46;
+            this.btnSellOrderQuantityInput.Text = "직접 입력";
+            // 
+            // btnSellOrderQuantity100
+            // 
+            this.btnSellOrderQuantity100.BackColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity100.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btnSellOrderQuantity100.BorderThickness = 1;
+            this.btnSellOrderQuantity100.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity100.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity100.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSellOrderQuantity100.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSellOrderQuantity100.FillColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity100.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSellOrderQuantity100.ForeColor = System.Drawing.Color.Black;
+            this.btnSellOrderQuantity100.Location = new System.Drawing.Point(336, 110);
+            this.btnSellOrderQuantity100.Name = "btnSellOrderQuantity100";
+            this.btnSellOrderQuantity100.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity100.TabIndex = 45;
+            this.btnSellOrderQuantity100.Text = "100%";
+            // 
+            // btnSellOrderQuantity75
+            // 
+            this.btnSellOrderQuantity75.BackColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btnSellOrderQuantity75.BorderThickness = 1;
+            this.btnSellOrderQuantity75.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity75.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity75.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSellOrderQuantity75.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSellOrderQuantity75.FillColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity75.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSellOrderQuantity75.ForeColor = System.Drawing.Color.Black;
+            this.btnSellOrderQuantity75.Location = new System.Drawing.Point(271, 110);
+            this.btnSellOrderQuantity75.Name = "btnSellOrderQuantity75";
+            this.btnSellOrderQuantity75.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity75.TabIndex = 44;
+            this.btnSellOrderQuantity75.Text = "75%";
+            // 
+            // btnSellOrderQuantity50
+            // 
+            this.btnSellOrderQuantity50.BackColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity50.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btnSellOrderQuantity50.BorderThickness = 1;
+            this.btnSellOrderQuantity50.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity50.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity50.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSellOrderQuantity50.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSellOrderQuantity50.FillColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity50.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSellOrderQuantity50.ForeColor = System.Drawing.Color.Black;
+            this.btnSellOrderQuantity50.Location = new System.Drawing.Point(206, 110);
+            this.btnSellOrderQuantity50.Name = "btnSellOrderQuantity50";
+            this.btnSellOrderQuantity50.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity50.TabIndex = 43;
+            this.btnSellOrderQuantity50.Text = "50%";
+            // 
+            // btnSellOrderQuantity25
+            // 
+            this.btnSellOrderQuantity25.BackColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity25.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btnSellOrderQuantity25.BorderThickness = 1;
+            this.btnSellOrderQuantity25.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity25.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSellOrderQuantity25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSellOrderQuantity25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSellOrderQuantity25.FillColor = System.Drawing.Color.White;
+            this.btnSellOrderQuantity25.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSellOrderQuantity25.ForeColor = System.Drawing.Color.Black;
+            this.btnSellOrderQuantity25.Location = new System.Drawing.Point(141, 110);
+            this.btnSellOrderQuantity25.Name = "btnSellOrderQuantity25";
+            this.btnSellOrderQuantity25.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity25.TabIndex = 42;
+            this.btnSellOrderQuantity25.Text = "25%";
+            // 
             // btnSellReset
             // 
             this.btnSellReset.BorderRadius = 5;
@@ -2316,7 +2411,7 @@ namespace Mock_Investing
             this.btnSellReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSellReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSellReset.FillColor = System.Drawing.Color.DarkGray;
-            this.btnSellReset.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSellReset.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSellReset.ForeColor = System.Drawing.Color.White;
             this.btnSellReset.Location = new System.Drawing.Point(22, 191);
             this.btnSellReset.Name = "btnSellReset";
@@ -2334,8 +2429,8 @@ namespace Mock_Investing
             this.txtboxSellTotalOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxSellTotalOrder.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxSellTotalOrder.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxSellTotalOrder.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.txtboxSellTotalOrder.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxSellTotalOrder.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtboxSellTotalOrder.ForeColor = System.Drawing.Color.Black;
             this.txtboxSellTotalOrder.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxSellTotalOrder.Location = new System.Drawing.Point(141, 141);
             this.txtboxSellTotalOrder.Margin = new System.Windows.Forms.Padding(2);
@@ -2370,8 +2465,8 @@ namespace Mock_Investing
             this.txtboxSellOrderQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxSellOrderQuantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxSellOrderQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxSellOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.txtboxSellOrderQuantity.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxSellOrderQuantity.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtboxSellOrderQuantity.ForeColor = System.Drawing.Color.Black;
             this.txtboxSellOrderQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxSellOrderQuantity.Location = new System.Drawing.Point(141, 70);
             this.txtboxSellOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
@@ -2406,8 +2501,8 @@ namespace Mock_Investing
             this.txtboxSellPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxSellPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtboxSellPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxSellPrice.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.txtboxSellPrice.ForeColor = System.Drawing.Color.Gray;
+            this.txtboxSellPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.txtboxSellPrice.ForeColor = System.Drawing.Color.Black;
             this.txtboxSellPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtboxSellPrice.Location = new System.Drawing.Point(141, 17);
             this.txtboxSellPrice.Margin = new System.Windows.Forms.Padding(2);
@@ -2472,24 +2567,24 @@ namespace Mock_Investing
             this.gridMainList.AllowUserToDeleteRows = false;
             this.gridMainList.AllowUserToResizeColumns = false;
             this.gridMainList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainList.BackgroundColor = System.Drawing.Color.White;
             this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.gridMainList.ColumnHeadersHeight = 40;
             this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn3,
@@ -2498,14 +2593,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn11});
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle21;
             this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainList.EnableHeadersVisualStyles = false;
             this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -2970,91 +3065,6 @@ namespace Mock_Investing
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(255, 851);
             this.guna2Panel1.TabIndex = 0;
-            // 
-            // btnSellOrderQuantityInput
-            // 
-            this.btnSellOrderQuantityInput.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantityInput.BorderThickness = 1;
-            this.btnSellOrderQuantityInput.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantityInput.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantityInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSellOrderQuantityInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSellOrderQuantityInput.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSellOrderQuantityInput.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSellOrderQuantityInput.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantityInput.Location = new System.Drawing.Point(401, 110);
-            this.btnSellOrderQuantityInput.Name = "btnSellOrderQuantityInput";
-            this.btnSellOrderQuantityInput.Size = new System.Drawing.Size(118, 26);
-            this.btnSellOrderQuantityInput.TabIndex = 46;
-            this.btnSellOrderQuantityInput.Text = "직접 입력";
-            // 
-            // btnSellOrderQuantity100
-            // 
-            this.btnSellOrderQuantity100.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity100.BorderThickness = 1;
-            this.btnSellOrderQuantity100.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity100.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity100.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSellOrderQuantity100.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSellOrderQuantity100.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSellOrderQuantity100.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSellOrderQuantity100.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity100.Location = new System.Drawing.Point(336, 110);
-            this.btnSellOrderQuantity100.Name = "btnSellOrderQuantity100";
-            this.btnSellOrderQuantity100.Size = new System.Drawing.Size(59, 26);
-            this.btnSellOrderQuantity100.TabIndex = 45;
-            this.btnSellOrderQuantity100.Text = "100%";
-            // 
-            // btnSellOrderQuantity75
-            // 
-            this.btnSellOrderQuantity75.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity75.BorderThickness = 1;
-            this.btnSellOrderQuantity75.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity75.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity75.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSellOrderQuantity75.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSellOrderQuantity75.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSellOrderQuantity75.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSellOrderQuantity75.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity75.Location = new System.Drawing.Point(271, 110);
-            this.btnSellOrderQuantity75.Name = "btnSellOrderQuantity75";
-            this.btnSellOrderQuantity75.Size = new System.Drawing.Size(59, 26);
-            this.btnSellOrderQuantity75.TabIndex = 44;
-            this.btnSellOrderQuantity75.Text = "75%";
-            // 
-            // btnSellOrderQuantity50
-            // 
-            this.btnSellOrderQuantity50.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity50.BorderThickness = 1;
-            this.btnSellOrderQuantity50.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity50.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity50.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSellOrderQuantity50.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSellOrderQuantity50.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSellOrderQuantity50.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSellOrderQuantity50.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity50.Location = new System.Drawing.Point(206, 110);
-            this.btnSellOrderQuantity50.Name = "btnSellOrderQuantity50";
-            this.btnSellOrderQuantity50.Size = new System.Drawing.Size(59, 26);
-            this.btnSellOrderQuantity50.TabIndex = 43;
-            this.btnSellOrderQuantity50.Text = "50%";
-            // 
-            // btnSellOrderQuantity25
-            // 
-            this.btnSellOrderQuantity25.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity25.BorderThickness = 1;
-            this.btnSellOrderQuantity25.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity25.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSellOrderQuantity25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSellOrderQuantity25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSellOrderQuantity25.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSellOrderQuantity25.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSellOrderQuantity25.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity25.Location = new System.Drawing.Point(141, 110);
-            this.btnSellOrderQuantity25.Name = "btnSellOrderQuantity25";
-            this.btnSellOrderQuantity25.Size = new System.Drawing.Size(59, 26);
-            this.btnSellOrderQuantity25.TabIndex = 42;
-            this.btnSellOrderQuantity25.Text = "25%";
             // 
             // Dashboard
             // 

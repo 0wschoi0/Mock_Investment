@@ -203,12 +203,12 @@ namespace Mock_Investing
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(51, 51);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(47, 68);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(169, 30);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(202, 34);
             this.guna2HtmlLabel5.TabIndex = 12;
             this.guna2HtmlLabel5.Text = "가상매매\r\n프로그램";
             // 
