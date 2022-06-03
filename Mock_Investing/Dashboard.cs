@@ -18,11 +18,12 @@ namespace Mock_Investing
 {
     public partial class Dashboard : Form
     {
-        string userName;
-        string UID;
-        int coinNum;
-        int wallet = 0;
-        int profit = 0;
+        string userName;    //유저 이름
+        string UID;         //uid
+        int coinNum;        //유저 보유 코인 종류 수
+        int asset = 0;      //현금
+        int wallet = 0;     //자산
+        int profit = 0;     //이익
         CoinOwn coinCurrent;
         Rank rankCurrent;
         BuyRecord recordCurrent;
@@ -132,7 +133,48 @@ namespace Mock_Investing
 
         private async void Dashboard_Load(object sender, EventArgs e)
         {
+            liveWallet();
+        }
+
+        private void butMy_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedIndex = 0;
+        }
+
+        private void butView_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedIndex = 1;
+        }
+
+        private void butFav_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedIndex = 2;
+        }
+
+        private void butTrans_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedIndex = 3;
+        }
+        private void myPro_Click(object sender, EventArgs e)
+        {
+            guna2TabControl1.SelectedIndex = 4;
+        }
+
+        private void butLogout_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        // 매수 구현 시작
+
+        // 매수 구현 끝
+
+        // 실시간 Ranking 및 자산 조회
+        async void liveWallet()
+        {
             // Firebase에서 사용자 데이터 및 Ranking 정보 가져오기
+            int walletTempt = 0;
+            int profitTempt = 0;
             collection = db.Collection(UID);
             Query allUserData = db.Collection(UID);
             QuerySnapshot allUserDataSnapshot = await allUserData.GetSnapshotAsync();
@@ -169,24 +211,26 @@ namespace Mock_Investing
                         if (pair.Key == coins[i].market)
                         {
                             int tempt = (int)((coins[i].trade_price - recordCurrent.BuyRecords[pair.Key]) * pair.Value);
-                            profit += tempt;
-                            wallet += (int)(pair.Value * coins[i].trade_price);
+                            profitTempt += tempt;
+                            walletTempt += (int)(pair.Value * coins[i].trade_price);
                         }
                     }
                 }
             }
-            wallet += getUserData.GetValue<int>("Asset");
-            await documentStatus.UpdateAsync("Wallet", wallet);
-            header_Overall.Text = wallet.ToString("C");
+            walletTempt += getUserData.GetValue<int>("Asset");
+            await documentStatus.UpdateAsync("Wallet", walletTempt);
+            header_Overall.Text = walletTempt.ToString("C");
+            wallet = walletTempt;
+            profit = profitTempt;
             header_Wallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
-            if (profit > 0) { header_Profit.Text = "+"+profit.ToString("C"); }
-            else { header_Profit.Text = profit.ToString("C"); }
+            if (profitTempt > 0) { header_Profit.Text = "+" + profitTempt.ToString("C"); }
+            else { header_Profit.Text = profitTempt.ToString("C"); }
             // 현재 자산 띄우기 & 현재 이익 띄우기 끝
 
             userName = getUserData.GetValue<string>("Name");
             header_Name.Text = userName;
 
-            // Ranking 정보 띄우기
+            // Ranking 정보 띄우기 시작
             first = new Rankers();
             second = new Rankers();
             third = new Rankers();
@@ -233,39 +277,10 @@ namespace Mock_Investing
             secondRankWallet.Text = second.Money.ToString("C");
             thirdRankName.Text = third.Name;
             thirdRankWallet.Text = third.Money.ToString("C");
-        }
-
-        private void butMy_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 0;
-        }
-
-        private void butView_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 1;
-        }
-
-        private void butFav_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 2;
-        }
-
-        private void butTrans_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 3;
-        }
-        private void myPro_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 4;
-        }
-
-        private void butLogout_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
+            // Ranking 정보 띄우기 끝
         }
 
         // 실시간 차트 구현 시작
-
         public void Chart(string coinName)
         {
             if (coinName == "")
@@ -372,7 +387,7 @@ namespace Mock_Investing
 
         void timer_Tick(object sender, EventArgs e)
         {
-
+            liveWallet();
             List<Candle> new_candle = fetchcandle("100");
             coin_candle = new_candle;
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
@@ -659,6 +674,11 @@ namespace Mock_Investing
         {
             [FirestoreProperty]
             public Dictionary<string, string> UID { get; set; }
+        }
+
+        private void btnBuyOrderQuantity25_Click(object sender, EventArgs e)
+        {
+
         }
 
 
