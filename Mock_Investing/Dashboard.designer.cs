@@ -34,9 +34,6 @@ namespace Mock_Investing
             {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -52,12 +49,15 @@ namespace Mock_Investing
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.header_Profit = new System.Windows.Forms.Label();
@@ -133,20 +133,10 @@ namespace Mock_Investing
             this.tabcontrolWonBTCHolding = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPageWon = new System.Windows.Forms.TabPage();
             this.gridCoinListChart = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.tabPageBTC = new System.Windows.Forms.TabPage();
+            this.tabPageFav = new System.Windows.Forms.TabPage();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageHoldings = new System.Windows.Forms.TabPage();
             this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.favoriteChkBox = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.transactionChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -239,6 +229,14 @@ namespace Mock_Investing
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.view_Search = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -266,7 +264,7 @@ namespace Mock_Investing
             this.tabcontrolWonBTCHolding.SuspendLayout();
             this.tabPageWon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCoinListChart)).BeginInit();
-            this.tabPageBTC.SuspendLayout();
+            this.tabPageFav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.tabPageHoldings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
@@ -289,6 +287,7 @@ namespace Mock_Investing
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            this.guna2Panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -854,24 +853,24 @@ namespace Mock_Investing
             this.gridRecordList.AllowUserToDeleteRows = false;
             this.gridRecordList.AllowUserToResizeColumns = false;
             this.gridRecordList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridRecordList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridRecordList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.gridRecordList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridRecordList.BackgroundColor = System.Drawing.Color.White;
             this.gridRecordList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridRecordList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridRecordList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridRecordList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridRecordList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridRecordList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.gridRecordList.ColumnHeadersHeight = 40;
             this.gridRecordList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn4,
@@ -880,14 +879,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn14,
             this.Date,
             this.dataGridViewTextBoxColumn15});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridRecordList.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridRecordList.DefaultCellStyle = dataGridViewCellStyle27;
             this.gridRecordList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridRecordList.EnableHeadersVisualStyles = false;
             this.gridRecordList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1092,6 +1091,7 @@ namespace Mock_Investing
             // tabView
             // 
             this.tabView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.tabView.Controls.Add(this.view_Search);
             this.tabView.Controls.Add(this.gridCoinList);
             this.tabView.Location = new System.Drawing.Point(4, 4);
             this.tabView.Name = "tabView";
@@ -1106,24 +1106,24 @@ namespace Mock_Investing
             this.gridCoinList.AllowUserToDeleteRows = false;
             this.gridCoinList.AllowUserToResizeColumns = false;
             this.gridCoinList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
             this.gridCoinList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.gridCoinList.ColumnHeadersHeight = 40;
             this.gridCoinList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column0,
@@ -1131,18 +1131,18 @@ namespace Mock_Investing
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle30;
             this.gridCoinList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinList.EnableHeadersVisualStyles = false;
             this.gridCoinList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            this.gridCoinList.Location = new System.Drawing.Point(6, 6);
+            this.gridCoinList.Location = new System.Drawing.Point(6, 43);
             this.gridCoinList.MultiSelect = false;
             this.gridCoinList.Name = "gridCoinList";
             this.gridCoinList.RowHeadersVisible = false;
@@ -1151,7 +1151,7 @@ namespace Mock_Investing
             this.gridCoinList.RowTemplate.Height = 50;
             this.gridCoinList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.gridCoinList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridCoinList.Size = new System.Drawing.Size(1170, 655);
+            this.gridCoinList.Size = new System.Drawing.Size(1170, 606);
             this.gridCoinList.TabIndex = 1;
             this.gridCoinList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gridCoinList.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1228,24 +1228,24 @@ namespace Mock_Investing
             this.gridFavList.AllowUserToDeleteRows = false;
             this.gridFavList.AllowUserToResizeColumns = false;
             this.gridFavList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
-            this.gridFavList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            this.gridFavList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.gridFavList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridFavList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridFavList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridFavList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridFavList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridFavList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFavList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFavList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.gridFavList.ColumnHeadersHeight = 40;
             this.gridFavList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -1253,14 +1253,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridFavList.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridFavList.DefaultCellStyle = dataGridViewCellStyle33;
             this.gridFavList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridFavList.EnableHeadersVisualStyles = false;
             this.gridFavList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1348,7 +1348,7 @@ namespace Mock_Investing
             // tabcontrolWonBTCHolding
             // 
             this.tabcontrolWonBTCHolding.Controls.Add(this.tabPageWon);
-            this.tabcontrolWonBTCHolding.Controls.Add(this.tabPageBTC);
+            this.tabcontrolWonBTCHolding.Controls.Add(this.tabPageFav);
             this.tabcontrolWonBTCHolding.Controls.Add(this.tabPageHoldings);
             this.tabcontrolWonBTCHolding.ItemSize = new System.Drawing.Size(150, 40);
             this.tabcontrolWonBTCHolding.Location = new System.Drawing.Point(719, 28);
@@ -1394,37 +1394,37 @@ namespace Mock_Investing
             this.gridCoinListChart.AllowUserToDeleteRows = false;
             this.gridCoinListChart.AllowUserToResizeColumns = false;
             this.gridCoinListChart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
             this.gridCoinListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle32.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.gridCoinListChart.ColumnHeadersHeight = 40;
             this.gridCoinListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn16});
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle36;
             this.gridCoinListChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridCoinListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinListChart.EnableHeadersVisualStyles = false;
@@ -1463,16 +1463,16 @@ namespace Mock_Investing
             this.gridCoinListChart.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gridCoinListChart.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCoinListChart_CellDoubleClick);
             // 
-            // tabPageBTC
+            // tabPageFav
             // 
-            this.tabPageBTC.Controls.Add(this.guna2DataGridView1);
-            this.tabPageBTC.Location = new System.Drawing.Point(4, 44);
-            this.tabPageBTC.Name = "tabPageBTC";
-            this.tabPageBTC.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBTC.Size = new System.Drawing.Size(525, 280);
-            this.tabPageBTC.TabIndex = 1;
-            this.tabPageBTC.Text = "BTC";
-            this.tabPageBTC.UseVisualStyleBackColor = true;
+            this.tabPageFav.Controls.Add(this.guna2DataGridView1);
+            this.tabPageFav.Location = new System.Drawing.Point(4, 44);
+            this.tabPageFav.Name = "tabPageFav";
+            this.tabPageFav.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFav.Size = new System.Drawing.Size(447, 280);
+            this.tabPageFav.TabIndex = 1;
+            this.tabPageFav.Text = "관심";
+            this.tabPageFav.UseVisualStyleBackColor = true;
             // 
             // guna2DataGridView1
             // 
@@ -1480,39 +1480,37 @@ namespace Mock_Investing
             this.guna2DataGridView1.AllowUserToDeleteRows = false;
             this.guna2DataGridView1.AllowUserToResizeColumns = false;
             this.guna2DataGridView1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.guna2DataGridView1.ColumnHeadersHeight = 40;
             this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn19,
             this.dataGridViewTextBoxColumn20,
-            this.dataGridViewTextBoxColumn21,
-            this.dataGridViewTextBoxColumn22,
-            this.dataGridViewTextBoxColumn23});
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle36;
+            this.dataGridViewTextBoxColumn21});
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle39;
             this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
@@ -1526,7 +1524,7 @@ namespace Mock_Investing
             this.guna2DataGridView1.RowTemplate.Height = 50;
             this.guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(519, 274);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(441, 274);
             this.guna2DataGridView1.TabIndex = 3;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1550,47 +1548,13 @@ namespace Mock_Investing
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.HeaderText = "종목";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewTextBoxColumn20
-            // 
-            this.dataGridViewTextBoxColumn20.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn20.HeaderText = "한글명";
-            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
-            // 
-            // dataGridViewTextBoxColumn21
-            // 
-            this.dataGridViewTextBoxColumn21.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn21.HeaderText = "현재가";
-            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
-            // 
-            // dataGridViewTextBoxColumn22
-            // 
-            this.dataGridViewTextBoxColumn22.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn22.HeaderText = "전일대비";
-            this.dataGridViewTextBoxColumn22.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
-            // 
-            // dataGridViewTextBoxColumn23
-            // 
-            this.dataGridViewTextBoxColumn23.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn23.HeaderText = "거래대금";
-            this.dataGridViewTextBoxColumn23.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
-            // 
             // tabPageHoldings
             // 
             this.tabPageHoldings.Controls.Add(this.guna2DataGridView2);
             this.tabPageHoldings.Location = new System.Drawing.Point(4, 44);
             this.tabPageHoldings.Name = "tabPageHoldings";
             this.tabPageHoldings.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageHoldings.Size = new System.Drawing.Size(525, 280);
+            this.tabPageHoldings.Size = new System.Drawing.Size(447, 280);
             this.tabPageHoldings.TabIndex = 2;
             this.tabPageHoldings.Text = "보유";
             this.tabPageHoldings.UseVisualStyleBackColor = true;
@@ -1601,39 +1565,37 @@ namespace Mock_Investing
             this.guna2DataGridView2.AllowUserToDeleteRows = false;
             this.guna2DataGridView2.AllowUserToResizeColumns = false;
             this.guna2DataGridView2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
             this.guna2DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.guna2DataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.guna2DataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
             this.guna2DataGridView2.ColumnHeadersHeight = 40;
             this.guna2DataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
-            this.dataGridViewTextBoxColumn26,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28});
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle39;
+            this.dataGridViewTextBoxColumn26});
+            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle42;
             this.guna2DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2DataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.guna2DataGridView2.EnableHeadersVisualStyles = false;
@@ -1647,7 +1609,7 @@ namespace Mock_Investing
             this.guna2DataGridView2.RowTemplate.Height = 50;
             this.guna2DataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.guna2DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(519, 274);
+            this.guna2DataGridView2.Size = new System.Drawing.Size(441, 274);
             this.guna2DataGridView2.TabIndex = 3;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -1670,40 +1632,6 @@ namespace Mock_Investing
             this.guna2DataGridView2.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // dataGridViewTextBoxColumn24
-            // 
-            this.dataGridViewTextBoxColumn24.HeaderText = "종목";
-            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
-            // 
-            // dataGridViewTextBoxColumn25
-            // 
-            this.dataGridViewTextBoxColumn25.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn25.HeaderText = "한글명";
-            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn26.HeaderText = "현재가";
-            this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn27.HeaderText = "전일대비";
-            this.dataGridViewTextBoxColumn27.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.FillWeight = 117.7326F;
-            this.dataGridViewTextBoxColumn28.HeaderText = "거래대금";
-            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
             // 
             // guna2Panel5
             // 
@@ -1808,7 +1736,7 @@ namespace Mock_Investing
             this.tabcontrolBuySell.TabButtonSelectedState.FillColor = System.Drawing.Color.SeaShell;
             this.tabcontrolBuySell.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabcontrolBuySell.TabButtonSelectedState.ForeColor = System.Drawing.Color.Black;
-            this.tabcontrolBuySell.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            this.tabcontrolBuySell.TabButtonSelectedState.InnerColor = System.Drawing.Color.SeaShell;
             this.tabcontrolBuySell.TabButtonSize = new System.Drawing.Size(225, 40);
             this.tabcontrolBuySell.TabIndex = 14;
             this.tabcontrolBuySell.TabMenuBackColor = System.Drawing.SystemColors.Window;
@@ -2091,7 +2019,7 @@ namespace Mock_Investing
             this.tabPageSell.Location = new System.Drawing.Point(4, 44);
             this.tabPageSell.Name = "tabPageSell";
             this.tabPageSell.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSell.Size = new System.Drawing.Size(525, 250);
+            this.tabPageSell.Size = new System.Drawing.Size(447, 250);
             this.tabPageSell.TabIndex = 1;
             this.tabPageSell.Text = "매도";
             // 
@@ -2107,9 +2035,9 @@ namespace Mock_Investing
             this.btnSellOrderQuantityInput.FillColor = System.Drawing.Color.White;
             this.btnSellOrderQuantityInput.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSellOrderQuantityInput.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantityInput.Location = new System.Drawing.Point(401, 110);
+            this.btnSellOrderQuantityInput.Location = new System.Drawing.Point(361, 110);
             this.btnSellOrderQuantityInput.Name = "btnSellOrderQuantityInput";
-            this.btnSellOrderQuantityInput.Size = new System.Drawing.Size(118, 26);
+            this.btnSellOrderQuantityInput.Size = new System.Drawing.Size(80, 26);
             this.btnSellOrderQuantityInput.TabIndex = 46;
             this.btnSellOrderQuantityInput.Text = "직접 입력";
             // 
@@ -2125,9 +2053,9 @@ namespace Mock_Investing
             this.btnSellOrderQuantity100.FillColor = System.Drawing.Color.White;
             this.btnSellOrderQuantity100.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSellOrderQuantity100.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity100.Location = new System.Drawing.Point(336, 110);
+            this.btnSellOrderQuantity100.Location = new System.Drawing.Point(300, 110);
             this.btnSellOrderQuantity100.Name = "btnSellOrderQuantity100";
-            this.btnSellOrderQuantity100.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity100.Size = new System.Drawing.Size(55, 26);
             this.btnSellOrderQuantity100.TabIndex = 45;
             this.btnSellOrderQuantity100.Text = "100%";
             // 
@@ -2143,9 +2071,9 @@ namespace Mock_Investing
             this.btnSellOrderQuantity75.FillColor = System.Drawing.Color.White;
             this.btnSellOrderQuantity75.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSellOrderQuantity75.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity75.Location = new System.Drawing.Point(271, 110);
+            this.btnSellOrderQuantity75.Location = new System.Drawing.Point(247, 110);
             this.btnSellOrderQuantity75.Name = "btnSellOrderQuantity75";
-            this.btnSellOrderQuantity75.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity75.Size = new System.Drawing.Size(50, 26);
             this.btnSellOrderQuantity75.TabIndex = 44;
             this.btnSellOrderQuantity75.Text = "75%";
             // 
@@ -2161,9 +2089,9 @@ namespace Mock_Investing
             this.btnSellOrderQuantity50.FillColor = System.Drawing.Color.White;
             this.btnSellOrderQuantity50.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSellOrderQuantity50.ForeColor = System.Drawing.Color.Black;
-            this.btnSellOrderQuantity50.Location = new System.Drawing.Point(206, 110);
+            this.btnSellOrderQuantity50.Location = new System.Drawing.Point(194, 110);
             this.btnSellOrderQuantity50.Name = "btnSellOrderQuantity50";
-            this.btnSellOrderQuantity50.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity50.Size = new System.Drawing.Size(50, 26);
             this.btnSellOrderQuantity50.TabIndex = 43;
             this.btnSellOrderQuantity50.Text = "50%";
             // 
@@ -2181,7 +2109,7 @@ namespace Mock_Investing
             this.btnSellOrderQuantity25.ForeColor = System.Drawing.Color.Black;
             this.btnSellOrderQuantity25.Location = new System.Drawing.Point(141, 110);
             this.btnSellOrderQuantity25.Name = "btnSellOrderQuantity25";
-            this.btnSellOrderQuantity25.Size = new System.Drawing.Size(59, 26);
+            this.btnSellOrderQuantity25.Size = new System.Drawing.Size(50, 26);
             this.btnSellOrderQuantity25.TabIndex = 42;
             this.btnSellOrderQuantity25.Text = "25%";
             // 
@@ -2221,7 +2149,7 @@ namespace Mock_Investing
             this.txtboxSellTotalOrder.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxSellTotalOrder.PlaceholderText = "";
             this.txtboxSellTotalOrder.SelectedText = "";
-            this.txtboxSellTotalOrder.Size = new System.Drawing.Size(378, 35);
+            this.txtboxSellTotalOrder.Size = new System.Drawing.Size(300, 35);
             this.txtboxSellTotalOrder.TabIndex = 35;
             this.txtboxSellTotalOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -2257,7 +2185,7 @@ namespace Mock_Investing
             this.txtboxSellOrderQuantity.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxSellOrderQuantity.PlaceholderText = "";
             this.txtboxSellOrderQuantity.SelectedText = "";
-            this.txtboxSellOrderQuantity.Size = new System.Drawing.Size(378, 35);
+            this.txtboxSellOrderQuantity.Size = new System.Drawing.Size(300, 35);
             this.txtboxSellOrderQuantity.TabIndex = 33;
             this.txtboxSellOrderQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -2293,7 +2221,7 @@ namespace Mock_Investing
             this.txtboxSellPrice.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxSellPrice.PlaceholderText = "";
             this.txtboxSellPrice.SelectedText = "";
-            this.txtboxSellPrice.Size = new System.Drawing.Size(378, 35);
+            this.txtboxSellPrice.Size = new System.Drawing.Size(300, 35);
             this.txtboxSellPrice.TabIndex = 31;
             this.txtboxSellPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -2323,7 +2251,7 @@ namespace Mock_Investing
             this.BtnSell.ForeColor = System.Drawing.Color.White;
             this.BtnSell.Location = new System.Drawing.Point(141, 191);
             this.BtnSell.Name = "BtnSell";
-            this.BtnSell.Size = new System.Drawing.Size(378, 40);
+            this.BtnSell.Size = new System.Drawing.Size(300, 40);
             this.BtnSell.TabIndex = 29;
             this.BtnSell.Text = "매도";
             this.BtnSell.UseTransparentBackground = true;
@@ -2349,24 +2277,24 @@ namespace Mock_Investing
             this.gridMainList.AllowUserToDeleteRows = false;
             this.gridMainList.AllowUserToResizeColumns = false;
             this.gridMainList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
             this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainList.BackgroundColor = System.Drawing.Color.White;
             this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.gridMainList.ColumnHeadersHeight = 40;
             this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewImageColumn3,
@@ -2375,14 +2303,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn11});
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle24;
             this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainList.EnableHeadersVisualStyles = false;
             this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -2480,13 +2408,8 @@ namespace Mock_Investing
             this.guna2Panel2.BorderColor = System.Drawing.Color.DimGray;
             this.guna2Panel2.BorderRadius = 5;
             this.guna2Panel2.BorderThickness = 2;
+            this.guna2Panel2.Controls.Add(this.guna2Panel7);
             this.guna2Panel2.Controls.Add(this.myProfile_Img);
-            this.guna2Panel2.Controls.Add(this.myProfile_lab5);
-            this.guna2Panel2.Controls.Add(this.myProfile_lab4);
-            this.guna2Panel2.Controls.Add(this.myProfile_lab3);
-            this.guna2Panel2.Controls.Add(this.myProfile_lab8);
-            this.guna2Panel2.Controls.Add(this.myProfile_lab7);
-            this.guna2Panel2.Controls.Add(this.myProfile_lab6);
             this.guna2Panel2.Controls.Add(this.myProfile_lab2);
             this.guna2Panel2.Controls.Add(this.myProfile_lab1);
             this.guna2Panel2.Controls.Add(this.guna2Panel6);
@@ -2516,7 +2439,7 @@ namespace Mock_Investing
             this.myProfile_lab5.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab5.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab5.Location = new System.Drawing.Point(414, 145);
+            this.myProfile_lab5.Location = new System.Drawing.Point(305, 28);
             this.myProfile_lab5.Name = "myProfile_lab5";
             this.myProfile_lab5.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab5.TabIndex = 93;
@@ -2528,7 +2451,7 @@ namespace Mock_Investing
             this.myProfile_lab4.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab4.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab4.Location = new System.Drawing.Point(414, 116);
+            this.myProfile_lab4.Location = new System.Drawing.Point(21, 152);
             this.myProfile_lab4.Name = "myProfile_lab4";
             this.myProfile_lab4.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab4.TabIndex = 92;
@@ -2540,7 +2463,7 @@ namespace Mock_Investing
             this.myProfile_lab3.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab3.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab3.Location = new System.Drawing.Point(414, 87);
+            this.myProfile_lab3.Location = new System.Drawing.Point(21, 90);
             this.myProfile_lab3.Name = "myProfile_lab3";
             this.myProfile_lab3.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab3.TabIndex = 91;
@@ -2552,7 +2475,7 @@ namespace Mock_Investing
             this.myProfile_lab8.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab8.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab8.Location = new System.Drawing.Point(414, 203);
+            this.myProfile_lab8.Location = new System.Drawing.Point(305, 152);
             this.myProfile_lab8.Name = "myProfile_lab8";
             this.myProfile_lab8.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab8.TabIndex = 90;
@@ -2564,7 +2487,7 @@ namespace Mock_Investing
             this.myProfile_lab7.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab7.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab7.Location = new System.Drawing.Point(414, 58);
+            this.myProfile_lab7.Location = new System.Drawing.Point(21, 28);
             this.myProfile_lab7.Name = "myProfile_lab7";
             this.myProfile_lab7.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab7.TabIndex = 89;
@@ -2576,7 +2499,7 @@ namespace Mock_Investing
             this.myProfile_lab6.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab6.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab6.Location = new System.Drawing.Point(414, 174);
+            this.myProfile_lab6.Location = new System.Drawing.Point(305, 90);
             this.myProfile_lab6.Name = "myProfile_lab6";
             this.myProfile_lab6.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab6.TabIndex = 88;
@@ -2588,7 +2511,7 @@ namespace Mock_Investing
             this.myProfile_lab2.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab2.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab2.Location = new System.Drawing.Point(36, 204);
+            this.myProfile_lab2.Location = new System.Drawing.Point(33, 209);
             this.myProfile_lab2.Name = "myProfile_lab2";
             this.myProfile_lab2.Size = new System.Drawing.Size(89, 21);
             this.myProfile_lab2.TabIndex = 87;
@@ -2600,7 +2523,7 @@ namespace Mock_Investing
             this.myProfile_lab1.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab1.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab1.Location = new System.Drawing.Point(36, 173);
+            this.myProfile_lab1.Location = new System.Drawing.Point(33, 173);
             this.myProfile_lab1.Name = "myProfile_lab1";
             this.myProfile_lab1.Size = new System.Drawing.Size(89, 21);
             this.myProfile_lab1.TabIndex = 86;
@@ -3054,7 +2977,7 @@ namespace Mock_Investing
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(17, 31);
+            this.label9.Location = new System.Drawing.Point(11, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(91, 14);
             this.label9.TabIndex = 24;
@@ -3065,7 +2988,7 @@ namespace Mock_Investing
             this.guna2PictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
             this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(40, 7);
+            this.guna2PictureBox5.Location = new System.Drawing.Point(38, 6);
             this.guna2PictureBox5.Name = "guna2PictureBox5";
             this.guna2PictureBox5.Size = new System.Drawing.Size(40, 20);
             this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3142,7 +3065,7 @@ namespace Mock_Investing
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(19, 31);
+            this.label18.Location = new System.Drawing.Point(16, 29);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(84, 14);
             this.label18.TabIndex = 24;
@@ -3175,6 +3098,86 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn16.HeaderText = "현재가";
             this.dataGridViewTextBoxColumn16.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.HeaderText = "종목";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn20.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn21.HeaderText = "현재가";
+            this.dataGridViewTextBoxColumn21.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.HeaderText = "종목";
+            this.dataGridViewTextBoxColumn24.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn25.HeaderText = "한글명";
+            this.dataGridViewTextBoxColumn25.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.FillWeight = 117.7326F;
+            this.dataGridViewTextBoxColumn26.HeaderText = "현재가";
+            this.dataGridViewTextBoxColumn26.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            // 
+            // view_Search
+            // 
+            this.view_Search.BorderRadius = 15;
+            this.view_Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.view_Search.DefaultText = "";
+            this.view_Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.view_Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.view_Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.view_Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.view_Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.view_Search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.view_Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.view_Search.IconLeft = ((System.Drawing.Image)(resources.GetObject("view_Search.IconLeft")));
+            this.view_Search.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.view_Search.Location = new System.Drawing.Point(327, 6);
+            this.view_Search.Name = "view_Search";
+            this.view_Search.PasswordChar = '\0';
+            this.view_Search.PlaceholderText = "Search a Name";
+            this.view_Search.SelectedText = "";
+            this.view_Search.Size = new System.Drawing.Size(547, 31);
+            this.view_Search.TabIndex = 2;
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.White;
+            this.guna2Panel7.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel7.BorderRadius = 5;
+            this.guna2Panel7.BorderThickness = 2;
+            this.guna2Panel7.Controls.Add(this.myProfile_lab7);
+            this.guna2Panel7.Controls.Add(this.myProfile_lab3);
+            this.guna2Panel7.Controls.Add(this.myProfile_lab5);
+            this.guna2Panel7.Controls.Add(this.myProfile_lab8);
+            this.guna2Panel7.Controls.Add(this.myProfile_lab4);
+            this.guna2Panel7.Controls.Add(this.myProfile_lab6);
+            this.guna2Panel7.ForeColor = System.Drawing.SystemColors.Control;
+            this.guna2Panel7.Location = new System.Drawing.Point(227, 35);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.Size = new System.Drawing.Size(560, 210);
+            this.guna2Panel7.TabIndex = 95;
             // 
             // Dashboard
             // 
@@ -3227,7 +3230,7 @@ namespace Mock_Investing
             this.tabcontrolWonBTCHolding.ResumeLayout(false);
             this.tabPageWon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridCoinListChart)).EndInit();
-            this.tabPageBTC.ResumeLayout(false);
+            this.tabPageFav.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.tabPageHoldings.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).EndInit();
@@ -3257,6 +3260,8 @@ namespace Mock_Investing
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            this.guna2Panel7.ResumeLayout(false);
+            this.guna2Panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3293,7 +3298,7 @@ namespace Mock_Investing
             private System.Windows.Forms.Label lblChartCoinPrice;
             private Guna.UI2.WinForms.Guna2TabControl tabcontrolWonBTCHolding;
             private System.Windows.Forms.TabPage tabPageWon;
-            private System.Windows.Forms.TabPage tabPageBTC;
+            private System.Windows.Forms.TabPage tabPageFav;
             private System.Windows.Forms.TabPage tabPageHoldings;
             private Guna.UI2.WinForms.Guna2Button btnSellReset;
             private Guna.UI2.WinForms.Guna2TextBox txtboxSellTotalOrder;
@@ -3396,17 +3401,7 @@ namespace Mock_Investing
         private System.Windows.Forms.Label label33;
         private Guna.UI2.WinForms.Guna2ImageCheckBox favoriteChkBox;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
         private Guna.UI2.WinForms.Guna2Button btnBuyOrderQuantityInput;
         private Guna.UI2.WinForms.Guna2Button btnBuyOrderQuantity100;
         private Guna.UI2.WinForms.Guna2Button btnBuyOrderQuantity75;
@@ -3444,6 +3439,14 @@ namespace Mock_Investing
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
+        private Guna.UI2.WinForms.Guna2TextBox view_Search;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
     }
     }
 
