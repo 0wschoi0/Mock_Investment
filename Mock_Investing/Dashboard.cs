@@ -20,7 +20,22 @@ namespace Mock_Investing
     {
         string userName;
         string UID;
+        int coinNum;
+        int wallet = 0;
+        int profit = 0;
+        CoinOwn coinCurrent;
+        Rank rankCurrent;
+        BuyRecord recordCurrent;
         FirestoreDb db;
+        CollectionReference collection;
+        DocumentReference documentStatus;
+        DocumentReference documentCoins;
+        DocumentReference documentRecords;
+        DocumentReference rdocument;
+        DocumentSnapshot getUserData;
+        DocumentSnapshot getUserCoins;
+        DocumentSnapshot getBuyRecords;
+        DocumentSnapshot getRanking;
         List<Candle> coin_candle;
         List<Coin> coin;
         List<CoinDetail> coins;
@@ -41,6 +56,7 @@ namespace Mock_Investing
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
             coins = fetchCoinInfo(market);
+            
             // 코인 리스트 초기화
             for (int i = 0; i < coins.Count; i++)
             {
@@ -113,11 +129,73 @@ namespace Mock_Investing
 
         private async void Dashboard_Load(object sender, EventArgs e)
         {
-            CollectionReference collection = db.Collection(UID);
-            DocumentReference document = collection.Document("Status");
-            DocumentSnapshot getUserData = await document.GetSnapshotAsync();
+            // Firebase에서 사용자 데이터 및 Ranking 정보 가져오기
+            collection = db.Collection(UID);
+            Query allUserData = db.Collection(UID);
+            QuerySnapshot allUserDataSnapshot = await allUserData.GetSnapshotAsync();
+            documentStatus = collection.Document("Status");
+            documentCoins = collection.Document("Coins");
+            documentRecords = collection.Document("Records");
+            rdocument = db.Collection("Ranking").Document("Top");
+            foreach (DocumentSnapshot documentSnapshot in allUserDataSnapshot.Documents)
+            {
+                if (documentSnapshot.Id == "Status")
+                {
+                    getUserData = documentSnapshot;
+                }
+                else if (documentSnapshot.Id == "Coins")
+                {
+                    getUserCoins = documentSnapshot;
+                }
+                else if (documentSnapshot.Id == "Records")
+                {
+                    getBuyRecords = documentSnapshot;
+                }
+            }
+            // 현재 자산 띄우기 & 현재 이익 띄우기 시작
+            coinNum = getUserData.GetValue<int>("CoinNumber");
+            if (coinNum > 0)
+            {
+                coinCurrent = getUserCoins.ConvertTo<CoinOwn>();
+                recordCurrent = getBuyRecords.ConvertTo<BuyRecord>();
+
+                foreach (KeyValuePair<string, double> pair in coinCurrent.CoinCurrent)
+                {
+                    for (int i = 0; i < coins.Count; i++)
+                    {
+                        if (pair.Key == coins[i].market)
+                        {
+                            int tempt = (int)((coins[i].trade_price - recordCurrent.BuyRecords[pair.Key]) * pair.Value);
+                            profit += tempt;
+                            wallet += (int)(pair.Value * coins[i].trade_price);
+                        }
+                    }
+                }
+            }
+            wallet += getUserData.GetValue<int>("Asset");
+            await documentStatus.UpdateAsync("Wallet", wallet);
+            header_Overall.Text = wallet.ToString("C");
+            header_Wallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
+            if (profit > 0) { header_Profit.Text = "+"+profit.ToString("C"); }
+            else { header_Profit.Text = profit.ToString("C"); }
+            // 현재 자산 띄우기 & 현재 이익 띄우기 끝
+
             userName = getUserData.GetValue<string>("Name");
-            //lblWallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
+            header_Name.Text = userName;
+
+            // Ranking 정보 띄우기
+            getRanking = await rdocument.GetSnapshotAsync();
+            rankCurrent = getRanking.ConvertTo<Rank>();
+            foreach (KeyValuePair<string, string> pair in rankCurrent.UID)
+            {
+                for (int i = 0; i < coins.Count; i++)
+                {
+                    if (pair.Key == coins[i].market)
+                    {
+                        
+                    }
+                }
+            }
         }
 
         private void butMy_Click(object sender, EventArgs e)
@@ -521,8 +599,24 @@ namespace Mock_Investing
             public long timestamp { get; set; }                 // 타임스탬프
         }
 
-
-
+        [FirestoreData]
+        public class CoinOwn
+        {
+            [FirestoreProperty]
+            public Dictionary<string, double> CoinCurrent { get; set; }
+        }
+        [FirestoreData]
+        public class BuyRecord
+        {
+            [FirestoreProperty]
+            public Dictionary<string, double> BuyRecords { get; set; }
+        }
+        [FirestoreData]
+        public class Rank
+        {
+            [FirestoreProperty]
+            public Dictionary<string, string> UID { get; set; }
+        }
 
 
 

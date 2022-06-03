@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
 using Firebase.Auth;
@@ -100,16 +101,39 @@ namespace Mock_Investing
            var client = new FirebaseAuthProvider(config);
            try
            {
-               var userCredential = await client.CreateUserWithEmailAndPasswordAsync(txtEmailNew.Text, txtPasswordNew.Text, txtNameNew.Text);
-               MessageBox.Show("환영합니다! \n 가상화폐 모의투자를 이용해주셔서 감사합니다.");
-               CollectionReference collection = db.Collection(userCredential.User.LocalId);
-               DocumentReference document = collection.Document("Status");
-               Dictionary<string, object> docData = new Dictionary<string, object>
-               {
-                   { "Name", txtNameNew.Text },
-                   { "Asset", 30000000 },
-               };
-               await document.SetAsync(docData);
+                var userCredential = await client.CreateUserWithEmailAndPasswordAsync(txtEmailNew.Text, txtPasswordNew.Text, txtNameNew.Text);
+                MessageBox.Show("환영합니다! \n 가상화폐 모의투자를 이용해주셔서 감사합니다.");
+                CollectionReference collection = db.Collection(userCredential.User.LocalId);
+                DocumentReference document = collection.Document("Status");
+                Dictionary<string, object> docData = new Dictionary<string, object>
+                {
+                    { "Name", txtNameNew.Text },
+                    { "Asset", 30000000 },
+                    { "Wallet", 30000000 },
+                    { "CoinNumber", 0 },
+                };
+                DocumentReference document2 = collection.Document("Coins");
+                Dictionary<string, object> coins = new Dictionary<string, object>()
+                {
+
+                };
+                Dictionary<string, object> coinOwned = new Dictionary<string, object>(){ };
+                coins.Add("CoinCurrent", coinOwned);
+                await document.SetAsync(docData);
+                await document2.SetAsync(coins);
+
+                DocumentReference rankDoc = db.Collection("Ranking").Document("Top");
+                Dictionary<string, object> data = new Dictionary<string, object>()
+                {
+                    {"UID."+txtNameNew.Text, userCredential.User.LocalId}
+                };
+
+                DocumentSnapshot snapshot = await rankDoc.GetSnapshotAsync();
+                if (snapshot.Exists)
+                {
+                    await rankDoc.UpdateAsync(data);
+                }
+
                 sideTabControl.SelectedIndex = 0;
             }
            catch (FirebaseAuthException)
