@@ -139,11 +139,14 @@ namespace Mock_Investing
            catch (FirebaseAuthException)
            {
                MessageBox.Show("이미 존재하는 이메일이거나 이메일 형식이 아닙니다 ");
-               txtEmailNew.ResetText();
-               txtPasswordNew.ResetText();
-               txtNameNew.ResetText();
                t = false;
            }
+            finally
+            {
+                txtEmailNew.ResetText();
+                txtPasswordNew.ResetText();
+                txtNameNew.ResetText();
+            }
         }
 
         private void chkPassword_CheckStateChanged(object sender, EventArgs e)

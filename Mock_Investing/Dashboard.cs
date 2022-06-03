@@ -39,6 +39,9 @@ namespace Mock_Investing
         List<Candle> coin_candle;
         List<Coin> coin;
         List<CoinDetail> coins;
+        Rankers first;
+        Rankers second;
+        Rankers third;
         string market;
         string coinName = "";
         int maxViewY = 0;
@@ -184,18 +187,52 @@ namespace Mock_Investing
             header_Name.Text = userName;
 
             // Ranking 정보 띄우기
+            first = new Rankers();
+            second = new Rankers();
+            third = new Rankers();
+            first.Money = 0;
+            first.Name = "";
+            second.Money = 0;
+            second.Name = "";
+            third.Money = 0;
+            third.Name = "";
             getRanking = await rdocument.GetSnapshotAsync();
             rankCurrent = getRanking.ConvertTo<Rank>();
             foreach (KeyValuePair<string, string> pair in rankCurrent.UID)
             {
-                for (int i = 0; i < coins.Count; i++)
+                CollectionReference userAll = db.Collection(pair.Value);
+                DocumentReference userSpecify = userAll.Document("Status");
+                DocumentSnapshot userSnapshot = await userSpecify.GetSnapshotAsync();
+                if (third.Money < userSnapshot.GetValue<int>("Wallet"))
                 {
-                    if (pair.Key == coins[i].market)
+                    if (second.Money < userSnapshot.GetValue<int>("Wallet"))
                     {
-                        
+                        if (first.Money < userSnapshot.GetValue<int>("Wallet"))
+                        {
+                            third.Money = second.Money;
+                            third.Name = second.Name;
+                            second.Money = first.Money;
+                            second.Name = first.Name;
+                            first.Money = userSnapshot.GetValue<int>("Wallet");
+                            first.Name = userSnapshot.GetValue<string>("Name");
+                            continue;
+                        }
+                        third.Money = second.Money;
+                        third.Name = second.Name;
+                        second.Money = userSnapshot.GetValue<int>("Wallet");
+                        second.Name = userSnapshot.GetValue<string>("Name");
+                        continue;
                     }
+                    third.Money = userSnapshot.GetValue<int>("Wallet");
+                    third.Name = userSnapshot.GetValue<string>("Name");
                 }
             }
+            firstRankName.Text = first.Name;
+            firstRankWallet.Text = first.Money.ToString("C");
+            secondRankName.Text = second.Name;
+            secondRankWallet.Text = second.Money.ToString("C");
+            thirdRankName.Text = third.Name;
+            thirdRankWallet.Text = third.Money.ToString("C");
         }
 
         private void butMy_Click(object sender, EventArgs e)
@@ -597,6 +634,12 @@ namespace Mock_Investing
             public string lowest_52_week_date { get; set; } // 52주 신저가 달성일
             [JsonInclude]
             public long timestamp { get; set; }                 // 타임스탬프
+        }
+
+        public class Rankers
+        {
+            public int Money { get; set; }
+            public string Name { get; set; }
         }
 
         [FirestoreData]
