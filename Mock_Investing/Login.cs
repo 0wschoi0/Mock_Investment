@@ -119,8 +119,16 @@ namespace Mock_Investing
                 };
                 Dictionary<string, object> coinOwned = new Dictionary<string, object>(){ };
                 coins.Add("CoinCurrent", coinOwned);
+                DocumentReference document3 = collection.Document("Records");
+                Dictionary<string, object> record = new Dictionary<string, object>()
+                {
+
+                };
+                Dictionary<string, object> recordPrice = new Dictionary<string, object>() { };
+                record.Add("BuyRecords", recordPrice);
                 await document.SetAsync(docData);
                 await document2.SetAsync(coins);
+                await document3.SetAsync(coins);
 
                 DocumentReference rankDoc = db.Collection("Ranking").Document("Top");
                 Dictionary<string, object> data = new Dictionary<string, object>()
