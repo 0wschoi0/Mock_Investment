@@ -24,7 +24,8 @@ namespace Mock_Investing
         int asset = 0;      //현금
         int wallet = 0;     //자산
         int profit = 0;     //이익
-        double amount = 0;  // 매수/매도 수량
+        double amount = 0;      // 매수 수량
+        double sellAmount = 0; //매도 수량
         int cost = 0;       //매수/매도 금액
         CoinOwn coinCurrent;
         Rank rankCurrent;
@@ -174,6 +175,7 @@ namespace Mock_Investing
                 return;
             }
         }
+
         private void butMy_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedIndex = 0;
@@ -307,6 +309,189 @@ namespace Mock_Investing
             }
         }
         // 매수 구현 끝
+
+        // 매도 구현 시작
+        private async void btnSellOrderQuantity25_Click(object sender, EventArgs e)
+        {
+            txtboxSellOrderQuantity.ReadOnly = false;
+            CoinOwn coinOwn = new CoinOwn
+            {
+                CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, amount }
+                    }
+            };
+
+            DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+            DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+            if (snap.ContainsField("CoinCurrent." + coinNow.market))
+            {
+                coinOwn = snap.ConvertTo<CoinOwn>();
+                sellAmount = Math.Round((coinOwn.CoinCurrent[coinNow.market] / 4), 4);
+                cost = (int)Math.Floor(sellAmount * coinNow.trade_price);
+                txtboxSellOrderQuantity.Text = sellAmount.ToString();
+                txtboxSellTotalOrder.Text = cost.ToString("C");
+            }
+            else
+            {
+                txtboxSellOrderQuantity.Text = 0.ToString();
+            }
+        }
+
+        private async void btnSellOrderQuantity50_Click(object sender, EventArgs e)
+        {
+            txtboxSellOrderQuantity.ReadOnly = false;
+            CoinOwn coinOwn = new CoinOwn
+            {
+                CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, amount }
+                    }
+            };
+
+            DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+            DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+            if (snap.ContainsField("CoinCurrent." + coinNow.market))
+            {
+                coinOwn = snap.ConvertTo<CoinOwn>();
+                sellAmount = Math.Round((coinOwn.CoinCurrent[coinNow.market] / 2), 4);
+                cost = (int)Math.Floor(sellAmount * coinNow.trade_price);
+                txtboxSellOrderQuantity.Text = sellAmount.ToString();
+                txtboxSellTotalOrder.Text = cost.ToString("C");
+            }
+            else
+            {
+                txtboxSellOrderQuantity.Text = 0.ToString();
+            }
+        }
+
+        private async void btnSellOrderQuantity75_Click(object sender, EventArgs e)
+        {
+            txtboxSellOrderQuantity.ReadOnly = false;
+            CoinOwn coinOwn = new CoinOwn
+            {
+                CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, amount }
+                    }
+            };
+
+            DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+            DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+            if (snap.ContainsField("CoinCurrent." + coinNow.market))
+            {
+                coinOwn = snap.ConvertTo<CoinOwn>();
+                sellAmount = Math.Round(((coinOwn.CoinCurrent[coinNow.market] / 4) * 3), 4);
+                cost = (int)Math.Floor(sellAmount * coinNow.trade_price);
+                txtboxSellOrderQuantity.Text = sellAmount.ToString();
+                txtboxSellTotalOrder.Text = cost.ToString("C");
+            }
+            else
+            {
+                txtboxSellOrderQuantity.Text = 0.ToString();
+            }
+        }
+
+        private async void btnSellOrderQuantity100_Click(object sender, EventArgs e)
+        {
+            txtboxSellOrderQuantity.ReadOnly = false;
+            CoinOwn coinOwn = new CoinOwn
+            {
+                CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, amount }
+                    }
+            };
+
+            DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+            DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+            if (snap.ContainsField("CoinCurrent." + coinNow.market))
+            {
+                coinOwn = snap.ConvertTo<CoinOwn>();
+                sellAmount = Math.Round((coinOwn.CoinCurrent[coinNow.market]), 4);
+                cost = (int)Math.Floor(sellAmount * coinNow.trade_price);
+                txtboxSellOrderQuantity.Text = sellAmount.ToString();
+                txtboxSellTotalOrder.Text = cost.ToString("C");
+            }
+            else
+            {
+                txtboxSellOrderQuantity.Text = 0.ToString();
+                txtboxSellTotalOrder.Text = 0.ToString("C");
+            }
+        }
+
+        private async void btnSellOrderQuantityInput_Click(object sender, EventArgs e)
+        {
+            CoinOwn coinOwn = new CoinOwn
+            {
+                CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, amount }
+                    }
+            };
+            DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+            DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+            if (snap.ContainsField("CoinCurrent." + coinNow.market))
+            {
+                txtboxSellOrderQuantity.ReadOnly = false;
+                txtboxSellOrderQuantity.ResetText();
+                txtboxSellOrderQuantity.Focus();
+            }
+            else
+            {
+                txtboxSellOrderQuantity.ReadOnly = true;
+            }
+        }
+
+        private void btnSellReset_Click(object sender, EventArgs e)
+        {
+            txtboxSellOrderQuantity.ReadOnly = false;
+            txtboxSellOrderQuantity.ResetText();
+            txtboxSellTotalOrder.ResetText();
+        }
+
+        private async void BtnSell_Click(object sender, EventArgs e)
+        {
+            CoinOwn coinOwn = new CoinOwn
+            {
+                CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, 0 }
+                    }
+            };
+            BuyRecord buyOwn = new BuyRecord
+            {
+                BuyRecords = new Dictionary<string, int>
+                    {
+                        { coinNow.market, (int)coinNow.trade_price }
+                    }
+            };
+            DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+            DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+            coinOwn = snap.ConvertTo<CoinOwn>();
+            buyOwn = rsnap.ConvertTo<BuyRecord>();
+
+            if (sellAmount > coinOwn.CoinCurrent[coinNow.market])
+            {
+                MessageBox.Show("매도 수량을 확인하십시오.");
+                return;
+            }
+            else
+            {
+                coinOwn.CoinCurrent[coinNow.market] -= sellAmount;
+                if (coinOwn.CoinCurrent[coinNow.market] == 0)
+                {
+                    buyOwn.BuyRecords.Remove(coinNow.market);
+                    coinOwn.CoinCurrent.Remove(coinNow.market);
+                }
+                await documentCoins.SetAsync(coinOwn);
+                await documentRecords.SetAsync(buyOwn);
+                await documentStatus.UpdateAsync("Asset", asset + (int)(sellAmount * coinNow.trade_price));
+                await documentStatus.UpdateAsync("CoinNumber", coinNum - 1);
+                MessageBox.Show("매도 체결완료");
+            }
+        }
+        // 매도 구현 끝
 
         // 실시간 Ranking 및 자산 조회 시작
         async void liveWallet()
