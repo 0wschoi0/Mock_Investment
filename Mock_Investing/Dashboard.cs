@@ -78,7 +78,7 @@ namespace Mock_Investing
                 gridCoinList.Rows[i].Cells[1].Value = coin[i].korean_name;
                 gridCoinList.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
                 gridCoinList.Rows[i].Cells[3].Value = changeRate.ToString() + "%";
-
+                
                 gridCoinListChart.Rows[i].Cells[0].Value = coin[i].market.Trim().Remove(0, 4);
                 gridCoinListChart.Rows[i].Cells[1].Value = coin[i].korean_name;
                 gridCoinListChart.Rows[i].Cells[2].Value = coins[i].trade_price.ToString("C");
@@ -109,7 +109,6 @@ namespace Mock_Investing
                     gridCoinListChart.Rows[i].Cells[3].Style.ForeColor = Color.Red;
                 }
                 gridCoinList.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
-                //gridCoinListChart.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
 
             }
 
@@ -152,27 +151,35 @@ namespace Mock_Investing
                     if (coinCurrent.CoinCurrent.ContainsKey(coins[i].market))
                     {
                         gridMainList.Rows.Add(1);
+                        gridMainListChart.Rows.Add(1);
                         gridMainList.Rows[myCoinIndex].Cells[0].Value = coins[i].market;
                         gridMainList.Rows[myCoinIndex].Cells[1].Value = coin[i].korean_name;
                         gridMainList.Rows[myCoinIndex].Cells[2].Value = coins[i].trade_price.ToString("C");
                         gridMainList.Rows[myCoinIndex].Cells[3].Value = changeRate.ToString() + "%";
-
+                        gridMainListChart.Rows[myCoinIndex].Cells[0].Value = coins[i].market;
+                        gridMainListChart.Rows[myCoinIndex].Cells[1].Value = coin[i].korean_name;
+                        gridMainListChart.Rows[myCoinIndex].Cells[2].Value = coins[i].trade_price.ToString("C");
+                        gridMainListChart.Rows[myCoinIndex].Cells[3].Value = changeRate.ToString() + "%";
                         if (changeRate < 0)
                         {
                             gridMainList.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Blue;
                             gridMainList.Rows[myCoinIndex].Cells[3].Style.ForeColor = Color.Blue;
-
-                            gridMainList.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Blue;
+                            gridMainListChart.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Blue;
+                            gridMainListChart.Rows[myCoinIndex].Cells[3].Style.ForeColor = Color.Blue;
                         }
                         else if (changeRate == 0)
                         {
                             gridMainList.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Black;
                             gridMainList.Rows[myCoinIndex].Cells[3].Style.ForeColor = Color.Black;
+                            gridMainListChart.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Black;
+                            gridMainListChart.Rows[myCoinIndex].Cells[3].Style.ForeColor = Color.Black;
                         }
                         else
                         {
                             gridMainList.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Red;
                             gridMainList.Rows[myCoinIndex].Cells[3].Style.ForeColor = Color.Red;
+                            gridMainListChart.Rows[myCoinIndex].Cells[2].Style.ForeColor = Color.Red;
+                            gridMainListChart.Rows[myCoinIndex].Cells[3].Style.ForeColor = Color.Red;
                         }
                         gridMainList.Rows[myCoinIndex].Cells[4].Value = ((int)((coins[i].trade_price * coinCurrent.CoinCurrent[coins[i].market]))).ToString("C");
                         gridMainList.Rows[myCoinIndex].Cells[5].Value = coinCurrent.CoinCurrent[coins[i].market];
@@ -338,6 +345,7 @@ namespace Mock_Investing
                 else
                 {
                     gridMainList.Rows.Add(1);
+                    gridMainListChart.Rows.Add(1);
                     coinOwn.CoinCurrent.Add(coinNow.market, amount);
                     buyOwn.BuyRecords.Add(coinNow.market, (int)coinNow.trade_price);
                     await documentStatus.UpdateAsync("CoinNumber", coinNum + 1);
@@ -526,6 +534,7 @@ namespace Mock_Investing
                     for (int i = 0; i < gridMainList.Rows.Count; i++)
                     {
                         if (gridMainList.Rows[i].Cells[0].Value.Equals(coinNow.market)) { gridMainList.Rows.RemoveAt(i); }
+                        if (gridMainListChart.Rows[i].Cells[0].Value.Equals(coinNow.market)) { gridMainListChart.Rows.RemoveAt(i); }
                     }
                 }
                 await documentCoins.SetAsync(coinOwn);
@@ -598,21 +607,30 @@ namespace Mock_Investing
                             gridMainList.Rows[myCoinCount].Cells[1].Value = coin[i].korean_name;
                             gridMainList.Rows[myCoinCount].Cells[2].Value = coins[i].trade_price.ToString("C");
                             gridMainList.Rows[myCoinCount].Cells[3].Value = changeRate.ToString() + "%";
-
+                            gridMainListChart.Rows[myCoinCount].Cells[0].Value = coins[i].market;
+                            gridMainListChart.Rows[myCoinCount].Cells[1].Value = coin[i].korean_name;
+                            gridMainListChart.Rows[myCoinCount].Cells[2].Value = coins[i].trade_price.ToString("C");
+                            gridMainListChart.Rows[myCoinCount].Cells[3].Value = changeRate.ToString() + "%";
                             if (changeRate < 0)
                             {
                                 gridMainList.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Blue;
                                 gridMainList.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Blue;
+                                gridMainListChart.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Blue;
+                                gridMainListChart.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Blue;
                             }
                             else if (changeRate == 0)
                             {
                                 gridMainList.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Black;
                                 gridMainList.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Black;
+                                gridMainListChart.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Black;
+                                gridMainListChart.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Black;
                             }
                             else
                             {
                                 gridMainList.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Red;
                                 gridMainList.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Red;
+                                gridMainListChart.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Red;
+                                gridMainListChart.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Red;
                             }
                             gridMainList.Rows[myCoinCount].Cells[4].Value = ((int)((coins[i].trade_price * coinCurrent.CoinCurrent[coins[i].market]))).ToString("C");
                             gridMainList.Rows[myCoinCount].Cells[5].Value = coinCurrent.CoinCurrent[coins[i].market];
