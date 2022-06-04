@@ -49,9 +49,9 @@ namespace Mock_Investing
         Rankers third;
         string market;
         string coinName = "";
-        int maxViewY = 0;
-        int minViewY = 0;
-
+        double maxViewY = 0;
+        double minViewY = 0;
+        
         public Dashboard(string uid)
         {
             InitializeComponent();
@@ -110,6 +110,7 @@ namespace Mock_Investing
                 }
                 gridCoinList.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
                 //gridCoinListChart.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
+
             }
 
             gridRecordList.Rows.Add(4);
@@ -715,8 +716,8 @@ namespace Mock_Investing
 
             transactionChart.MouseWheel += mouseWheel;
             transactionChart.Series["Series1"].Points.Clear();
-            maxViewY = (int)coin_candle.ElementAt(0).high_price;
-            minViewY = (int)coin_candle.ElementAt(0).low_price;
+            maxViewY = coin_candle.ElementAt(0).high_price;
+            minViewY = coin_candle.ElementAt(0).low_price;
             for (int i = 0; i < coin_candle.Count; i++)
             {
                 transactionChart.Series["Series1"].Points.AddXY(coin_candle.ElementAt(i).candle_date_time_kst, coin_candle.ElementAt(i).high_price);
@@ -734,10 +735,10 @@ namespace Mock_Investing
                     transactionChart.Series["Series1"].Points[i].BorderColor = Color.Red;
                 }
 
-                if (maxViewY < (int)coin_candle.ElementAt(i).high_price)
-                    maxViewY = (int)coin_candle.ElementAt(i).high_price;
-                if (minViewY > (int)coin_candle.ElementAt(i).low_price)
-                    minViewY = (int)coin_candle.ElementAt(i).low_price;
+                if (maxViewY < coin_candle.ElementAt(i).high_price)
+                    maxViewY = coin_candle.ElementAt(i).high_price;
+                if (minViewY > coin_candle.ElementAt(i).low_price)
+                    minViewY = coin_candle.ElementAt(i).low_price;
             }
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
@@ -806,8 +807,8 @@ namespace Mock_Investing
 
         void timer_Tick(object sender, EventArgs e)
         {
-            liveWallet();
 
+            liveWallet();
             List<Candle> new_candle = fetchcandle("100");
             coin_candle = new_candle;
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
@@ -829,10 +830,10 @@ namespace Mock_Investing
                     transactionChart.Series["Series1"].Points[0].BorderColor = Color.Blue;
                 }
 
-                if (maxViewY < (int)coin_candle.ElementAt(i).high_price)
-                    maxViewY = (int)coin_candle.ElementAt(i).high_price;
-                if (minViewY > (int)coin_candle.ElementAt(i).low_price)
-                    minViewY = (int)coin_candle.ElementAt(i).low_price;
+                if (maxViewY < coin_candle.ElementAt(i).high_price)
+                    maxViewY = coin_candle.ElementAt(i).high_price;
+                if (minViewY > coin_candle.ElementAt(i).low_price)
+                    minViewY = coin_candle.ElementAt(i).low_price;
             }
             transactionChart.ChartAreas[0].AxisY.Maximum = maxViewY;
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
@@ -878,7 +879,8 @@ namespace Mock_Investing
                 //gridCoinListChart.Rows[i].Cells[4].Value = tradePrice.ToString("N0") + "백만";
 
             }
-            txtboxBuyPrice.Text = lblChartCoinPrice.Text; // 매수 가격 
+
+            txtboxBuyPrice.Text = lblChartCoinPrice.Text;// 매수 가격 
             txtboxSellPrice.Text = lblChartCoinPrice.Text;//매도 가격
         }
 
@@ -899,7 +901,7 @@ namespace Mock_Investing
         }
 
         private void gridCoinListChart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
+        { 
             coinName = "KRW-" + gridCoinListChart.Rows[e.RowIndex].Cells[0].Value.ToString();
             lblChartCoinName.Text = gridCoinListChart.Rows[e.RowIndex].Cells[1].Value.ToString();
             lblChartCoinPrice.Text = gridCoinListChart.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -910,6 +912,7 @@ namespace Mock_Investing
             txtboxBuyTotalOrder.ResetText();
             txtboxSellOrderQuantity.ResetText();
             txtboxSellTotalOrder.ResetText();
+
             Chart(coinName);
         }
 
