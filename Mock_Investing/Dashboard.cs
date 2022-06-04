@@ -138,6 +138,7 @@ namespace Mock_Investing
         {
             liveWallet();
         }
+
         private async void resetAccountBtn_Click(object sender, EventArgs e)
         {
             // 초기화 버튼 구현
