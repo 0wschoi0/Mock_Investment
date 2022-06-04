@@ -24,6 +24,8 @@ namespace Mock_Investing
         int asset = 0;      //현금
         int wallet = 0;     //자산
         int profit = 0;     //이익
+        double amount = 0;  // 매수/매도 수량
+        int cost = 0;       //매수/매도 금액
         CoinOwn coinCurrent;
         Rank rankCurrent;
         BuyRecord recordCurrent;
@@ -39,6 +41,7 @@ namespace Mock_Investing
         DocumentSnapshot getRanking;
         List<Candle> coin_candle;
         List<Coin> coin;
+        CoinDetail coinNow;
         List<CoinDetail> coins;
         Rankers first;
         Rankers second;
@@ -60,7 +63,7 @@ namespace Mock_Investing
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();
             coins = fetchCoinInfo(market);
-            
+            coinNow = coins[0];
             // 코인 리스트 초기화
             for (int i = 0; i < coins.Count; i++)
             {
@@ -131,11 +134,45 @@ namespace Mock_Investing
             //
         }
 
-        private async void Dashboard_Load(object sender, EventArgs e)
+        private void Dashboard_Load(object sender, EventArgs e)
         {
             liveWallet();
         }
+        private async void resetAccountBtn_Click(object sender, EventArgs e)
+        {
+            // 초기화 버튼 구현
+            if (MessageBox.Show("사용자의 정보가 초기화됩니다", "초기화 경고", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                CoinOwn coinOwn = new CoinOwn
+                {
+                    CoinCurrent = new Dictionary<string, double>
+                    {
 
+                    }
+                };
+                BuyRecord buyOwn = new BuyRecord
+                {
+                    BuyRecords = new Dictionary<string, int>
+                    {
+
+                    }
+                };
+                await documentCoins.SetAsync(coinOwn);
+                await documentRecords.SetAsync(buyOwn);
+
+                Dictionary<string, object> resets = new Dictionary<string, object>
+                {
+                    { "Asset", 30000000 },
+                    { "Wallet", 30000000 },
+                    { "CoinNumber", 0 }
+                };
+                await documentStatus.UpdateAsync(resets);
+            }
+            else
+            {
+                return;
+            }
+        }
         private void butMy_Click(object sender, EventArgs e)
         {
             guna2TabControl1.SelectedIndex = 0;
@@ -166,10 +203,111 @@ namespace Mock_Investing
         }
 
         // 매수 구현 시작
+        private void btnBuyOrderQuantity25_Click(object sender, EventArgs e)
+        {
+            int quarter = asset / 4;
+            double result = 0;
+            result = quarter / coinNow.trade_price;
+            amount = Math.Round(result, 4);
+            cost = (int)Math.Floor(amount * coinNow.trade_price);
+            txtboxBuyOrderQuantity.Text = amount.ToString();
+            txtboxBuyTotalOrder.Text = (cost).ToString("C");
+        }
+        private void btnBuyOrderQuantity50_Click(object sender, EventArgs e)
+        {
+            int half = asset / 2;
+            double result = 0;
+            result = half / coinNow.trade_price;
+            amount = Math.Round(result, 4);
+            cost = (int)Math.Floor(amount * coinNow.trade_price);
+            txtboxBuyOrderQuantity.Text = amount.ToString();
+            txtboxBuyTotalOrder.Text = (cost).ToString("C");
+        }
 
+        private void btnBuyOrderQuantity75_Click(object sender, EventArgs e)
+        {
+            int tripleQuarter = (asset / 4) * 3;
+            double result = 0;
+            result = tripleQuarter / coinNow.trade_price;
+            amount = Math.Round(result, 4);
+            cost = (int)Math.Floor(amount * coinNow.trade_price);
+            txtboxBuyOrderQuantity.Text = amount.ToString();
+            txtboxBuyTotalOrder.Text = (cost).ToString("C");
+        }
+
+        private void btnBuyOrderQuantity100_Click(object sender, EventArgs e)
+        {
+            int full = asset;
+            double result = 0;
+            result = full / coinNow.trade_price;
+            amount = Math.Round(result, 4);
+            cost = (int)Math.Floor(amount * coinNow.trade_price);
+            txtboxBuyOrderQuantity.Text = amount.ToString();
+            txtboxBuyTotalOrder.Text = (cost).ToString("C");
+        }
+
+        private void btnBuyOrderQuantityInput_Click(object sender, EventArgs e)
+        {
+            txtboxBuyOrderQuantity.ResetText();
+            txtboxBuyOrderQuantity.Focus();
+        }
+
+        private void btnResetBuy_Click(object sender, EventArgs e)
+        {
+            txtboxBuyOrderQuantity.ResetText();
+            txtboxBuyTotalOrder.ResetText();
+        }
+
+        private async void btnBuy_Click(object sender, EventArgs e)
+        {
+            if (cost > asset)
+            {
+                MessageBox.Show("현금이 부족합니다.");
+                return;
+            }
+            else
+            {
+                asset -= cost;
+                await documentStatus.UpdateAsync("Asset", asset);
+
+                CoinOwn coinOwn = new CoinOwn
+                {
+                    CoinCurrent = new Dictionary<string, double>
+                    {
+                        { coinNow.market, amount }
+                    }
+                };
+                BuyRecord buyOwn = new BuyRecord
+                {
+                    BuyRecords = new Dictionary<string, int>
+                    {
+                        { coinNow.market, (int)coinNow.trade_price }
+                    }
+                };
+                DocumentSnapshot snap = await documentCoins.GetSnapshotAsync();
+                DocumentSnapshot rsnap = await documentRecords.GetSnapshotAsync();
+                coinOwn = snap.ConvertTo<CoinOwn>();
+                buyOwn = rsnap.ConvertTo<BuyRecord>();
+                if (snap.ContainsField("CoinCurrent."+coinNow.market))
+                {
+                    int temptBefore = (int)(coinOwn.CoinCurrent[coinNow.market] * buyOwn.BuyRecords[coinNow.market]);
+                    coinOwn.CoinCurrent[coinNow.market] += amount;
+                    buyOwn.BuyRecords[coinNow.market] = (int)((temptBefore + cost) / coinOwn.CoinCurrent[coinNow.market]);
+                }
+                else
+                {
+                    coinOwn.CoinCurrent.Add(coinNow.market, amount);
+                    buyOwn.BuyRecords.Add(coinNow.market, (int)coinNow.trade_price);
+                    await documentStatus.UpdateAsync("CoinNumber", coinNum + 1);
+                }
+                await documentCoins.SetAsync(coinOwn);
+                await documentRecords.SetAsync(buyOwn);
+                MessageBox.Show("매수 체결완료");
+            }
+        }
         // 매수 구현 끝
 
-        // 실시간 Ranking 및 자산 조회
+        // 실시간 Ranking 및 자산 조회 시작
         async void liveWallet()
         {
             // Firebase에서 사용자 데이터 및 Ranking 정보 가져오기
@@ -210,13 +348,14 @@ namespace Mock_Investing
                     {
                         if (pair.Key == coins[i].market)
                         {
-                            int tempt = (int)((coins[i].trade_price - recordCurrent.BuyRecords[pair.Key]) * pair.Value);
+                            int tempt = (int)((coins[i].trade_price * pair.Value) - (recordCurrent.BuyRecords[pair.Key] * pair.Value));
                             profitTempt += tempt;
                             walletTempt += (int)(pair.Value * coins[i].trade_price);
                         }
                     }
                 }
             }
+            asset = getUserData.GetValue<int>("Asset");
             walletTempt += getUserData.GetValue<int>("Asset");
             await documentStatus.UpdateAsync("Wallet", walletTempt);
             header_Overall.Text = walletTempt.ToString("C");
@@ -279,6 +418,7 @@ namespace Mock_Investing
             thirdRankWallet.Text = third.Money.ToString("C");
             // Ranking 정보 띄우기 끝
         }
+        // 실시간 Ranking 및 자산 조회 끝
 
         // 실시간 차트 구현 시작
         public void Chart(string coinName)
@@ -288,7 +428,7 @@ namespace Mock_Investing
                 coinName = "KRW-BTC";
             }
             this.coinName = coinName;
-          
+
             transactionChart.Series["Series1"]["PriceDownColor"] = "Blue";
             coin_candle = fetchcandle("100");
 
@@ -467,6 +607,13 @@ namespace Mock_Investing
             coinName = "KRW-" + gridCoinList.Rows[e.RowIndex].Cells[0].Value.ToString();
             lblChartCoinName.Text = gridCoinList.Rows[e.RowIndex].Cells[1].Value.ToString();
             lblChartCoinPrice.Text = gridCoinList.Rows[e.RowIndex].Cells[2].Value.ToString();
+            int index = 0;
+            while(coinName != coins[index].market) { index++; }
+            coinNow = coins[index];
+            txtboxBuyOrderQuantity.ResetText();
+            txtboxBuyTotalOrder.ResetText();
+            txtboxSellOrderQuantity.ResetText();
+            txtboxSellTotalOrder.ResetText();
             butTrans.PerformClick();
             Chart(coinName);
         }
@@ -476,6 +623,13 @@ namespace Mock_Investing
             coinName = "KRW-" + gridCoinListChart.Rows[e.RowIndex].Cells[0].Value.ToString();
             lblChartCoinName.Text = gridCoinListChart.Rows[e.RowIndex].Cells[1].Value.ToString();
             lblChartCoinPrice.Text = gridCoinListChart.Rows[e.RowIndex].Cells[2].Value.ToString();
+            int index = 0;
+            while (coinName != coins[index].market) { index++; }
+            coinNow = coins[index];
+            txtboxBuyOrderQuantity.ResetText();
+            txtboxBuyTotalOrder.ResetText();
+            txtboxSellOrderQuantity.ResetText();
+            txtboxSellTotalOrder.ResetText();
             Chart(coinName);
         }
 
@@ -651,6 +805,8 @@ namespace Mock_Investing
             public long timestamp { get; set; }                 // 타임스탬프
         }
 
+        // 실시간 코인 리스트 구현 끝
+
         public class Rankers
         {
             public int Money { get; set; }
@@ -667,7 +823,7 @@ namespace Mock_Investing
         public class BuyRecord
         {
             [FirestoreProperty]
-            public Dictionary<string, double> BuyRecords { get; set; }
+            public Dictionary<string, int> BuyRecords { get; set; }
         }
         [FirestoreData]
         public class Rank
@@ -675,22 +831,6 @@ namespace Mock_Investing
             [FirestoreProperty]
             public Dictionary<string, string> UID { get; set; }
         }
-
-        private void btnBuyOrderQuantity25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-
-
-
-
-
-        // 실시간 코인 리스트 구현 끝
-
 
     }
 }
