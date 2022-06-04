@@ -65,9 +65,9 @@ namespace Mock_Investing
             timer.Start();
             coins = fetchCoinInfo(market);
             coinNow = coins[0];
-            // 코인 리스트 초기화
             initializeGridMain();
-            liveWallet();
+            //liveWallet();
+            // 코인 리스트 초기화
             for (int i = 0; i < coins.Count; i++)
             {
                 gridCoinList.Rows.Add(1);
@@ -121,8 +121,6 @@ namespace Mock_Investing
                 gridRecordList.Rows[i].Cells[3].Value = "2022-05-27 22:50";
                 gridRecordList.Rows[i].Cells[4].Value = "판매";
             }
-
-            //
         }
 
         // 보유종목 Grid 초기화 구현 시작
@@ -220,6 +218,7 @@ namespace Mock_Investing
                     { "CoinNumber", 0 }
                 };
                 await documentStatus.UpdateAsync(resets);
+                gridMainList.Rows.Clear();
             }
             else
             {
@@ -357,6 +356,7 @@ namespace Mock_Investing
                 }
                 await documentCoins.SetAsync(coinOwn);
                 await documentRecords.SetAsync(buyOwn);
+                btnResetBuy.PerformClick();
                 MessageBox.Show("매수 체결완료");
             }
         }
@@ -544,6 +544,7 @@ namespace Mock_Investing
                 await documentRecords.SetAsync(buyOwn);
                 await documentStatus.UpdateAsync("Asset", asset + (int)(sellAmount * coinNow.trade_price));
                 await documentStatus.UpdateAsync("CoinNumber", coinNum - 1);
+                btnSellReset.PerformClick();
                 MessageBox.Show("매도 체결완료");
             }
         }
@@ -583,18 +584,30 @@ namespace Mock_Investing
             {
                 coinCurrent = getUserCoins.ConvertTo<CoinOwn>();
                 recordCurrent = getBuyRecords.ConvertTo<BuyRecord>();
-                int myCoinCount = 0;
                 foreach (KeyValuePair<string, double> pair in coinCurrent.CoinCurrent)
                 {
                     for (int i = 0; i < coins.Count; i++)
                     {
                         if (pair.Key == coins[i].market)
                         {
-                            // 보유자산 정보 띄우기 시작
+                            int tempt = (int)((coins[i].trade_price * pair.Value) - (recordCurrent.BuyRecords[pair.Key] * pair.Value));
+                            profitTempt += tempt;
+                            walletTempt += (int)(pair.Value * coins[i].trade_price);
+                        } 
+                    }
+                }
+                int myCoinCount = 0;
+                for (int i = 0; i < coins.Count; i++)
+                {
+                    double changeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
+                    coinNum = getUserData.GetValue<int>("CoinNumber");
+                    if (coinNum > 0)
+                    {
+                        coinCurrent = getUserCoins.ConvertTo<CoinOwn>();
+                        if (coinCurrent.CoinCurrent.ContainsKey(coins[i].market))
+                        {
                             gridMainList.Rows[myCoinCount].Cells[0].Value = coins[i].market;
                             gridMainList.Rows[myCoinCount].Cells[1].Value = coin[i].korean_name;
-                            double changeRate = Math.Round(coins[i].signed_change_rate * 100, 2);
-
                             gridMainList.Rows[myCoinCount].Cells[2].Value = coins[i].trade_price.ToString("C");
                             gridMainList.Rows[myCoinCount].Cells[3].Value = changeRate.ToString() + "%";
 
@@ -613,14 +626,9 @@ namespace Mock_Investing
                                 gridMainList.Rows[myCoinCount].Cells[2].Style.ForeColor = Color.Red;
                                 gridMainList.Rows[myCoinCount].Cells[3].Style.ForeColor = Color.Red;
                             }
-                            gridMainList.Rows[myCoinCount].Cells[4].Value =((int)((coins[i].trade_price * pair.Value))).ToString("C");
-                            gridMainList.Rows[myCoinCount].Cells[5].Value = pair.Value;
+                            gridMainList.Rows[myCoinCount].Cells[4].Value = ((int)((coins[i].trade_price * coinCurrent.CoinCurrent[coins[i].market]))).ToString("C");
+                            gridMainList.Rows[myCoinCount].Cells[5].Value = coinCurrent.CoinCurrent[coins[i].market];
                             myCoinCount++;
-
-                            // 보유자산 정보 띄우기 끝
-                            int tempt = (int)((coins[i].trade_price * pair.Value) - (recordCurrent.BuyRecords[pair.Key] * pair.Value));
-                            profitTempt += tempt;
-                            walletTempt += (int)(pair.Value * coins[i].trade_price);
                         }
                     }
                 }
