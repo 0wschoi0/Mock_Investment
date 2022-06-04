@@ -34,9 +34,6 @@ namespace Mock_Investing
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -55,6 +52,9 @@ namespace Mock_Investing
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.header_Profit = new System.Windows.Forms.Label();
@@ -67,12 +67,11 @@ namespace Mock_Investing
             this.tabMy = new System.Windows.Forms.TabPage();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.ethprice = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label4 = new System.Windows.Forms.Label();
+            this.ethchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btcprice = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel4 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.transRecPrice4 = new System.Windows.Forms.Label();
@@ -214,13 +213,13 @@ namespace Mock_Investing
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.header_Img = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btcchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tabMy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ethchart)).BeginInit();
             this.guna2ShadowPanel4.SuspendLayout();
             this.guna2ShadowPanel3.SuspendLayout();
             this.guna2ShadowPanel2.SuspendLayout();
@@ -256,6 +255,7 @@ namespace Mock_Investing
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.header_Img)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btcchart)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -392,14 +392,14 @@ namespace Mock_Investing
             // 
             this.tabMy.BackColor = System.Drawing.Color.White;
             this.tabMy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabMy.Controls.Add(this.btcprice);
+            this.tabMy.Controls.Add(this.btcchart);
             this.tabMy.Controls.Add(this.label16);
             this.tabMy.Controls.Add(this.label19);
-            this.tabMy.Controls.Add(this.label12);
+            this.tabMy.Controls.Add(this.ethprice);
             this.tabMy.Controls.Add(this.label13);
-            this.tabMy.Controls.Add(this.chart2);
-            this.tabMy.Controls.Add(this.label4);
+            this.tabMy.Controls.Add(this.ethchart);
             this.tabMy.Controls.Add(this.label8);
-            this.tabMy.Controls.Add(this.chart1);
             this.tabMy.Controls.Add(this.label1);
             this.tabMy.Controls.Add(this.guna2ShadowPanel4);
             this.tabMy.Controls.Add(this.guna2ShadowPanel3);
@@ -427,7 +427,7 @@ namespace Mock_Investing
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(158, 291);
+            this.label16.Location = new System.Drawing.Point(166, 291);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(117, 28);
             this.label16.TabIndex = 114;
@@ -441,20 +441,20 @@ namespace Mock_Investing
             this.label19.ForeColor = System.Drawing.Color.Gray;
             this.label19.Location = new System.Drawing.Point(72, 291);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(111, 28);
+            this.label19.Size = new System.Drawing.Size(97, 28);
             this.label19.TabIndex = 113;
-            this.label19.Text = "갱신 시간 : ";
+            this.label19.Text = "갱신 시간";
             // 
-            // label12
+            // ethprice
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.IndianRed;
-            this.label12.Location = new System.Drawing.Point(419, 346);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 23);
-            this.label12.TabIndex = 112;
-            this.label12.Text = "37,799,000";
+            this.ethprice.AutoSize = true;
+            this.ethprice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ethprice.ForeColor = System.Drawing.Color.IndianRed;
+            this.ethprice.Location = new System.Drawing.Point(418, 353);
+            this.ethprice.Name = "ethprice";
+            this.ethprice.Size = new System.Drawing.Size(100, 23);
+            this.ethprice.TabIndex = 112;
+            this.ethprice.Text = "37,799,000";
             // 
             // label13
             // 
@@ -464,46 +464,51 @@ namespace Mock_Investing
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(92, 28);
             this.label13.TabIndex = 111;
-            this.label13.Text = "비트코인";
+            this.label13.Text = "이더리움";
             // 
-            // chart2
+            // ethchart
             // 
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.IsReversed = true;
-            chartArea1.AxisY.IsLabelAutoFit = false;
-            chartArea1.CursorX.IsUserSelectionEnabled = true;
-            chartArea1.InnerPlotPosition.Auto = false;
-            chartArea1.InnerPlotPosition.Height = 90.55851F;
-            chartArea1.InnerPlotPosition.Width = 90.52276F;
-            chartArea1.InnerPlotPosition.X = 1.67553F;
-            chartArea1.InnerPlotPosition.Y = 2.23404F;
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(409, 361);
-            this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 4;
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(300, 300);
-            this.chart2.TabIndex = 110;
-            this.chart2.Text = "chart2";
+            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea2.AxisX.IsLabelAutoFit = false;
+            chartArea2.AxisX.IsReversed = true;
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.MajorTickMark.Enabled = false;
+            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea2.AxisY.IsLabelAutoFit = false;
+            chartArea2.AxisY.MajorGrid.Enabled = false;
+            chartArea2.AxisY.MajorTickMark.Enabled = false;
+            chartArea2.InnerPlotPosition.Auto = false;
+            chartArea2.InnerPlotPosition.Height = 90.55851F;
+            chartArea2.InnerPlotPosition.Width = 90.52276F;
+            chartArea2.InnerPlotPosition.X = 1.67553F;
+            chartArea2.InnerPlotPosition.Y = 2.23404F;
+            chartArea2.Name = "ChartArea1";
+            this.ethchart.ChartAreas.Add(chartArea2);
+            legend2.Enabled = false;
+            legend2.Name = "Legend1";
+            this.ethchart.Legends.Add(legend2);
+            this.ethchart.Location = new System.Drawing.Point(409, 361);
+            this.ethchart.Name = "ethchart";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.YValuesPerPoint = 4;
+            this.ethchart.Series.Add(series2);
+            this.ethchart.Size = new System.Drawing.Size(300, 300);
+            this.ethchart.TabIndex = 110;
+            this.ethchart.Text = "chart2";
             // 
-            // label4
+            // btcprice
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.IndianRed;
-            this.label4.Location = new System.Drawing.Point(80, 346);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 23);
-            this.label4.TabIndex = 109;
-            this.label4.Text = "37,799,000";
+            this.btcprice.AutoSize = true;
+            this.btcprice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btcprice.ForeColor = System.Drawing.Color.IndianRed;
+            this.btcprice.Location = new System.Drawing.Point(79, 352);
+            this.btcprice.Name = "btcprice";
+            this.btcprice.Size = new System.Drawing.Size(100, 23);
+            this.btcprice.TabIndex = 109;
+            this.btcprice.Text = "37,799,000";
             // 
             // label8
             // 
@@ -514,34 +519,6 @@ namespace Mock_Investing
             this.label8.Size = new System.Drawing.Size(92, 28);
             this.label8.TabIndex = 108;
             this.label8.Text = "비트코인";
-            // 
-            // chart1
-            // 
-            chartArea2.AxisX.IsLabelAutoFit = false;
-            chartArea2.AxisX.IsReversed = true;
-            chartArea2.AxisY.IsLabelAutoFit = false;
-            chartArea2.CursorX.IsUserSelectionEnabled = true;
-            chartArea2.InnerPlotPosition.Auto = false;
-            chartArea2.InnerPlotPosition.Height = 90.55851F;
-            chartArea2.InnerPlotPosition.Width = 90.52276F;
-            chartArea2.InnerPlotPosition.X = 1.67553F;
-            chartArea2.InnerPlotPosition.Y = 2.23404F;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(70, 361);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.YValuesPerPoint = 4;
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
-            this.chart1.TabIndex = 106;
-            this.chart1.Text = "chart1";
             // 
             // label1
             // 
@@ -1120,7 +1097,7 @@ namespace Mock_Investing
             this.labTrans.BackColor = System.Drawing.Color.Transparent;
             this.labTrans.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.labTrans.ForeColor = System.Drawing.Color.Gray;
-            this.labTrans.Location = new System.Drawing.Point(896, 294);
+            this.labTrans.Location = new System.Drawing.Point(903, 294);
             this.labTrans.Name = "labTrans";
             this.labTrans.Size = new System.Drawing.Size(117, 28);
             this.labTrans.TabIndex = 92;
@@ -1134,9 +1111,9 @@ namespace Mock_Investing
             this.label30.ForeColor = System.Drawing.Color.Gray;
             this.label30.Location = new System.Drawing.Point(810, 294);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(111, 28);
+            this.label30.Size = new System.Drawing.Size(97, 28);
             this.label30.TabIndex = 91;
-            this.label30.Text = "갱신 시간 : ";
+            this.label30.Text = "갱신 시간";
             // 
             // label29
             // 
@@ -2803,6 +2780,39 @@ namespace Mock_Investing
             this.header_Img.TabStop = false;
             this.header_Img.UseTransparentBackground = true;
             // 
+            // btcchart
+            // 
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.IsReversed = true;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorTickMark.Enabled = false;
+            chartArea1.InnerPlotPosition.Auto = false;
+            chartArea1.InnerPlotPosition.Height = 90.55851F;
+            chartArea1.InnerPlotPosition.Width = 90.52276F;
+            chartArea1.InnerPlotPosition.X = 1.67553F;
+            chartArea1.InnerPlotPosition.Y = 2.23404F;
+            chartArea1.Name = "ChartArea1";
+            this.btcchart.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.btcchart.Legends.Add(legend1);
+            this.btcchart.Location = new System.Drawing.Point(77, 361);
+            this.btcchart.Name = "btcchart";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.btcchart.Series.Add(series1);
+            this.btcchart.Size = new System.Drawing.Size(300, 300);
+            this.btcchart.TabIndex = 115;
+            this.btcchart.Text = "chart2";
+            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2823,8 +2833,7 @@ namespace Mock_Investing
             this.guna2TabControl1.ResumeLayout(false);
             this.tabMy.ResumeLayout(false);
             this.tabMy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ethchart)).EndInit();
             this.guna2ShadowPanel4.ResumeLayout(false);
             this.guna2ShadowPanel4.PerformLayout();
             this.guna2ShadowPanel3.ResumeLayout(false);
@@ -2875,6 +2884,7 @@ namespace Mock_Investing
             this.guna2Panel3.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.header_Img)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btcchart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3032,14 +3042,14 @@ namespace Mock_Investing
         private System.Windows.Forms.Label transRecName4;
         private System.Windows.Forms.Label transRecKor4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label btcprice;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label ethprice;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ethchart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart btcchart;
     }
 }
 

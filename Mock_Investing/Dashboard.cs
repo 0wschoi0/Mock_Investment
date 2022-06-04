@@ -43,6 +43,8 @@ namespace Mock_Investing
         List<Candle> coin_candle;
         List<Coin> coin;
         CoinDetail coinNow;
+        List<Candle> BTC;
+        List<Candle> ETH;
         List<CoinDetail> coins;
         Rankers first;
         Rankers second;
@@ -768,7 +770,7 @@ namespace Mock_Investing
             this.coinName = coinName;
 
             transactionChart.Series["Series1"]["PriceDownColor"] = "Blue";
-            coin_candle = fetchcandle("100");
+            coin_candle = fetchcandle("100", coinName);
 
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
 
@@ -802,11 +804,11 @@ namespace Mock_Investing
             transactionChart.ChartAreas[0].AxisY.Minimum = minViewY;
         }
 
-        public List<Candle> fetchcandle(string count)
+        public List<Candle> fetchcandle(string count, string coinname)
         {
             string urlMarket = "https://api.upbit.com/v1/candles/minutes/1";
             StringBuilder dataParams = new StringBuilder();
-            dataParams.Append("market=" + coinName + "&" + "count=" + count);
+            dataParams.Append("market=" + coinname + "&" + "count=" + count);
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(urlMarket + "?" + dataParams);
             request.Method = "GET";
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -867,7 +869,9 @@ namespace Mock_Investing
         {
 
             liveWallet();
-            List<Candle> new_candle = fetchcandle("100");
+            List<Candle> new_candle = fetchcandle("100", coinName);
+            BTC = fetchcandle("100", "KRW-BTC");
+            ETH = fetchcandle("100", "KRW-ETH");
             coin_candle = new_candle;
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
             transactionChart.Series["Series1"].Points.Clear();
@@ -940,6 +944,78 @@ namespace Mock_Investing
 
             txtboxBuyPrice.Text = lblChartCoinPrice.Text;// 매수 가격 
             txtboxSellPrice.Text = lblChartCoinPrice.Text;//매도 가격
+
+            labTrans.Text = BTC.ElementAt(0).candle_date_time_kst;
+            label16.Text = BTC.ElementAt(0).candle_date_time_kst;
+            btcprice.Text = (BTC.ElementAt(0).trade_price).ToString("C");
+            ethprice.Text = (ETH.ElementAt(0).trade_price).ToString("C");
+            transRecPrice1.Text = (BTC.ElementAt(0).trade_price).ToString("C");
+            btcchart.Series["Series1"].Points.Clear();
+            int btcmaxViewY = (int)BTC.ElementAt(0).high_price;
+            int btcminViewY = (int)BTC.ElementAt(0).low_price;
+            for (int i = 0; i < BTC.Count(); i++)
+            {   
+                btcchart.Series["Series1"].Points.AddXY(BTC.ElementAt(i).candle_date_time_kst, BTC.ElementAt(i).high_price);
+                btcchart.Series["Series1"].Points[i].YValues[1] = BTC.ElementAt(i).low_price;
+                btcchart.Series["Series1"].Points[i].YValues[2] = BTC.ElementAt(i).opening_price;
+                btcchart.Series["Series1"].Points[i].YValues[3] = BTC.ElementAt(i).trade_price;
+                if (BTC.ElementAt(i).opening_price < BTC.ElementAt(i).trade_price)
+                {
+                    btcchart.Series["Series1"].Points[i].Color = Color.Red;
+                    btcchart.Series["Series1"].Points[i].BorderColor = Color.Red;
+                }
+                if (BTC.ElementAt(i).opening_price >= BTC.ElementAt(i).trade_price)
+                {
+                    btcchart.Series["Series1"].Points[0].Color = Color.Blue;
+                    btcchart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+                }
+                if (btcmaxViewY < BTC.ElementAt(i).high_price)
+                    btcmaxViewY = (int)BTC.ElementAt(i).high_price;
+                if (btcminViewY > BTC.ElementAt(i).low_price)
+                    btcminViewY = (int)BTC.ElementAt(i).low_price;
+            }
+            btcchart.ChartAreas[0].AxisY.Maximum = btcmaxViewY;
+            btcchart.ChartAreas[0].AxisY.Minimum = btcminViewY;
+
+            ethchart.Series["Series1"].Points.Clear();
+            int ethmaxViewY = (int)ETH.ElementAt(0).high_price;
+            int ethminViewY = (int)ETH.ElementAt(0).low_price;
+            for (int i = 0; i < ETH.Count(); i++)
+            {
+                ethchart.Series["Series1"].Points.AddXY(ETH.ElementAt(i).candle_date_time_kst, ETH.ElementAt(i).high_price);
+                ethchart.Series["Series1"].Points[i].YValues[1] = ETH.ElementAt(i).low_price;
+                ethchart.Series["Series1"].Points[i].YValues[2] = ETH.ElementAt(i).opening_price;
+                ethchart.Series["Series1"].Points[i].YValues[3] = ETH.ElementAt(i).trade_price;
+                if (ETH.ElementAt(i).opening_price < ETH.ElementAt(i).trade_price)
+                {
+                    ethchart.Series["Series1"].Points[i].Color = Color.Red;
+                    ethchart.Series["Series1"].Points[i].BorderColor = Color.Red;
+                }
+                if (ETH.ElementAt(i).opening_price >= ETH.ElementAt(i).trade_price)
+                {
+                    ethchart.Series["Series1"].Points[0].Color = Color.Blue;
+                    ethchart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+                }
+                if (ethmaxViewY < ETH.ElementAt(i).high_price)
+                    ethmaxViewY = (int)ETH.ElementAt(i).high_price;
+                if (ethminViewY > ETH.ElementAt(i).low_price)
+                    ethminViewY = (int)ETH.ElementAt(i).low_price;
+            }
+            ethchart.ChartAreas[0].AxisY.Maximum = ethmaxViewY;
+            ethchart.ChartAreas[0].AxisY.Minimum = ethminViewY;
+
+            if (transRecPrice2.Text == "")
+            {
+                transRecPrice2.Text = (BTC.ElementAt(1).trade_price).ToString("C");
+                transRecPrice3.Text = (BTC.ElementAt(2).trade_price).ToString("C");
+                transRecPrice4.Text = (BTC.ElementAt(3).trade_price).ToString("C");
+            }
+            else
+            {
+                transRecPrice4.Text = transRecPrice3.Text;
+                transRecPrice3.Text = transRecPrice2.Text;
+                transRecPrice2.Text = transRecPrice1.Text;
+            }
         }
 
         private void gridCoinList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -1172,6 +1248,5 @@ namespace Mock_Investing
             [FirestoreProperty]
             public Dictionary<string, string> UID { get; set; }
         }
-
     }
 }
