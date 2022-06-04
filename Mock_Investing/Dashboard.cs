@@ -707,7 +707,13 @@ namespace Mock_Investing
 
             userName = getUserData.GetValue<string>("Name");
             header_Name.Text = userName;
+            myProfile_lab1.Text = userName;
+            myProfile_lab5.Text = "순수익 : " + header_Profit.Text;
+            myProfile_lab7.Text = "시작 자금 : " + (30000000).ToString("C");
+            myProfile_lab3.Text = "총 보유 자금 : " + header_Wallet.Text;
+            myProfile_lab4.Text = "현 보유 자금 : " + header_Overall.Text;
 
+            myProfile_lab6.Text = "총 수익률 : " + (profitTempt / 30000000.0).ToString("P");
             // Ranking 정보 띄우기 시작
             first = new Rankers();
             second = new Rankers();
