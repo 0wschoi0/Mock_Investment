@@ -251,8 +251,56 @@ namespace Mock_Investing
         }
 
         // 매수 구현 시작
+        private void txtboxBuySellOrderQuantity_Keypress(object sender, KeyPressEventArgs e)
+        {
+           if (!sender.ToString().Contains(".")) // 키 입력 제한
+            {
+                if (char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back) || e.KeyChar == '.')
+                    return;
+            }
+            else
+            {
+                if (char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back))
+                    return;
+            }
+            e.Handled = true;
+           
+        }
+        private void txtboxBuySellOrderQuantity_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (sender.Equals(txtboxBuyOrderQuantity))
+            {
+                if (txtboxBuyOrderQuantity.Text != "")
+                {
+                    double result = Convert.ToDouble(txtboxBuyOrderQuantity.Text);
+                    cost = (int)Math.Floor(result * coinNow.trade_price);
+                    txtboxBuyTotalOrder.Text = (cost).ToString("C");
+                    amount = result;
+                }
+                else
+                {
+                    txtboxBuyTotalOrder.Text = (0).ToString("C");
+                }
+
+            }
+            else 
+            {
+                if (txtboxSellOrderQuantity.Text != "")
+                {
+                    double result = Convert.ToDouble(txtboxSellOrderQuantity.Text);
+                    cost = (int)Math.Floor(result * coinNow.trade_price);
+                    txtboxSellTotalOrder.Text = (cost).ToString("C");
+                    sellAmount = result;
+                }
+                else
+                {
+                    txtboxSellTotalOrder.Text = (0).ToString("C");
+                }
+            }
+        }
         private void btnBuyOrderQuantity25_Click(object sender, EventArgs e)
         {
+            txtboxBuyOrderQuantity.ReadOnly = true;
             int quarter = asset / 4;
             double result = 0;
             result = quarter / coinNow.trade_price;
@@ -263,6 +311,7 @@ namespace Mock_Investing
         }
         private void btnBuyOrderQuantity50_Click(object sender, EventArgs e)
         {
+            txtboxBuyOrderQuantity.ReadOnly = true;
             int half = asset / 2;
             double result = 0;
             result = half / coinNow.trade_price;
@@ -274,6 +323,7 @@ namespace Mock_Investing
 
         private void btnBuyOrderQuantity75_Click(object sender, EventArgs e)
         {
+            txtboxBuyOrderQuantity.ReadOnly = true;
             int tripleQuarter = (asset / 4) * 3;
             double result = 0;
             result = tripleQuarter / coinNow.trade_price;
@@ -285,6 +335,7 @@ namespace Mock_Investing
 
         private void btnBuyOrderQuantity100_Click(object sender, EventArgs e)
         {
+            txtboxBuyOrderQuantity.ReadOnly = true;
             int full = asset;
             double result = 0;
             result = full / coinNow.trade_price;
@@ -296,12 +347,14 @@ namespace Mock_Investing
 
         private void btnBuyOrderQuantityInput_Click(object sender, EventArgs e)
         {
+            txtboxBuyOrderQuantity.ReadOnly = false;
             txtboxBuyOrderQuantity.ResetText();
             txtboxBuyOrderQuantity.Focus();
         }
 
         private void btnResetBuy_Click(object sender, EventArgs e)
         {
+            txtboxBuyOrderQuantity.ReadOnly = true;
             txtboxBuyOrderQuantity.ResetText();
             txtboxBuyTotalOrder.ResetText();
         }
@@ -361,7 +414,7 @@ namespace Mock_Investing
         // 매도 구현 시작
         private async void btnSellOrderQuantity25_Click(object sender, EventArgs e)
         {
-            txtboxSellOrderQuantity.ReadOnly = false;
+            txtboxSellOrderQuantity.ReadOnly = true;
             CoinOwn coinOwn = new CoinOwn
             {
                 CoinCurrent = new Dictionary<string, double>
@@ -388,7 +441,7 @@ namespace Mock_Investing
 
         private async void btnSellOrderQuantity50_Click(object sender, EventArgs e)
         {
-            txtboxSellOrderQuantity.ReadOnly = false;
+            txtboxSellOrderQuantity.ReadOnly = true;
             CoinOwn coinOwn = new CoinOwn
             {
                 CoinCurrent = new Dictionary<string, double>
@@ -415,7 +468,7 @@ namespace Mock_Investing
 
         private async void btnSellOrderQuantity75_Click(object sender, EventArgs e)
         {
-            txtboxSellOrderQuantity.ReadOnly = false;
+            txtboxSellOrderQuantity.ReadOnly = true;
             CoinOwn coinOwn = new CoinOwn
             {
                 CoinCurrent = new Dictionary<string, double>
@@ -442,7 +495,7 @@ namespace Mock_Investing
 
         private async void btnSellOrderQuantity100_Click(object sender, EventArgs e)
         {
-            txtboxSellOrderQuantity.ReadOnly = false;
+            txtboxSellOrderQuantity.ReadOnly = true;
             CoinOwn coinOwn = new CoinOwn
             {
                 CoinCurrent = new Dictionary<string, double>
@@ -493,7 +546,7 @@ namespace Mock_Investing
 
         private void btnSellReset_Click(object sender, EventArgs e)
         {
-            txtboxSellOrderQuantity.ReadOnly = false;
+            txtboxSellOrderQuantity.ReadOnly = true;
             txtboxSellOrderQuantity.ResetText();
             txtboxSellTotalOrder.ResetText();
         }

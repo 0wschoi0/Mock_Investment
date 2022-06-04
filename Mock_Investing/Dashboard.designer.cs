@@ -294,7 +294,7 @@ namespace Mock_Investing
             this.header_Profit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Profit.Location = new System.Drawing.Point(250, 70);
             this.header_Profit.Name = "header_Profit";
-            this.header_Profit.Size = new System.Drawing.Size(162, 31);
+            this.header_Profit.Size = new System.Drawing.Size(211, 40);
             this.header_Profit.TabIndex = 5;
             this.header_Profit.Text = "+ ₩ 1,230,890";
             // 
@@ -306,7 +306,7 @@ namespace Mock_Investing
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(256, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 15);
+            this.label6.Size = new System.Drawing.Size(56, 20);
             this.label6.TabIndex = 4;
             this.label6.Text = "PROFIT";
             // 
@@ -328,7 +328,7 @@ namespace Mock_Investing
             this.header_Overall.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Overall.Location = new System.Drawing.Point(37, 70);
             this.header_Overall.Name = "header_Overall";
-            this.header_Overall.Size = new System.Drawing.Size(140, 31);
+            this.header_Overall.Size = new System.Drawing.Size(182, 40);
             this.header_Overall.TabIndex = 2;
             this.header_Overall.Text = "₩ 2,250,320";
             // 
@@ -340,7 +340,7 @@ namespace Mock_Investing
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(42, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "OVERALL";
             // 
@@ -429,7 +429,7 @@ namespace Mock_Investing
             this.label16.ForeColor = System.Drawing.Color.Gray;
             this.label16.Location = new System.Drawing.Point(158, 291);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(95, 21);
+            this.label16.Size = new System.Drawing.Size(117, 28);
             this.label16.TabIndex = 114;
             this.label16.Text = "05/27 20:49";
             // 
@@ -441,7 +441,7 @@ namespace Mock_Investing
             this.label19.ForeColor = System.Drawing.Color.Gray;
             this.label19.Location = new System.Drawing.Point(72, 291);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(89, 21);
+            this.label19.Size = new System.Drawing.Size(111, 28);
             this.label19.TabIndex = 113;
             this.label19.Text = "갱신 시간 : ";
             // 
@@ -452,7 +452,7 @@ namespace Mock_Investing
             this.label12.ForeColor = System.Drawing.Color.IndianRed;
             this.label12.Location = new System.Drawing.Point(419, 346);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 17);
+            this.label12.Size = new System.Drawing.Size(100, 23);
             this.label12.TabIndex = 112;
             this.label12.Text = "37,799,000";
             // 
@@ -462,7 +462,7 @@ namespace Mock_Investing
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(417, 325);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 21);
+            this.label13.Size = new System.Drawing.Size(92, 28);
             this.label13.TabIndex = 111;
             this.label13.Text = "비트코인";
             // 
@@ -501,7 +501,7 @@ namespace Mock_Investing
             this.label4.ForeColor = System.Drawing.Color.IndianRed;
             this.label4.Location = new System.Drawing.Point(80, 346);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 17);
+            this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 109;
             this.label4.Text = "37,799,000";
             // 
@@ -511,7 +511,7 @@ namespace Mock_Investing
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(78, 325);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 21);
+            this.label8.Size = new System.Drawing.Size(92, 28);
             this.label8.TabIndex = 108;
             this.label8.Text = "비트코인";
             // 
@@ -551,7 +551,7 @@ namespace Mock_Investing
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(63, 253);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 37);
+            this.label1.Size = new System.Drawing.Size(161, 45);
             this.label1.TabIndex = 105;
             this.label1.Text = "시장 동향";
             // 
@@ -579,7 +579,7 @@ namespace Mock_Investing
             this.transRecPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice4.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice4.Name = "transRecPrice4";
-            this.transRecPrice4.Size = new System.Drawing.Size(106, 21);
+            this.transRecPrice4.Size = new System.Drawing.Size(139, 28);
             this.transRecPrice4.TabIndex = 5;
             this.transRecPrice4.Text = "₩ 42,480,680";
             // 
@@ -591,7 +591,7 @@ namespace Mock_Investing
             this.transRecName4.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName4.Location = new System.Drawing.Point(17, 36);
             this.transRecName4.Name = "transRecName4";
-            this.transRecName4.Size = new System.Drawing.Size(26, 15);
+            this.transRecName4.Size = new System.Drawing.Size(33, 20);
             this.transRecName4.TabIndex = 4;
             this.transRecName4.Text = "BTC";
             // 
@@ -603,7 +603,7 @@ namespace Mock_Investing
             this.transRecKor4.ForeColor = System.Drawing.Color.Black;
             this.transRecKor4.Location = new System.Drawing.Point(16, 13);
             this.transRecKor4.Name = "transRecKor4";
-            this.transRecKor4.Size = new System.Drawing.Size(74, 21);
+            this.transRecKor4.Size = new System.Drawing.Size(92, 28);
             this.transRecKor4.TabIndex = 3;
             this.transRecKor4.Text = "비트코인";
             // 
@@ -631,7 +631,7 @@ namespace Mock_Investing
             this.transRecPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice3.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice3.Name = "transRecPrice3";
-            this.transRecPrice3.Size = new System.Drawing.Size(106, 21);
+            this.transRecPrice3.Size = new System.Drawing.Size(139, 28);
             this.transRecPrice3.TabIndex = 5;
             this.transRecPrice3.Text = "₩ 42,480,680";
             // 
@@ -643,7 +643,7 @@ namespace Mock_Investing
             this.transRecName3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName3.Location = new System.Drawing.Point(17, 37);
             this.transRecName3.Name = "transRecName3";
-            this.transRecName3.Size = new System.Drawing.Size(26, 15);
+            this.transRecName3.Size = new System.Drawing.Size(33, 20);
             this.transRecName3.TabIndex = 4;
             this.transRecName3.Text = "BTC";
             // 
@@ -655,7 +655,7 @@ namespace Mock_Investing
             this.transRecKor3.ForeColor = System.Drawing.Color.Black;
             this.transRecKor3.Location = new System.Drawing.Point(16, 14);
             this.transRecKor3.Name = "transRecKor3";
-            this.transRecKor3.Size = new System.Drawing.Size(74, 21);
+            this.transRecKor3.Size = new System.Drawing.Size(92, 28);
             this.transRecKor3.TabIndex = 3;
             this.transRecKor3.Text = "비트코인";
             // 
@@ -683,7 +683,7 @@ namespace Mock_Investing
             this.transRecPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice2.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice2.Name = "transRecPrice2";
-            this.transRecPrice2.Size = new System.Drawing.Size(106, 21);
+            this.transRecPrice2.Size = new System.Drawing.Size(139, 28);
             this.transRecPrice2.TabIndex = 5;
             this.transRecPrice2.Text = "₩ 42,480,680";
             // 
@@ -695,7 +695,7 @@ namespace Mock_Investing
             this.transRecName2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName2.Location = new System.Drawing.Point(17, 38);
             this.transRecName2.Name = "transRecName2";
-            this.transRecName2.Size = new System.Drawing.Size(26, 15);
+            this.transRecName2.Size = new System.Drawing.Size(33, 20);
             this.transRecName2.TabIndex = 4;
             this.transRecName2.Text = "BTC";
             // 
@@ -707,7 +707,7 @@ namespace Mock_Investing
             this.transRecKor2.ForeColor = System.Drawing.Color.Black;
             this.transRecKor2.Location = new System.Drawing.Point(16, 15);
             this.transRecKor2.Name = "transRecKor2";
-            this.transRecKor2.Size = new System.Drawing.Size(74, 21);
+            this.transRecKor2.Size = new System.Drawing.Size(92, 28);
             this.transRecKor2.TabIndex = 3;
             this.transRecKor2.Text = "비트코인";
             // 
@@ -768,7 +768,7 @@ namespace Mock_Investing
             this.firstRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.firstRankWallet.Location = new System.Drawing.Point(32, 142);
             this.firstRankWallet.Name = "firstRankWallet";
-            this.firstRankWallet.Size = new System.Drawing.Size(219, 23);
+            this.firstRankWallet.Size = new System.Drawing.Size(279, 29);
             this.firstRankWallet.TabIndex = 7;
             this.firstRankWallet.Text = "₩ 1,240,234,092,390";
             // 
@@ -780,7 +780,7 @@ namespace Mock_Investing
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Location = new System.Drawing.Point(222, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 13);
+            this.label14.Size = new System.Drawing.Size(64, 17);
             this.label14.TabIndex = 6;
             this.label14.Text = "05 / 13";
             // 
@@ -792,7 +792,7 @@ namespace Mock_Investing
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label15.Location = new System.Drawing.Point(186, 8);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 13);
+            this.label15.Size = new System.Drawing.Size(112, 17);
             this.label15.TabIndex = 5;
             this.label15.Text = "Date Achieved";
             // 
@@ -804,7 +804,7 @@ namespace Mock_Investing
             this.firstRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.firstRankName.Location = new System.Drawing.Point(109, 73);
             this.firstRankName.Name = "firstRankName";
-            this.firstRankName.Size = new System.Drawing.Size(155, 28);
+            this.firstRankName.Size = new System.Drawing.Size(191, 36);
             this.firstRankName.TabIndex = 4;
             this.firstRankName.Text = "John Harris";
             // 
@@ -816,7 +816,7 @@ namespace Mock_Investing
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Location = new System.Drawing.Point(21, 31);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 14);
+            this.label17.Size = new System.Drawing.Size(96, 18);
             this.label17.TabIndex = 3;
             this.label17.Text = "First Place";
             // 
@@ -877,7 +877,7 @@ namespace Mock_Investing
             this.secondRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.secondRankWallet.Location = new System.Drawing.Point(28, 142);
             this.secondRankWallet.Name = "secondRankWallet";
-            this.secondRankWallet.Size = new System.Drawing.Size(197, 23);
+            this.secondRankWallet.Size = new System.Drawing.Size(251, 29);
             this.secondRankWallet.TabIndex = 28;
             this.secondRankWallet.Text = "₩ 940,315,221,410";
             // 
@@ -889,7 +889,7 @@ namespace Mock_Investing
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(218, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(64, 17);
             this.label5.TabIndex = 27;
             this.label5.Text = "04 / 25";
             // 
@@ -901,7 +901,7 @@ namespace Mock_Investing
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(182, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 13);
+            this.label7.Size = new System.Drawing.Size(112, 17);
             this.label7.TabIndex = 26;
             this.label7.Text = "Date Achieved";
             // 
@@ -913,7 +913,7 @@ namespace Mock_Investing
             this.secondRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.secondRankName.Location = new System.Drawing.Point(110, 73);
             this.secondRankName.Name = "secondRankName";
-            this.secondRankName.Size = new System.Drawing.Size(155, 28);
+            this.secondRankName.Size = new System.Drawing.Size(191, 36);
             this.secondRankName.TabIndex = 25;
             this.secondRankName.Text = "Stephan Lee";
             // 
@@ -925,7 +925,7 @@ namespace Mock_Investing
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(11, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 14);
+            this.label9.Size = new System.Drawing.Size(104, 18);
             this.label9.TabIndex = 24;
             this.label9.Text = "Second Place";
             // 
@@ -986,7 +986,7 @@ namespace Mock_Investing
             this.thirdRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thirdRankWallet.Location = new System.Drawing.Point(30, 143);
             this.thirdRankWallet.Name = "thirdRankWallet";
-            this.thirdRankWallet.Size = new System.Drawing.Size(197, 23);
+            this.thirdRankWallet.Size = new System.Drawing.Size(251, 29);
             this.thirdRankWallet.TabIndex = 28;
             this.thirdRankWallet.Text = "₩ 472,929,125,440";
             // 
@@ -998,7 +998,7 @@ namespace Mock_Investing
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label10.Location = new System.Drawing.Point(220, 21);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.Size = new System.Drawing.Size(64, 17);
             this.label10.TabIndex = 27;
             this.label10.Text = "12 / 25";
             // 
@@ -1010,7 +1010,7 @@ namespace Mock_Investing
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Location = new System.Drawing.Point(184, 8);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 13);
+            this.label11.Size = new System.Drawing.Size(112, 17);
             this.label11.TabIndex = 26;
             this.label11.Text = "Date Achieved";
             // 
@@ -1022,7 +1022,7 @@ namespace Mock_Investing
             this.thirdRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thirdRankName.Location = new System.Drawing.Point(102, 74);
             this.thirdRankName.Name = "thirdRankName";
-            this.thirdRankName.Size = new System.Drawing.Size(181, 28);
+            this.thirdRankName.Size = new System.Drawing.Size(223, 36);
             this.thirdRankName.TabIndex = 25;
             this.thirdRankName.Text = "Oliver Hutley";
             // 
@@ -1034,7 +1034,7 @@ namespace Mock_Investing
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label18.Location = new System.Drawing.Point(16, 29);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(84, 14);
+            this.label18.Size = new System.Drawing.Size(96, 18);
             this.label18.TabIndex = 24;
             this.label18.Text = "Third Place";
             // 
@@ -1070,7 +1070,7 @@ namespace Mock_Investing
             this.transRecPrice1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice1.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice1.Name = "transRecPrice1";
-            this.transRecPrice1.Size = new System.Drawing.Size(106, 21);
+            this.transRecPrice1.Size = new System.Drawing.Size(139, 28);
             this.transRecPrice1.TabIndex = 5;
             this.transRecPrice1.Text = "₩ 42,480,680";
             // 
@@ -1082,7 +1082,7 @@ namespace Mock_Investing
             this.transRecName1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName1.Location = new System.Drawing.Point(18, 39);
             this.transRecName1.Name = "transRecName1";
-            this.transRecName1.Size = new System.Drawing.Size(26, 15);
+            this.transRecName1.Size = new System.Drawing.Size(33, 20);
             this.transRecName1.TabIndex = 4;
             this.transRecName1.Text = "BTC";
             // 
@@ -1094,7 +1094,7 @@ namespace Mock_Investing
             this.transRecKor1.ForeColor = System.Drawing.Color.Black;
             this.transRecKor1.Location = new System.Drawing.Point(16, 15);
             this.transRecKor1.Name = "transRecKor1";
-            this.transRecKor1.Size = new System.Drawing.Size(74, 21);
+            this.transRecKor1.Size = new System.Drawing.Size(92, 28);
             this.transRecKor1.TabIndex = 3;
             this.transRecKor1.Text = "비트코인";
             // 
@@ -1122,7 +1122,7 @@ namespace Mock_Investing
             this.labTrans.ForeColor = System.Drawing.Color.Gray;
             this.labTrans.Location = new System.Drawing.Point(896, 294);
             this.labTrans.Name = "labTrans";
-            this.labTrans.Size = new System.Drawing.Size(95, 21);
+            this.labTrans.Size = new System.Drawing.Size(117, 28);
             this.labTrans.TabIndex = 92;
             this.labTrans.Text = "05/27 20:49";
             // 
@@ -1134,7 +1134,7 @@ namespace Mock_Investing
             this.label30.ForeColor = System.Drawing.Color.Gray;
             this.label30.Location = new System.Drawing.Point(810, 294);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(89, 21);
+            this.label30.Size = new System.Drawing.Size(111, 28);
             this.label30.TabIndex = 91;
             this.label30.Text = "갱신 시간 : ";
             // 
@@ -1146,7 +1146,7 @@ namespace Mock_Investing
             this.label29.ForeColor = System.Drawing.Color.Black;
             this.label29.Location = new System.Drawing.Point(802, 253);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(187, 37);
+            this.label29.Size = new System.Drawing.Size(229, 45);
             this.label29.TabIndex = 90;
             this.label29.Text = "BTC 체결 내역";
             // 
@@ -1449,6 +1449,7 @@ namespace Mock_Investing
             // 전일대비
             // 
             this.전일대비.HeaderText = "전일대비";
+            this.전일대비.MinimumWidth = 6;
             this.전일대비.Name = "전일대비";
             // 
             // tabPageHoldings
@@ -1560,6 +1561,7 @@ namespace Mock_Investing
             // 전일대비2
             // 
             this.전일대비2.HeaderText = "전일대비";
+            this.전일대비2.MinimumWidth = 6;
             this.전일대비2.Name = "전일대비2";
             // 
             // guna2Panel5
@@ -1617,7 +1619,7 @@ namespace Mock_Investing
             this.lblChartCoinPrice.ForeColor = System.Drawing.Color.IndianRed;
             this.lblChartCoinPrice.Location = new System.Drawing.Point(37, 72);
             this.lblChartCoinPrice.Name = "lblChartCoinPrice";
-            this.lblChartCoinPrice.Size = new System.Drawing.Size(121, 30);
+            this.lblChartCoinPrice.Size = new System.Drawing.Size(159, 37);
             this.lblChartCoinPrice.TabIndex = 1;
             this.lblChartCoinPrice.Text = "37,799,000";
             // 
@@ -1627,7 +1629,7 @@ namespace Mock_Investing
             this.lblChartCoinName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChartCoinName.Location = new System.Drawing.Point(34, 35);
             this.lblChartCoinName.Name = "lblChartCoinName";
-            this.lblChartCoinName.Size = new System.Drawing.Size(111, 32);
+            this.lblChartCoinName.Size = new System.Drawing.Size(138, 41);
             this.lblChartCoinName.TabIndex = 0;
             this.lblChartCoinName.Text = "비트코인";
             // 
@@ -1833,7 +1835,7 @@ namespace Mock_Investing
             this.labelBuyTotalOrder.Location = new System.Drawing.Point(38, 151);
             this.labelBuyTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyTotalOrder.Name = "labelBuyTotalOrder";
-            this.labelBuyTotalOrder.Size = new System.Drawing.Size(55, 19);
+            this.labelBuyTotalOrder.Size = new System.Drawing.Size(71, 25);
             this.labelBuyTotalOrder.TabIndex = 21;
             this.labelBuyTotalOrder.Text = "주문총액";
             // 
@@ -1857,10 +1859,13 @@ namespace Mock_Investing
             this.txtboxBuyOrderQuantity.PasswordChar = '\0';
             this.txtboxBuyOrderQuantity.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxBuyOrderQuantity.PlaceholderText = "";
+            this.txtboxBuyOrderQuantity.ReadOnly = true;
             this.txtboxBuyOrderQuantity.SelectedText = "";
             this.txtboxBuyOrderQuantity.Size = new System.Drawing.Size(300, 35);
             this.txtboxBuyOrderQuantity.TabIndex = 20;
             this.txtboxBuyOrderQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtboxBuyOrderQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtboxBuySellOrderQuantity_Keypress);
+            this.txtboxBuyOrderQuantity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtboxBuySellOrderQuantity_KeyUp);
             // 
             // labelBuyOrderQuantity
             // 
@@ -1870,7 +1875,7 @@ namespace Mock_Investing
             this.labelBuyOrderQuantity.Location = new System.Drawing.Point(38, 78);
             this.labelBuyOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyOrderQuantity.Name = "labelBuyOrderQuantity";
-            this.labelBuyOrderQuantity.Size = new System.Drawing.Size(55, 19);
+            this.labelBuyOrderQuantity.Size = new System.Drawing.Size(71, 25);
             this.labelBuyOrderQuantity.TabIndex = 19;
             this.labelBuyOrderQuantity.Text = "주문수량";
             // 
@@ -1909,7 +1914,7 @@ namespace Mock_Investing
             this.labelBuyPrice.Location = new System.Drawing.Point(38, 26);
             this.labelBuyPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyPrice.Name = "labelBuyPrice";
-            this.labelBuyPrice.Size = new System.Drawing.Size(55, 19);
+            this.labelBuyPrice.Size = new System.Drawing.Size(71, 25);
             this.labelBuyPrice.TabIndex = 17;
             this.labelBuyPrice.Text = "매수가격";
             // 
@@ -2101,7 +2106,7 @@ namespace Mock_Investing
             this.labelSellTotalOrder.Location = new System.Drawing.Point(38, 151);
             this.labelSellTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellTotalOrder.Name = "labelSellTotalOrder";
-            this.labelSellTotalOrder.Size = new System.Drawing.Size(55, 19);
+            this.labelSellTotalOrder.Size = new System.Drawing.Size(71, 25);
             this.labelSellTotalOrder.TabIndex = 34;
             this.labelSellTotalOrder.Text = "주문총액";
             // 
@@ -2124,10 +2129,13 @@ namespace Mock_Investing
             this.txtboxSellOrderQuantity.PasswordChar = '\0';
             this.txtboxSellOrderQuantity.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txtboxSellOrderQuantity.PlaceholderText = "";
+            this.txtboxSellOrderQuantity.ReadOnly = true;
             this.txtboxSellOrderQuantity.SelectedText = "";
             this.txtboxSellOrderQuantity.Size = new System.Drawing.Size(300, 35);
             this.txtboxSellOrderQuantity.TabIndex = 33;
             this.txtboxSellOrderQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtboxSellOrderQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtboxBuySellOrderQuantity_Keypress);
+            this.txtboxSellOrderQuantity.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtboxBuySellOrderQuantity_KeyUp);
             // 
             // labelSellOrderQuantity
             // 
@@ -2137,7 +2145,7 @@ namespace Mock_Investing
             this.labelSellOrderQuantity.Location = new System.Drawing.Point(38, 78);
             this.labelSellOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellOrderQuantity.Name = "labelSellOrderQuantity";
-            this.labelSellOrderQuantity.Size = new System.Drawing.Size(55, 19);
+            this.labelSellOrderQuantity.Size = new System.Drawing.Size(71, 25);
             this.labelSellOrderQuantity.TabIndex = 32;
             this.labelSellOrderQuantity.Text = "주문수량";
             // 
@@ -2174,7 +2182,7 @@ namespace Mock_Investing
             this.labelSellPrice.Location = new System.Drawing.Point(38, 26);
             this.labelSellPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellPrice.Name = "labelSellPrice";
-            this.labelSellPrice.Size = new System.Drawing.Size(55, 19);
+            this.labelSellPrice.Size = new System.Drawing.Size(71, 25);
             this.labelSellPrice.TabIndex = 30;
             this.labelSellPrice.Text = "매도가격";
             // 
@@ -2326,6 +2334,7 @@ namespace Mock_Investing
             // OwnQuantity
             // 
             this.OwnQuantity.HeaderText = "보유량";
+            this.OwnQuantity.MinimumWidth = 6;
             this.OwnQuantity.Name = "OwnQuantity";
             // 
             // label2
@@ -2336,7 +2345,7 @@ namespace Mock_Investing
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(58, 363);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 37);
+            this.label2.Size = new System.Drawing.Size(165, 46);
             this.label2.TabIndex = 87;
             this.label2.Text = "내 프로필";
             // 
@@ -2383,7 +2392,7 @@ namespace Mock_Investing
             this.myProfile_lab7.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab7.Location = new System.Drawing.Point(21, 28);
             this.myProfile_lab7.Name = "myProfile_lab7";
-            this.myProfile_lab7.Size = new System.Drawing.Size(109, 21);
+            this.myProfile_lab7.Size = new System.Drawing.Size(136, 28);
             this.myProfile_lab7.TabIndex = 89;
             this.myProfile_lab7.Text = "시작 자금      : ";
             // 
@@ -2395,7 +2404,7 @@ namespace Mock_Investing
             this.myProfile_lab3.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab3.Location = new System.Drawing.Point(21, 90);
             this.myProfile_lab3.Name = "myProfile_lab3";
-            this.myProfile_lab3.Size = new System.Drawing.Size(109, 21);
+            this.myProfile_lab3.Size = new System.Drawing.Size(136, 28);
             this.myProfile_lab3.TabIndex = 91;
             this.myProfile_lab3.Text = "총 보유 자금 : ";
             // 
@@ -2407,7 +2416,7 @@ namespace Mock_Investing
             this.myProfile_lab5.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab5.Location = new System.Drawing.Point(305, 28);
             this.myProfile_lab5.Name = "myProfile_lab5";
-            this.myProfile_lab5.Size = new System.Drawing.Size(109, 21);
+            this.myProfile_lab5.Size = new System.Drawing.Size(136, 28);
             this.myProfile_lab5.TabIndex = 93;
             this.myProfile_lab5.Text = "순수익           : ";
             // 
@@ -2419,7 +2428,7 @@ namespace Mock_Investing
             this.myProfile_lab8.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab8.Location = new System.Drawing.Point(305, 152);
             this.myProfile_lab8.Name = "myProfile_lab8";
-            this.myProfile_lab8.Size = new System.Drawing.Size(109, 21);
+            this.myProfile_lab8.Size = new System.Drawing.Size(136, 28);
             this.myProfile_lab8.TabIndex = 90;
             this.myProfile_lab8.Text = "현재 순위      : ";
             // 
@@ -2431,7 +2440,7 @@ namespace Mock_Investing
             this.myProfile_lab4.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab4.Location = new System.Drawing.Point(21, 152);
             this.myProfile_lab4.Name = "myProfile_lab4";
-            this.myProfile_lab4.Size = new System.Drawing.Size(109, 21);
+            this.myProfile_lab4.Size = new System.Drawing.Size(136, 28);
             this.myProfile_lab4.TabIndex = 92;
             this.myProfile_lab4.Text = "현 보유 자금 : ";
             // 
@@ -2443,7 +2452,7 @@ namespace Mock_Investing
             this.myProfile_lab6.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab6.Location = new System.Drawing.Point(305, 90);
             this.myProfile_lab6.Name = "myProfile_lab6";
-            this.myProfile_lab6.Size = new System.Drawing.Size(109, 21);
+            this.myProfile_lab6.Size = new System.Drawing.Size(136, 28);
             this.myProfile_lab6.TabIndex = 88;
             this.myProfile_lab6.Text = "현재 수익률  : ";
             // 
@@ -2469,7 +2478,7 @@ namespace Mock_Investing
             this.myProfile_lab2.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab2.Location = new System.Drawing.Point(33, 209);
             this.myProfile_lab2.Name = "myProfile_lab2";
-            this.myProfile_lab2.Size = new System.Drawing.Size(89, 21);
+            this.myProfile_lab2.Size = new System.Drawing.Size(111, 28);
             this.myProfile_lab2.TabIndex = 87;
             this.myProfile_lab2.Text = "시작 날짜 : ";
             // 
@@ -2481,7 +2490,7 @@ namespace Mock_Investing
             this.myProfile_lab1.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab1.Location = new System.Drawing.Point(33, 173);
             this.myProfile_lab1.Name = "myProfile_lab1";
-            this.myProfile_lab1.Size = new System.Drawing.Size(89, 21);
+            this.myProfile_lab1.Size = new System.Drawing.Size(111, 28);
             this.myProfile_lab1.TabIndex = 86;
             this.myProfile_lab1.Text = "이름          : ";
             // 
@@ -2518,7 +2527,7 @@ namespace Mock_Investing
             this.label32.ForeColor = System.Drawing.Color.Black;
             this.label32.Location = new System.Drawing.Point(14, 18);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(110, 21);
+            this.label32.Size = new System.Drawing.Size(138, 28);
             this.label32.TabIndex = 79;
             this.label32.Text = "리셋 주의사항";
             // 
@@ -2552,7 +2561,7 @@ namespace Mock_Investing
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(34, 9);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(132, 37);
+            this.label33.Size = new System.Drawing.Size(165, 46);
             this.label33.TabIndex = 89;
             this.label33.Text = "보유 종목";
             // 
@@ -2583,7 +2592,7 @@ namespace Mock_Investing
             this.header_Wallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Wallet.Location = new System.Drawing.Point(69, 85);
             this.header_Wallet.Name = "header_Wallet";
-            this.header_Wallet.Size = new System.Drawing.Size(84, 21);
+            this.header_Wallet.Size = new System.Drawing.Size(104, 28);
             this.header_Wallet.TabIndex = 4;
             this.header_Wallet.Text = "₩ 550,320";
             // 
@@ -2595,7 +2604,7 @@ namespace Mock_Investing
             this.header_Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Name.Location = new System.Drawing.Point(70, 46);
             this.header_Name.Name = "header_Name";
-            this.header_Name.Size = new System.Drawing.Size(83, 31);
+            this.header_Name.Size = new System.Drawing.Size(104, 40);
             this.header_Name.TabIndex = 3;
             this.header_Name.Text = "홍길동";
             // 
