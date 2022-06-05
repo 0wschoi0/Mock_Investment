@@ -1097,6 +1097,21 @@ namespace Mock_Investing
             butTrans.PerformClick();
             Chart(coinName);
         }
+        private void gridMainList_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            coinName = gridMainList.Rows[e.RowIndex].Cells[0].Value.ToString();
+            lblChartCoinName.Text = gridMainList.Rows[e.RowIndex].Cells[1].Value.ToString();
+            lblChartCoinPrice.Text = gridMainList.Rows[e.RowIndex].Cells[2].Value.ToString();
+            int index = 0;
+            while (coinName != coins[index].market) { index++; }
+            coinNow = coins[index];
+            txtboxBuyOrderQuantity.ResetText();
+            txtboxBuyTotalOrder.ResetText();
+            txtboxSellOrderQuantity.ResetText();
+            txtboxSellTotalOrder.ResetText();
+            butTrans.PerformClick();
+            Chart(coinName);
+        }
         public class Candle
         {
             string date_format = "";
@@ -1347,6 +1362,6 @@ namespace Mock_Investing
             }
         }
 
-
+       
     }
 }
