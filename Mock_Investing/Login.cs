@@ -128,7 +128,7 @@ namespace Mock_Investing
                 record.Add("BuyRecords", recordPrice);
                 await document.SetAsync(docData);
                 await document2.SetAsync(coins);
-                await document3.SetAsync(coins);
+                await document3.SetAsync(record);
 
                 DocumentReference rankDoc = db.Collection("Ranking").Document("Top");
                 Dictionary<string, object> data = new Dictionary<string, object>()
