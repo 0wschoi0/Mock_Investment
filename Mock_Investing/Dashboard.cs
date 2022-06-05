@@ -61,7 +61,6 @@ namespace Mock_Investing
             InitializeComponent();
             db = FirestoreDb.Create("mock-af23d");
             UID = uid;
-            myProfile_startDate.Text = startDate;
             market = fetchCoinList();
             Chart(coinName);
             Timer timer = new System.Windows.Forms.Timer();
