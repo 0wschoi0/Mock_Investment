@@ -34,6 +34,9 @@ namespace Mock_Investing
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -55,9 +58,6 @@ namespace Mock_Investing
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.header_Profit = new System.Windows.Forms.Label();
@@ -68,6 +68,9 @@ namespace Mock_Investing
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabMy = new System.Windows.Forms.TabPage();
+            this.xrpprice = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.xrpchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btcprice = new System.Windows.Forms.Label();
             this.btcchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label16 = new System.Windows.Forms.Label();
@@ -206,14 +209,13 @@ namespace Mock_Investing
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.header_Img = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.xrpprice = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.xrpchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tabMy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xrpchart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcchart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ethchart)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
@@ -247,7 +249,6 @@ namespace Mock_Investing
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.header_Img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrpchart)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -384,6 +385,7 @@ namespace Mock_Investing
             // 
             this.tabMy.BackColor = System.Drawing.Color.White;
             this.tabMy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabMy.Controls.Add(this.button1);
             this.tabMy.Controls.Add(this.xrpprice);
             this.tabMy.Controls.Add(this.label12);
             this.tabMy.Controls.Add(this.xrpchart);
@@ -408,6 +410,60 @@ namespace Mock_Investing
             this.tabMy.Size = new System.Drawing.Size(1182, 686);
             this.tabMy.TabIndex = 1;
             this.tabMy.Text = "tabPage2";
+            // 
+            // xrpprice
+            // 
+            this.xrpprice.AutoSize = true;
+            this.xrpprice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xrpprice.ForeColor = System.Drawing.Color.IndianRed;
+            this.xrpprice.Location = new System.Drawing.Point(761, 353);
+            this.xrpprice.Name = "xrpprice";
+            this.xrpprice.Size = new System.Drawing.Size(100, 23);
+            this.xrpprice.TabIndex = 118;
+            this.xrpprice.Text = "37,799,000";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(760, 325);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 28);
+            this.label12.TabIndex = 117;
+            this.label12.Text = "리플";
+            // 
+            // xrpchart
+            // 
+            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.IsReversed = true;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Enabled = false;
+            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorTickMark.Enabled = false;
+            chartArea1.InnerPlotPosition.Auto = false;
+            chartArea1.InnerPlotPosition.Height = 90.55851F;
+            chartArea1.InnerPlotPosition.Width = 90.52276F;
+            chartArea1.InnerPlotPosition.X = 1.67553F;
+            chartArea1.InnerPlotPosition.Y = 2.23404F;
+            chartArea1.Name = "ChartArea1";
+            this.xrpchart.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.xrpchart.Legends.Add(legend1);
+            this.xrpchart.Location = new System.Drawing.Point(765, 352);
+            this.xrpchart.Name = "xrpchart";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.YValuesPerPoint = 4;
+            this.xrpchart.Series.Add(series1);
+            this.xrpchart.Size = new System.Drawing.Size(300, 300);
+            this.xrpchart.TabIndex = 116;
+            this.xrpchart.Text = "chart2";
             // 
             // btcprice
             // 
@@ -2663,59 +2719,14 @@ namespace Mock_Investing
             this.header_Img.TabStop = false;
             this.header_Img.UseTransparentBackground = true;
             // 
-            // xrpprice
+            // button1
             // 
-            this.xrpprice.AutoSize = true;
-            this.xrpprice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrpprice.ForeColor = System.Drawing.Color.IndianRed;
-            this.xrpprice.Location = new System.Drawing.Point(761, 353);
-            this.xrpprice.Name = "xrpprice";
-            this.xrpprice.Size = new System.Drawing.Size(100, 23);
-            this.xrpprice.TabIndex = 118;
-            this.xrpprice.Text = "37,799,000";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(760, 325);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 28);
-            this.label12.TabIndex = 117;
-            this.label12.Text = "리플";
-            // 
-            // xrpchart
-            // 
-            chartArea1.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea1.AxisX.IsLabelAutoFit = false;
-            chartArea1.AxisX.IsReversed = true;
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisX.MajorTickMark.Enabled = false;
-            chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea1.AxisY.IsLabelAutoFit = false;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorTickMark.Enabled = false;
-            chartArea1.InnerPlotPosition.Auto = false;
-            chartArea1.InnerPlotPosition.Height = 90.55851F;
-            chartArea1.InnerPlotPosition.Width = 90.52276F;
-            chartArea1.InnerPlotPosition.X = 1.67553F;
-            chartArea1.InnerPlotPosition.Y = 2.23404F;
-            chartArea1.Name = "ChartArea1";
-            this.xrpchart.ChartAreas.Add(chartArea1);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.xrpchart.Legends.Add(legend1);
-            this.xrpchart.Location = new System.Drawing.Point(765, 352);
-            this.xrpchart.Name = "xrpchart";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            series1.YValuesPerPoint = 4;
-            this.xrpchart.Series.Add(series1);
-            this.xrpchart.Size = new System.Drawing.Size(300, 300);
-            this.xrpchart.TabIndex = 116;
-            this.xrpchart.Text = "chart2";
+            this.button1.Location = new System.Drawing.Point(1024, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 119;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Dashboard
             // 
@@ -2737,6 +2748,7 @@ namespace Mock_Investing
             this.guna2TabControl1.ResumeLayout(false);
             this.tabMy.ResumeLayout(false);
             this.tabMy.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.xrpchart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcchart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ethchart)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
@@ -2781,7 +2793,6 @@ namespace Mock_Investing
             this.guna2Panel3.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.header_Img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrpchart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2939,6 +2950,7 @@ namespace Mock_Investing
         private System.Windows.Forms.Label xrpprice;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataVisualization.Charting.Chart xrpchart;
+        private System.Windows.Forms.Button button1;
     }
 }
 
