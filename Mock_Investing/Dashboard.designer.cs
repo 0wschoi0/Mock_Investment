@@ -2106,6 +2106,7 @@ namespace Mock_Investing
             this.gridMainList.ThemeStyle.RowsStyle.Height = 50;
             this.gridMainList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridMainList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainList.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridMainList_CellContentDoubleClick);
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -2549,7 +2550,7 @@ namespace Mock_Investing
             this.butView.Text = "View All Items";
             this.butView.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.butView.TextOffset = new System.Drawing.Point(30, 0);
-            this.butView.Click += new System.EventHandler(this.butView_Click);
+            this.butView.Click += new System.EventHandler(this.but_Click);
             // 
             // butTrans
             // 
@@ -2578,7 +2579,7 @@ namespace Mock_Investing
             this.butTrans.Text = "Transaction";
             this.butTrans.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.butTrans.TextOffset = new System.Drawing.Point(30, 0);
-            this.butTrans.Click += new System.EventHandler(this.butTrans_Click);
+            this.butTrans.Click += new System.EventHandler(this.but_Click);
             // 
             // butMy
             // 
@@ -2608,7 +2609,7 @@ namespace Mock_Investing
             this.butMy.Text = "Main Page";
             this.butMy.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.butMy.TextOffset = new System.Drawing.Point(30, 0);
-            this.butMy.Click += new System.EventHandler(this.butMy_Click);
+            this.butMy.Click += new System.EventHandler(this.but_Click);
             // 
             // butLogout
             // 
@@ -2637,7 +2638,7 @@ namespace Mock_Investing
             this.butLogout.Text = "Logout";
             this.butLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.butLogout.TextOffset = new System.Drawing.Point(30, 0);
-            this.butLogout.Click += new System.EventHandler(this.butLogout_Click);
+            this.butLogout.Click += new System.EventHandler(this.but_Click);
             // 
             // guna2Panel4
             // 
@@ -2673,7 +2674,7 @@ namespace Mock_Investing
             this.myPro.Text = "My Profile";
             this.myPro.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.myPro.TextOffset = new System.Drawing.Point(30, 0);
-            this.myPro.Click += new System.EventHandler(this.myPro_Click);
+            this.myPro.Click += new System.EventHandler(this.but_Click);
             // 
             // guna2VSeparator3
             // 
