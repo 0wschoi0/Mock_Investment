@@ -363,6 +363,7 @@ namespace Mock_Investing
 
         private async void btnBuy_Click(object sender, EventArgs e)
         {
+            if (txtboxBuyOrderQuantity.Text == "0" || txtboxBuyOrderQuantity.Text == "") { return; }
             if (cost > asset)
             {
                 MessageBox.Show("현금이 부족합니다.");
@@ -555,6 +556,7 @@ namespace Mock_Investing
 
         private async void BtnSell_Click(object sender, EventArgs e)
         {
+            if (txtboxSellOrderQuantity.Text == "0" || txtboxSellOrderQuantity.Text == "") { return; }
             CoinOwn coinOwn = new CoinOwn
             {
                 CoinCurrent = new Dictionary<string, double>
