@@ -235,30 +235,20 @@ namespace Mock_Investing
                 return;
             }
         }
-
-        private void butMy_Click(object sender, EventArgs e)
+        private void but_Click(object sender, EventArgs e)
         {
-            guna2TabControl1.SelectedIndex = 0;
+            if (sender.Equals(butMy))
+                guna2TabControl1.SelectedIndex = 0;
+            else if (sender.Equals(butView))
+                guna2TabControl1.SelectedIndex = 1;
+            else if (sender.Equals(butTrans))
+                guna2TabControl1.SelectedIndex = 2;
+            else if (sender.Equals(myPro))
+                guna2TabControl1.SelectedIndex = 3;
+            else if (sender.Equals(butLogout))
+                Environment.Exit(0);
         }
-
-        private void butView_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 1;
-        }
-
-        private void butTrans_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 2;
-        }
-        private void myPro_Click(object sender, EventArgs e)
-        {
-            guna2TabControl1.SelectedIndex = 3;
-        }
-
-        private void butLogout_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
+     
 
         // 매수 구현 시작
         private void txtboxBuySellOrderQuantity_Keypress(object sender, KeyPressEventArgs e)
