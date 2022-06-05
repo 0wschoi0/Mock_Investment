@@ -245,22 +245,46 @@ namespace Mock_Investing
             else if (sender.Equals(butLogout))
                 Environment.Exit(0);
         }
-     
+
 
         // 매수 구현 시작
         private void txtboxBuySellOrderQuantity_Keypress(object sender, KeyPressEventArgs e)
         {
-           if (!sender.ToString().Contains(".")) // 키 입력 제한
+            if (sender.Equals(txtboxBuyOrderQuantity))
             {
-                if (char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back) || e.KeyChar == '.')
-                    return;
+                
+                if (!(txtboxBuyOrderQuantity.Text.Contains("."))) // 키 입력 제한
+                {
+                    if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != '.' && e.KeyChar != Convert.ToChar(Keys.Back))
+                    {
+                        e.Handled = true;
+                    }
+                   
+                }
+                else
+                {
+                    if (!(char.IsDigit(e.KeyChar)) && e.KeyChar != Convert.ToChar(Keys.Back))
+                    {
+                        e.Handled = true; 
+                    }
+                   
+                }
+                
             }
             else
             {
-                if (char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back))
-                    return;
+                if (!txtboxSellOrderQuantity.Text.Contains(".")) // 키 입력 제한
+                {
+                    if (!(Char.IsDigit(e.KeyChar)) && e.KeyChar != '.' && e.KeyChar != Convert.ToChar(Keys.Back))
+                        e.Handled = true;
+                }
+                else
+                {
+                    if (!(char.IsDigit(e.KeyChar)) && e.KeyChar != Convert.ToChar(Keys.Back))
+                        e.Handled = true;
+                }
             }
-            e.Handled = true;
+            
            
         }
         private void txtboxBuySellOrderQuantity_KeyUp(object sender, KeyEventArgs e)
@@ -273,6 +297,11 @@ namespace Mock_Investing
                     cost = (int)Math.Floor(result * coinNow.trade_price);
                     txtboxBuyTotalOrder.Text = (cost).ToString("C");
                     amount = result;
+                    if (asset < Convert.ToDouble(txtboxBuyOrderQuantity.Text) * coinNow.trade_price)
+                    {
+                            btnBuyOrderQuantity100.PerformClick();
+                    }
+                    
                 }
                 else
                 {
@@ -288,6 +317,16 @@ namespace Mock_Investing
                     cost = (int)Math.Floor(result * coinNow.trade_price);
                     txtboxSellTotalOrder.Text = (cost).ToString("C");
                     sellAmount = result;
+                    for (int i = 0; i < gridMainList.Rows.Count; i++) {
+                        if (gridMainList.Rows[i].Cells[0].Value.ToString() == coinNow.market)
+                        {
+                            if(Convert.ToDouble(txtboxSellOrderQuantity.Text) > Convert.ToDouble(gridMainList.Rows[i].Cells[5].Value))
+                            {
+                                btnSellOrderQuantity100.PerformClick();
+                            }
+
+                        }
+                    }
                 }
                 else
                 {
