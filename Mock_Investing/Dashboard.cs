@@ -595,7 +595,7 @@ namespace Mock_Investing
                 }
                 await documentCoins.SetAsync(coinOwn);
                 await documentRecords.SetAsync(buyOwn);
-                await documentStatus.UpdateAsync("Asset", asset + (int)(sellAmount * coinNow.trade_price));
+                await documentStatus.UpdateAsync("Asset", asset + (int)(sellAmount * (int)coinNow.trade_price));
                 btnSellReset.PerformClick();
                 MessageBox.Show("매도 체결완료");
             }
