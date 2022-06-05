@@ -162,7 +162,7 @@ namespace Mock_Investing
                         gridMainList.Rows[myCoinIndex].Cells[1].Value = coin[i].korean_name;
                         gridMainList.Rows[myCoinIndex].Cells[2].Value = coins[i].trade_price.ToString("C");
                         gridMainList.Rows[myCoinIndex].Cells[3].Value = changeRate.ToString() + "%";
-                        gridMainListChart.Rows[myCoinIndex].Cells[0].Value = coins[i].market;
+                        gridMainListChart.Rows[myCoinIndex].Cells[0].Value = coin[i].market;
                         gridMainListChart.Rows[myCoinIndex].Cells[1].Value = coin[i].korean_name;
                         gridMainListChart.Rows[myCoinIndex].Cells[2].Value = coins[i].trade_price.ToString("C");
                         gridMainListChart.Rows[myCoinIndex].Cells[3].Value = changeRate.ToString() + "%";
@@ -1078,7 +1078,21 @@ namespace Mock_Investing
 
             Chart(coinName);
         }
-
+        private void gridMainListChart_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            coinName = gridMainListChart.Rows[e.RowIndex].Cells[0].Value.ToString();
+            lblChartCoinName.Text = gridMainListChart.Rows[e.RowIndex].Cells[1].Value.ToString();
+            lblChartCoinPrice.Text = gridMainListChart.Rows[e.RowIndex].Cells[2].Value.ToString();
+            int index = 0;
+            while (coinName != coins[index].market) { index++; }
+            coinNow = coins[index];
+            txtboxBuyOrderQuantity.ResetText();
+            txtboxBuyTotalOrder.ResetText();
+            txtboxSellOrderQuantity.ResetText();
+            txtboxSellTotalOrder.ResetText();
+            butTrans.PerformClick();
+            Chart(coinName);
+        }
         public class Candle
         {
             string date_format = "";
@@ -1328,5 +1342,7 @@ namespace Mock_Investing
                 myProfile_profit.ForeColor = Color.Red;
             }
         }
+
+
     }
 }

@@ -1292,6 +1292,7 @@ namespace Mock_Investing
             this.gridMainListChart.ThemeStyle.RowsStyle.Height = 50;
             this.gridMainListChart.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridMainListChart.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridMainListChart.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridMainListChart_CellDoubleClick);
             // 
             // dataGridViewTextBoxColumn24
             // 
