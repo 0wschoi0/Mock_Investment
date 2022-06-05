@@ -53,7 +53,8 @@ namespace Mock_Investing
         string coinName = "";
         double maxViewY = 0;
         double minViewY = 0;
-        
+
+
         public Dashboard(string uid)
         {
             InitializeComponent();
@@ -114,7 +115,9 @@ namespace Mock_Investing
 
             }
 
-            
+           
+
+
         }
 
         // 보유종목 Grid 초기화 구현 시작
@@ -1022,6 +1025,8 @@ namespace Mock_Investing
                 transRecPrice3.Text = transRecPrice2.Text;
                 transRecPrice2.Text = transRecPrice1.Text;
             }
+
+            
         }
 
         private void gridCoinList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -1253,6 +1258,28 @@ namespace Mock_Investing
         {
             [FirestoreProperty]
             public Dictionary<string, string> UID { get; set; }
+        }
+
+     
+        //view_Search 구현
+        private void view_Search_KeyDown(object sender, KeyEventArgs e)
+        {
+            String searchValue = view_Search.Text;
+            int rowindex = -1;
+
+            if (e.KeyCode == Keys.Enter)
+            {
+                foreach (DataGridViewRow row in gridCoinList.Rows)
+                {
+                    if (row.Cells[1].Value.ToString().Equals(searchValue))
+                    {
+                        rowindex = row.Index;
+                        gridCoinList.CurrentCell = gridCoinList.Rows[rowindex].Cells[0];
+                        break;
+                    }
+                }
+            }
+            
         }
     }
 }

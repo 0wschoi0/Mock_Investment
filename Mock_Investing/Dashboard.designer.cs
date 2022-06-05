@@ -34,27 +34,27 @@ namespace Mock_Investing
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.header_Profit = new System.Windows.Forms.Label();
@@ -294,7 +294,7 @@ namespace Mock_Investing
             this.header_Profit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Profit.Location = new System.Drawing.Point(250, 70);
             this.header_Profit.Name = "header_Profit";
-            this.header_Profit.Size = new System.Drawing.Size(211, 40);
+            this.header_Profit.Size = new System.Drawing.Size(162, 31);
             this.header_Profit.TabIndex = 5;
             this.header_Profit.Text = "+ ₩ 1,230,890";
             // 
@@ -306,7 +306,7 @@ namespace Mock_Investing
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(256, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.Size = new System.Drawing.Size(45, 15);
             this.label6.TabIndex = 4;
             this.label6.Text = "PROFIT";
             // 
@@ -328,7 +328,7 @@ namespace Mock_Investing
             this.header_Overall.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Overall.Location = new System.Drawing.Point(37, 70);
             this.header_Overall.Name = "header_Overall";
-            this.header_Overall.Size = new System.Drawing.Size(182, 40);
+            this.header_Overall.Size = new System.Drawing.Size(140, 31);
             this.header_Overall.TabIndex = 2;
             this.header_Overall.Text = "₩ 2,250,320";
             // 
@@ -340,7 +340,7 @@ namespace Mock_Investing
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(42, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 20);
+            this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 1;
             this.label3.Text = "OVERALL";
             // 
@@ -428,39 +428,39 @@ namespace Mock_Investing
             this.btcprice.ForeColor = System.Drawing.Color.IndianRed;
             this.btcprice.Location = new System.Drawing.Point(79, 352);
             this.btcprice.Name = "btcprice";
-            this.btcprice.Size = new System.Drawing.Size(100, 23);
+            this.btcprice.Size = new System.Drawing.Size(72, 17);
             this.btcprice.TabIndex = 109;
             this.btcprice.Text = "37,799,000";
             // 
             // btcchart
             // 
-            chartArea10.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea10.AxisX.IsLabelAutoFit = false;
-            chartArea10.AxisX.IsReversed = true;
-            chartArea10.AxisX.MajorGrid.Enabled = false;
-            chartArea10.AxisX.MajorTickMark.Enabled = false;
-            chartArea10.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea10.AxisY.IsLabelAutoFit = false;
-            chartArea10.AxisY.MajorGrid.Enabled = false;
-            chartArea10.AxisY.MajorTickMark.Enabled = false;
-            chartArea10.InnerPlotPosition.Auto = false;
-            chartArea10.InnerPlotPosition.Height = 90.55851F;
-            chartArea10.InnerPlotPosition.Width = 90.52276F;
-            chartArea10.InnerPlotPosition.X = 1.67553F;
-            chartArea10.InnerPlotPosition.Y = 2.23404F;
-            chartArea10.Name = "ChartArea1";
-            this.btcchart.ChartAreas.Add(chartArea10);
-            legend10.Enabled = false;
-            legend10.Name = "Legend1";
-            this.btcchart.Legends.Add(legend10);
+            chartArea7.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea7.AxisX.IsLabelAutoFit = false;
+            chartArea7.AxisX.IsReversed = true;
+            chartArea7.AxisX.MajorGrid.Enabled = false;
+            chartArea7.AxisX.MajorTickMark.Enabled = false;
+            chartArea7.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea7.AxisY.IsLabelAutoFit = false;
+            chartArea7.AxisY.MajorGrid.Enabled = false;
+            chartArea7.AxisY.MajorTickMark.Enabled = false;
+            chartArea7.InnerPlotPosition.Auto = false;
+            chartArea7.InnerPlotPosition.Height = 90.55851F;
+            chartArea7.InnerPlotPosition.Width = 90.52276F;
+            chartArea7.InnerPlotPosition.X = 1.67553F;
+            chartArea7.InnerPlotPosition.Y = 2.23404F;
+            chartArea7.Name = "ChartArea1";
+            this.btcchart.ChartAreas.Add(chartArea7);
+            legend7.Enabled = false;
+            legend7.Name = "Legend1";
+            this.btcchart.Legends.Add(legend7);
             this.btcchart.Location = new System.Drawing.Point(77, 361);
             this.btcchart.Name = "btcchart";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            series10.YValuesPerPoint = 4;
-            this.btcchart.Series.Add(series10);
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            series7.YValuesPerPoint = 4;
+            this.btcchart.Series.Add(series7);
             this.btcchart.Size = new System.Drawing.Size(300, 300);
             this.btcchart.TabIndex = 115;
             this.btcchart.Text = "chart2";
@@ -473,7 +473,7 @@ namespace Mock_Investing
             this.label16.ForeColor = System.Drawing.Color.Gray;
             this.label16.Location = new System.Drawing.Point(166, 291);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(117, 28);
+            this.label16.Size = new System.Drawing.Size(95, 21);
             this.label16.TabIndex = 114;
             this.label16.Text = "05/27 20:49";
             // 
@@ -485,7 +485,7 @@ namespace Mock_Investing
             this.label19.ForeColor = System.Drawing.Color.Gray;
             this.label19.Location = new System.Drawing.Point(72, 291);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(97, 28);
+            this.label19.Size = new System.Drawing.Size(78, 21);
             this.label19.TabIndex = 113;
             this.label19.Text = "갱신 시간";
             // 
@@ -496,7 +496,7 @@ namespace Mock_Investing
             this.ethprice.ForeColor = System.Drawing.Color.IndianRed;
             this.ethprice.Location = new System.Drawing.Point(418, 353);
             this.ethprice.Name = "ethprice";
-            this.ethprice.Size = new System.Drawing.Size(100, 23);
+            this.ethprice.Size = new System.Drawing.Size(72, 17);
             this.ethprice.TabIndex = 112;
             this.ethprice.Text = "37,799,000";
             // 
@@ -506,39 +506,39 @@ namespace Mock_Investing
             this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(417, 325);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 28);
+            this.label13.Size = new System.Drawing.Size(74, 21);
             this.label13.TabIndex = 111;
             this.label13.Text = "이더리움";
             // 
             // ethchart
             // 
-            chartArea11.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea11.AxisX.IsLabelAutoFit = false;
-            chartArea11.AxisX.IsReversed = true;
-            chartArea11.AxisX.MajorGrid.Enabled = false;
-            chartArea11.AxisX.MajorTickMark.Enabled = false;
-            chartArea11.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea11.AxisY.IsLabelAutoFit = false;
-            chartArea11.AxisY.MajorGrid.Enabled = false;
-            chartArea11.AxisY.MajorTickMark.Enabled = false;
-            chartArea11.InnerPlotPosition.Auto = false;
-            chartArea11.InnerPlotPosition.Height = 90.55851F;
-            chartArea11.InnerPlotPosition.Width = 90.52276F;
-            chartArea11.InnerPlotPosition.X = 1.67553F;
-            chartArea11.InnerPlotPosition.Y = 2.23404F;
-            chartArea11.Name = "ChartArea1";
-            this.ethchart.ChartAreas.Add(chartArea11);
-            legend11.Enabled = false;
-            legend11.Name = "Legend1";
-            this.ethchart.Legends.Add(legend11);
+            chartArea8.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea8.AxisX.IsLabelAutoFit = false;
+            chartArea8.AxisX.IsReversed = true;
+            chartArea8.AxisX.MajorGrid.Enabled = false;
+            chartArea8.AxisX.MajorTickMark.Enabled = false;
+            chartArea8.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea8.AxisY.IsLabelAutoFit = false;
+            chartArea8.AxisY.MajorGrid.Enabled = false;
+            chartArea8.AxisY.MajorTickMark.Enabled = false;
+            chartArea8.InnerPlotPosition.Auto = false;
+            chartArea8.InnerPlotPosition.Height = 90.55851F;
+            chartArea8.InnerPlotPosition.Width = 90.52276F;
+            chartArea8.InnerPlotPosition.X = 1.67553F;
+            chartArea8.InnerPlotPosition.Y = 2.23404F;
+            chartArea8.Name = "ChartArea1";
+            this.ethchart.ChartAreas.Add(chartArea8);
+            legend8.Enabled = false;
+            legend8.Name = "Legend1";
+            this.ethchart.Legends.Add(legend8);
             this.ethchart.Location = new System.Drawing.Point(409, 361);
             this.ethchart.Name = "ethchart";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series11.Legend = "Legend1";
-            series11.Name = "Series1";
-            series11.YValuesPerPoint = 4;
-            this.ethchart.Series.Add(series11);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            series8.YValuesPerPoint = 4;
+            this.ethchart.Series.Add(series8);
             this.ethchart.Size = new System.Drawing.Size(300, 300);
             this.ethchart.TabIndex = 110;
             this.ethchart.Text = "chart2";
@@ -549,7 +549,7 @@ namespace Mock_Investing
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(78, 325);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 28);
+            this.label8.Size = new System.Drawing.Size(74, 21);
             this.label8.TabIndex = 108;
             this.label8.Text = "비트코인";
             // 
@@ -561,7 +561,7 @@ namespace Mock_Investing
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(63, 253);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 45);
+            this.label1.Size = new System.Drawing.Size(132, 37);
             this.label1.TabIndex = 105;
             this.label1.Text = "시장 동향";
             // 
@@ -589,7 +589,7 @@ namespace Mock_Investing
             this.transRecPrice4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice4.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice4.Name = "transRecPrice4";
-            this.transRecPrice4.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice4.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice4.TabIndex = 5;
             this.transRecPrice4.Text = "₩ 42,480,680";
             // 
@@ -601,7 +601,7 @@ namespace Mock_Investing
             this.transRecName4.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName4.Location = new System.Drawing.Point(17, 36);
             this.transRecName4.Name = "transRecName4";
-            this.transRecName4.Size = new System.Drawing.Size(33, 20);
+            this.transRecName4.Size = new System.Drawing.Size(26, 15);
             this.transRecName4.TabIndex = 4;
             this.transRecName4.Text = "BTC";
             // 
@@ -613,7 +613,7 @@ namespace Mock_Investing
             this.transRecKor4.ForeColor = System.Drawing.Color.Black;
             this.transRecKor4.Location = new System.Drawing.Point(16, 13);
             this.transRecKor4.Name = "transRecKor4";
-            this.transRecKor4.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor4.Size = new System.Drawing.Size(74, 21);
             this.transRecKor4.TabIndex = 3;
             this.transRecKor4.Text = "비트코인";
             // 
@@ -641,7 +641,7 @@ namespace Mock_Investing
             this.transRecPrice3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice3.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice3.Name = "transRecPrice3";
-            this.transRecPrice3.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice3.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice3.TabIndex = 5;
             this.transRecPrice3.Text = "₩ 42,480,680";
             // 
@@ -653,7 +653,7 @@ namespace Mock_Investing
             this.transRecName3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName3.Location = new System.Drawing.Point(17, 37);
             this.transRecName3.Name = "transRecName3";
-            this.transRecName3.Size = new System.Drawing.Size(33, 20);
+            this.transRecName3.Size = new System.Drawing.Size(26, 15);
             this.transRecName3.TabIndex = 4;
             this.transRecName3.Text = "BTC";
             // 
@@ -665,7 +665,7 @@ namespace Mock_Investing
             this.transRecKor3.ForeColor = System.Drawing.Color.Black;
             this.transRecKor3.Location = new System.Drawing.Point(16, 14);
             this.transRecKor3.Name = "transRecKor3";
-            this.transRecKor3.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor3.Size = new System.Drawing.Size(74, 21);
             this.transRecKor3.TabIndex = 3;
             this.transRecKor3.Text = "비트코인";
             // 
@@ -693,7 +693,7 @@ namespace Mock_Investing
             this.transRecPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice2.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice2.Name = "transRecPrice2";
-            this.transRecPrice2.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice2.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice2.TabIndex = 5;
             this.transRecPrice2.Text = "₩ 42,480,680";
             // 
@@ -705,7 +705,7 @@ namespace Mock_Investing
             this.transRecName2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName2.Location = new System.Drawing.Point(17, 38);
             this.transRecName2.Name = "transRecName2";
-            this.transRecName2.Size = new System.Drawing.Size(33, 20);
+            this.transRecName2.Size = new System.Drawing.Size(26, 15);
             this.transRecName2.TabIndex = 4;
             this.transRecName2.Text = "BTC";
             // 
@@ -717,7 +717,7 @@ namespace Mock_Investing
             this.transRecKor2.ForeColor = System.Drawing.Color.Black;
             this.transRecKor2.Location = new System.Drawing.Point(16, 15);
             this.transRecKor2.Name = "transRecKor2";
-            this.transRecKor2.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor2.Size = new System.Drawing.Size(74, 21);
             this.transRecKor2.TabIndex = 3;
             this.transRecKor2.Text = "비트코인";
             // 
@@ -778,7 +778,7 @@ namespace Mock_Investing
             this.firstRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.firstRankWallet.Location = new System.Drawing.Point(32, 142);
             this.firstRankWallet.Name = "firstRankWallet";
-            this.firstRankWallet.Size = new System.Drawing.Size(279, 29);
+            this.firstRankWallet.Size = new System.Drawing.Size(219, 23);
             this.firstRankWallet.TabIndex = 7;
             this.firstRankWallet.Text = "₩ 1,240,234,092,390";
             // 
@@ -790,7 +790,7 @@ namespace Mock_Investing
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Location = new System.Drawing.Point(222, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 17);
+            this.label14.Size = new System.Drawing.Size(49, 13);
             this.label14.TabIndex = 6;
             this.label14.Text = "05 / 13";
             // 
@@ -802,7 +802,7 @@ namespace Mock_Investing
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label15.Location = new System.Drawing.Point(186, 8);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(112, 17);
+            this.label15.Size = new System.Drawing.Size(85, 13);
             this.label15.TabIndex = 5;
             this.label15.Text = "Date Achieved";
             // 
@@ -814,7 +814,7 @@ namespace Mock_Investing
             this.firstRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.firstRankName.Location = new System.Drawing.Point(109, 73);
             this.firstRankName.Name = "firstRankName";
-            this.firstRankName.Size = new System.Drawing.Size(191, 36);
+            this.firstRankName.Size = new System.Drawing.Size(155, 28);
             this.firstRankName.TabIndex = 4;
             this.firstRankName.Text = "John Harris";
             // 
@@ -826,7 +826,7 @@ namespace Mock_Investing
             this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label17.Location = new System.Drawing.Point(21, 31);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 18);
+            this.label17.Size = new System.Drawing.Size(84, 14);
             this.label17.TabIndex = 3;
             this.label17.Text = "First Place";
             // 
@@ -887,7 +887,7 @@ namespace Mock_Investing
             this.secondRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.secondRankWallet.Location = new System.Drawing.Point(28, 142);
             this.secondRankWallet.Name = "secondRankWallet";
-            this.secondRankWallet.Size = new System.Drawing.Size(251, 29);
+            this.secondRankWallet.Size = new System.Drawing.Size(197, 23);
             this.secondRankWallet.TabIndex = 28;
             this.secondRankWallet.Text = "₩ 940,315,221,410";
             // 
@@ -899,7 +899,7 @@ namespace Mock_Investing
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(218, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 17);
+            this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 27;
             this.label5.Text = "04 / 25";
             // 
@@ -911,7 +911,7 @@ namespace Mock_Investing
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(182, 8);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 17);
+            this.label7.Size = new System.Drawing.Size(85, 13);
             this.label7.TabIndex = 26;
             this.label7.Text = "Date Achieved";
             // 
@@ -923,7 +923,7 @@ namespace Mock_Investing
             this.secondRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.secondRankName.Location = new System.Drawing.Point(110, 73);
             this.secondRankName.Name = "secondRankName";
-            this.secondRankName.Size = new System.Drawing.Size(191, 36);
+            this.secondRankName.Size = new System.Drawing.Size(155, 28);
             this.secondRankName.TabIndex = 25;
             this.secondRankName.Text = "Stephan Lee";
             // 
@@ -935,7 +935,7 @@ namespace Mock_Investing
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(11, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 18);
+            this.label9.Size = new System.Drawing.Size(91, 14);
             this.label9.TabIndex = 24;
             this.label9.Text = "Second Place";
             // 
@@ -996,7 +996,7 @@ namespace Mock_Investing
             this.thirdRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thirdRankWallet.Location = new System.Drawing.Point(30, 143);
             this.thirdRankWallet.Name = "thirdRankWallet";
-            this.thirdRankWallet.Size = new System.Drawing.Size(251, 29);
+            this.thirdRankWallet.Size = new System.Drawing.Size(197, 23);
             this.thirdRankWallet.TabIndex = 28;
             this.thirdRankWallet.Text = "₩ 472,929,125,440";
             // 
@@ -1008,7 +1008,7 @@ namespace Mock_Investing
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label10.Location = new System.Drawing.Point(220, 21);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 17);
+            this.label10.Size = new System.Drawing.Size(49, 13);
             this.label10.TabIndex = 27;
             this.label10.Text = "12 / 25";
             // 
@@ -1020,7 +1020,7 @@ namespace Mock_Investing
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label11.Location = new System.Drawing.Point(184, 8);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 17);
+            this.label11.Size = new System.Drawing.Size(85, 13);
             this.label11.TabIndex = 26;
             this.label11.Text = "Date Achieved";
             // 
@@ -1032,7 +1032,7 @@ namespace Mock_Investing
             this.thirdRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thirdRankName.Location = new System.Drawing.Point(102, 74);
             this.thirdRankName.Name = "thirdRankName";
-            this.thirdRankName.Size = new System.Drawing.Size(223, 36);
+            this.thirdRankName.Size = new System.Drawing.Size(181, 28);
             this.thirdRankName.TabIndex = 25;
             this.thirdRankName.Text = "Oliver Hutley";
             // 
@@ -1044,7 +1044,7 @@ namespace Mock_Investing
             this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label18.Location = new System.Drawing.Point(16, 29);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(96, 18);
+            this.label18.Size = new System.Drawing.Size(84, 14);
             this.label18.TabIndex = 24;
             this.label18.Text = "Third Place";
             // 
@@ -1080,7 +1080,7 @@ namespace Mock_Investing
             this.transRecPrice1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
             this.transRecPrice1.Location = new System.Drawing.Point(192, 23);
             this.transRecPrice1.Name = "transRecPrice1";
-            this.transRecPrice1.Size = new System.Drawing.Size(139, 28);
+            this.transRecPrice1.Size = new System.Drawing.Size(106, 21);
             this.transRecPrice1.TabIndex = 5;
             this.transRecPrice1.Text = "₩ 42,480,680";
             // 
@@ -1092,7 +1092,7 @@ namespace Mock_Investing
             this.transRecName1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.transRecName1.Location = new System.Drawing.Point(18, 39);
             this.transRecName1.Name = "transRecName1";
-            this.transRecName1.Size = new System.Drawing.Size(33, 20);
+            this.transRecName1.Size = new System.Drawing.Size(26, 15);
             this.transRecName1.TabIndex = 4;
             this.transRecName1.Text = "BTC";
             // 
@@ -1104,7 +1104,7 @@ namespace Mock_Investing
             this.transRecKor1.ForeColor = System.Drawing.Color.Black;
             this.transRecKor1.Location = new System.Drawing.Point(16, 15);
             this.transRecKor1.Name = "transRecKor1";
-            this.transRecKor1.Size = new System.Drawing.Size(92, 28);
+            this.transRecKor1.Size = new System.Drawing.Size(74, 21);
             this.transRecKor1.TabIndex = 3;
             this.transRecKor1.Text = "비트코인";
             // 
@@ -1132,7 +1132,7 @@ namespace Mock_Investing
             this.labTrans.ForeColor = System.Drawing.Color.Gray;
             this.labTrans.Location = new System.Drawing.Point(903, 294);
             this.labTrans.Name = "labTrans";
-            this.labTrans.Size = new System.Drawing.Size(117, 28);
+            this.labTrans.Size = new System.Drawing.Size(95, 21);
             this.labTrans.TabIndex = 92;
             this.labTrans.Text = "05/27 20:49";
             // 
@@ -1144,7 +1144,7 @@ namespace Mock_Investing
             this.label30.ForeColor = System.Drawing.Color.Gray;
             this.label30.Location = new System.Drawing.Point(810, 294);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(97, 28);
+            this.label30.Size = new System.Drawing.Size(78, 21);
             this.label30.TabIndex = 91;
             this.label30.Text = "갱신 시간";
             // 
@@ -1156,7 +1156,7 @@ namespace Mock_Investing
             this.label29.ForeColor = System.Drawing.Color.Black;
             this.label29.Location = new System.Drawing.Point(802, 253);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(229, 45);
+            this.label29.Size = new System.Drawing.Size(187, 37);
             this.label29.TabIndex = 90;
             this.label29.Text = "BTC 체결 내역";
             // 
@@ -1193,6 +1193,7 @@ namespace Mock_Investing
             this.view_Search.SelectedText = "";
             this.view_Search.Size = new System.Drawing.Size(547, 31);
             this.view_Search.TabIndex = 2;
+            this.view_Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.view_Search_KeyDown);
             // 
             // gridCoinList
             // 
@@ -1200,24 +1201,24 @@ namespace Mock_Investing
             this.gridCoinList.AllowUserToDeleteRows = false;
             this.gridCoinList.AllowUserToResizeColumns = false;
             this.gridCoinList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.gridCoinList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle41.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle41.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.gridCoinList.ColumnHeadersHeight = 40;
             this.gridCoinList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column0,
@@ -1225,14 +1226,14 @@ namespace Mock_Investing
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle27;
             this.gridCoinList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinList.EnableHeadersVisualStyles = false;
             this.gridCoinList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1366,38 +1367,38 @@ namespace Mock_Investing
             this.gridCoinListChart.AllowUserToDeleteRows = false;
             this.gridCoinListChart.AllowUserToResizeColumns = false;
             this.gridCoinListChart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
             this.gridCoinListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.gridCoinListChart.ColumnHeadersHeight = 40;
             this.gridCoinListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn16,
             this.전일대비});
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle30;
             this.gridCoinListChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridCoinListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinListChart.EnableHeadersVisualStyles = false;
@@ -1479,38 +1480,38 @@ namespace Mock_Investing
             this.gridMainListChart.AllowUserToDeleteRows = false;
             this.gridMainListChart.AllowUserToResizeColumns = false;
             this.gridMainListChart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.White;
-            this.gridMainListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            this.gridMainListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.gridMainListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridMainListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.gridMainListChart.ColumnHeadersHeight = 40;
             this.gridMainListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
             this.dataGridViewTextBoxColumn26,
             this.전일대비2});
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainListChart.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainListChart.DefaultCellStyle = dataGridViewCellStyle33;
             this.gridMainListChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridMainListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainListChart.EnableHeadersVisualStyles = false;
@@ -1596,28 +1597,28 @@ namespace Mock_Investing
             // 
             // transactionChart
             // 
-            chartArea12.AxisX.IsLabelAutoFit = false;
-            chartArea12.AxisX.IsReversed = true;
-            chartArea12.AxisY.IsLabelAutoFit = false;
-            chartArea12.CursorX.IsUserSelectionEnabled = true;
-            chartArea12.InnerPlotPosition.Auto = false;
-            chartArea12.InnerPlotPosition.Height = 90.55851F;
-            chartArea12.InnerPlotPosition.Width = 90.52276F;
-            chartArea12.InnerPlotPosition.X = 1.67553F;
-            chartArea12.InnerPlotPosition.Y = 2.23404F;
-            chartArea12.Name = "ChartArea1";
-            this.transactionChart.ChartAreas.Add(chartArea12);
-            legend12.Enabled = false;
-            legend12.Name = "Legend1";
-            this.transactionChart.Legends.Add(legend12);
+            chartArea9.AxisX.IsLabelAutoFit = false;
+            chartArea9.AxisX.IsReversed = true;
+            chartArea9.AxisY.IsLabelAutoFit = false;
+            chartArea9.CursorX.IsUserSelectionEnabled = true;
+            chartArea9.InnerPlotPosition.Auto = false;
+            chartArea9.InnerPlotPosition.Height = 90.55851F;
+            chartArea9.InnerPlotPosition.Width = 90.52276F;
+            chartArea9.InnerPlotPosition.X = 1.67553F;
+            chartArea9.InnerPlotPosition.Y = 2.23404F;
+            chartArea9.Name = "ChartArea1";
+            this.transactionChart.ChartAreas.Add(chartArea9);
+            legend9.Enabled = false;
+            legend9.Name = "Legend1";
+            this.transactionChart.Legends.Add(legend9);
             this.transactionChart.Location = new System.Drawing.Point(14, 109);
             this.transactionChart.Name = "transactionChart";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series12.Legend = "Legend1";
-            series12.Name = "Series1";
-            series12.YValuesPerPoint = 4;
-            this.transactionChart.Series.Add(series12);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            series9.YValuesPerPoint = 4;
+            this.transactionChart.Series.Add(series9);
             this.transactionChart.Size = new System.Drawing.Size(673, 521);
             this.transactionChart.TabIndex = 0;
             this.transactionChart.Text = "transactionChart";
@@ -1629,7 +1630,7 @@ namespace Mock_Investing
             this.lblChartCoinPrice.ForeColor = System.Drawing.Color.IndianRed;
             this.lblChartCoinPrice.Location = new System.Drawing.Point(37, 72);
             this.lblChartCoinPrice.Name = "lblChartCoinPrice";
-            this.lblChartCoinPrice.Size = new System.Drawing.Size(159, 37);
+            this.lblChartCoinPrice.Size = new System.Drawing.Size(121, 30);
             this.lblChartCoinPrice.TabIndex = 1;
             this.lblChartCoinPrice.Text = "37,799,000";
             // 
@@ -1639,7 +1640,7 @@ namespace Mock_Investing
             this.lblChartCoinName.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChartCoinName.Location = new System.Drawing.Point(34, 35);
             this.lblChartCoinName.Name = "lblChartCoinName";
-            this.lblChartCoinName.Size = new System.Drawing.Size(138, 41);
+            this.lblChartCoinName.Size = new System.Drawing.Size(111, 32);
             this.lblChartCoinName.TabIndex = 0;
             this.lblChartCoinName.Text = "비트코인";
             // 
@@ -1845,7 +1846,7 @@ namespace Mock_Investing
             this.labelBuyTotalOrder.Location = new System.Drawing.Point(38, 151);
             this.labelBuyTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyTotalOrder.Name = "labelBuyTotalOrder";
-            this.labelBuyTotalOrder.Size = new System.Drawing.Size(71, 25);
+            this.labelBuyTotalOrder.Size = new System.Drawing.Size(55, 19);
             this.labelBuyTotalOrder.TabIndex = 21;
             this.labelBuyTotalOrder.Text = "주문총액";
             // 
@@ -1885,7 +1886,7 @@ namespace Mock_Investing
             this.labelBuyOrderQuantity.Location = new System.Drawing.Point(38, 78);
             this.labelBuyOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyOrderQuantity.Name = "labelBuyOrderQuantity";
-            this.labelBuyOrderQuantity.Size = new System.Drawing.Size(71, 25);
+            this.labelBuyOrderQuantity.Size = new System.Drawing.Size(55, 19);
             this.labelBuyOrderQuantity.TabIndex = 19;
             this.labelBuyOrderQuantity.Text = "주문수량";
             // 
@@ -1924,7 +1925,7 @@ namespace Mock_Investing
             this.labelBuyPrice.Location = new System.Drawing.Point(38, 26);
             this.labelBuyPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelBuyPrice.Name = "labelBuyPrice";
-            this.labelBuyPrice.Size = new System.Drawing.Size(71, 25);
+            this.labelBuyPrice.Size = new System.Drawing.Size(55, 19);
             this.labelBuyPrice.TabIndex = 17;
             this.labelBuyPrice.Text = "매수가격";
             // 
@@ -2116,7 +2117,7 @@ namespace Mock_Investing
             this.labelSellTotalOrder.Location = new System.Drawing.Point(38, 151);
             this.labelSellTotalOrder.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellTotalOrder.Name = "labelSellTotalOrder";
-            this.labelSellTotalOrder.Size = new System.Drawing.Size(71, 25);
+            this.labelSellTotalOrder.Size = new System.Drawing.Size(55, 19);
             this.labelSellTotalOrder.TabIndex = 34;
             this.labelSellTotalOrder.Text = "주문총액";
             // 
@@ -2155,7 +2156,7 @@ namespace Mock_Investing
             this.labelSellOrderQuantity.Location = new System.Drawing.Point(38, 78);
             this.labelSellOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellOrderQuantity.Name = "labelSellOrderQuantity";
-            this.labelSellOrderQuantity.Size = new System.Drawing.Size(71, 25);
+            this.labelSellOrderQuantity.Size = new System.Drawing.Size(55, 19);
             this.labelSellOrderQuantity.TabIndex = 32;
             this.labelSellOrderQuantity.Text = "주문수량";
             // 
@@ -2192,7 +2193,7 @@ namespace Mock_Investing
             this.labelSellPrice.Location = new System.Drawing.Point(38, 26);
             this.labelSellPrice.Margin = new System.Windows.Forms.Padding(2);
             this.labelSellPrice.Name = "labelSellPrice";
-            this.labelSellPrice.Size = new System.Drawing.Size(71, 25);
+            this.labelSellPrice.Size = new System.Drawing.Size(55, 19);
             this.labelSellPrice.TabIndex = 30;
             this.labelSellPrice.Text = "매도가격";
             // 
@@ -2237,24 +2238,24 @@ namespace Mock_Investing
             this.gridMainList.AllowUserToDeleteRows = false;
             this.gridMainList.AllowUserToResizeColumns = false;
             this.gridMainList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.White;
-            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
+            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
             this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainList.BackgroundColor = System.Drawing.Color.White;
             this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.gridMainList.ColumnHeadersHeight = 40;
             this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
@@ -2263,14 +2264,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn11,
             this.OwnQuantity});
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle36;
             this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainList.EnableHeadersVisualStyles = false;
             this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -2355,7 +2356,7 @@ namespace Mock_Investing
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(58, 363);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 46);
+            this.label2.Size = new System.Drawing.Size(132, 37);
             this.label2.TabIndex = 87;
             this.label2.Text = "내 프로필";
             // 
@@ -2402,7 +2403,7 @@ namespace Mock_Investing
             this.myProfile_lab7.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab7.Location = new System.Drawing.Point(21, 28);
             this.myProfile_lab7.Name = "myProfile_lab7";
-            this.myProfile_lab7.Size = new System.Drawing.Size(111, 28);
+            this.myProfile_lab7.Size = new System.Drawing.Size(89, 21);
             this.myProfile_lab7.TabIndex = 89;
             this.myProfile_lab7.Text = "시작 자금 : ";
             // 
@@ -2414,7 +2415,7 @@ namespace Mock_Investing
             this.myProfile_lab3.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab3.Location = new System.Drawing.Point(21, 90);
             this.myProfile_lab3.Name = "myProfile_lab3";
-            this.myProfile_lab3.Size = new System.Drawing.Size(136, 28);
+            this.myProfile_lab3.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab3.TabIndex = 91;
             this.myProfile_lab3.Text = "총 보유 자금 : ";
             // 
@@ -2426,7 +2427,7 @@ namespace Mock_Investing
             this.myProfile_lab5.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab5.Location = new System.Drawing.Point(305, 28);
             this.myProfile_lab5.Name = "myProfile_lab5";
-            this.myProfile_lab5.Size = new System.Drawing.Size(91, 28);
+            this.myProfile_lab5.Size = new System.Drawing.Size(73, 21);
             this.myProfile_lab5.TabIndex = 93;
             this.myProfile_lab5.Text = "순수익 :  ";
             // 
@@ -2438,7 +2439,7 @@ namespace Mock_Investing
             this.myProfile_lab8.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab8.Location = new System.Drawing.Point(305, 152);
             this.myProfile_lab8.Name = "myProfile_lab8";
-            this.myProfile_lab8.Size = new System.Drawing.Size(136, 28);
+            this.myProfile_lab8.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab8.TabIndex = 90;
             this.myProfile_lab8.Text = "현재 순위      : ";
             // 
@@ -2450,7 +2451,7 @@ namespace Mock_Investing
             this.myProfile_lab4.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab4.Location = new System.Drawing.Point(21, 152);
             this.myProfile_lab4.Name = "myProfile_lab4";
-            this.myProfile_lab4.Size = new System.Drawing.Size(136, 28);
+            this.myProfile_lab4.Size = new System.Drawing.Size(109, 21);
             this.myProfile_lab4.TabIndex = 92;
             this.myProfile_lab4.Text = "현 보유 자금 : ";
             // 
@@ -2462,7 +2463,7 @@ namespace Mock_Investing
             this.myProfile_lab6.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab6.Location = new System.Drawing.Point(305, 90);
             this.myProfile_lab6.Name = "myProfile_lab6";
-            this.myProfile_lab6.Size = new System.Drawing.Size(111, 28);
+            this.myProfile_lab6.Size = new System.Drawing.Size(89, 21);
             this.myProfile_lab6.TabIndex = 88;
             this.myProfile_lab6.Text = "총 수익률 : ";
             // 
@@ -2488,7 +2489,7 @@ namespace Mock_Investing
             this.myProfile_lab2.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab2.Location = new System.Drawing.Point(33, 209);
             this.myProfile_lab2.Name = "myProfile_lab2";
-            this.myProfile_lab2.Size = new System.Drawing.Size(111, 28);
+            this.myProfile_lab2.Size = new System.Drawing.Size(89, 21);
             this.myProfile_lab2.TabIndex = 87;
             this.myProfile_lab2.Text = "시작 날짜 : ";
             // 
@@ -2500,7 +2501,7 @@ namespace Mock_Investing
             this.myProfile_lab1.ForeColor = System.Drawing.Color.Black;
             this.myProfile_lab1.Location = new System.Drawing.Point(33, 173);
             this.myProfile_lab1.Name = "myProfile_lab1";
-            this.myProfile_lab1.Size = new System.Drawing.Size(111, 28);
+            this.myProfile_lab1.Size = new System.Drawing.Size(89, 21);
             this.myProfile_lab1.TabIndex = 86;
             this.myProfile_lab1.Text = "이름          : ";
             // 
@@ -2537,7 +2538,7 @@ namespace Mock_Investing
             this.label32.ForeColor = System.Drawing.Color.Black;
             this.label32.Location = new System.Drawing.Point(14, 18);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(138, 28);
+            this.label32.Size = new System.Drawing.Size(110, 21);
             this.label32.TabIndex = 79;
             this.label32.Text = "리셋 주의사항";
             // 
@@ -2571,7 +2572,7 @@ namespace Mock_Investing
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Location = new System.Drawing.Point(34, 9);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(165, 46);
+            this.label33.Size = new System.Drawing.Size(132, 37);
             this.label33.TabIndex = 89;
             this.label33.Text = "보유 종목";
             // 
@@ -2602,7 +2603,7 @@ namespace Mock_Investing
             this.header_Wallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Wallet.Location = new System.Drawing.Point(69, 85);
             this.header_Wallet.Name = "header_Wallet";
-            this.header_Wallet.Size = new System.Drawing.Size(104, 28);
+            this.header_Wallet.Size = new System.Drawing.Size(84, 21);
             this.header_Wallet.TabIndex = 4;
             this.header_Wallet.Text = "₩ 550,320";
             // 
@@ -2614,7 +2615,7 @@ namespace Mock_Investing
             this.header_Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.header_Name.Location = new System.Drawing.Point(70, 46);
             this.header_Name.Name = "header_Name";
-            this.header_Name.Size = new System.Drawing.Size(104, 40);
+            this.header_Name.Size = new System.Drawing.Size(83, 31);
             this.header_Name.TabIndex = 3;
             this.header_Name.Text = "홍길동";
             // 
