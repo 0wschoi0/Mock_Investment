@@ -20,7 +20,6 @@ namespace Mock_Investing
     {
         string userName;    //유저 이름
         string UID;         //uid
-        string startDate;
         int coinNum;        //유저 보유 코인 종류 수
         int asset = 0;      //현금
         int wallet = 0;     //자산
@@ -57,12 +56,11 @@ namespace Mock_Investing
         double minViewY = 0;
 
 
-        public Dashboard(string uid, string date)
+        public Dashboard(string uid)
         {
             InitializeComponent();
             db = FirestoreDb.Create("mock-af23d");
             UID = uid;
-            startDate = date.Substring(0, 10) ;
             myProfile_startDate.Text = startDate;
             market = fetchCoinList();
             Chart(coinName);
