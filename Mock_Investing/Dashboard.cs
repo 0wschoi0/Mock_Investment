@@ -588,14 +588,14 @@ namespace Mock_Investing
                     coinOwn.CoinCurrent.Remove(coinNow.market);
                     for (int i = 0; i < gridMainList.Rows.Count; i++)
                     {
-                        if (gridMainList.Rows[i].Cells[0].Value.Equals(coinNow.market)) { gridMainList.Rows.RemoveAt(i); }
+                        if (gridMainList.Rows[i].Cells[0].Value.Equals(coinNow.market)) { gridMainList.Rows.RemoveAt(i); await documentStatus.UpdateAsync("CoinNumber", coinNum - 1); }
                         if (gridMainListChart.Rows[i].Cells[0].Value.Equals(coinNow.market)) { gridMainListChart.Rows.RemoveAt(i); }
+
                     }
                 }
                 await documentCoins.SetAsync(coinOwn);
                 await documentRecords.SetAsync(buyOwn);
                 await documentStatus.UpdateAsync("Asset", asset + (int)(sellAmount * coinNow.trade_price));
-                await documentStatus.UpdateAsync("CoinNumber", coinNum - 1);
                 btnSellReset.PerformClick();
                 MessageBox.Show("매도 체결완료");
             }
