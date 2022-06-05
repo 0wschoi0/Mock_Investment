@@ -228,6 +228,7 @@ namespace Mock_Investing
                 };
                 await documentStatus.UpdateAsync(resets);
                 gridMainList.Rows.Clear();
+                gridMainListChart.Rows.Clear();
             }
             else
             {
