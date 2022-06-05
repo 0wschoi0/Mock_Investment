@@ -710,13 +710,14 @@ namespace Mock_Investing
 
             userName = getUserData.GetValue<string>("Name");
             header_Name.Text = userName;
-            myProfile_lab1.Text = userName;
-            myProfile_lab5.Text = "순수익 : " + header_Profit.Text;
-            myProfile_lab7.Text = "시작 자금 : " + (30000000).ToString("C");
-            myProfile_lab3.Text = "총 보유 자금 : " + header_Wallet.Text;
-            myProfile_lab4.Text = "현 보유 자금 : " + header_Overall.Text;
+            myProfile_name.Text = userName;
 
-            myProfile_lab6.Text = "총 수익률 : " + (profitTempt / 30000000.0).ToString("P");
+            myProfile_startFunds.Text = (30000000).ToString("C");
+            myProfile_overall.Text = header_Overall.Text;
+            myProfile_wallet.Text = header_Wallet.Text;
+
+            put_profitRate_profit(profitTempt, walletTempt);
+           
             // Ranking 정보 띄우기 시작
             first = new Rankers();
             second = new Rankers();
@@ -1280,6 +1281,35 @@ namespace Mock_Investing
                 }
             }
             
+        }
+
+        public void put_profitRate_profit(double profitTempt, double walletTempt)
+        {
+            double profitRate = (profitTempt / 30000000.0);
+            double profit = (walletTempt - 30000000);
+
+            if (profitRate < 0)
+            {
+                myProfile_profitRate.Text = profitRate.ToString("P");
+                myProfile_profitRate.ForeColor = Color.Blue;
+                myProfile_profit.Text = profit.ToString("C");
+                myProfile_profit.ForeColor = Color.Blue;
+
+            }
+            else if (profitRate == 0)
+            {
+                myProfile_profitRate.Text = profitRate.ToString("P");
+                myProfile_profitRate.ForeColor = Color.Black;
+                myProfile_profit.Text = profit.ToString("C");
+                myProfile_profit.ForeColor = Color.Black;
+            }
+            else
+            {
+                myProfile_profitRate.Text = "+" + profitRate.ToString("P");
+                myProfile_profitRate.ForeColor = Color.Red;
+                myProfile_profit.Text = "+" + profit.ToString("C");
+                myProfile_profit.ForeColor = Color.Red;
+            }
         }
     }
 }
