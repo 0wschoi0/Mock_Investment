@@ -742,8 +742,10 @@ namespace Mock_Investing
             wallet = walletTempt;
             profit = profitTempt;
             header_Wallet.Text = getUserData.GetValue<int>("Asset").ToString("C");
-            if (profitTempt > 0) { header_Profit.Text = "+" + profitTempt.ToString("C"); }
-            else { header_Profit.Text = profitTempt.ToString("C"); }
+            // double int 변환 이슈로 인해 임시 walletTempt - 30000000
+            double profitBugTempt = walletTempt - 30000000;
+            if (profitBugTempt > 0) { header_Profit.Text = "+" + profitBugTempt.ToString("C"); }
+            else { header_Profit.Text = profitBugTempt.ToString("C"); }
             // 현재 자산 띄우기 & 현재 이익 띄우기 끝
 
             userName = getUserData.GetValue<string>("Name");
