@@ -770,7 +770,7 @@ namespace Mock_Investing
             rankCurrent = getRanking.ConvertTo<Rank>();
             foreach (KeyValuePair<string, string> pair in rankCurrent.UID)
             {
-                CollectionReference userAll = db.Collection(pair.Value);
+                CollectionReference userAll = db.Collection(pair.Key);
                 DocumentReference userSpecify = userAll.Document("Status");
                 DocumentSnapshot userSnapshot = await userSpecify.GetSnapshotAsync();
                 if (third.Money < userSnapshot.GetValue<int>("Wallet"))

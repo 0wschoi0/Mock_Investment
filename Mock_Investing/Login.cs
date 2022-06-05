@@ -133,7 +133,7 @@ namespace Mock_Investing
                 DocumentReference rankDoc = db.Collection("Ranking").Document("Top");
                 Dictionary<string, object> data = new Dictionary<string, object>()
                 {
-                    {"UID."+txtNameNew.Text, userCredential.User.LocalId}
+                    {"UID."+userCredential.User.LocalId, txtNameNew.Text}
                 };
 
                 DocumentSnapshot snapshot = await rankDoc.GetSnapshotAsync();
