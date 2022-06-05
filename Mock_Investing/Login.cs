@@ -16,7 +16,6 @@ namespace Mock_Investing
     public partial class Login : Form
     {
         public string loginID = "";
-        public string startDate = "";
         FirestoreDb db;
         FirebaseConfig config = new FirebaseConfig("AIzaSyDBwwgGtnnUruuoORjTiVLEvsI_0e87BUk");
 
@@ -58,9 +57,8 @@ namespace Mock_Investing
             {
                 var userCredential = await client.SignInWithEmailAndPasswordAsync(txtEmail.Text, txtPassword.Text);
                 loginID = userCredential.User.LocalId;
-                startDate = userCredential.Created.ToString();
                 Console.WriteLine(loginID);
-                new Dashboard(loginID, startDate).Show();
+                new Dashboard(loginID).Show();
                 this.Close();
             }
             catch (Firebase.Auth.FirebaseAuthException)
@@ -130,7 +128,7 @@ namespace Mock_Investing
                 record.Add("BuyRecords", recordPrice);
                 await document.SetAsync(docData);
                 await document2.SetAsync(coins);
-                await document3.SetAsync(coins);
+                await document3.SetAsync(record);
 
                 DocumentReference rankDoc = db.Collection("Ranking").Document("Top");
                 Dictionary<string, object> data = new Dictionary<string, object>()

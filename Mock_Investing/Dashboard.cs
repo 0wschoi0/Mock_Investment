@@ -20,7 +20,6 @@ namespace Mock_Investing
     {
         string userName;    //유저 이름
         string UID;         //uid
-        string startDate;
         int coinNum;        //유저 보유 코인 종류 수
         int asset = 0;      //현금
         int wallet = 0;     //자산
@@ -57,12 +56,11 @@ namespace Mock_Investing
         double minViewY = 0;
 
 
-        public Dashboard(string uid, string date)
+        public Dashboard(string uid)
         {
             InitializeComponent();
             db = FirestoreDb.Create("mock-af23d");
             UID = uid;
-            startDate = date.Substring(0, 10) ;
             market = fetchCoinList();
             Chart(coinName);
             Timer timer = new System.Windows.Forms.Timer();
@@ -299,6 +297,7 @@ namespace Mock_Investing
         }
         private void btnBuyOrderQuantity25_Click(object sender, EventArgs e)
         {
+            if (asset == 0) { return; }
             txtboxBuyOrderQuantity.ReadOnly = true;
             int quarter = asset / 4;
             double result = 0;
@@ -310,6 +309,7 @@ namespace Mock_Investing
         }
         private void btnBuyOrderQuantity50_Click(object sender, EventArgs e)
         {
+            if (asset == 0) { return; }
             txtboxBuyOrderQuantity.ReadOnly = true;
             int half = asset / 2;
             double result = 0;
@@ -322,6 +322,7 @@ namespace Mock_Investing
 
         private void btnBuyOrderQuantity75_Click(object sender, EventArgs e)
         {
+            if (asset == 0) { return; }
             txtboxBuyOrderQuantity.ReadOnly = true;
             int tripleQuarter = (asset / 4) * 3;
             double result = 0;
@@ -334,6 +335,7 @@ namespace Mock_Investing
 
         private void btnBuyOrderQuantity100_Click(object sender, EventArgs e)
         {
+            if (asset == 0) { return; }
             txtboxBuyOrderQuantity.ReadOnly = true;
             int full = asset;
             double result = 0;
@@ -346,6 +348,7 @@ namespace Mock_Investing
 
         private void btnBuyOrderQuantityInput_Click(object sender, EventArgs e)
         {
+            if (asset == 0) { return; }
             txtboxBuyOrderQuantity.ReadOnly = false;
             txtboxBuyOrderQuantity.ResetText();
             txtboxBuyOrderQuantity.Focus();

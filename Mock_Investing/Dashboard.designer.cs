@@ -383,6 +383,7 @@ namespace Mock_Investing
             this.guna2TabControl1.TabIndex = 2;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalBottom;
+            this.guna2TabControl1.TabMenuVisible = false;
             // 
             // tabMy
             // 
@@ -420,7 +421,7 @@ namespace Mock_Investing
             this.tabMy.Location = new System.Drawing.Point(4, 4);
             this.tabMy.Margin = new System.Windows.Forms.Padding(0);
             this.tabMy.Name = "tabMy";
-            this.tabMy.Size = new System.Drawing.Size(1182, 686);
+            this.tabMy.Size = new System.Drawing.Size(1182, 705);
             this.tabMy.TabIndex = 1;
             this.tabMy.Text = "tabPage2";
             // 
