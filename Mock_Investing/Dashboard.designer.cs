@@ -209,7 +209,6 @@ namespace Mock_Investing
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.header_Img = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -385,7 +384,6 @@ namespace Mock_Investing
             // 
             this.tabMy.BackColor = System.Drawing.Color.White;
             this.tabMy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabMy.Controls.Add(this.button1);
             this.tabMy.Controls.Add(this.xrpprice);
             this.tabMy.Controls.Add(this.label12);
             this.tabMy.Controls.Add(this.xrpchart);
@@ -2719,15 +2717,6 @@ namespace Mock_Investing
             this.header_Img.TabStop = false;
             this.header_Img.UseTransparentBackground = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1024, 308);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 119;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2950,7 +2939,6 @@ namespace Mock_Investing
         private System.Windows.Forms.Label xrpprice;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataVisualization.Charting.Chart xrpchart;
-        private System.Windows.Forms.Button button1;
     }
 }
 
