@@ -16,6 +16,7 @@ namespace Mock_Investing
     public partial class Login : Form
     {
         public string loginID = "";
+        public string startDate = "";
         FirestoreDb db;
         FirebaseConfig config = new FirebaseConfig("AIzaSyDBwwgGtnnUruuoORjTiVLEvsI_0e87BUk");
 
@@ -57,8 +58,9 @@ namespace Mock_Investing
             {
                 var userCredential = await client.SignInWithEmailAndPasswordAsync(txtEmail.Text, txtPassword.Text);
                 loginID = userCredential.User.LocalId;
+                startDate = userCredential.Created.ToString();
                 Console.WriteLine(loginID);
-                new Dashboard(loginID).Show();
+                new Dashboard(loginID, startDate).Show();
                 this.Close();
             }
             catch (Firebase.Auth.FirebaseAuthException)
