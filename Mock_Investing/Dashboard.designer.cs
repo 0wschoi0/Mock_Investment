@@ -34,32 +34,31 @@ namespace Mock_Investing
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelHeader = new Guna.UI2.WinForms.Guna2Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.header_Profit = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
@@ -68,6 +67,13 @@ namespace Mock_Investing
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabMy = new System.Windows.Forms.TabPage();
+            this.guna2Chip5 = new Guna.UI2.WinForms.Guna2Chip();
+            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Chip6 = new Guna.UI2.WinForms.Guna2Chip();
+            this.guna2VSeparator5 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.guna2Chip1 = new Guna.UI2.WinForms.Guna2Chip();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Chip4 = new Guna.UI2.WinForms.Guna2Chip();
             this.guna2Chip3 = new Guna.UI2.WinForms.Guna2Chip();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Chip2 = new Guna.UI2.WinForms.Guna2Chip();
@@ -75,9 +81,9 @@ namespace Mock_Investing
             this.lab_BTC = new System.Windows.Forms.Label();
             this.btcchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btcprice = new System.Windows.Forms.Label();
-            this.xrpprice = new System.Windows.Forms.Label();
+            this.bchprice = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.xrpchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.bchchart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label16 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.ethprice = new System.Windows.Forms.Label();
@@ -203,21 +209,15 @@ namespace Mock_Investing
             this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.header_Img = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Chip1 = new Guna.UI2.WinForms.Guna2Chip();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Chip4 = new Guna.UI2.WinForms.Guna2Chip();
-            this.guna2VSeparator5 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2Chip5 = new Guna.UI2.WinForms.Guna2Chip();
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Chip6 = new Guna.UI2.WinForms.Guna2Chip();
             this.panelHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tabMy.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcchart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrpchart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bchchart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ethchart)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -250,14 +250,11 @@ namespace Mock_Investing
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.header_Img)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            this.panelHeader.Controls.Add(this.pictureBox2);
             this.panelHeader.Controls.Add(this.header_Profit);
             this.panelHeader.Controls.Add(this.label6);
             this.panelHeader.Controls.Add(this.guna2VSeparator1);
@@ -271,16 +268,6 @@ namespace Mock_Investing
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1190, 137);
             this.panelHeader.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1025, 15);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 78);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // header_Profit
             // 
@@ -383,7 +370,6 @@ namespace Mock_Investing
             this.guna2TabControl1.TabIndex = 2;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2TabControl1.TabMenuOrientation = Guna.UI2.WinForms.TabMenuOrientation.HorizontalBottom;
-            this.guna2TabControl1.TabMenuVisible = false;
             // 
             // tabMy
             // 
@@ -403,9 +389,9 @@ namespace Mock_Investing
             this.tabMy.Controls.Add(this.lab_BTC);
             this.tabMy.Controls.Add(this.btcchart);
             this.tabMy.Controls.Add(this.btcprice);
-            this.tabMy.Controls.Add(this.xrpprice);
+            this.tabMy.Controls.Add(this.bchprice);
             this.tabMy.Controls.Add(this.label12);
-            this.tabMy.Controls.Add(this.xrpchart);
+            this.tabMy.Controls.Add(this.bchchart);
             this.tabMy.Controls.Add(this.label16);
             this.tabMy.Controls.Add(this.label19);
             this.tabMy.Controls.Add(this.ethprice);
@@ -421,9 +407,97 @@ namespace Mock_Investing
             this.tabMy.Location = new System.Drawing.Point(4, 4);
             this.tabMy.Margin = new System.Windows.Forms.Padding(0);
             this.tabMy.Name = "tabMy";
-            this.tabMy.Size = new System.Drawing.Size(1182, 705);
+            this.tabMy.Size = new System.Drawing.Size(1182, 686);
             this.tabMy.TabIndex = 1;
             this.tabMy.Text = "tabPage2";
+            // 
+            // guna2Chip5
+            // 
+            this.guna2Chip5.AutoRoundedCorners = true;
+            this.guna2Chip5.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Chip5.BorderRadius = 11;
+            this.guna2Chip5.FillColor = System.Drawing.Color.Silver;
+            this.guna2Chip5.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.guna2Chip5.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Chip5.IsClosable = false;
+            this.guna2Chip5.Location = new System.Drawing.Point(971, 312);
+            this.guna2Chip5.Name = "guna2Chip5";
+            this.guna2Chip5.Size = new System.Drawing.Size(50, 25);
+            this.guna2Chip5.TabIndex = 132;
+            this.guna2Chip5.Text = "KOR";
+            // 
+            // guna2PictureBox9
+            // 
+            this.guna2PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.Image")));
+            this.guna2PictureBox9.ImageRotate = 0F;
+            this.guna2PictureBox9.Location = new System.Drawing.Point(1028, 317);
+            this.guna2PictureBox9.Name = "guna2PictureBox9";
+            this.guna2PictureBox9.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox9.TabIndex = 131;
+            this.guna2PictureBox9.TabStop = false;
+            // 
+            // guna2Chip6
+            // 
+            this.guna2Chip6.AutoRoundedCorners = true;
+            this.guna2Chip6.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Chip6.BorderRadius = 11;
+            this.guna2Chip6.FillColor = System.Drawing.Color.Silver;
+            this.guna2Chip6.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.guna2Chip6.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Chip6.IsClosable = false;
+            this.guna2Chip6.Location = new System.Drawing.Point(1050, 312);
+            this.guna2Chip6.Name = "guna2Chip6";
+            this.guna2Chip6.Size = new System.Drawing.Size(50, 25);
+            this.guna2Chip6.TabIndex = 130;
+            this.guna2Chip6.Text = "BCH";
+            // 
+            // guna2VSeparator5
+            // 
+            this.guna2VSeparator5.FillColor = System.Drawing.Color.Black;
+            this.guna2VSeparator5.Location = new System.Drawing.Point(765, 299);
+            this.guna2VSeparator5.Name = "guna2VSeparator5";
+            this.guna2VSeparator5.Size = new System.Drawing.Size(10, 300);
+            this.guna2VSeparator5.TabIndex = 129;
+            // 
+            // guna2Chip1
+            // 
+            this.guna2Chip1.AutoRoundedCorners = true;
+            this.guna2Chip1.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Chip1.BorderRadius = 11;
+            this.guna2Chip1.FillColor = System.Drawing.Color.Silver;
+            this.guna2Chip1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.guna2Chip1.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Chip1.IsClosable = false;
+            this.guna2Chip1.Location = new System.Drawing.Point(606, 312);
+            this.guna2Chip1.Name = "guna2Chip1";
+            this.guna2Chip1.Size = new System.Drawing.Size(50, 25);
+            this.guna2Chip1.TabIndex = 128;
+            this.guna2Chip1.Text = "KOR";
+            // 
+            // guna2PictureBox8
+            // 
+            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
+            this.guna2PictureBox8.ImageRotate = 0F;
+            this.guna2PictureBox8.Location = new System.Drawing.Point(663, 317);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.Size = new System.Drawing.Size(20, 20);
+            this.guna2PictureBox8.TabIndex = 127;
+            this.guna2PictureBox8.TabStop = false;
+            // 
+            // guna2Chip4
+            // 
+            this.guna2Chip4.AutoRoundedCorners = true;
+            this.guna2Chip4.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Chip4.BorderRadius = 11;
+            this.guna2Chip4.FillColor = System.Drawing.Color.Silver;
+            this.guna2Chip4.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.guna2Chip4.ForeColor = System.Drawing.Color.DimGray;
+            this.guna2Chip4.IsClosable = false;
+            this.guna2Chip4.Location = new System.Drawing.Point(685, 312);
+            this.guna2Chip4.Name = "guna2Chip4";
+            this.guna2Chip4.Size = new System.Drawing.Size(50, 25);
+            this.guna2Chip4.TabIndex = 126;
+            this.guna2Chip4.Text = "ETH";
             // 
             // guna2Chip3
             // 
@@ -487,33 +561,33 @@ namespace Mock_Investing
             // 
             // btcchart
             // 
-            chartArea5.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea5.AxisX.IsLabelAutoFit = false;
-            chartArea5.AxisX.IsReversed = true;
-            chartArea5.AxisX.MajorGrid.Enabled = false;
-            chartArea5.AxisX.MajorTickMark.Enabled = false;
-            chartArea5.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea5.AxisY.IsLabelAutoFit = false;
-            chartArea5.AxisY.MajorGrid.Enabled = false;
-            chartArea5.AxisY.MajorTickMark.Enabled = false;
-            chartArea5.InnerPlotPosition.Auto = false;
-            chartArea5.InnerPlotPosition.Height = 90.55851F;
-            chartArea5.InnerPlotPosition.Width = 90.52276F;
-            chartArea5.InnerPlotPosition.X = 1.67553F;
-            chartArea5.InnerPlotPosition.Y = 2.23404F;
-            chartArea5.Name = "ChartArea1";
-            this.btcchart.ChartAreas.Add(chartArea5);
-            legend5.Enabled = false;
-            legend5.Name = "Legend1";
-            this.btcchart.Legends.Add(legend5);
+            chartArea9.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea9.AxisX.IsLabelAutoFit = false;
+            chartArea9.AxisX.IsReversed = true;
+            chartArea9.AxisX.MajorGrid.Enabled = false;
+            chartArea9.AxisX.MajorTickMark.Enabled = false;
+            chartArea9.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea9.AxisY.IsLabelAutoFit = false;
+            chartArea9.AxisY.MajorGrid.Enabled = false;
+            chartArea9.AxisY.MajorTickMark.Enabled = false;
+            chartArea9.InnerPlotPosition.Auto = false;
+            chartArea9.InnerPlotPosition.Height = 90.55851F;
+            chartArea9.InnerPlotPosition.Width = 90.52276F;
+            chartArea9.InnerPlotPosition.X = 1.67553F;
+            chartArea9.InnerPlotPosition.Y = 2.23404F;
+            chartArea9.Name = "ChartArea1";
+            this.btcchart.ChartAreas.Add(chartArea9);
+            legend9.Enabled = false;
+            legend9.Name = "Legend1";
+            this.btcchart.Legends.Add(legend9);
             this.btcchart.Location = new System.Drawing.Point(70, 349);
             this.btcchart.Name = "btcchart";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            series5.YValuesPerPoint = 4;
-            this.btcchart.Series.Add(series5);
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            series9.YValuesPerPoint = 4;
+            this.btcchart.Series.Add(series9);
             this.btcchart.Size = new System.Drawing.Size(300, 300);
             this.btcchart.TabIndex = 115;
             this.btcchart.Text = "chart2";
@@ -529,16 +603,16 @@ namespace Mock_Investing
             this.btcprice.TabIndex = 109;
             this.btcprice.Text = "37,799,000";
             // 
-            // xrpprice
+            // bchprice
             // 
-            this.xrpprice.AutoSize = true;
-            this.xrpprice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrpprice.ForeColor = System.Drawing.Color.IndianRed;
-            this.xrpprice.Location = new System.Drawing.Point(808, 328);
-            this.xrpprice.Name = "xrpprice";
-            this.xrpprice.Size = new System.Drawing.Size(72, 17);
-            this.xrpprice.TabIndex = 118;
-            this.xrpprice.Text = "37,799,000";
+            this.bchprice.AutoSize = true;
+            this.bchprice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bchprice.ForeColor = System.Drawing.Color.IndianRed;
+            this.bchprice.Location = new System.Drawing.Point(808, 328);
+            this.bchprice.Name = "bchprice";
+            this.bchprice.Size = new System.Drawing.Size(72, 17);
+            this.bchprice.TabIndex = 118;
+            this.bchprice.Text = "37,799,000";
             // 
             // label12
             // 
@@ -546,42 +620,42 @@ namespace Mock_Investing
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(796, 304);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 21);
+            this.label12.Size = new System.Drawing.Size(106, 21);
             this.label12.TabIndex = 117;
-            this.label12.Text = "리플";
+            this.label12.Text = "비트코인캐시";
             // 
-            // xrpchart
+            // bchchart
             // 
-            chartArea6.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea6.AxisX.IsLabelAutoFit = false;
-            chartArea6.AxisX.IsReversed = true;
-            chartArea6.AxisX.MajorGrid.Enabled = false;
-            chartArea6.AxisX.MajorTickMark.Enabled = false;
-            chartArea6.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea6.AxisY.IsLabelAutoFit = false;
-            chartArea6.AxisY.MajorGrid.Enabled = false;
-            chartArea6.AxisY.MajorTickMark.Enabled = false;
-            chartArea6.InnerPlotPosition.Auto = false;
-            chartArea6.InnerPlotPosition.Height = 90.55851F;
-            chartArea6.InnerPlotPosition.Width = 90.52276F;
-            chartArea6.InnerPlotPosition.X = 1.67553F;
-            chartArea6.InnerPlotPosition.Y = 2.23404F;
-            chartArea6.Name = "ChartArea1";
-            this.xrpchart.ChartAreas.Add(chartArea6);
-            legend6.Enabled = false;
-            legend6.Name = "Legend1";
-            this.xrpchart.Legends.Add(legend6);
-            this.xrpchart.Location = new System.Drawing.Point(800, 349);
-            this.xrpchart.Name = "xrpchart";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            series6.YValuesPerPoint = 4;
-            this.xrpchart.Series.Add(series6);
-            this.xrpchart.Size = new System.Drawing.Size(300, 300);
-            this.xrpchart.TabIndex = 116;
-            this.xrpchart.Text = "chart2";
+            chartArea10.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea10.AxisX.IsLabelAutoFit = false;
+            chartArea10.AxisX.IsReversed = true;
+            chartArea10.AxisX.MajorGrid.Enabled = false;
+            chartArea10.AxisX.MajorTickMark.Enabled = false;
+            chartArea10.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea10.AxisY.IsLabelAutoFit = false;
+            chartArea10.AxisY.MajorGrid.Enabled = false;
+            chartArea10.AxisY.MajorTickMark.Enabled = false;
+            chartArea10.InnerPlotPosition.Auto = false;
+            chartArea10.InnerPlotPosition.Height = 90.55851F;
+            chartArea10.InnerPlotPosition.Width = 90.52276F;
+            chartArea10.InnerPlotPosition.X = 1.67553F;
+            chartArea10.InnerPlotPosition.Y = 2.23404F;
+            chartArea10.Name = "ChartArea1";
+            this.bchchart.ChartAreas.Add(chartArea10);
+            legend10.Enabled = false;
+            legend10.Name = "Legend1";
+            this.bchchart.Legends.Add(legend10);
+            this.bchchart.Location = new System.Drawing.Point(800, 349);
+            this.bchchart.Name = "bchchart";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            series10.YValuesPerPoint = 4;
+            this.bchchart.Series.Add(series10);
+            this.bchchart.Size = new System.Drawing.Size(300, 300);
+            this.bchchart.TabIndex = 116;
+            this.bchchart.Text = "chart2";
             // 
             // label16
             // 
@@ -630,33 +704,33 @@ namespace Mock_Investing
             // 
             // ethchart
             // 
-            chartArea7.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea7.AxisX.IsLabelAutoFit = false;
-            chartArea7.AxisX.IsReversed = true;
-            chartArea7.AxisX.MajorGrid.Enabled = false;
-            chartArea7.AxisX.MajorTickMark.Enabled = false;
-            chartArea7.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-            chartArea7.AxisY.IsLabelAutoFit = false;
-            chartArea7.AxisY.MajorGrid.Enabled = false;
-            chartArea7.AxisY.MajorTickMark.Enabled = false;
-            chartArea7.InnerPlotPosition.Auto = false;
-            chartArea7.InnerPlotPosition.Height = 90.55851F;
-            chartArea7.InnerPlotPosition.Width = 90.52276F;
-            chartArea7.InnerPlotPosition.X = 1.67553F;
-            chartArea7.InnerPlotPosition.Y = 2.23404F;
-            chartArea7.Name = "ChartArea1";
-            this.ethchart.ChartAreas.Add(chartArea7);
-            legend7.Enabled = false;
-            legend7.Name = "Legend1";
-            this.ethchart.Legends.Add(legend7);
+            chartArea11.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea11.AxisX.IsLabelAutoFit = false;
+            chartArea11.AxisX.IsReversed = true;
+            chartArea11.AxisX.MajorGrid.Enabled = false;
+            chartArea11.AxisX.MajorTickMark.Enabled = false;
+            chartArea11.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+            chartArea11.AxisY.IsLabelAutoFit = false;
+            chartArea11.AxisY.MajorGrid.Enabled = false;
+            chartArea11.AxisY.MajorTickMark.Enabled = false;
+            chartArea11.InnerPlotPosition.Auto = false;
+            chartArea11.InnerPlotPosition.Height = 90.55851F;
+            chartArea11.InnerPlotPosition.Width = 90.52276F;
+            chartArea11.InnerPlotPosition.X = 1.67553F;
+            chartArea11.InnerPlotPosition.Y = 2.23404F;
+            chartArea11.Name = "ChartArea1";
+            this.ethchart.ChartAreas.Add(chartArea11);
+            legend11.Enabled = false;
+            legend11.Name = "Legend1";
+            this.ethchart.Legends.Add(legend11);
             this.ethchart.Location = new System.Drawing.Point(435, 352);
             this.ethchart.Name = "ethchart";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            series7.YValuesPerPoint = 4;
-            this.ethchart.Series.Add(series7);
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.Name = "Series1";
+            series11.YValuesPerPoint = 4;
+            this.ethchart.Series.Add(series11);
             this.ethchart.Size = new System.Drawing.Size(300, 300);
             this.ethchart.TabIndex = 110;
             this.ethchart.Text = "chart2";
@@ -726,7 +800,7 @@ namespace Mock_Investing
             this.firstRankWallet.BackColor = System.Drawing.Color.Transparent;
             this.firstRankWallet.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.firstRankWallet.Location = new System.Drawing.Point(61, 142);
+            this.firstRankWallet.Location = new System.Drawing.Point(66, 142);
             this.firstRankWallet.Name = "firstRankWallet";
             this.firstRankWallet.Size = new System.Drawing.Size(168, 28);
             this.firstRankWallet.TabIndex = 7;
@@ -738,7 +812,7 @@ namespace Mock_Investing
             this.firstRankName.BackColor = System.Drawing.Color.Transparent;
             this.firstRankName.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.firstRankName.Location = new System.Drawing.Point(109, 114);
+            this.firstRankName.Location = new System.Drawing.Point(109, 115);
             this.firstRankName.Name = "firstRankName";
             this.firstRankName.Size = new System.Drawing.Size(69, 28);
             this.firstRankName.TabIndex = 4;
@@ -809,7 +883,7 @@ namespace Mock_Investing
             this.secondRankWallet.BackColor = System.Drawing.Color.Transparent;
             this.secondRankWallet.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.secondRankWallet.Location = new System.Drawing.Point(70, 142);
+            this.secondRankWallet.Location = new System.Drawing.Point(75, 142);
             this.secondRankWallet.Name = "secondRankWallet";
             this.secondRankWallet.Size = new System.Drawing.Size(168, 28);
             this.secondRankWallet.TabIndex = 28;
@@ -821,7 +895,7 @@ namespace Mock_Investing
             this.secondRankName.BackColor = System.Drawing.Color.Transparent;
             this.secondRankName.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.secondRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.secondRankName.Location = new System.Drawing.Point(117, 114);
+            this.secondRankName.Location = new System.Drawing.Point(117, 115);
             this.secondRankName.Name = "secondRankName";
             this.secondRankName.Size = new System.Drawing.Size(69, 28);
             this.secondRankName.TabIndex = 25;
@@ -892,7 +966,7 @@ namespace Mock_Investing
             this.thirdRankWallet.BackColor = System.Drawing.Color.Transparent;
             this.thirdRankWallet.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thirdRankWallet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.thirdRankWallet.Location = new System.Drawing.Point(66, 143);
+            this.thirdRankWallet.Location = new System.Drawing.Point(71, 143);
             this.thirdRankWallet.Name = "thirdRankWallet";
             this.thirdRankWallet.Size = new System.Drawing.Size(168, 28);
             this.thirdRankWallet.TabIndex = 28;
@@ -904,7 +978,7 @@ namespace Mock_Investing
             this.thirdRankName.BackColor = System.Drawing.Color.Transparent;
             this.thirdRankName.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thirdRankName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.thirdRankName.Location = new System.Drawing.Point(113, 115);
+            this.thirdRankName.Location = new System.Drawing.Point(113, 116);
             this.thirdRankName.Name = "thirdRankName";
             this.thirdRankName.Size = new System.Drawing.Size(69, 28);
             this.thirdRankName.TabIndex = 25;
@@ -987,24 +1061,24 @@ namespace Mock_Investing
             this.gridCoinList.AllowUserToDeleteRows = false;
             this.gridCoinList.AllowUserToResizeColumns = false;
             this.gridCoinList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
             this.gridCoinList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinList.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
             this.gridCoinList.ColumnHeadersHeight = 40;
             this.gridCoinList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column0,
@@ -1012,14 +1086,14 @@ namespace Mock_Investing
             this.Column3,
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinList.DefaultCellStyle = dataGridViewCellStyle27;
             this.gridCoinList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinList.EnableHeadersVisualStyles = false;
             this.gridCoinList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -1153,38 +1227,38 @@ namespace Mock_Investing
             this.gridCoinListChart.AllowUserToDeleteRows = false;
             this.gridCoinListChart.AllowUserToResizeColumns = false;
             this.gridCoinListChart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.White;
+            this.gridCoinListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
             this.gridCoinListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridCoinListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridCoinListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCoinListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridCoinListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridCoinListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCoinListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
             this.gridCoinListChart.ColumnHeadersHeight = 40;
             this.gridCoinListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn16,
             this.전일대비});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCoinListChart.DefaultCellStyle = dataGridViewCellStyle30;
             this.gridCoinListChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridCoinListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridCoinListChart.EnableHeadersVisualStyles = false;
@@ -1266,38 +1340,38 @@ namespace Mock_Investing
             this.gridMainListChart.AllowUserToDeleteRows = false;
             this.gridMainListChart.AllowUserToResizeColumns = false;
             this.gridMainListChart.AllowUserToResizeRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
-            this.gridMainListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.White;
+            this.gridMainListChart.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle31;
             this.gridMainListChart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainListChart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
             this.gridMainListChart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainListChart.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainListChart.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainListChart.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainListChart.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle32;
             this.gridMainListChart.ColumnHeadersHeight = 40;
             this.gridMainListChart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn24,
             this.dataGridViewTextBoxColumn25,
             this.dataGridViewTextBoxColumn26,
             this.전일대비2});
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainListChart.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainListChart.DefaultCellStyle = dataGridViewCellStyle33;
             this.gridMainListChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridMainListChart.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainListChart.EnableHeadersVisualStyles = false;
@@ -1384,28 +1458,28 @@ namespace Mock_Investing
             // 
             // transactionChart
             // 
-            chartArea8.AxisX.IsLabelAutoFit = false;
-            chartArea8.AxisX.IsReversed = true;
-            chartArea8.AxisY.IsLabelAutoFit = false;
-            chartArea8.CursorX.IsUserSelectionEnabled = true;
-            chartArea8.InnerPlotPosition.Auto = false;
-            chartArea8.InnerPlotPosition.Height = 90.55851F;
-            chartArea8.InnerPlotPosition.Width = 90.52276F;
-            chartArea8.InnerPlotPosition.X = 1.67553F;
-            chartArea8.InnerPlotPosition.Y = 2.23404F;
-            chartArea8.Name = "ChartArea1";
-            this.transactionChart.ChartAreas.Add(chartArea8);
-            legend8.Enabled = false;
-            legend8.Name = "Legend1";
-            this.transactionChart.Legends.Add(legend8);
+            chartArea12.AxisX.IsLabelAutoFit = false;
+            chartArea12.AxisX.IsReversed = true;
+            chartArea12.AxisY.IsLabelAutoFit = false;
+            chartArea12.CursorX.IsUserSelectionEnabled = true;
+            chartArea12.InnerPlotPosition.Auto = false;
+            chartArea12.InnerPlotPosition.Height = 90.55851F;
+            chartArea12.InnerPlotPosition.Width = 90.52276F;
+            chartArea12.InnerPlotPosition.X = 1.67553F;
+            chartArea12.InnerPlotPosition.Y = 2.23404F;
+            chartArea12.Name = "ChartArea1";
+            this.transactionChart.ChartAreas.Add(chartArea12);
+            legend12.Enabled = false;
+            legend12.Name = "Legend1";
+            this.transactionChart.Legends.Add(legend12);
             this.transactionChart.Location = new System.Drawing.Point(14, 109);
             this.transactionChart.Name = "transactionChart";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            series8.YValuesPerPoint = 4;
-            this.transactionChart.Series.Add(series8);
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Candlestick;
+            series12.Legend = "Legend1";
+            series12.Name = "Series1";
+            series12.YValuesPerPoint = 4;
+            this.transactionChart.Series.Add(series12);
             this.transactionChart.Size = new System.Drawing.Size(673, 521);
             this.transactionChart.TabIndex = 0;
             this.transactionChart.Text = "transactionChart";
@@ -2025,24 +2099,24 @@ namespace Mock_Investing
             this.gridMainList.AllowUserToDeleteRows = false;
             this.gridMainList.AllowUserToResizeColumns = false;
             this.gridMainList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
-            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.White;
+            this.gridMainList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle34;
             this.gridMainList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMainList.BackgroundColor = System.Drawing.Color.White;
             this.gridMainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMainList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridMainList.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.gridMainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMainList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle35;
             this.gridMainList.ColumnHeadersHeight = 40;
             this.gridMainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn9,
@@ -2051,14 +2125,14 @@ namespace Mock_Investing
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn11,
             this.OwnQuantity});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(63)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMainList.DefaultCellStyle = dataGridViewCellStyle36;
             this.gridMainList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.gridMainList.EnableHeadersVisualStyles = false;
             this.gridMainList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(250)))));
@@ -2171,7 +2245,7 @@ namespace Mock_Investing
             this.myProfile_name.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_name.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_name.Location = new System.Drawing.Point(131, 187);
+            this.myProfile_name.Location = new System.Drawing.Point(116, 183);
             this.myProfile_name.Name = "myProfile_name";
             this.myProfile_name.Size = new System.Drawing.Size(16, 21);
             this.myProfile_name.TabIndex = 96;
@@ -2325,7 +2399,7 @@ namespace Mock_Investing
             this.myProfile_Img.BorderRadius = 30;
             this.myProfile_Img.Image = ((System.Drawing.Image)(resources.GetObject("myProfile_Img.Image")));
             this.myProfile_Img.ImageRotate = 0F;
-            this.myProfile_Img.Location = new System.Drawing.Point(73, 43);
+            this.myProfile_Img.Location = new System.Drawing.Point(66, 63);
             this.myProfile_Img.Name = "myProfile_Img";
             this.myProfile_Img.Size = new System.Drawing.Size(100, 100);
             this.myProfile_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2339,11 +2413,11 @@ namespace Mock_Investing
             this.myProfile_lab1.BackColor = System.Drawing.Color.Transparent;
             this.myProfile_lab1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myProfile_lab1.ForeColor = System.Drawing.Color.Black;
-            this.myProfile_lab1.Location = new System.Drawing.Point(36, 187);
+            this.myProfile_lab1.Location = new System.Drawing.Point(63, 183);
             this.myProfile_lab1.Name = "myProfile_lab1";
-            this.myProfile_lab1.Size = new System.Drawing.Size(89, 21);
+            this.myProfile_lab1.Size = new System.Drawing.Size(57, 21);
             this.myProfile_lab1.TabIndex = 86;
-            this.myProfile_lab1.Text = "이름          : ";
+            this.myProfile_lab1.Text = "이름  : ";
             // 
             // guna2Panel6
             // 
@@ -2453,7 +2527,7 @@ namespace Mock_Investing
             this.header_Name.BackColor = System.Drawing.Color.Transparent;
             this.header_Name.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.header_Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.header_Name.Location = new System.Drawing.Point(70, 46);
+            this.header_Name.Location = new System.Drawing.Point(74, 46);
             this.header_Name.Name = "header_Name";
             this.header_Name.Size = new System.Drawing.Size(83, 31);
             this.header_Name.TabIndex = 3;
@@ -2654,94 +2728,6 @@ namespace Mock_Investing
             this.header_Img.TabStop = false;
             this.header_Img.UseTransparentBackground = true;
             // 
-            // guna2Chip1
-            // 
-            this.guna2Chip1.AutoRoundedCorners = true;
-            this.guna2Chip1.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Chip1.BorderRadius = 11;
-            this.guna2Chip1.FillColor = System.Drawing.Color.Silver;
-            this.guna2Chip1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.guna2Chip1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Chip1.IsClosable = false;
-            this.guna2Chip1.Location = new System.Drawing.Point(606, 312);
-            this.guna2Chip1.Name = "guna2Chip1";
-            this.guna2Chip1.Size = new System.Drawing.Size(50, 25);
-            this.guna2Chip1.TabIndex = 128;
-            this.guna2Chip1.Text = "KOR";
-            // 
-            // guna2PictureBox8
-            // 
-            this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
-            this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(663, 317);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.Size = new System.Drawing.Size(20, 20);
-            this.guna2PictureBox8.TabIndex = 127;
-            this.guna2PictureBox8.TabStop = false;
-            // 
-            // guna2Chip4
-            // 
-            this.guna2Chip4.AutoRoundedCorners = true;
-            this.guna2Chip4.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Chip4.BorderRadius = 11;
-            this.guna2Chip4.FillColor = System.Drawing.Color.Silver;
-            this.guna2Chip4.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.guna2Chip4.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Chip4.IsClosable = false;
-            this.guna2Chip4.Location = new System.Drawing.Point(685, 312);
-            this.guna2Chip4.Name = "guna2Chip4";
-            this.guna2Chip4.Size = new System.Drawing.Size(50, 25);
-            this.guna2Chip4.TabIndex = 126;
-            this.guna2Chip4.Text = "ETH";
-            // 
-            // guna2VSeparator5
-            // 
-            this.guna2VSeparator5.FillColor = System.Drawing.Color.Black;
-            this.guna2VSeparator5.Location = new System.Drawing.Point(765, 299);
-            this.guna2VSeparator5.Name = "guna2VSeparator5";
-            this.guna2VSeparator5.Size = new System.Drawing.Size(10, 300);
-            this.guna2VSeparator5.TabIndex = 129;
-            // 
-            // guna2Chip5
-            // 
-            this.guna2Chip5.AutoRoundedCorners = true;
-            this.guna2Chip5.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Chip5.BorderRadius = 11;
-            this.guna2Chip5.FillColor = System.Drawing.Color.Silver;
-            this.guna2Chip5.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.guna2Chip5.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Chip5.IsClosable = false;
-            this.guna2Chip5.Location = new System.Drawing.Point(971, 312);
-            this.guna2Chip5.Name = "guna2Chip5";
-            this.guna2Chip5.Size = new System.Drawing.Size(50, 25);
-            this.guna2Chip5.TabIndex = 132;
-            this.guna2Chip5.Text = "KOR";
-            // 
-            // guna2PictureBox9
-            // 
-            this.guna2PictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox9.Image")));
-            this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(1028, 317);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.Size = new System.Drawing.Size(20, 20);
-            this.guna2PictureBox9.TabIndex = 131;
-            this.guna2PictureBox9.TabStop = false;
-            // 
-            // guna2Chip6
-            // 
-            this.guna2Chip6.AutoRoundedCorners = true;
-            this.guna2Chip6.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Chip6.BorderRadius = 11;
-            this.guna2Chip6.FillColor = System.Drawing.Color.Silver;
-            this.guna2Chip6.Font = new System.Drawing.Font("Segoe UI", 9.5F);
-            this.guna2Chip6.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Chip6.IsClosable = false;
-            this.guna2Chip6.Location = new System.Drawing.Point(1050, 312);
-            this.guna2Chip6.Name = "guna2Chip6";
-            this.guna2Chip6.Size = new System.Drawing.Size(50, 25);
-            this.guna2Chip6.TabIndex = 130;
-            this.guna2Chip6.Text = "XRP";
-            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2757,14 +2743,15 @@ namespace Mock_Investing
             this.Text = "Dashboard";
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2TabControl1.ResumeLayout(false);
             this.tabMy.ResumeLayout(false);
             this.tabMy.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btcchart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xrpchart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bchchart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ethchart)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
@@ -2808,8 +2795,6 @@ namespace Mock_Investing
             this.guna2Panel3.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.header_Img)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2823,7 +2808,6 @@ namespace Mock_Investing
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private System.Windows.Forms.Label header_Profit;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage tabMy;
         private System.Windows.Forms.TabPage tabView;
@@ -2953,9 +2937,9 @@ namespace Mock_Investing
         private System.Windows.Forms.Label myProfile_profit;
         private System.Windows.Forms.Label myProfile_overall;
         private System.Windows.Forms.Label myProfile_startFunds;
-        private System.Windows.Forms.Label xrpprice;
+        private System.Windows.Forms.Label bchprice;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataVisualization.Charting.Chart xrpchart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart bchchart;
         private System.Windows.Forms.Label lab_BTC;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
         private Guna.UI2.WinForms.Guna2Chip guna2Chip2;

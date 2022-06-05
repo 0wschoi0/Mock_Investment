@@ -45,7 +45,7 @@ namespace Mock_Investing
         CoinDetail coinNow;
         List<Candle> BTC;
         List<Candle> ETH;
-        List<Candle> XRP;
+        List<Candle> BCH;
         List<CoinDetail> coins;
         Rankers first;
         Rankers second;
@@ -879,7 +879,7 @@ namespace Mock_Investing
             List<Candle> new_candle = fetchcandle("100", coinName);
             BTC = fetchcandle("100", "KRW-BTC");
             ETH = fetchcandle("100", "KRW-ETH");
-            XRP = fetchcandle("100", "KRW-XRP");
+            BCH = fetchcandle("100", "KRW-BCH");
             coin_candle = new_candle;
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
             transactionChart.Series["Series1"].Points.Clear();
@@ -957,7 +957,7 @@ namespace Mock_Investing
             label16.Text = BTC.ElementAt(0).candle_date_time_kst;
             btcprice.Text = (BTC.ElementAt(0).trade_price).ToString("C");
             ethprice.Text = (ETH.ElementAt(0).trade_price).ToString("C");
-            xrpprice.Text = (XRP.ElementAt(0).trade_price).ToString("C");
+            bchprice.Text = (BCH.ElementAt(0).trade_price).ToString("C");
 
             btcchart.Series["Series1"].Points.Clear();
             int btcmaxViewY = (int)BTC.ElementAt(0).high_price;
@@ -1013,32 +1013,32 @@ namespace Mock_Investing
             ethchart.ChartAreas[0].AxisY.Maximum = ethmaxViewY;
             ethchart.ChartAreas[0].AxisY.Minimum = ethminViewY;
 
-            xrpchart.Series["Series1"].Points.Clear();
-            int xrpmaxViewY = (int)XRP.ElementAt(0).high_price;
-            int xrpminViewY = (int)XRP.ElementAt(0).low_price;
-            for (int i = 0; i < XRP.Count(); i++)
+            bchchart.Series["Series1"].Points.Clear();
+            int bchmaxViewY = (int)BCH.ElementAt(0).high_price;
+            int bchminViewY = (int)BCH.ElementAt(0).low_price;
+            for (int i = 0; i < BCH.Count(); i++)
             {
-                xrpchart.Series["Series1"].Points.AddXY(XRP.ElementAt(i).candle_date_time_kst, XRP.ElementAt(i).high_price);
-                xrpchart.Series["Series1"].Points[i].YValues[1] = XRP.ElementAt(i).low_price;
-                xrpchart.Series["Series1"].Points[i].YValues[2] = XRP.ElementAt(i).opening_price;
-                xrpchart.Series["Series1"].Points[i].YValues[3] = XRP.ElementAt(i).trade_price;
-                if (XRP.ElementAt(i).opening_price < XRP.ElementAt(i).trade_price)
+                bchchart.Series["Series1"].Points.AddXY(BCH.ElementAt(i).candle_date_time_kst, BCH.ElementAt(i).high_price);
+                bchchart.Series["Series1"].Points[i].YValues[1] = BCH.ElementAt(i).low_price;
+                bchchart.Series["Series1"].Points[i].YValues[2] = BCH.ElementAt(i).opening_price;
+                bchchart.Series["Series1"].Points[i].YValues[3] = BCH.ElementAt(i).trade_price;
+                if (BCH.ElementAt(i).opening_price < BCH.ElementAt(i).trade_price)
                 {
-                    xrpchart.Series["Series1"].Points[i].Color = Color.Red;
-                    xrpchart.Series["Series1"].Points[i].BorderColor = Color.Red;
+                    bchchart.Series["Series1"].Points[i].Color = Color.Red;
+                    bchchart.Series["Series1"].Points[i].BorderColor = Color.Red;
                 }
-                if (XRP.ElementAt(i).opening_price >= XRP.ElementAt(i).trade_price)
+                if (BCH.ElementAt(i).opening_price >= BCH.ElementAt(i).trade_price)
                 {
-                    xrpchart.Series["Series1"].Points[0].Color = Color.Blue;
-                    xrpchart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+                    bchchart.Series["Series1"].Points[0].Color = Color.Blue;
+                    bchchart.Series["Series1"].Points[0].BorderColor = Color.Blue;
                 }
-                if (xrpmaxViewY < XRP.ElementAt(i).high_price)
-                    xrpmaxViewY = (int)XRP.ElementAt(i).high_price;
-                if (xrpminViewY > XRP.ElementAt(i).low_price)
-                    xrpminViewY = (int)XRP.ElementAt(i).low_price;
+                if (bchmaxViewY < BCH.ElementAt(i).high_price)
+                    bchmaxViewY = (int)BCH.ElementAt(i).high_price;
+                if (bchminViewY > BCH.ElementAt(i).low_price)
+                    bchminViewY = (int)BCH.ElementAt(i).low_price;
             }
-            xrpchart.ChartAreas[0].AxisY.Maximum = xrpmaxViewY;
-            xrpchart.ChartAreas[0].AxisY.Minimum = xrpminViewY;
+            bchchart.ChartAreas[0].AxisY.Maximum = bchmaxViewY;
+            bchchart.ChartAreas[0].AxisY.Minimum = bchminViewY;
 
 
         }
