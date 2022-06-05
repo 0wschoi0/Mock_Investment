@@ -45,6 +45,7 @@ namespace Mock_Investing
         CoinDetail coinNow;
         List<Candle> BTC;
         List<Candle> ETH;
+        List<Candle> XRP;
         List<CoinDetail> coins;
         Rankers first;
         Rankers second;
@@ -882,6 +883,7 @@ namespace Mock_Investing
             List<Candle> new_candle = fetchcandle("100", coinName);
             BTC = fetchcandle("100", "KRW-BTC");
             ETH = fetchcandle("100", "KRW-ETH");
+            XRP = fetchcandle("100", "KRW-XRP");
             coin_candle = new_candle;
             lblChartCoinPrice.Text = coin_candle.ElementAt(0).trade_price.ToString("C");
             transactionChart.Series["Series1"].Points.Clear();
@@ -955,11 +957,12 @@ namespace Mock_Investing
             txtboxBuyPrice.Text = lblChartCoinPrice.Text;// 매수 가격 
             txtboxSellPrice.Text = lblChartCoinPrice.Text;//매도 가격
 
-            labTrans.Text = BTC.ElementAt(0).candle_date_time_kst;
+            
             label16.Text = BTC.ElementAt(0).candle_date_time_kst;
             btcprice.Text = (BTC.ElementAt(0).trade_price).ToString("C");
             ethprice.Text = (ETH.ElementAt(0).trade_price).ToString("C");
-            transRecPrice1.Text = (BTC.ElementAt(0).trade_price).ToString("C");
+            xrpprice.Text = (XRP.ElementAt(0).trade_price).ToString("C");
+
             btcchart.Series["Series1"].Points.Clear();
             int btcmaxViewY = (int)BTC.ElementAt(0).high_price;
             int btcminViewY = (int)BTC.ElementAt(0).low_price;
@@ -1014,20 +1017,34 @@ namespace Mock_Investing
             ethchart.ChartAreas[0].AxisY.Maximum = ethmaxViewY;
             ethchart.ChartAreas[0].AxisY.Minimum = ethminViewY;
 
-            if (transRecPrice2.Text == "")
+            xrpchart.Series["Series1"].Points.Clear();
+            int xrpmaxViewY = (int)XRP.ElementAt(0).high_price;
+            int xrpminViewY = (int)XRP.ElementAt(0).low_price;
+            for (int i = 0; i < XRP.Count(); i++)
             {
-                transRecPrice2.Text = (BTC.ElementAt(1).trade_price).ToString("C");
-                transRecPrice3.Text = (BTC.ElementAt(2).trade_price).ToString("C");
-                transRecPrice4.Text = (BTC.ElementAt(3).trade_price).ToString("C");
+                xrpchart.Series["Series1"].Points.AddXY(XRP.ElementAt(i).candle_date_time_kst, XRP.ElementAt(i).high_price);
+                xrpchart.Series["Series1"].Points[i].YValues[1] = XRP.ElementAt(i).low_price;
+                xrpchart.Series["Series1"].Points[i].YValues[2] = XRP.ElementAt(i).opening_price;
+                xrpchart.Series["Series1"].Points[i].YValues[3] = XRP.ElementAt(i).trade_price;
+                if (XRP.ElementAt(i).opening_price < XRP.ElementAt(i).trade_price)
+                {
+                    xrpchart.Series["Series1"].Points[i].Color = Color.Red;
+                    xrpchart.Series["Series1"].Points[i].BorderColor = Color.Red;
+                }
+                if (XRP.ElementAt(i).opening_price >= XRP.ElementAt(i).trade_price)
+                {
+                    xrpchart.Series["Series1"].Points[0].Color = Color.Blue;
+                    xrpchart.Series["Series1"].Points[0].BorderColor = Color.Blue;
+                }
+                if (xrpmaxViewY < XRP.ElementAt(i).high_price)
+                    xrpmaxViewY = (int)XRP.ElementAt(i).high_price;
+                if (xrpminViewY > XRP.ElementAt(i).low_price)
+                    xrpminViewY = (int)XRP.ElementAt(i).low_price;
             }
-            else
-            {
-                transRecPrice4.Text = transRecPrice3.Text;
-                transRecPrice3.Text = transRecPrice2.Text;
-                transRecPrice2.Text = transRecPrice1.Text;
-            }
+            xrpchart.ChartAreas[0].AxisY.Maximum = xrpmaxViewY;
+            xrpchart.ChartAreas[0].AxisY.Minimum = xrpminViewY;
 
-            
+
         }
 
         private void gridCoinList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
