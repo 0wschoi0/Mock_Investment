@@ -21,10 +21,10 @@
 <h2> 실행 화면 </h2>
 <ul>
   <li>Login 화면 <br/>
-    ![Mock_Investment_Login](https://user-images.githubusercontent.com/83345831/173191288-008dcf0b-e2c8-470a-a124-38912e503ccf.png)
+    <img src="https://user-images.githubusercontent.com/83345831/173190715-f340f785-f3b4-4431-9fde-40e29866d130.png" />
   </li>
   <li>Dashboard 화면 <br/>
-    ![Mock_Investment_Dashboard](https://user-images.githubusercontent.com/83345831/173191296-a4e932f8-27c5-421b-9948-9776c52b1fbb.png)
+    <img src="https://user-images.githubusercontent.com/83345831/173190899-b7313ff1-6340-4eab-82c8-a17919a7c205.png" />
   </li>
 </ul>
 <h2> 출처 </h2>
@@ -33,8 +33,8 @@
     <li>Login.cs 디자인 템플릿 : https://www.youtube.com/watch?v=RiuD3fgItjg&ab_channel=VectoArt</li>
     <li>Login.cs 이미지 파일 출처 : https://www.pngwing.com/en/free-png-sxijx</li>
     <li>Dashboard.cs 디자인 템플릿 : https://www.youtube.com/watch?v=mcc0KFyB_Eg</li>
-    <li>Dashboard.cs 이미지 파일 출처 : PICHON 아이콘, 구글링 <br />
-      ![Mock_Investment_DashboardImages_Source](https://user-images.githubusercontent.com/83345831/173191306-4e2a2d9e-16fa-4b7e-ab6f-1b440d6a9035.png)
+    <li>Dashboard.cs 이미지 파일 출처 : PICHON 아이콘, 구글링 <br /> <br />
+      <img src="https://user-images.githubusercontent.com/83345831/173190935-8f63d93c-bda5-41e1-b93c-ceb2b3253b1c.png" />
     </li>
   </ul>
 </p>
