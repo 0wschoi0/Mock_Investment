@@ -21,10 +21,10 @@
 <h2> 실행 화면 </h2>
 <ul>
   <li>Login 화면 <br/>
-    <img src="https://github.com/0wschoi0/Mock_Investment/issues/2#issue-1268283003" />
+    ![Mock_Investment_Login](https://user-images.githubusercontent.com/83345831/173191288-008dcf0b-e2c8-470a-a124-38912e503ccf.png)
   </li>
   <li>Dashboard 화면 <br/>
-   <img src="https://github.com/0wschoi0/Mock_Investment/issues/3#issue-1268283286" />
+    ![Mock_Investment_Dashboard](https://user-images.githubusercontent.com/83345831/173191296-a4e932f8-27c5-421b-9948-9776c52b1fbb.png)
   </li>
 </ul>
 <h2> 출처 </h2>
@@ -34,7 +34,7 @@
     <li>Login.cs 이미지 파일 출처 : https://www.pngwing.com/en/free-png-sxijx</li>
     <li>Dashboard.cs 디자인 템플릿 : https://www.youtube.com/watch?v=mcc0KFyB_Eg</li>
     <li>Dashboard.cs 이미지 파일 출처 : PICHON 아이콘, 구글링 <br />
-      <img src="https://github.com/0wschoi0/Mock_Investment/issues/4#issue-1268283571" />
+      ![Mock_Investment_DashboardImages_Source](https://user-images.githubusercontent.com/83345831/173191306-4e2a2d9e-16fa-4b7e-ab6f-1b440d6a9035.png)
     </li>
   </ul>
 </p>
