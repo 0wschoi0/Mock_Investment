@@ -21,10 +21,11 @@
 </p>
 <h2> 실행 화면 </h2>
 <ul>
-  <li>Login 화면 <br/>
+  <li>Login 화면 <br/><br/>
     <img src="https://user-images.githubusercontent.com/83345831/173190715-f340f785-f3b4-4431-9fde-40e29866d130.png" />
   </li>
-  <li>Dashboard 화면 <br/>
+  <br/>
+  <li>Dashboard 화면 <br/><br/>
     <img src="https://user-images.githubusercontent.com/83345831/173190899-b7313ff1-6340-4eab-82c8-a17919a7c205.png" />
   </li>
 </ul>
