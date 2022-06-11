@@ -3,8 +3,8 @@
   This is a mock investment software based on C# language with Upbit and Firebase Open API. <br />
   해당 프로젝트는 가상화폐 모의투자 프로그램입니다. <br />
   C# WinForm을 기반으로 Guna UI와 함께 Upbit와 Firebase의 Open API를 사용하여 만들었습니다. <br />
-  로그인은 현재 이메일을 아이디로 회원가입 가능합니다.
-  아직 개발 완료가 아니기에 몇가지 버그가 존재합니다.
+  로그인은 현재 이메일을 아이디로 회원가입 가능합니다. <br />
+  아직 개발 완료가 아니기에 몇가지 버그가 존재합니다. <br />
 </p>
 <h2> 실행 안내서 </h2>
 <p>
